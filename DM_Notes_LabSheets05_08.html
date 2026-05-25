@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT1160 – Discrete Mathematics Notes</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f14;
+    --surface: #161920;
+    --card: #1c2028;
+    --border: #2a2f3d;
+    --accent1: #4fffb0;
+    --accent2: #4db8ff;
+    --accent3: #ff7c5c;
+    --accent4: #c77dff;
+    --text: #e8eaf0;
+    --muted: #7a8099;
+    --code-bg: #111318;
+    --tag-bg: #1e2535;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* --- Header --- */
+  header {
+    background: linear-gradient(135deg, #0d1b2a 0%, #0d0f14 60%);
+    border-bottom: 1px solid var(--border);
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(77,184,255,0.03) 40px, rgba(77,184,255,0.03) 41px),
+                repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(77,184,255,0.03) 40px, rgba(77,184,255,0.03) 41px);
+  }
+  header .badge {
+    display: inline-block;
+    background: rgba(79,255,176,0.12);
+    color: var(--accent1);
+    border: 1px solid rgba(79,255,176,0.3);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 4px 14px;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  /* --- Nav --- */
+  nav {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 14px 20px;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  nav a:hover { color: var(--text); border-bottom-color: var(--accent2); }
+  nav a.l5 { border-bottom-color: var(--accent1); color: var(--accent1); }
+
+  /* --- Layout --- */
+  main { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
+
+  /* --- Section headers --- */
+  .lab-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 3.5rem 0 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .lab-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  .l5 .lab-num { background: rgba(79,255,176,0.12); color: var(--accent1); border: 1px solid rgba(79,255,176,0.25); }
+  .l6 .lab-num { background: rgba(77,184,255,0.12); color: var(--accent2); border: 1px solid rgba(77,184,255,0.25); }
+  .l7 .lab-num { background: rgba(255,124,92,0.12); color: var(--accent3); border: 1px solid rgba(255,124,92,0.25); }
+  .l8 .lab-num { background: rgba(199,125,255,0.12); color: var(--accent4); border: 1px solid rgba(199,125,255,0.25); }
+  .lab-header h2 { font-size: 1.4rem; font-weight: 600; color: #fff; }
+
+  /* --- Sub-section --- */
+  .section { margin: 2rem 0; }
+  .section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+  }
+  .section h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 1.2rem 0 0.5rem;
+  }
+  p { margin-bottom: 0.75rem; color: #c8cad8; }
+
+  /* --- Cards --- */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  @media (max-width: 600px) { .card-grid { grid-template-columns: 1fr; } }
+
+  /* --- Compare table --- */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 1rem 0;
+  }
+  .compare-col { padding: 1.25rem; }
+  .compare-col:first-child { border-right: 1px solid var(--border); background: rgba(79,255,176,0.04); }
+  .compare-col:last-child { background: rgba(77,184,255,0.04); }
+  .compare-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .compare-col:first-child .compare-title { color: var(--accent1); }
+  .compare-col:last-child .compare-title { color: var(--accent2); }
+
+  /* --- Code --- */
+  pre, code {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0.75rem 0 1rem;
+    color: #c8ccd8;
+  }
+  .kw { color: #ff7c7c; }
+  .fn { color: #4db8ff; }
+  .str { color: #4fffb0; }
+  .cm { color: #4a5068; font-style: italic; }
+  .num { color: #ffb347; }
+  code {
+    background: var(--tag-bg);
+    color: var(--accent2);
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+
+  /* --- Formula box --- */
+  .formula {
+    background: var(--code-bg);
+    border-left: 3px solid var(--accent4);
+    border-radius: 0 5px 5px 0;
+    padding: 0.75rem 1.25rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: var(--accent4);
+    margin: 0.75rem 0;
+  }
+
+  /* --- Table --- */
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 13.5px; }
+  th {
+    background: var(--card);
+    color: var(--accent2);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  td { padding: 9px 14px; border-bottom: 1px solid rgba(42,47,61,0.6); color: #c8cad8; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: rgba(255,255,255,0.02); }
+
+  /* --- Bullet list --- */
+  ul { list-style: none; padding: 0; margin: 0.5rem 0; }
+  ul li { padding: 5px 0 5px 22px; color: #c8cad8; position: relative; }
+  ul li::before { content: '›'; position: absolute; left: 6px; color: var(--accent1); font-weight: 600; }
+  ol { padding-left: 1.5rem; margin: 0.5rem 0; }
+  ol li { padding: 4px 0; color: #c8cad8; }
+
+  /* --- Info boxes --- */
+  .info-box {
+    border-radius: 5px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    font-size: 14px;
+  }
+  .info-box.tip { background: rgba(79,255,176,0.06); border: 1px solid rgba(79,255,176,0.2); }
+  .info-box.warn { background: rgba(255,124,92,0.06); border: 1px solid rgba(255,124,92,0.2); }
+  .info-box.note { background: rgba(77,184,255,0.06); border: 1px solid rgba(77,184,255,0.2); }
+  .info-box .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .tip .label { color: var(--accent1); }
+  .warn .label { color: var(--accent3); }
+  .note .label { color: var(--accent2); }
+
+  /* --- Divider --- */
+  hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+  /* --- Tag chips --- */
+  .chip {
+    display: inline-block;
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    padding: 3px 9px;
+    margin: 2px;
+    color: var(--muted);
+  }
+
+  /* --- Exercise boxes --- */
+  .ex-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1rem 0; }
+  @media (max-width: 600px) { .ex-grid { grid-template-columns: 1fr; } }
+  .ex-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 0.9rem 1.1rem;
+    font-size: 13px;
+  }
+  .ex-box .ex-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--accent3);
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .ex-box p { font-size: 13px; margin: 0; color: #c0c2d0; }
+
+  /* tree diagram */
+  .tree-visual {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1.25rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--accent4);
+    line-height: 2;
+    text-align: center;
+    margin: 1rem 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">IT1160 · SLIIT · Year 01 Sem II</div>
+  <h1>Discrete Mathematics — Study Notes</h1>
+  <p>Lab Sheets 05–08 &nbsp;·&nbsp; Permutations &amp; Combinations · Recursion · Graphs · Trees</p>
+</header>
+
+<nav>
+  <a href="#lab05" class="l5">LS05 · Perm &amp; Comb</a>
+  <a href="#lab06">LS06 · Recursion</a>
+  <a href="#lab07">LS07 · Graphs</a>
+  <a href="#lab08">LS08 · Trees</a>
+</nav>
+
+<main>
+
+<!-- ======================================================= LAB 05 -->
+<div id="lab05" class="lab-header l5">
+  <span class="lab-num">LAB SHEET 05</span>
+  <h2>Permutations &amp; Combinations</h2>
+</div>
+
+<div class="section">
+  <h3>Core Concept</h3>
+  <p>Both deal with counting selections from a set, but differ in one critical way: <strong>order</strong>.</p>
+
+  <div class="compare">
+    <div class="compare-col">
+      <div class="compare-title">PERMUTATION</div>
+      <p>Counting <em>arrangements</em> — order matters.</p>
+      <p>(A, B) and (B, A) are <strong>two different</strong> permutations.</p>
+    </div>
+    <div class="compare-col">
+      <div class="compare-title">COMBINATION</div>
+      <p>Counting <em>selections</em> — order does not matter.</p>
+      <p>(A, B) and (B, A) are the <strong>same</strong> combination.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Formulas</h3>
+  <div class="card-grid">
+    <div class="card">
+      <h4>Permutation — nPr</h4>
+      <p>Number of ways to arrange r objects from n distinct objects.</p>
+      <div class="formula">nPr = n! / (n − r)!</div>
+      <p style="font-size:13px; color:var(--muted);">Example: 3P2 = 3! / 1! = 6</p>
+    </div>
+    <div class="card">
+      <h4>Combination — nCr</h4>
+      <p>Number of ways to choose r objects from n distinct objects.</p>
+      <div class="formula">nCr = n! / [r! × (n − r)!]</div>
+      <p style="font-size:13px; color:var(--muted);">Example: 3C2 = 3! / (2! × 1!) = 3</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4>Permutation with Identical (Indistinguishable) Objects</h4>
+    <p>When some objects are identical, divide out the duplicate arrangements:</p>
+    <div class="formula">= n! / (a! × b! × c! × …)</div>
+    <p style="font-size:13px;">Example: arranging AABBC → 5! / (2! × 2! × 1!) = 30</p>
+  </div>
+
+  <div class="card">
+    <h4>Stars and Bars (Distributing identical items)</h4>
+    <p>Ways to distribute n identical items into k distinct categories (repetition allowed):</p>
+    <div class="formula">C(n + k − 1, k − 1)</div>
+    <p style="font-size:13px;">Example: allocate 10 VMs across 4 types → C(13, 3) = 286</p>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Python itertools Functions</h3>
+  <table>
+    <thead><tr><th>Type</th><th>Function</th><th>Repetition?</th><th>Order?</th></tr></thead>
+    <tbody>
+      <tr><td>Permutations without repetition</td><td><code>itertools.permutations(iterable, r)</code></td><td>No</td><td>Yes</td></tr>
+      <tr><td>Permutations with repetition</td><td><code>itertools.product(iterable, repeat=r)</code></td><td>Yes</td><td>Yes</td></tr>
+      <tr><td>Permutations (identical objects)</td><td>No direct function — use math formula</td><td>—</td><td>Yes</td></tr>
+      <tr><td>Combinations without repetition</td><td><code>itertools.combinations(iterable, r)</code></td><td>No</td><td>No</td></tr>
+      <tr><td>Combinations with repetition</td><td><code>itertools.combinations_with_replacement(iterable, r)</code></td><td>Yes</td><td>No</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h3>Key Python Code Patterns</h3>
+
+  <h4>Generate &amp; count permutations</h4>
+<pre><span class="kw">from</span> itertools <span class="kw">import</span> <span class="fn">permutations</span>
+
+actors = [<span class="str">"A"</span>, <span class="str">"B"</span>, <span class="str">"C"</span>]
+all_perms = <span class="fn">list</span>(<span class="fn">permutations</span>(actors))
+print(<span class="fn">len</span>(all_perms))          <span class="cm"># 6</span>
+print(all_perms[<span class="num">4</span>])            <span class="cm"># 5th schedule (index 4)</span>
+
+<span class="cm"># Convert tuple to string</span>
+perms_str = [<span class="str">""</span>.<span class="fn">join</span>(p) <span class="kw">for</span> p <span class="kw">in</span> all_perms]</pre>
+
+  <h4>Passwords — product (repetition allowed)</h4>
+<pre><span class="kw">from</span> itertools <span class="kw">import</span> <span class="fn">product</span>
+<span class="kw">import</span> math
+
+letters = [<span class="str">"a"</span>, <span class="str">"b"</span>, <span class="str">"c"</span>, <span class="str">"d"</span>]
+digits  = [<span class="str">"0"</span>, <span class="str">"1"</span>, <span class="str">"2"</span>, <span class="str">"3"</span>, <span class="str">"4"</span>]
+
+letter_part = <span class="fn">list</span>(<span class="fn">product</span>(letters, repeat=<span class="num">2</span>))
+digit_part  = <span class="fn">list</span>(<span class="fn">product</span>(digits, repeat=<span class="num">3</span>))
+
+passwords = [l + d <span class="kw">for</span> l <span class="kw">in</span> letter_part <span class="kw">for</span> d <span class="kw">in</span> digit_part]
+print(<span class="fn">len</span>(passwords))   <span class="cm"># 4² × 5³ = 2000</span></pre>
+
+  <h4>Combinations — committee formation</h4>
+<pre><span class="kw">from</span> itertools <span class="kw">import</span> <span class="fn">combinations</span>
+
+employees = [<span class="str">"A"</span>, <span class="str">"B"</span>, <span class="str">"C"</span>, <span class="str">"D"</span>]
+committees = <span class="fn">list</span>(<span class="fn">combinations</span>(employees, <span class="num">2</span>))
+print(committees[<span class="num">2</span>])     <span class="cm"># 3rd committee (index 2)</span></pre>
+
+  <h4>math.comb — direct formula</h4>
+<pre><span class="kw">import</span> math
+print(math.<span class="fn">comb</span>(<span class="num">6</span>, <span class="num">3</span>))   <span class="cm"># 20</span>
+print(math.<span class="fn">comb</span>(<span class="num">15</span>, <span class="num">11</span>)) <span class="cm"># C(15,11) = 1365</span></pre>
+
+  <h4>Indistinguishable objects — manual formula</h4>
+<pre><span class="kw">import</span> math
+<span class="cm"># 7 books: 3 red, 2 green, 1 blue, 1 orange</span>
+unique = math.<span class="fn">factorial</span>(<span class="num">7</span>) // (math.<span class="fn">factorial</span>(<span class="num">3</span>) * math.<span class="fn">factorial</span>(<span class="num">2</span>))
+print(unique)   <span class="cm"># 420</span></pre>
+
+  <h4>Combinations with replacement — bouquets</h4>
+<pre><span class="kw">from</span> itertools <span class="kw">import</span> <span class="fn">combinations_with_replacement</span>
+
+flowers = [<span class="str">"Rose"</span>, <span class="str">"Lily"</span>, <span class="str">"Tulip"</span>]
+bouquets = <span class="fn">list</span>(<span class="fn">combinations_with_replacement</span>(flowers, <span class="num">3</span>))
+
+<span class="cm"># Filter bouquets with all different flowers</span>
+all_diff = [b <span class="kw">for</span> b <span class="kw">in</span> bouquets <span class="kw">if</span> <span class="fn">len</span>(<span class="fn">set</span>(b)) == <span class="num">3</span>]</pre>
+</div>
+
+<div class="section">
+  <h3>Lab Exercise Quick-Reference</h3>
+  <div class="ex-grid">
+    <div class="ex-box"><div class="ex-label">PART 01 – Q3 · Robot Paths</div><p>Move R or U from (0,0) to (3,3) → 6 moves: 3R + 3U → C(6,3) = 20 paths</p></div>
+    <div class="ex-box"><div class="ex-label">PART 02 – Q1 · Books</div><p>7 books (3R,2G,1B,1O): unique = 7!/(3!2!) = 420. Adjacent reds+greens: treat as blocks → 4!/(1!) = 24... adjust for internal orders.</p></div>
+    <div class="ex-box"><div class="ex-label">PART 02 – Q2 · 3-digit numbers</div><p>From digits 1–5, no repetition: 5P3 = 60. Greater than 500: first digit must be 5 → 4P2 = 12.</p></div>
+    <div class="ex-box"><div class="ex-label">PART 02 – Q4 · Servers</div><p>a) C(15,11) = 1365. b) C(8,6)×C(5,4)×C(2,1) = 28×5×2 = 280.</p></div>
+    <div class="ex-box"><div class="ex-label">PART 02 – Q5 · VM Allocation</div><p>10 VMs of 4 types, order irrelevant, repetition allowed → Stars &amp; Bars: C(13,3) = 286.</p></div>
+    <div class="ex-box"><div class="ex-label">PART 02 – Q3 · Grid with obstacle</div><p>Paths through (2,2): C(4,2)×C(2,2)=6. Total paths C(6,3)=20. Avoiding (2,2) = 20−6 = 14.</p></div>
+  </div>
+</div>
+
+
+<!-- ======================================================= LAB 06 -->
+<div id="lab06" class="lab-header l6" style="margin-top:4rem;">
+  <span class="lab-num">LAB SHEET 06</span>
+  <h2>Recursion</h2>
+</div>
+
+<div class="section">
+  <h3>What is Recursion?</h3>
+  <p>A function that calls itself to solve a problem by breaking it into smaller, simpler subproblems. Every recursive function must have:</p>
+  <div class="card-grid">
+    <div class="card">
+      <h4>Base Case</h4>
+      <p>The stopping condition. Without it, the function recurses infinitely and causes a stack overflow.</p>
+      <p style="font-size:13px; color:var(--accent1);">Example: <code>if n == 0: return 1</code></p>
+    </div>
+    <div class="card">
+      <h4>Recursive Case</h4>
+      <p>Where the function calls itself with a modified (smaller) parameter, moving toward the base case.</p>
+      <p style="font-size:13px; color:var(--accent2);">Example: <code>return n * factorial(n-1)</code></p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Classic Recursive Functions</h3>
+
+  <h4>1 · Factorial</h4>
+  <div class="formula">f(n) = n × f(n−1)  |  base: f(0) = 1</div>
+<pre><span class="kw">def</span> <span class="fn">factorial</span>(n):
+    <span class="kw">if</span> n == <span class="num">0</span>:
+        <span class="kw">return</span> <span class="num">1</span>
+    <span class="kw">return</span> n * <span class="fn">factorial</span>(n - <span class="num">1</span>)
+print(<span class="fn">factorial</span>(<span class="num">5</span>))  <span class="cm"># 120</span></pre>
+
+  <h4>2 · Fibonacci</h4>
+  <div class="formula">F(n) = F(n−1) + F(n−2)  |  base: F(0)=0, F(1)=1</div>
+<pre><span class="kw">def</span> <span class="fn">Fibo</span>(n):
+    <span class="kw">if</span> n &lt;= <span class="num">1</span>:
+        <span class="kw">return</span> n
+    <span class="kw">return</span> <span class="fn">Fibo</span>(n - <span class="num">1</span>) + <span class="fn">Fibo</span>(n - <span class="num">2</span>)
+print(<span class="fn">Fibo</span>(<span class="num">6</span>))  <span class="cm"># 8  (sequence: 0,1,1,2,3,5,8)</span></pre>
+
+  <h4>3 · Sum of Natural Numbers</h4>
+  <div class="formula">S(n) = n + S(n−1)  |  base: S(0) = 0 or S(1) = 1</div>
+<pre><span class="kw">def</span> <span class="fn">S</span>(n):
+    <span class="kw">if</span> n == <span class="num">0</span>: <span class="kw">return</span> <span class="num">0</span>
+    <span class="kw">return</span> n + <span class="fn">S</span>(n - <span class="num">1</span>)
+print(<span class="fn">S</span>(<span class="num">5</span>))   <span class="cm"># 15</span></pre>
+
+  <h4>4 · Harmonic Sum</h4>
+  <div class="formula">H(n) = 1/n + H(n−1)  |  base: H(1) = 1</div>
+<pre><span class="kw">def</span> <span class="fn">harmonic_sum</span>(n):
+    <span class="kw">if</span> n == <span class="num">1</span>: <span class="kw">return</span> <span class="num">1</span>
+    <span class="kw">return</span> <span class="num">1</span>/n + <span class="fn">harmonic_sum</span>(n - <span class="num">1</span>)
+print(<span class="fn">round</span>(<span class="fn">harmonic_sum</span>(<span class="num">5</span>), <span class="num">4</span>))  <span class="cm"># 2.2833</span></pre>
+
+  <h4>5 · Sum of Digits</h4>
+  <div class="formula">sum_digits(n) = n%10 + sum_digits(n//10)  |  base: n==0 → 0</div>
+<pre><span class="kw">def</span> <span class="fn">sum_of_digits</span>(n):
+    <span class="kw">if</span> n == <span class="num">0</span>: <span class="kw">return</span> <span class="num">0</span>
+    <span class="kw">return</span> n % <span class="num">10</span> + <span class="fn">sum_of_digits</span>(n // <span class="num">10</span>)
+print(<span class="fn">sum_of_digits</span>(<span class="num">1234</span>))  <span class="cm"># 10</span></pre>
+
+  <h4>6 · GCD (Euclidean Algorithm)</h4>
+  <div class="formula">gcd(a,b) = gcd(b, a mod b)  |  base: b==0 → return a</div>
+<pre><span class="kw">def</span> <span class="fn">gcd</span>(a, b):
+    <span class="kw">if</span> b == <span class="num">0</span>: <span class="kw">return</span> a
+    <span class="kw">return</span> <span class="fn">gcd</span>(b, a % b)
+print(<span class="fn">gcd</span>(<span class="num">48</span>, <span class="num">18</span>))  <span class="cm"># 6</span></pre>
+
+  <h4>7 · Pascal's Triangle</h4>
+  <div class="formula">pascal(n,k) = pascal(n−1,k−1) + pascal(n−1,k)  |  base: k==0 or k==n → 1</div>
+<pre><span class="kw">def</span> <span class="fn">pascal</span>(n, k):
+    <span class="kw">if</span> k == <span class="num">0</span> <span class="kw">or</span> k == n: <span class="kw">return</span> <span class="num">1</span>
+    <span class="kw">return</span> <span class="fn">pascal</span>(n - <span class="num">1</span>, k - <span class="num">1</span>) + <span class="fn">pascal</span>(n - <span class="num">1</span>, k)</pre>
+
+  <h4>8 · Sum of Even Numbers</h4>
+<pre><span class="kw">def</span> <span class="fn">sum_even</span>(n):
+    <span class="kw">if</span> n == <span class="num">0</span>: <span class="kw">return</span> <span class="num">0</span>
+    <span class="kw">return</span> n + <span class="fn">sum_even</span>(n - <span class="num">2</span>)
+print(<span class="fn">sum_even</span>(<span class="num">8</span>))  <span class="cm"># 2+4+6+8 = 20</span></pre>
+
+  <h4>9 · Sum of Factorials</h4>
+<pre><span class="kw">def</span> <span class="fn">sum_factorials</span>(n):
+    <span class="kw">if</span> n == <span class="num">0</span>: <span class="kw">return</span> <span class="num">0</span>
+    <span class="kw">return</span> <span class="fn">factorial</span>(n) + <span class="fn">sum_factorials</span>(n - <span class="num">1</span>)
+print(<span class="fn">sum_factorials</span>(<span class="num">4</span>))  <span class="cm"># 1!+2!+3!+4! = 1+2+6+24 = 33</span></pre>
+</div>
+
+<div class="section">
+  <h3>Recursion Tips</h3>
+  <div class="card-grid">
+    <div class="info-box tip">
+      <span class="label">TIP</span>
+      Always define the base case first. Trace small inputs manually (n=0,1,2) to verify correctness before testing large values.
+    </div>
+    <div class="info-box warn">
+      <span class="label">WATCH OUT</span>
+      Missing base case → infinite recursion → RecursionError. Each recursive call uses memory on the call stack.
+    </div>
+  </div>
+
+  <table>
+    <thead><tr><th>Function</th><th>Base Case</th><th>Recursive Calls</th><th>Pattern</th></tr></thead>
+    <tbody>
+      <tr><td>factorial(n)</td><td>n==0 → 1</td><td>1</td><td>n × fact(n−1)</td></tr>
+      <tr><td>Fibo(n)</td><td>n≤1 → n</td><td>2</td><td>F(n−1)+F(n−2)</td></tr>
+      <tr><td>S(n)</td><td>n==0 → 0</td><td>1</td><td>n + S(n−1)</td></tr>
+      <tr><td>harmonic(n)</td><td>n==1 → 1</td><td>1</td><td>1/n + H(n−1)</td></tr>
+      <tr><td>gcd(a,b)</td><td>b==0 → a</td><td>1</td><td>gcd(b, a%b)</td></tr>
+      <tr><td>pascal(n,k)</td><td>k==0 or k==n → 1</td><td>2</td><td>p(n−1,k−1)+p(n−1,k)</td></tr>
+      <tr><td>sum_digits(n)</td><td>n==0 → 0</td><td>1</td><td>n%10 + sd(n//10)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- ======================================================= LAB 07 -->
+<div id="lab07" class="lab-header l7" style="margin-top:4rem;">
+  <span class="lab-num">LAB SHEET 07</span>
+  <h2>Graphs</h2>
+</div>
+
+<div class="section">
+  <h3>What is a Graph?</h3>
+  <p>A non-linear data structure made of <strong>vertices (nodes)</strong> connected by <strong>edges (links)</strong>. Used to model networks, routes, relationships.</p>
+
+  <table>
+    <thead><tr><th>Graph Type</th><th>Description</th><th>NetworkX Syntax</th></tr></thead>
+    <tbody>
+      <tr><td>Undirected Graph</td><td>Edges have no direction</td><td><code>nx.Graph()</code></td></tr>
+      <tr><td>Directed Graph (DiGraph)</td><td>Edges have a specific direction (A→B)</td><td><code>nx.DiGraph()</code></td></tr>
+      <tr><td>Undirected MultiGraph</td><td>Multiple edges between same nodes, no direction</td><td><code>nx.MultiGraph()</code></td></tr>
+      <tr><td>Directed MultiGraph</td><td>Multiple directed edges between same nodes</td><td><code>nx.MultiDiGraph()</code></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h3>Core NetworkX Operations</h3>
+
+  <h4>Setup &amp; create graph</h4>
+<pre><span class="kw">import</span> networkx <span class="kw">as</span> nx
+<span class="kw">import</span> matplotlib.pyplot <span class="kw">as</span> plt
+
+G = nx.<span class="fn">Graph</span>()           <span class="cm"># undirected</span>
+G = nx.<span class="fn">DiGraph</span>()         <span class="cm"># directed</span></pre>
+
+  <h4>Add / remove nodes</h4>
+<pre>G.<span class="fn">add_node</span>(<span class="num">1</span>)
+G.<span class="fn">add_nodes_from</span>([<span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>])
+G.<span class="fn">remove_node</span>(<span class="num">1</span>)          <span class="cm"># also removes connected edges</span>
+G.<span class="fn">remove_nodes_from</span>([<span class="num">2</span>, <span class="num">3</span>])</pre>
+
+  <h4>Add / remove edges</h4>
+<pre>G.<span class="fn">add_edge</span>(<span class="num">1</span>, <span class="num">2</span>)
+G.<span class="fn">add_edges_from</span>([(1,2), (2,3), (3,4)])
+G.<span class="fn">add_weighted_edges_from</span>([(<span class="str">'A'</span>,<span class="str">'B'</span>,2), (<span class="str">'B'</span>,<span class="str">'C'</span>,3)])
+G.<span class="fn">remove_edge</span>(<span class="num">1</span>, <span class="num">2</span>)
+G.<span class="fn">remove_edges_from</span>([(2,3), (3,4)])</pre>
+
+  <h4>Visualize</h4>
+<pre>nx.<span class="fn">draw</span>(G, with_labels=<span class="kw">True</span>)
+plt.<span class="fn">show</span>()</pre>
+</div>
+
+<div class="section">
+  <h3>Graph Information Methods</h3>
+  <table>
+    <thead><tr><th>Goal</th><th>Code</th></tr></thead>
+    <tbody>
+      <tr><td>All nodes</td><td><code>nx.nodes(G)</code> or <code>G.nodes()</code></td></tr>
+      <tr><td>All edges</td><td><code>nx.edges(G)</code> or <code>G.edges()</code></td></tr>
+      <tr><td>Neighbours of node</td><td><code>G.neighbors(2)</code></td></tr>
+      <tr><td>Degree (undirected)</td><td><code>G.degree(2)</code></td></tr>
+      <tr><td>In-degree (directed)</td><td><code>G.in_degree("B")</code></td></tr>
+      <tr><td>Out-degree (directed)</td><td><code>G.out_degree("B")</code></td></tr>
+      <tr><td>Shortest path</td><td><code>nx.all_shortest_paths(G, source=1, target=4)</code></td></tr>
+      <tr><td>All simple paths</td><td><code>nx.all_simple_paths(G, source=1, target=4)</code></td></tr>
+      <tr><td>Cycles (undirected)</td><td><code>nx.cycle_basis(G)</code></td></tr>
+      <tr><td>Cycles (directed)</td><td><code>nx.simple_cycles(G)</code></td></tr>
+      <tr><td>Self-loops</td><td><code>nx.selfloop_edges(G)</code></td></tr>
+      <tr><td>Node count</td><td><code>G.number_of_nodes()</code> or <code>len(G.nodes())</code></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h3>Graph Representations</h3>
+
+  <div class="card-grid">
+    <div class="card">
+      <h4>Adjacency List</h4>
+      <p>Dictionary where each key is a node and the value is a list of its neighbours.</p>
+<pre style="margin-top:0.5rem">adj = nx.<span class="fn">to_dict_of_lists</span>(G)
+<span class="cm"># {1:[2], 2:[1,3], 3:[2]}</span></pre>
+    </div>
+    <div class="card">
+      <h4>Adjacency Matrix</h4>
+      <p>2D array. Cell [i][j] = 1 if an edge exists between node i and node j.</p>
+<pre style="margin-top:0.5rem">matrix = nx.<span class="fn">to_numpy_array</span>(G)
+print(matrix)</pre>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Complete Airline Example (Part 01 Q1–3)</h3>
+<pre><span class="kw">import</span> networkx <span class="kw">as</span> nx
+<span class="kw">import</span> matplotlib.pyplot <span class="kw">as</span> plt
+
+G = nx.<span class="fn">DiGraph</span>()
+G.<span class="fn">add_edges_from</span>([
+    (<span class="str">'A'</span>,<span class="str">'B'</span>), (<span class="str">'B'</span>,<span class="str">'C'</span>), (<span class="str">'C'</span>,<span class="str">'D'</span>),
+    (<span class="str">'C'</span>,<span class="str">'E'</span>), (<span class="str">'E'</span>,<span class="str">'D'</span>), (<span class="str">'C'</span>,<span class="str">'B'</span>)
+])
+
+<span class="cm"># In/out degrees</span>
+<span class="kw">for</span> node <span class="kw">in</span> G.nodes():
+    print(f<span class="str">"{node}: in={G.in_degree(node)}, out={G.out_degree(node)}"</span>)
+
+<span class="cm"># Self-loops</span>
+print(<span class="fn">list</span>(nx.<span class="fn">selfloop_edges</span>(G)))
+
+<span class="cm"># Reachability A → D</span>
+print(nx.<span class="fn">has_path</span>(G, <span class="str">'A'</span>, <span class="str">'D'</span>))
+
+<span class="cm"># All simple paths A → D</span>
+paths = <span class="fn">list</span>(nx.<span class="fn">all_simple_paths</span>(G, <span class="str">'A'</span>, <span class="str">'D'</span>))
+print(paths)
+
+<span class="cm"># Cycles</span>
+cycles = <span class="fn">list</span>(nx.<span class="fn">simple_cycles</span>(G))
+print(cycles)
+
+<span class="cm"># Visualize</span>
+nx.<span class="fn">draw</span>(G, with_labels=<span class="kw">True</span>, arrows=<span class="kw">True</span>)
+plt.<span class="fn">show</span>()</pre>
+</div>
+
+<div class="section">
+  <h3>Key Concepts Summary</h3>
+  <div class="card-grid">
+    <div class="card">
+      <h4>Self-loop</h4>
+      <p>An edge where both endpoints are the same node: <code>G.add_edge(1,1)</code></p>
+    </div>
+    <div class="card">
+      <h4>Degree</h4>
+      <p>Number of edges connected to a node. Directed graphs have separate in-degree and out-degree.</p>
+    </div>
+    <div class="card">
+      <h4>Cycle</h4>
+      <p>A path that starts and ends at the same node without repeating any node/edge.</p>
+    </div>
+    <div class="card">
+      <h4>Simple Path</h4>
+      <p>A path between two nodes where no node is repeated.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ======================================================= LAB 08 -->
+<div id="lab08" class="lab-header l8" style="margin-top:4rem;">
+  <span class="lab-num">LAB SHEET 08</span>
+  <h2>Trees, MST, BFS &amp; DFS</h2>
+</div>
+
+<div class="section">
+  <h3>What is a Tree?</h3>
+  <p>A tree is a special graph that is <strong>connected</strong> and <strong>acyclic</strong> (no cycles). Exactly one unique path exists between any two nodes.</p>
+  <div class="info-box note">
+    <span class="label">KEY FACT</span>
+    All trees are graphs, but not all graphs are trees. A tree with n nodes always has exactly <strong>n − 1 edges</strong>.
+  </div>
+</div>
+
+<div class="section">
+  <h3>Tree Terminology</h3>
+  <div class="tree-visual">
+                    10  ← Root
+                  /    \
+               20        30
+              /  \      /  \
+            40   50   60   70
+                           |
+                           80  ← Leaf
+  </div>
+
+  <table>
+    <thead><tr><th>Term</th><th>Definition</th><th>Example above</th></tr></thead>
+    <tbody>
+      <tr><td>Root</td><td>Top-most node, has no parent</td><td>Node 10</td></tr>
+      <tr><td>Leaf</td><td>Node with no children</td><td>40, 50, 60, 80</td></tr>
+      <tr><td>Parent</td><td>Node directly above another</td><td>Parent of 40 is 20</td></tr>
+      <tr><td>Child</td><td>Node directly below another</td><td>Children of 10 are 20, 30</td></tr>
+      <tr><td>Siblings</td><td>Nodes sharing the same parent</td><td>40 and 50 (parent = 20)</td></tr>
+      <tr><td>Depth of node</td><td>Number of edges from root to node</td><td>Depth of 70 = 2</td></tr>
+      <tr><td>Height of tree</td><td>Longest path from root to any leaf</td><td>Height = 3 (10→30→70→80)</td></tr>
+      <tr><td>Full Binary Tree</td><td>Every node has 0 or exactly 2 children</td><td>—</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h3>Tree in NetworkX</h3>
+<pre><span class="kw">import</span> networkx <span class="kw">as</span> nx
+<span class="kw">import</span> matplotlib.pyplot <span class="kw">as</span> plt
+
+T = nx.<span class="fn">DiGraph</span>()
+T.<span class="fn">add_edges_from</span>([
+    (<span class="num">10</span>,<span class="num">20</span>), (<span class="num">10</span>,<span class="num">30</span>), (<span class="num">20</span>,<span class="num">40</span>),
+    (<span class="num">20</span>,<span class="num">50</span>), (<span class="num">30</span>,<span class="num">60</span>), (<span class="num">30</span>,<span class="num">70</span>), (<span class="num">70</span>,<span class="num">80</span>)
+])
+
+<span class="cm"># Check if valid tree</span>
+print(nx.<span class="fn">is_tree</span>(T))              <span class="cm"># True</span>
+
+<span class="cm"># Get children of node 20</span>
+print(<span class="fn">list</span>(T.<span class="fn">successors</span>(<span class="num">20</span>)))     <span class="cm"># [40, 50]</span>
+
+<span class="cm"># Get parent of node 40</span>
+print(<span class="fn">list</span>(T.<span class="fn">predecessors</span>(<span class="num">40</span>)))  <span class="cm"># [20]</span>
+
+<span class="cm"># Depth from root (height of tree)</span>
+depths = nx.<span class="fn">shortest_path_length</span>(T, source=<span class="num">10</span>)
+height = <span class="fn">max</span>(depths.values())
+print(<span class="str">"Height:"</span>, height)           <span class="cm"># 3</span>
+
+<span class="cm"># Find leaf nodes (no successors)</span>
+leaves = [n <span class="kw">for</span> n <span class="kw">in</span> T.nodes() <span class="kw">if</span> T.<span class="fn">out_degree</span>(n) == <span class="num">0</span>]
+print(<span class="str">"Leaves:"</span>, leaves)
+
+<span class="cm"># Find root (no predecessors)</span>
+root = [n <span class="kw">for</span> n <span class="kw">in</span> T.nodes() <span class="kw">if</span> T.<span class="fn">in_degree</span>(n) == <span class="num">0</span>]
+print(<span class="str">"Root:"</span>, root)
+
+nx.<span class="fn">draw</span>(T, with_labels=<span class="kw">True</span>)
+plt.<span class="fn">show</span>()</pre>
+</div>
+
+<div class="section">
+  <h3>Full Binary Tree Check</h3>
+<pre><span class="kw">def</span> <span class="fn">is_full_binary_tree</span>(tree_array):
+    n = <span class="fn">len</span>(tree_array)
+    <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(n):
+        <span class="kw">if</span> tree_array[i] <span class="kw">is</span> <span class="kw">None</span>: <span class="kw">continue</span>
+        left  = <span class="num">2</span>*i + <span class="num">1</span>
+        right = <span class="num">2</span>*i + <span class="num">2</span>
+        has_left  = left  &lt; n <span class="kw">and</span> tree_array[left]  <span class="kw">is not</span> <span class="kw">None</span>
+        has_right = right &lt; n <span class="kw">and</span> tree_array[right] <span class="kw">is not</span> <span class="kw">None</span>
+        <span class="kw">if</span> has_left != has_right:  <span class="cm"># one child only → NOT full</span>
+            <span class="kw">return</span> <span class="kw">False</span>
+    <span class="kw">return</span> <span class="kw">True</span>
+
+tree = [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span>, <span class="kw">None</span>, <span class="kw">None</span>]
+print(<span class="fn">is_full_binary_tree</span>(tree))   <span class="cm"># True</span></pre>
+</div>
+
+<div class="section">
+  <h3>Spanning Tree &amp; Minimum Spanning Tree</h3>
+
+  <div class="card-grid">
+    <div class="card">
+      <h4>Spanning Tree</h4>
+      <p>A subgraph that includes all n nodes connected with exactly <strong>n−1 edges</strong>, no cycles. Keeps the graph connected with minimum edges.</p>
+    </div>
+    <div class="card">
+      <h4>Minimum Spanning Tree (MST)</h4>
+      <p>The spanning tree with the <strong>smallest total edge weight</strong>. Algorithms: Prim's, Kruskal's. Used in networking to minimize cost.</p>
+    </div>
+  </div>
+
+  <h4>MST with NetworkX (Prim's Algorithm)</h4>
+<pre>G = nx.<span class="fn">Graph</span>()
+G.<span class="fn">add_weighted_edges_from</span>([
+    (<span class="str">'A'</span>,<span class="str">'B'</span>,<span class="num">2</span>), (<span class="str">'A'</span>,<span class="str">'D'</span>,<span class="num">6</span>),
+    (<span class="str">'B'</span>,<span class="str">'C'</span>,<span class="num">3</span>), (<span class="str">'B'</span>,<span class="str">'D'</span>,<span class="num">8</span>),
+    (<span class="str">'C'</span>,<span class="str">'D'</span>,<span class="num">5</span>)
+])
+
+MST = nx.<span class="fn">minimum_spanning_tree</span>(G, algorithm=<span class="str">'prim'</span>)
+print(<span class="str">"MST edges:"</span>, <span class="fn">list</span>(MST.edges(data=<span class="kw">True</span>)))
+<span class="cm"># MST: A-B(2), B-C(3), C-D(5)  Total = 10</span>
+
+nx.<span class="fn">draw</span>(MST, with_labels=<span class="kw">True</span>)
+plt.<span class="fn">show</span>()</pre>
+</div>
+
+<div class="section">
+  <h3>BFS vs DFS</h3>
+
+  <div class="compare">
+    <div class="compare-col">
+      <div class="compare-title">BFS — BREADTH-FIRST SEARCH</div>
+      <p>Explores nodes <strong>level by level</strong>. Uses a <strong>Queue (FIFO)</strong>.</p>
+      <p style="font-size:13px;">Good for: shortest path, level-order traversal, nearest-neighbour finding.</p>
+<pre style="font-size:12px;">bfs = nx.<span class="fn">bfs_tree</span>(G, source=<span class="num">1</span>)
+print(<span class="fn">list</span>(bfs))
+<span class="cm"># Visits: 1 → neighbours → their neighbours…</span></pre>
+    </div>
+    <div class="compare-col">
+      <div class="compare-title">DFS — DEPTH-FIRST SEARCH</div>
+      <p>Explores <strong>as deep as possible</strong> before backtracking. Uses a <strong>Stack (LIFO)</strong>.</p>
+      <p style="font-size:13px;">Good for: cycle detection, topological sort, exploring all paths.</p>
+<pre style="font-size:12px;">dfs = nx.<span class="fn">dfs_tree</span>(G, source=<span class="num">1</span>)
+print(<span class="fn">list</span>(dfs))
+<span class="cm"># Visits: 1 → deep branch → backtrack</span></pre>
+    </div>
+  </div>
+
+  <h4>Full BFS/DFS Example</h4>
+<pre><span class="kw">import</span> networkx <span class="kw">as</span> nx
+<span class="kw">import</span> matplotlib.pyplot <span class="kw">as</span> plt
+
+G = nx.<span class="fn">DiGraph</span>()
+G.<span class="fn">add_edges_from</span>([(1,3),(2,3),(1,4),(3,4)])
+
+<span class="cm"># BFS from node 1</span>
+bfs = nx.<span class="fn">bfs_tree</span>(G, source=<span class="num">1</span>)
+print(<span class="str">"BFS order:"</span>, <span class="fn">list</span>(bfs))   <span class="cm"># [1, 3, 4]</span>
+
+<span class="cm"># DFS from node 1</span>
+dfs = nx.<span class="fn">dfs_tree</span>(G, source=<span class="num">1</span>)
+print(<span class="str">"DFS order:"</span>, <span class="fn">list</span>(dfs))   <span class="cm"># [1, 2, 4, 3, 5]</span>
+
+nx.<span class="fn">draw</span>(bfs, with_labels=<span class="kw">True</span>)
+plt.<span class="fn">show</span>()</pre>
+</div>
+
+<div class="section">
+  <h3>Quick Reference Summary</h3>
+  <table>
+    <thead><tr><th>Task</th><th>NetworkX Code</th></tr></thead>
+    <tbody>
+      <tr><td>Check if tree</td><td><code>nx.is_tree(T)</code></td></tr>
+      <tr><td>Get children</td><td><code>list(T.successors(node))</code></td></tr>
+      <tr><td>Get parent</td><td><code>list(T.predecessors(node))</code></td></tr>
+      <tr><td>Find root</td><td><code>[n for n in T if T.in_degree(n)==0]</code></td></tr>
+      <tr><td>Find leaves</td><td><code>[n for n in T if T.out_degree(n)==0]</code></td></tr>
+      <tr><td>Tree height</td><td><code>max(nx.shortest_path_length(T, source=root).values())</code></td></tr>
+      <tr><td>MST (Prim's)</td><td><code>nx.minimum_spanning_tree(G, algorithm='prim')</code></td></tr>
+      <tr><td>BFS traversal</td><td><code>list(nx.bfs_tree(G, source=start))</code></td></tr>
+      <tr><td>DFS traversal</td><td><code>list(nx.dfs_tree(G, source=start))</code></td></tr>
+      <tr><td>Adjacency list</td><td><code>nx.to_dict_of_lists(G)</code></td></tr>
+      <tr><td>Adjacency matrix</td><td><code>nx.to_numpy_array(G)</code></td></tr>
+      <tr><td>Detect cycles (directed)</td><td><code>list(nx.simple_cycles(G))</code></td></tr>
+      <tr><td>Shortest path lengths</td><td><code>nx.shortest_path_length(G, source=1)</code></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="info-box tip" style="margin-top:2rem;">
+  <span class="label">EXAM REMINDER</span>
+  Remember: <strong>permutations = order matters</strong>, <strong>combinations = order doesn't matter</strong>. For recursion, always identify the base case first. For trees, n nodes → n−1 edges. BFS uses Queue, DFS uses Stack.
+</div>
+
+</main>
+</body>
+</html>

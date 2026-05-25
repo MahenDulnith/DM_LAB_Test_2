@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DM Quiz — Discrete Mathematics MCQ Trainer</title>
+  <meta name="description" content="Interactive MCQ quiz for IT1160 Discrete Mathematics. Track your performance, identify weak areas, and master Permutations, Recursion, Graphs & Trees.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="app-header">
+    <span class="badge">IT1160 · Discrete Mathematics</span>
+    <h1>DM Quiz Trainer</h1>
+    <p>Lab Sheets 05–08 · MCQ Practice with Performance Tracking</p>
+  </header>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="nav-tabs" id="navTabs">
+    <button class="nav-tab active" data-view="quiz" id="tab-quiz">
+      <span class="tab-icon">📝</span>
+      <span class="tab-label">Quiz</span>
+    </button>
+    <button class="nav-tab" data-view="dashboard" id="tab-dashboard">
+      <span class="tab-icon">📊</span>
+      <span class="tab-label">Dashboard</span>
+    </button>
+    <button class="nav-tab" data-view="review" id="tab-review">
+      <span class="tab-icon">📖</span>
+      <span class="tab-label">Review</span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       VIEW 1: QUIZ
+       ═══════════════════════════════════════ -->
+  <section class="view active" id="view-quiz">
+
+    <!-- Topic Selector -->
+    <div class="topic-selector" id="topicSelector">
+      <h2>Choose Topics</h2>
+      <div class="topic-grid" id="topicGrid">
+        <!-- Dynamically populated -->
+      </div>
+
+      <div class="quiz-controls">
+        <button class="btn btn-primary" id="btnStartQuiz" disabled>
+          ▶ Start Quiz
+        </button>
+        <button class="btn btn-weak" id="btnWeakQuiz" style="display:none;">
+          🔥 Focus on Weak Areas
+        </button>
+        <button class="btn btn-secondary" id="btnQuizSettings">
+          ⚙ Settings
+        </button>
+      </div>
+
+      <!-- Settings Panel (hidden by default) -->
+      <div class="settings-panel" id="settingsPanel" style="display:none; margin-top:1rem;">
+        <div style="background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem;">
+          <label style="display:flex; align-items:center; gap:10px; font-size:14px; color:var(--text-secondary); cursor:pointer;">
+            <span style="color:var(--text);">Questions per quiz:</span>
+            <select id="quizLength" style="background:var(--surface); border:1px solid var(--border); color:var(--text); padding:6px 12px; border-radius:var(--radius-xs); font-family:inherit; cursor:pointer;">
+              <option value="5">5</option>
+              <option value="10" selected>10</option>
+              <option value="15">15</option>
+              <option value="0">All available</option>
+            </select>
+          </label>
+          <label style="display:flex; align-items:center; gap:10px; font-size:14px; color:var(--text-secondary); margin-top:10px; cursor:pointer;">
+            <input type="checkbox" id="shuffleOptions" checked style="accent-color:var(--accent-blue); width:16px; height:16px;">
+            <span>Shuffle answer options</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiz Area (hidden until quiz starts) -->
+    <div class="quiz-area" id="quizArea">
+
+      <!-- Progress -->
+      <div class="quiz-progress">
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+        </div>
+        <span class="progress-text" id="progressText">0 / 0</span>
+        <span class="quiz-score-live" id="scoreLive">✓ 0</span>
+        <div class="streak-indicator" id="streakIndicator" style="display:none;">
+          <span class="streak-fire">🔥</span>
+          <span id="streakCount">0</span>
+        </div>
+      </div>
+
+      <!-- Question -->
+      <div id="questionContainer">
+        <!-- Dynamically populated -->
+      </div>
+
+    </div>
+
+    <!-- Results Screen (hidden until quiz ends) -->
+    <div class="results-screen" id="resultsScreen" style="display:none;">
+      <!-- Dynamically populated -->
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       VIEW 2: DASHBOARD
+       ═══════════════════════════════════════ -->
+  <section class="view" id="view-dashboard">
+
+    <div class="dashboard-header">
+      <h2>📊 Performance Dashboard</h2>
+      <p>Track your progress and identify areas that need more practice</p>
+    </div>
+
+    <!-- Overview Stats -->
+    <div class="overview-grid" id="overviewGrid">
+      <!-- Dynamically populated -->
+    </div>
+
+    <!-- Topic Breakdown -->
+    <div class="section-title">
+      <span class="section-icon">📋</span>
+      Topic Breakdown
+    </div>
+    <div class="topic-breakdown" id="topicBreakdown">
+      <!-- Dynamically populated -->
+    </div>
+
+    <!-- 🔥 Focus Mode Banner (shown when weak questions exist) -->
+    <div class="focus-mode-banner" id="focusBanner" style="display:none;">
+      <div class="focus-banner-glow"></div>
+      <div class="focus-banner-content">
+        <div class="focus-banner-left">
+          <span class="focus-banner-icon">🔥</span>
+          <div>
+            <div class="focus-banner-title">Focus Mode</div>
+            <div class="focus-banner-desc" id="focusBannerDesc">You have weak questions that need practice</div>
+          </div>
+        </div>
+        <button class="btn btn-focus" id="btnDashboardFocus">
+          ▶ Practice Weak Questions
+        </button>
+      </div>
+    </div>
+
+    <!-- Weak Questions -->
+    <div class="weak-questions-section" id="weakQuestionsSection">
+      <div class="section-title">
+        <span class="section-icon">⚠️</span>
+        Weak Questions
+        <span style="font-size:12px; color:var(--text-muted); font-weight:400; margin-left:8px;">
+          (answered wrong 2+ times)
+        </span>
+      </div>
+      <div class="weak-q-list" id="weakQList">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+
+    <!-- Reset -->
+    <div style="margin-top:2.5rem; text-align:center;">
+      <button class="btn btn-danger btn-sm" id="btnResetData">🗑 Reset All Data</button>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       VIEW 3: REVIEW / HISTORY
+       ═══════════════════════════════════════ -->
+  <section class="view" id="view-review">
+
+    <div class="review-header">
+      <h2>📖 Quiz History</h2>
+      <p>Review your past quiz attempts and see detailed results</p>
+    </div>
+
+    <div class="history-list" id="historyList">
+      <!-- Dynamically populated -->
+    </div>
+
+  </section>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
