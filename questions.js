@@ -4,6 +4,15 @@
 // 229 total questions across all subjects
 
 const SUBJECTS = {
+    "software-engineering": {
+        label: "Software Engineering",
+        shortLabel: "SE",
+        code: "IT2030",
+        icon: "fas fa-code-branch",
+        color: "#9b59b6",
+        description: "Introduction to SE, Process Models, Agile, and Ethics"
+    },
+
   "discrete-math": {
     label: "Discrete Mathematics",
     shortLabel: "Discrete Math",
@@ -47,6 +56,9 @@ const SUBJECTS = {
 };
 
 const TOPICS = {
+    "se-module-1": { label: "Module 1: Introduction to SE, Ethics & SDLC", shortLabel: "Module 1", subject: "software-engineering", labSheet: "Week 1", color: "#8e44ad", icon: "fas fa-book" },
+    "se-module-2": { label: "Module 2: Software Process Models", shortLabel: "Module 2", subject: "software-engineering", labSheet: "Week 2", color: "#9b59b6", icon: "fas fa-project-diagram" },
+
   // ═══ DISCRETE MATHEMATICS ═══
   "permutations-combinations": {
     label: "Permutations & Combinations",
@@ -219,6 +231,427 @@ const TOPICS = {
 };
 
 const QUESTIONS = [
+    {
+        id: "se_m1_001",
+        topic: "se-module-1",
+        difficulty: "medium",
+        question: `Which of the following best describes Software Engineering compared to traditional programming?`,
+        options: [
+            `Writing code for specific tasks or features`,
+            `Focusing solely on compiling and debugging code`,
+            `Applying engineering principles to build reliable, maintainable systems across the entire software lifecycle`,
+            `Developing quick scripts and prototypes as an individual effort`
+        ],
+        correct: 2,
+        explanation: `Software Engineering is about applying engineering principles to build reliable, efficient, and maintainable systems, encompassing the entire lifecycle (analysis, design, testing, etc.), whereas programming is typically focused on writing code for specific tasks.`
+    },
+    {
+        id: "se_m1_002",
+        topic: "se-module-1",
+        difficulty: "easy",
+        question: `What historical period and issue led to the realization that structured software engineering was necessary?`,
+        options: [
+            `The Hardware Crisis (1980s)`,
+            `The Software Crisis (1960s–1990s)`,
+            `The Internet Boom (2000s)`,
+            `The AI Revolution (2010s)`
+        ],
+        correct: 1,
+        explanation: `The Software Crisis from the 1960s to 1990s involved projects going over budget, missing deadlines, and resulting in critical failures, proving the need for structured software development processes.`
+    },
+    {
+        id: "se_m1_003",
+        topic: "se-module-1",
+        difficulty: "hard",
+        question: `Which of the following correctly identifies the type of feasibility that answers the question: 'Does the system comply with GDPR or data protection laws?'`,
+        options: [
+            `Technical Feasibility`,
+            `Economic Feasibility`,
+            `Operational Feasibility`,
+            `Legal Feasibility`
+        ],
+        correct: 3,
+        explanation: `Legal Feasibility checks if the project is legally safe and complies with laws, policies, and regulations such as GDPR.`
+    },
+    {
+        id: "se_m1_004",
+        topic: "se-module-1",
+        difficulty: "medium",
+        question: `In the context of requirement gathering, 'The system should load within 3 seconds' is an example of a:`,
+        options: [
+            `Functional Requirement`,
+            `Non-Functional Requirement`,
+            `Constraint`,
+            `Operational Requirement`
+        ],
+        correct: 1,
+        explanation: `Non-Functional Requirements describe how the system should perform (e.g., speed, reliability, availability), unlike functional requirements which describe what the system should do.`
+    },
+    {
+        id: "se_m1_005",
+        topic: "se-module-1",
+        difficulty: "medium",
+        question: `Which phase of the SDLC acts like a contract between the client and the development team outlining what will be built?`,
+        options: [
+            `System Design`,
+            `Implementation`,
+            `Requirements Gathering & Analysis`,
+            `Feasibility Study`
+        ],
+        correct: 2,
+        explanation: `Requirements Gathering & Analysis documents exactly what the client wants in an SRS, acting as an agreement or contract on what the system will entail.`
+    },
+    {
+        id: "se_m1_006",
+        topic: "se-module-1",
+        difficulty: "easy",
+        question: `Who among the following is considered a 'Stakeholder' in a software project?`,
+        options: [
+            `Only the end users`,
+            `Only the development team`,
+            `Any person or group who has an interest in, uses, manages, or is affected by the software system`,
+            `Only the project sponsors who provide funding`
+        ],
+        correct: 2,
+        explanation: `A stakeholder is anyone directly or indirectly affected by the system, including end users, management, sponsors, suppliers, and regulatory bodies.`
+    },
+    {
+        id: "se_m1_007",
+        topic: "se-module-1",
+        difficulty: "medium",
+        question: `If a client states 'The system must run on Android only', this requirement is best classified as a:`,
+        options: [
+            `Functional Requirement`,
+            `Non-Functional Requirement`,
+            `Constraint (Limitation)`,
+            `Business Requirement`
+        ],
+        correct: 2,
+        explanation: `A constraint or limitation is a rule or boundary the system must follow, such as operating only within a specific environment like Android or a local network.`
+    },
+    {
+        id: "se_m1_008",
+        topic: "se-module-1",
+        difficulty: "hard",
+        question: `During the maintenance phase, if you modify the software to work on a new operating system version (e.g., iOS 17), what type of maintenance is this?`,
+        options: [
+            `Corrective Maintenance`,
+            `Adaptive Maintenance`,
+            `Perfective Maintenance`,
+            `Preventive Maintenance`
+        ],
+        correct: 1,
+        explanation: `Adaptive Maintenance involves changing the software to work in a new or changed environment, such as a new OS version.`
+    },
+    {
+        id: "se_m1_009",
+        topic: "se-module-1",
+        difficulty: "medium",
+        question: `Which of the following testing types involves testing the system with actual users in the client environment to ensure it meets requirements?`,
+        options: [
+            `Unit Testing`,
+            `Integration Testing`,
+            `System Testing`,
+            `Acceptance Testing`
+        ],
+        correct: 3,
+        explanation: `Acceptance Testing (or User Acceptance Testing) checks if the system meets the client's requirements, typically involving actual users rather than just the development team.`
+    },
+    {
+        id: "se_m1_010",
+        topic: "se-module-1",
+        difficulty: "medium",
+        question: `Which organization provides a widely recognized Code of Ethics and Professional Conduct for software engineers globally?`,
+        options: [
+            `W3C`,
+            `IEEE and ACM`,
+            `ISO`,
+            `ICANN`
+        ],
+        correct: 1,
+        explanation: `The IEEE and ACM jointly created the 'Software Engineering Code of Ethics and Professional Practice' in 1999 to guide professionals.`
+    },
+    {
+        id: "se_m1_011",
+        topic: "se-module-1",
+        difficulty: "easy",
+        question: `What is the primary purpose of a Feasibility Study?`,
+        options: [
+            `To write the source code for the prototype`,
+            `To determine if the project is technically possible, financially affordable, and realistic to build`,
+            `To test the software for bugs`,
+            `To train users on how to use the deployed system`
+        ],
+        correct: 1,
+        explanation: `A Feasibility Study happens before development to answer 'Should we build this system?' by checking technical, economic, schedule, legal, and operational viability.`
+    },
+    {
+        id: "se_m1_012",
+        topic: "se-module-1",
+        difficulty: "hard",
+        question: `If your management forces you to release a software product with known critical bugs that could harm the public, what is the ethical action for a software engineer?`,
+        options: [
+            `Release it immediately as instructed by management to keep your job.`,
+            `Secretly delete the source code to prevent the release.`,
+            `Raise concerns based on the Code of Ethics, prioritizing the well-being and safety of the public.`,
+            `Release it but blame the QA team for missing the bugs.`
+        ],
+        correct: 2,
+        explanation: `Professional codes of ethics (like IEEE/ACM) state that software engineers must act consistently with the public interest and safety, even if it contradicts management pressure.`
+    },
+    {
+        id: "se_m1_013",
+        topic: "se-module-1",
+        difficulty: "medium",
+        question: `What is a 'Pilot Release' in the deployment phase?`,
+        options: [
+            `Releasing the software exclusively to the development team.`,
+            `Releasing the software to a small, selected group of users in the client environment for initial testing.`,
+            `Testing the software on an airplane flight control system.`,
+            `Deploying the software after all maintenance is complete.`
+        ],
+        correct: 1,
+        explanation: `A pilot release involves installing the system for a small set of computers or users in the client environment to test its functionality in the real world before a full rollout.`
+    },
+    {
+        id: "se_m1_014",
+        topic: "se-module-1",
+        difficulty: "easy",
+        question: `Which of the following is an example of Corrective Maintenance?`,
+        options: [
+            `Adding a new online payment gateway feature.`,
+            `Updating the system to support a new database server.`,
+            `Fixing a bug that causes the system to crash during user login.`,
+            `Providing a new user manual.`
+        ],
+        correct: 2,
+        explanation: `Corrective Maintenance is strictly about fixing bugs or errors found after the system has been deployed.`
+    },
+    {
+        id: "se_m1_015",
+        topic: "se-module-1",
+        difficulty: "medium",
+        question: `Why is 'Operational Feasibility' important?`,
+        options: [
+            `It checks if the budget is sufficient.`,
+            `It checks if the hardware exists.`,
+            `It checks if the users are willing to use the system and if it will work in their real-world environment.`,
+            `It checks if the project meets legal standards.`
+        ],
+        correct: 2,
+        explanation: `Operational feasibility determines whether the system will actually be used by the intended users. If users are reluctant or lack the skills, the system may fail even if technically perfect.`
+    },
+    {
+        id: "se_m2_001",
+        topic: "se-module-2",
+        difficulty: "medium",
+        question: `What is the main difference between the SDLC and a Software Process Model?`,
+        options: [
+            `SDLC is only for testing, while Process Models are for coding.`,
+            `SDLC defines the general phases to follow, while a Process Model defines exactly how to execute those phases.`,
+            `They are exactly the same thing.`,
+            `SDLC is used in Agile, while Process Models are used in Waterfall.`
+        ],
+        correct: 1,
+        explanation: `SDLC provides the general structure (the phases), while a Software Process Model provides the specific implementation, roadmap, or strategy on how to organize and iterate those phases.`
+    },
+    {
+        id: "se_m2_002",
+        topic: "se-module-2",
+        difficulty: "easy",
+        question: `Which software process model follows a linear, step-by-step approach where one phase must be fully completed before the next begins?`,
+        options: [
+            `Spiral Model`,
+            `Classical Waterfall Model`,
+            `Agile Model`,
+            `Prototyping Model`
+        ],
+        correct: 1,
+        explanation: `The Classical Waterfall Model is linear and sequential; you cannot go back to a previous phase once it is completed.`
+    },
+    {
+        id: "se_m2_003",
+        topic: "se-module-2",
+        difficulty: "medium",
+        question: `What is the primary advantage of the Iterative Waterfall Model over the Classical Waterfall Model?`,
+        options: [
+            `It completely skips the testing phase to save time.`,
+            `It includes feedback paths allowing teams to return to earlier phases to correct errors.`,
+            `It delivers a working product at the end of every week.`,
+            `It does not require requirement gathering.`
+        ],
+        correct: 1,
+        explanation: `The Iterative Waterfall Model introduced feedback loops, meaning if an error is found in design or testing, developers can go back to previous phases to fix it.`
+    },
+    {
+        id: "se_m2_004",
+        topic: "se-module-2",
+        difficulty: "hard",
+        question: `You are developing a safety-critical system for an aircraft where thorough testing is paramount. Which process model is heavily focused on validation, verification, and testing at every stage?`,
+        options: [
+            `Incremental Model`,
+            `Prototyping Model`,
+            `V-Model`,
+            `Scrum`
+        ],
+        correct: 2,
+        explanation: `The V-Model emphasizes validation and testing at each phase. For every development step on the left side, there is a corresponding testing step planned on the right side.`
+    },
+    {
+        id: "se_m2_005",
+        topic: "se-module-2",
+        difficulty: "medium",
+        question: `If a client cannot clearly explain their requirements and is unsure of what they want, which process model is most suitable to help them visualize the system?`,
+        options: [
+            `Classical Waterfall Model`,
+            `V-Model`,
+            `Spiral Model`,
+            `Prototyping Model`
+        ],
+        correct: 3,
+        explanation: `The Prototyping Model is ideal when requirements are unclear. Building a quick, rough version allows users to see it, test it, and provide feedback to refine the actual requirements.`
+    },
+    {
+        id: "se_m2_006",
+        topic: "se-module-2",
+        difficulty: "medium",
+        question: `Which process model is best suited for developing a large, complex, and high-risk system like a defense missile controller?`,
+        options: [
+            `Spiral Model`,
+            `Prototyping Model`,
+            `Iterative Waterfall Model`,
+            `Agile Model`
+        ],
+        correct: 0,
+        explanation: `The Spiral Model is risk-focused and iterative. Every loop involves extensive risk analysis, making it the best choice for high-risk, costly, or dangerous projects.`
+    },
+    {
+        id: "se_m2_007",
+        topic: "se-module-2",
+        difficulty: "medium",
+        question: `How does the Incremental Model deliver software to the client?`,
+        options: [
+            `It delivers the entire completed system all at once at the very end.`,
+            `It delivers a dummy system that is later thrown away.`,
+            `It develops and delivers the system step-by-step in small, working functional units (versions).`,
+            `It only delivers documentation.`
+        ],
+        correct: 2,
+        explanation: `In the Incremental Model, the software is delivered in smaller functional units (increments or versions), allowing early delivery of core features while development continues on the rest.`
+    },
+    {
+        id: "se_m2_008",
+        topic: "se-module-2",
+        difficulty: "easy",
+        question: `Which of the following is a core characteristic of the Agile Model?`,
+        options: [
+            `Freezing requirements at the beginning of the project.`,
+            `Heavy emphasis on comprehensive documentation over working software.`,
+            `Focusing on small, fast iterations (sprints) with regular customer feedback and flexibility to change.`,
+            `Completing development entirely before any testing occurs.`
+        ],
+        correct: 2,
+        explanation: `Agile focuses on iterative delivery via sprints, strong team collaboration, customer involvement, and high flexibility to adapt to changing requirements.`
+    },
+    {
+        id: "se_m2_009",
+        topic: "se-module-2",
+        difficulty: "hard",
+        question: `During a pandemic, a government needs an urgent, usable vaccination appointment system rapidly, with requirements that will likely evolve. Why is Waterfall a poor choice here?`,
+        options: [
+            `Because Waterfall requires all requirements upfront, allows no early delivery, and cannot adapt to flexible changes.`,
+            `Because Waterfall delivers the system in too many small increments.`,
+            `Because Waterfall requires heavy risk analysis in every cycle.`,
+            `Because Waterfall is only used for hardware development.`
+        ],
+        correct: 0,
+        explanation: `Waterfall is rigid, requires all requirements to be frozen early, and delivers nothing until the very end, making it totally unsuitable for an urgent project in an evolving crisis.`
+    },
+    {
+        id: "se_m2_010",
+        topic: "se-module-2",
+        difficulty: "medium",
+        question: `Scrum and Kanban are popular frameworks that implement which software process philosophy?`,
+        options: [
+            `The V-Model`,
+            `The Waterfall Model`,
+            `The Agile Model`,
+            `The Spiral Model`
+        ],
+        correct: 2,
+        explanation: `Scrum and Kanban are methodologies that fall under the broader Agile philosophy, focusing on iterative delivery and continuous flow respectively.`
+    },
+    {
+        id: "se_m2_011",
+        topic: "se-module-2",
+        difficulty: "hard",
+        question: `In the V-Model, what do the Quality Assurance (QA) engineers do during the 'Requirements Gathering' phase?`,
+        options: [
+            `They write code for the prototype.`,
+            `They wait idly until the coding phase is finished.`,
+            `They review the SRS and create User Acceptance Test plans and test cases.`,
+            `They deploy the system to the client.`
+        ],
+        correct: 2,
+        explanation: `In the V-Model, testing activities are planned in parallel with development. During requirement gathering, QA creates Acceptance Test plans based on those requirements.`
+    },
+    {
+        id: "se_m2_012",
+        topic: "se-module-2",
+        difficulty: "medium",
+        question: `A team decides to build a dummy version of a system, show it to users to gather feedback, and then discard the dummy to build the real system. Which model is this?`,
+        options: [
+            `Prototyping Model`,
+            `Incremental Model`,
+            `Waterfall Model`,
+            `Scrum`
+        ],
+        correct: 0,
+        explanation: `This describes the Prototyping Model, where a rough version is built strictly to clarify and gather requirements, then often discarded once the actual development begins.`
+    },
+    {
+        id: "se_m2_013",
+        topic: "se-module-2",
+        difficulty: "easy",
+        question: `Windows operating system releases (Windows 7, 8, 10, 11) are an excellent example of which software process model?`,
+        options: [
+            `V-Model`,
+            `Incremental Model`,
+            `Classical Waterfall Model`,
+            `Prototyping Model`
+        ],
+        correct: 1,
+        explanation: `Windows OS delivers core functionality in Version 1, then continuously adds and improves features in subsequent versions, which is the definition of the Incremental Model.`
+    },
+    {
+        id: "se_m2_014",
+        topic: "se-module-2",
+        difficulty: "hard",
+        question: `Each loop in the Spiral Model contains four main sectors. Which of the following is explicitly one of those sectors?`,
+        options: [
+            `Rapid Prototyping`,
+            `Risk Analysis`,
+            `Sprint Retrospective`,
+            `Feasibility Study`
+        ],
+        correct: 1,
+        explanation: `The four main sectors of a loop in the Spiral Model are Planning, Risk Analysis, Engineering (Design/Dev/Test), and Evaluation.`
+    },
+    {
+        id: "se_m2_015",
+        topic: "se-module-2",
+        difficulty: "medium",
+        question: `If your project requires a highly structured team, roles like 'Product Owner' and 'Scrum Master', and delivers work in fixed-length cycles, which model are you using?`,
+        options: [
+            `Kanban`,
+            `Spiral`,
+            `Scrum (Agile)`,
+            `Iterative Waterfall`
+        ],
+        correct: 2,
+        explanation: `Scrum is an Agile framework characterized by fixed-length sprints, backlogs, and specific roles like Product Owner and Scrum Master.`
+    },
+
   // ═══════════════════════════════════════════
   //  TOPIC 1: PERMUTATIONS & COMBINATIONS
   //  Covers: nPr, nCr, identical objects,
