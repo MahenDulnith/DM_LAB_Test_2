@@ -8,7 +8,7 @@ const SUBJECTS = {
         label: "Software Engineering",
         shortLabel: "SE",
         code: "IT2030",
-        icon: "fas fa-code-branch",
+        icon: "⚙️",
         color: "#9b59b6",
         description: "Introduction to SE, Process Models, Agile, and Ethics"
     },
@@ -56,8 +56,8 @@ const SUBJECTS = {
 };
 
 const TOPICS = {
-    "se-module-1": { label: "Module 1: Introduction to SE, Ethics & SDLC", shortLabel: "Module 1", subject: "software-engineering", labSheet: "Week 1", color: "#8e44ad", icon: "fas fa-book" },
-    "se-module-2": { label: "Module 2: Software Process Models", shortLabel: "Module 2", subject: "software-engineering", labSheet: "Week 2", color: "#9b59b6", icon: "fas fa-project-diagram" },
+    "se-module-1": { label: "Module 1: Introduction to SE, Ethics & SDLC", shortLabel: "Module 1", subject: "software-engineering", labSheet: "Week 1", color: "#8e44ad", icon: "📖" },
+    "se-module-2": { label: "Module 2: Software Process Models", shortLabel: "Module 2", subject: "software-engineering", labSheet: "Week 2", color: "#9b59b6", icon: "🔄" },
 
   // ═══ DISCRETE MATHEMATICS ═══
   "permutations-combinations": {
