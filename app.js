@@ -410,6 +410,7 @@
         <div class="question-meta">
           <span class="question-topic-tag" style="${tagStyle}">${tagLabel}</span>
           <span class="question-difficulty ${diffClass}">${q.difficulty}</span>
+          ${q.source ? `<span class="question-source source-${q.source.toLowerCase()}"><i class="${q.source === 'Recording' ? 'fas fa-video' : 'fas fa-file-pdf'}"></i> ${q.source === 'Recording' ? 'Lecture Recording' : 'PDF Slides'}</span>` : ''}
         </div>
         <div class="question-text">${escapeAndFormatCode(q.question)}</div>
         <div class="options-list" id="optionsList">

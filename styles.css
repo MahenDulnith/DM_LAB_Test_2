@@ -1444,3 +1444,31 @@ body::before {
   font-size: 14px;
   margin-right: 4px;
 }
+
+/* Question Source Badge */
+.question-source {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: var(--surface-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.source-pdf {
+  color: #e74c3c;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-color: rgba(231, 76, 60, 0.2);
+}
+
+.source-recording {
+  color: #3498db;
+  background-color: rgba(52, 152, 219, 0.1);
+  border-color: rgba(52, 152, 219, 0.2);
+}
