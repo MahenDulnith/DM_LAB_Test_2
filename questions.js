@@ -56,8 +56,8 @@ const SUBJECTS = {
 };
 
 const TOPICS = {
-    "se-module-1": { label: "Module 1: Introduction to SE, Ethics & SDLC", shortLabel: "Module 1", subject: "software-engineering", labSheet: "Week 1", color: "#8e44ad", icon: "📖" },
-    "se-module-2": { label: "Module 2: Software Process Models", shortLabel: "Module 2", subject: "software-engineering", labSheet: "Week 2", color: "#9b59b6", icon: "🔄" },
+    "se-module-1": { label: "Introduction to Software Engineering & SDLC", shortLabel: "Intro to SE & SDLC", subject: "software-engineering", labSheet: "Module 1", color: "#8e44ad", icon: "📖" },
+    "se-module-2": { label: "Software Process Models", shortLabel: "Process Models", subject: "software-engineering", labSheet: "Module 2", color: "#9b59b6", icon: "🔄" },
 
   // ═══ DISCRETE MATHEMATICS ═══
   "permutations-combinations": {
