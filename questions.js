@@ -1,11 +1,57 @@
-// ─── Discrete Mathematics MCQ Question Bank ───
-// Topics: permutations-combinations, recursion, graphs, trees
-// EXPANDED: 120+ tricky questions covering every detail from LS05–LS08
+// ─── Multi-Subject MCQ Question Bank ───
+// Subjects: Discrete Mathematics, Fundamentals of Computing, 
+//           Intro to Programming, Data Communication, Math for Computing
+// 229 total questions across all subjects
+
+const SUBJECTS = {
+  "discrete-math": {
+    label: "Discrete Mathematics",
+    shortLabel: "Discrete Math",
+    code: "IT1160",
+    icon: "🔢",
+    color: "#4fffb0",
+    description: "Permutations, Recursion, Graphs & Trees"
+  },
+  "fundamentals-of-computing": {
+    label: "Fundamentals of Computing",
+    shortLabel: "Fund. of Computing",
+    code: "IT1010",
+    icon: "🖥️",
+    color: "#4db8ff",
+    description: "Processor, ALU, Registers, OS, Memory & Architecture"
+  },
+  "intro-to-programming": {
+    label: "Introduction to Programming",
+    shortLabel: "Intro to Programming",
+    code: "IT1020",
+    icon: "💻",
+    color: "#ff7c5c",
+    description: "Variables, Control Structures & Functions"
+  },
+  "data-communication": {
+    label: "Data Communication & Network",
+    shortLabel: "Data Comm & Net",
+    code: "IT1030",
+    icon: "🌐",
+    color: "#c77dff",
+    description: "OSI Model & Network Protocols"
+  },
+  "math-for-computing": {
+    label: "Mathematics for Computing",
+    shortLabel: "Math for Computing",
+    code: "IT1040",
+    icon: "📐",
+    color: "#ffd166",
+    description: "Boolean Algebra & Set Theory"
+  }
+};
 
 const TOPICS = {
+  // ═══ DISCRETE MATHEMATICS ═══
   "permutations-combinations": {
     label: "Permutations & Combinations",
     shortLabel: "Perm & Comb",
+    subject: "discrete-math",
     labSheet: "LS05",
     color: "#4fffb0",
     icon: "🎲"
@@ -13,6 +59,7 @@ const TOPICS = {
   "recursion": {
     label: "Recursion",
     shortLabel: "Recursion",
+    subject: "discrete-math",
     labSheet: "LS06",
     color: "#4db8ff",
     icon: "🔁"
@@ -20,6 +67,7 @@ const TOPICS = {
   "graphs": {
     label: "Graphs",
     shortLabel: "Graphs",
+    subject: "discrete-math",
     labSheet: "LS07",
     color: "#ff7c5c",
     icon: "🕸️"
@@ -27,9 +75,146 @@ const TOPICS = {
   "trees": {
     label: "Trees, MST, BFS & DFS",
     shortLabel: "Trees & MST",
+    subject: "discrete-math",
     labSheet: "LS08",
     color: "#c77dff",
     icon: "🌳"
+  },
+
+  // ═══ FUNDAMENTALS OF COMPUTING ═══
+  "fc-processor-control": {
+    label: "Processor & Control Unit",
+    shortLabel: "Processor & CU",
+    subject: "fundamentals-of-computing",
+    labSheet: "FC",
+    color: "#4db8ff",
+    icon: "⚙️"
+  },
+  "fc-alu": {
+    label: "Arithmetic Logic Unit",
+    shortLabel: "ALU",
+    subject: "fundamentals-of-computing",
+    labSheet: "FC",
+    color: "#4fffb0",
+    icon: "🔧"
+  },
+  "fc-registers": {
+    label: "Processor Registers",
+    shortLabel: "Registers",
+    subject: "fundamentals-of-computing",
+    labSheet: "FC",
+    color: "#ff7c5c",
+    icon: "📋"
+  },
+  "fc-addressing-instructions": {
+    label: "Addressing Modes & Instructions",
+    shortLabel: "Addr & Instr",
+    subject: "fundamentals-of-computing",
+    labSheet: "FC",
+    color: "#c77dff",
+    icon: "📍"
+  },
+  "fc-interrupts-io": {
+    label: "Interrupts & I/O",
+    shortLabel: "Interrupts & I/O",
+    subject: "fundamentals-of-computing",
+    labSheet: "FC",
+    color: "#ffd166",
+    icon: "⚡"
+  },
+  "fc-os-boot": {
+    label: "Operating Systems & Boot Process",
+    shortLabel: "OS & Boot",
+    subject: "fundamentals-of-computing",
+    labSheet: "FC",
+    color: "#ff6b9d",
+    icon: "💿"
+  },
+  "fc-architecture": {
+    label: "Computer Architecture",
+    shortLabel: "Architecture",
+    subject: "fundamentals-of-computing",
+    labSheet: "FC",
+    color: "#4db8ff",
+    icon: "🏗️"
+  },
+  "fc-memory": {
+    label: "Memory Systems",
+    shortLabel: "Memory",
+    subject: "fundamentals-of-computing",
+    labSheet: "FC",
+    color: "#4fffb0",
+    icon: "💾"
+  },
+  "fc-display-network": {
+    label: "Display & Network Interface",
+    shortLabel: "Display & Net",
+    subject: "fundamentals-of-computing",
+    labSheet: "FC",
+    color: "#c77dff",
+    icon: "🖥️"
+  },
+
+  // ═══ INTRODUCTION TO PROGRAMMING ═══
+  "ip-data-types-variables": {
+    label: "Variables & Data Types",
+    shortLabel: "Data Types",
+    subject: "intro-to-programming",
+    labSheet: "IP",
+    color: "#ff7c5c",
+    icon: "📦"
+  },
+  "ip-control-structures": {
+    label: "Control Structures",
+    shortLabel: "Control Flow",
+    subject: "intro-to-programming",
+    labSheet: "IP",
+    color: "#4db8ff",
+    icon: "🔀"
+  },
+  "ip-functions": {
+    label: "Functions",
+    shortLabel: "Functions",
+    subject: "intro-to-programming",
+    labSheet: "IP",
+    color: "#4fffb0",
+    icon: "⚡"
+  },
+
+  // ═══ DATA COMMUNICATION & NETWORK ═══
+  "dcn-osi-model": {
+    label: "OSI Model",
+    shortLabel: "OSI Model",
+    subject: "data-communication",
+    labSheet: "DCN",
+    color: "#c77dff",
+    icon: "📶"
+  },
+  "dcn-protocols": {
+    label: "Network Protocols",
+    shortLabel: "Protocols",
+    subject: "data-communication",
+    labSheet: "DCN",
+    color: "#4db8ff",
+    icon: "🔗"
+  },
+
+  // ═══ MATHEMATICS FOR COMPUTING ═══
+  "mfc-boolean-algebra": {
+    label: "Boolean Algebra",
+    shortLabel: "Boolean",
+    subject: "math-for-computing",
+    labSheet: "MFC",
+    color: "#ffd166",
+    icon: "🔣"
+  },
+  "mfc-set-theory": {
+    label: "Set Theory",
+    shortLabel: "Sets",
+    subject: "math-for-computing",
+    labSheet: "MFC",
+    color: "#ff6b9d",
+    icon: "∪"
   }
 };
 
@@ -2124,5 +2309,1315 @@ const QUESTIONS = [
     ],
     correct: 0,
     explanation: "Tree with n=5 nodes MUST have n−1=4 edges. 5 edges means it has a cycle → NOT a tree."
+  },
+
+  // ═══════════════════════════════════════════
+  //  IMPORTED FROM OLD MCQ PLATFORM
+  //  Subjects: FC, IP, DCN, MFC
+  // ═══════════════════════════════════════════
+
+  {
+    id: "old-sample-3",
+    topic: "ip-data-types-variables",
+    difficulty: "medium",
+    question: "Which of the following is NOT a primitive data type in most programming languages?",
+    options: [
+      "int",
+      "string",
+      "boolean",
+      "array"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-sample-4",
+    topic: "ip-control-structures",
+    difficulty: "medium",
+    question: "What type of loop is guaranteed to execute at least once?",
+    options: [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "nested loop"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-sample-5",
+    topic: "dcn-osi-model",
+    difficulty: "medium",
+    question: "Which layer of the OSI model is responsible for routing?",
+    options: [
+      "Physical Layer",
+      "Data Link Layer",
+      "Network Layer",
+      "Transport Layer"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-sample-6",
+    topic: "dcn-protocols",
+    difficulty: "medium",
+    question: "What does TCP stand for?",
+    options: [
+      "Transfer Control Protocol",
+      "Transmission Control Protocol",
+      "Transport Control Protocol",
+      "Terminal Control Protocol"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-sample-7",
+    topic: "mfc-boolean-algebra",
+    difficulty: "medium",
+    question: "What is the result of A AND (NOT A)?",
+    options: [
+      "A",
+      "NOT A",
+      "1",
+      "0"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-sample-8",
+    topic: "mfc-set-theory",
+    difficulty: "medium",
+    question: "If set A = {1, 2, 3} and set B = {2, 3, 4}, what is A ∩ B?",
+    options: [
+      "{1, 2, 3, 4}",
+      "{2, 3}",
+      "{1}",
+      "{4}"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-sample-1",
+    topic: "ip-functions",
+    difficulty: "medium",
+    question: "What is the main advantage of using functions in programming?",
+    options: [
+      "Faster execution",
+      "Code reusability",
+      "Less memory usage",
+      "Better graphics"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-5ca510e2",
+    topic: "fc-processor-control",
+    difficulty: "medium",
+    question: "According to the provided lecture, what are the three main units contained within a processor?",
+    options: [
+      "RAM, ROM, and Cache",
+      "Control Unit, Arithmetic Logic Unit, and Registers",
+      "Input, Output, and Storage Devices",
+      "Motherboard, CPU, and Hard Drive"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-73319418",
+    topic: "fc-processor-control",
+    difficulty: "medium",
+    question: "Which component of the processor is responsible for managing the overall operation of the computer, including fetching and decoding instructions?",
+    options: [
+      "Arithmetic Logic Unit (ALU)",
+      "Registers",
+      "Control Unit",
+      "Memory"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-343abeb3",
+    topic: "fc-processor-control",
+    difficulty: "medium",
+    question: "What is the first step the Control Unit performs in its operation sequence?",
+    options: [
+      "Distributing the execution to the ALU",
+      "Decoding the instruction to determine the operation",
+      "Fetching the next instruction from memory",
+      "Storing the result in a register"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-de156d43",
+    topic: "fc-alu",
+    difficulty: "medium",
+    question: "Which processor component is often called the \"brain within the brain\" and handles the core computational tasks?",
+    options: [
+      "Control Unit",
+      "Registers",
+      "Cache Memory",
+      "Arithmetic Logic Unit (ALU)"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-a02c7aa9",
+    topic: "fc-alu",
+    difficulty: "medium",
+    question: "What are the input data values that the ALU processes called?",
+    options: [
+      "Operators",
+      "Operands",
+      "Control Signals",
+      "Flags"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-ac7b652b",
+    topic: "fc-alu",
+    difficulty: "medium",
+    question: "The ALU receives signals from which unit to determine the specific operation to be performed?",
+    options: [
+      "The Registers",
+      "The Memory Unit",
+      "The Control Unit",
+      "The Input/Output Devices"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-d6a7e77a",
+    topic: "fc-alu",
+    difficulty: "medium",
+    question: "Which of the following is NOT listed as a primary operation of the ALU?",
+    options: [
+      "Arithmetic operations",
+      "Logical operations",
+      "Data fetching from disk",
+      "Shift operations"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-942a1b74",
+    topic: "fc-registers",
+    difficulty: "medium",
+    question: "What is the primary characteristic of processor registers?",
+    options: [
+      "Large, slow storage locations outside the CPU",
+      "Small, fast storage locations within the CPU",
+      "Permanent, non-volatile storage",
+      "A tool for connecting to peripheral devices"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-0cc9aaff",
+    topic: "fc-registers",
+    difficulty: "medium",
+    question: "Which of the following is a primary function of processor registers?",
+    options: [
+      "Storing the operating system kernel",
+      "Long-term data archiving",
+      "Managing power consumption",
+      "Holding operands for arithmetic and logic operations"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-4402b01a",
+    topic: "fc-registers",
+    difficulty: "medium",
+    question: "Which type of register is specifically designed to hold the base addresses of segments in memory?",
+    options: [
+      "Floating-Point Registers",
+      "Data Registers",
+      "Segment Registers",
+      "Status Registers"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-d7527d5e",
+    topic: "fc-registers",
+    difficulty: "medium",
+    question: "Which register holds the address of the next instruction to be fetched from memory?",
+    options: [
+      "Instruction Register (IR)",
+      "Program Counter (PC)",
+      "Status Register",
+      "Memory Address Register"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-30f53c6a",
+    topic: "fc-registers",
+    difficulty: "medium",
+    question: "During the instruction cycle, into which register is an instruction loaded after being fetched from memory?",
+    options: [
+      "Program Counter (PC)",
+      "General Purpose Register",
+      "Instruction Register (IR)",
+      "Stack Pointer"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-8ab8169e",
+    topic: "fc-registers",
+    difficulty: "medium",
+    question: "What is the final step in the four-stage operation of processor registers where the result is written back to memory?",
+    options: [
+      "Fetch",
+      "Decode",
+      "Execute",
+      "Write-back"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-2b086bd4",
+    topic: "fc-registers",
+    difficulty: "medium",
+    question: "According to the lecture, which processor architecture typically includes 32 general-purpose registers?",
+    options: [
+      "x86 Architecture",
+      "ARM Architecture",
+      "RISC-V Architecture",
+      "Intel 8086 Architecture"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-737cdf3a",
+    topic: "fc-addressing-instructions",
+    difficulty: "medium",
+    question: "What is the purpose of addressing modes in a processor?",
+    options: [
+      "To specify the speed of the processor clock",
+      "To specify the location of operands for an instruction",
+      "To manage the power supply to the CPU",
+      "To select the operating system to boot"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-234aa3f3",
+    topic: "fc-addressing-instructions",
+    difficulty: "medium",
+    question: "In which addressing mode is the operand's value specified directly within the instruction itself?",
+    options: [
+      "Immediate Addressing Mode",
+      "Register Addressing Mode",
+      "Direct Addressing Mode",
+      "Indirect Addressing Mode"
+    ],
+    correct: 0,
+    explanation: ""
+  },
+
+  {
+    id: "old-157fe650",
+    topic: "fc-addressing-instructions",
+    difficulty: "medium",
+    question: "The instruction ADD R1, R2 is an example of which addressing mode?",
+    options: [
+      "Immediate Addressing Mode",
+      "Register Addressing Mode",
+      "Indirect Addressing Mode",
+      "Indexed Addressing Mode"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-813c3222",
+    topic: "fc-addressing-instructions",
+    difficulty: "medium",
+    question: "Which addressing mode contains the full memory address of the operand within the instruction?",
+    options: [
+      "Indexed Addressing Mode",
+      "Indirect Addressing Mode",
+      "Direct Addressing Mode",
+      "Register Addressing Mode"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-5ca96ebc",
+    topic: "fc-addressing-instructions",
+    difficulty: "medium",
+    question: "In the instruction MOV R1, [R2], the address of the operand is found in register R2. What is this mode called?",
+    options: [
+      "Direct Addressing Mode",
+      "Immediate Addressing Mode",
+      "Indexed Addressing Mode",
+      "Indirect Addressing Mode"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-46fa5d49",
+    topic: "fc-addressing-instructions",
+    difficulty: "medium",
+    question: "What does Indexed Addressing Mode do to find the effective address of an operand?",
+    options: [
+      "It uses the value directly from the instruction.",
+      "It adds a constant value (index) to a base address held in a register.",
+      "It uses an address stored in another memory location.",
+      "It takes the operand directly from a specified register."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-4a6aa97b",
+    topic: "fc-addressing-instructions",
+    difficulty: "medium",
+    question: "Which type of instruction allows the CPU to retrieve data from memory and save data back to memory?",
+    options: [
+      "Arithmetic instructions",
+      "Branching instructions",
+      "Logical instructions",
+      "Memory load and store instructions"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-f8055b89",
+    topic: "fc-addressing-instructions",
+    difficulty: "medium",
+    question: "The JMP and LOOP instructions are examples of which instruction type, used to alter the flow of a program?",
+    options: [
+      "Stack instructions",
+      "Branching instructions",
+      "Logical instructions",
+      "Arithmetic instructions"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-e6394a7e",
+    topic: "fc-addressing-instructions",
+    difficulty: "medium",
+    question: "What is the purpose of a NOP (No Operation) instruction?",
+    options: [
+      "To halt the processor completely",
+      "To perform an arithmetic calculation",
+      "To move the program counter to the next instruction without doing any other work",
+      "To trigger a hardware interrupt"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-1ce75640",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "What is an interrupt?",
+    options: [
+      "A signal sent to the CPU to stop its current activities and execute part of the OS",
+      "A command to increase the processor's clock speed",
+      "An error in a software program that causes it to crash",
+      "A type of memory used for temporary storage"
+    ],
+    correct: 0,
+    explanation: ""
+  },
+
+  {
+    id: "old-e0a727e0",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "Which type of interrupt is generated by hardware devices to signal they need attention from the OS?",
+    options: [
+      "Software Interrupts",
+      "Traps",
+      "Hardware Interrupts",
+      "Exception Interrupts"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-5ea26a10",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "When a program requests a service from the operating system, what kind of interrupt does it generate?",
+    options: [
+      "Hardware Interrupt",
+      "Software Interrupt",
+      "Trap",
+      "Fault"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-464376a3",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "What type of interrupt is generated by the CPU itself to indicate an error or special condition?",
+    options: [
+      "Hardware Interrupt",
+      "Software Interrupt",
+      "Trap",
+      "System Call"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-0ec2ace3",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "What is Memory-Mapped I/O?",
+    options: [
+      "A method where I/O devices have separate, dedicated instructions",
+      "A system where I/O devices are mapped into the regular memory address space",
+      "A technique that requires the CPU to handle all data transfers personally",
+      "A special type of memory used only for I/O operations"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-ff77ef71",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "In which I/O operation method does the processor actively check the status of the I/O device and move data itself?",
+    options: [
+      "Direct Memory Access (DMA)",
+      "Interrupt-Driven I/O",
+      "Programmed I/O (PIO)",
+      "Memory-Mapped I/O"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-51dac249",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "Which I/O technique allows an I/O device to transfer data directly to or from memory without involving the processor in the actual data transfer?",
+    options: [
+      "Programmed I/O (PIO)",
+      "Interrupt-Driven I/O",
+      "Direct Memory Access (DMA)",
+      "Port-Mapped I/O"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-9bccce80",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "What is the primary role of an Operating System (OS) in a computer?",
+    options: [
+      "To run a single application at a time",
+      "To act as an interface between the user and the computer hardware",
+      "To design and create new hardware components",
+      "To only manage the computer's power supply"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-627c6466",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "Which of the following is considered a primary goal of an OS?",
+    options: [
+      "To make computer hardware more complex for the user",
+      "To slow down program execution for better analysis",
+      "To use the computer hardware in an efficient manner",
+      "To prevent users from installing new applications"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-9002e4c5",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "Which type of OS aims to maximize CPU utilization by always having a process ready to execute?",
+    options: [
+      "Real-time OS",
+      "Multiprogramming OS",
+      "Multitasking OS",
+      "Single-tasking OS"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-e37d7491",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "An OS that can execute multiple tasks or processes seemingly at the same time by sharing system resources is known as what?",
+    options: [
+      "Multiprogramming OS",
+      "Multiprocessing OS",
+      "Multitasking OS",
+      "Real-time OS"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-0dbc8dd3",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "What defines a multiprocessing OS?",
+    options: [
+      "It can run multiple programs in memory at once",
+      "It supports a system that has two or more processors",
+      "It responds to events within a strict time constraint",
+      "It allows for only one user to operate the system at a time"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-746abc8f",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "In which type of operating system is returning a correct result within a specific time constraint the main priority?",
+    options: [
+      "Multitasking OS",
+      "Multiprocessing OS",
+      "Multiprogramming OS",
+      "Real-time OS"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-373c60a5",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "What is the main function of a device driver?",
+    options: [
+      "To provide power to hardware devices",
+      "To physically connect a device to the motherboard",
+      "To provide a software interface between the OS and a hardware device",
+      "To cool down hardware components"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-ccfc0af8",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "What are interrupts in the context of device driver operations?",
+    options: [
+      "Signals sent by the CPU to the device to stop its operation",
+      "Errors reported by the operating system to the user",
+      "Power fluctuations that can damage hardware",
+      "Signals sent by the device to notify the CPU that it needs attention"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-eabb300c",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "What is BIOS?",
+    options: [
+      "A type of application software like a web browser",
+      "The main memory (RAM) of the computer",
+      "Firmware embedded on a memory chip on the motherboard",
+      "The operating system's kernel"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-71923254",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "What is the first task the BIOS performs when a computer is powered on?",
+    options: [
+      "Loading the operating system",
+      "Displaying the desktop",
+      "Power-On Self Test (POST)",
+      "Connecting to the internet"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-181fec6e",
+    topic: "fc-os-boot",
+    difficulty: "medium",
+    question: "What is the role of the \"Bootstrap Loader\" in the boot process?",
+    options: [
+      "To check the computer's memory for errors",
+      "To load the operating system kernel into memory",
+      "To allow the user to change hardware settings",
+      "To test the keyboard and mouse for functionality"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-62ab7a13",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "Which type of memory is a smaller, faster memory located closer to the processor that stores copies of frequently accessed data?",
+    options: [
+      "Secondary Memory",
+      "Virtual Memory",
+      "RAM (Random Access Memory)",
+      "Cache Memory"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-d980128b",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is virtual memory?",
+    options: [
+      "The fastest type of memory, located directly on the CPU",
+      "A memory management technique that uses a portion of the hard drive as an extension of RAM",
+      "A type of physical RAM chip",
+      "Memory used exclusively for graphics processing"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-59419d3f",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "In the memory hierarchy, what is the trade-off as you move from CPU registers to secondary storage?",
+    options: [
+      "Speed and cost increase, while size decreases",
+      "Speed and cost decrease, while size increases",
+      "Only the speed increases",
+      "Only the cost decreases"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-1898e0b4",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "Which type of memory is typically used for a computer's main memory (RAM)?",
+    options: [
+      "SRAM",
+      "DRAM",
+      "ROM",
+      "Flash Memory"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-f5f2209a",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is the key feature of DDR (Double Data Rate) memory?",
+    options: [
+      "It does not require power to retain data",
+      "It transfers data twice per clock cycle",
+      "It is synchronized with the CPU's clock, transferring data once per cycle",
+      "It is used exclusively in mobile devices"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-23a53171",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "What is the primary responsibility of the I/O subsystem?",
+    options: [
+      "To perform complex mathematical calculations",
+      "To manage communication between the processor and external devices",
+      "To store the operating system and user files",
+      "To cool the central processing unit"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-a9d19c37",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "What is the difference between Interrupts and Polling for I/O operations?",
+    options: [
+      "There is no difference; they are the same thing",
+      "Interrupts are CPU-initiated, while Polling is device-initiated",
+      "Polling involves the CPU periodically checking a device's status, while an interrupt is a signal from the device to the CPU",
+      "Polling is faster but less efficient than interrupts"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-bba4ab81",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "Which type of keyboard is preferred by gamers and typists for its tactile feedback, responsiveness, and durability?",
+    options: [
+      "Membrane Keyboard",
+      "Ergonomic Keyboard",
+      "Mechanical Keyboard",
+      "Wireless Keyboard"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-9d450b3d",
+    topic: "fc-interrupts-io",
+    difficulty: "medium",
+    question: "What technology do most modern mice use to detect movement?",
+    options: [
+      "A rubber or metal rolling ball",
+      "Gyroscopic sensors",
+      "An LED or laser (Optical)",
+      "Sound waves"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-24469c0a",
+    topic: "fc-display-network",
+    difficulty: "medium",
+    question: "What type of signal does a VGA (Video Graphics Array) interface use to transfer video data?",
+    options: [
+      "Digital signal",
+      "Analog signal",
+      "Both analog and digital signals",
+      "Encrypted signal"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-0466e01a",
+    topic: "fc-display-network",
+    difficulty: "medium",
+    question: "Which interface is the modern standard for transmitting high-definition digital video and audio data over a single cable?",
+    options: [
+      "VGA",
+      "DVI",
+      "HDMI",
+      "Component Video"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-ab87fcf1",
+    topic: "fc-display-network",
+    difficulty: "medium",
+    question: "What is the function of a Network Interface in a computer?",
+    options: [
+      "To manage the display of graphics on the monitor",
+      "To enable the computer to connect and communicate with a network",
+      "To interpret keystrokes from the keyboard",
+      "To store long-term data and files"
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-8b687940",
+    topic: "fc-display-network",
+    difficulty: "medium",
+    question: "Which type of network interface is known for its reliability, speed, and security, but requires a physical connection?",
+    options: [
+      "Wireless Network Interface",
+      "Bluetooth Interface",
+      "Infrared Interface",
+      "Wired Network Interface"
+    ],
+    correct: 3,
+    explanation: ""
+  },
+
+  {
+    id: "old-9ef0d4d2",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "What is the defining characteristic of the Von Neumann architecture?",
+    options: [
+      "It uses separate memory spaces for instructions and data.",
+      "Program instructions and data share the same memory space.",
+      "It requires multiple processors to function.",
+      "It can only execute one program at a time."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-c23b05fb",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "What is the \"Von Neumann bottleneck\"?",
+    options: [
+      "The processor overheating due to high usage.",
+      "The limitation in performance because the CPU cannot access instructions and data simultaneously over the shared bus.",
+      "The slow speed of input/output devices.",
+      "A security flaw that allows unauthorized access to memory."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-2bf24981",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "A buffer overflow is a security vulnerability particularly relevant to Von Neumann architecture because:",
+    options: [
+      "It has separate memory for code and data.",
+      "It runs programs sequentially.",
+      "Excess input data can overwrite memory intended for program instructions since they are stored in the same space.",
+      "It uses a very fast data bus."
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-4b35cb1b",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "What is the key feature of the Harvard architecture?",
+    options: [
+      "A single, unified memory for all operations.",
+      "It uses one address space and memory bus for instructions and a separate one for data.",
+      "It is simpler and easier to implement than Von Neumann.",
+      "It primarily uses virtual memory for all its operations."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-7625a40d",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "What is the main advantage of the Harvard architecture's design?",
+    options: [
+      "It has a simpler hardware design.",
+      "It allows for simultaneous access to instructions and data, increasing throughput.",
+      "It uses less physical memory.",
+      "It is more flexible due to a shared memory space."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-33a3d38e",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "How does the Modified Harvard Architecture combine features from the other two architectures?",
+    options: [
+      "It uses a single bus but has separate physical memories.",
+      "It separates instruction and data memory but allows them to be accessed more flexibly, sometimes through a shared address space.",
+      "It is identical to the Von Neumann architecture but with a faster CPU.",
+      "It removes the ALU to simplify the design."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-c5cede54",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "Which architecture is most commonly found in modern high-performance CPUs?",
+    options: [
+      "Von Neumann Architecture",
+      "Strict Harvard Architecture",
+      "Modified Harvard Architecture",
+      "A completely new architecture not mentioned in the lecture."
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-ade63d85",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is the purpose of memory virtualization?",
+    options: [
+      "To physically increase the amount of RAM in a computer.",
+      "To manage how data is stored and accessed by the CPU for efficient performance.",
+      "To permanently store data when the computer is off.",
+      "To speed up the processor's clock cycle."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-51254eb8",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is \"swapping\" in the context of memory management?",
+    options: [
+      "Moving the CPU to a different motherboard.",
+      "Temporarily moving a process from memory to a backing store (like a hard drive) to free up memory.",
+      "Upgrading the RAM sticks in a computer.",
+      "Exchanging data between two running applications."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-a67b86c7",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is \"External Fragmentation\"?",
+    options: [
+      "When a file is broken into many pieces on a hard drive.",
+      "When a process is too large to fit into memory.",
+      "When total memory space exists to satisfy a request, but it is not in one continuous block.",
+      "Physical damage to the RAM chips."
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-c6035b71",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is the main concept behind \"Paging\"?",
+    options: [
+      "Allocating one single, large block of memory to each process.",
+      "Separating a process into equal-sized pages that can be stored in non-contiguous memory locations.",
+      "Writing memory contents to a piece of paper.",
+      "Using only the hard drive for memory operations."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-87caadec",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is the primary benefit of using virtual memory?",
+    options: [
+      "It makes the computer run faster than using physical RAM.",
+      "It allows the system to run larger programs than the physical RAM would allow.",
+      "It eliminates the need for a hard drive.",
+      "It is non-volatile, so data is never lost."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-34e679ce",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "Compared to physical memory (RAM), virtual memory is:",
+    options: [
+      "Faster and smaller",
+      "Faster and larger",
+      "Slower and larger",
+      "Slower and smaller"
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-b539887b",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "What is the defining characteristic of the Von Neumann architecture?",
+    options: [
+      "It uses separate memory spaces for instructions and data.",
+      "Program instructions and data share the same memory space.",
+      "It requires multiple processors to function.",
+      "It can only execute one program at a time."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-99ab0b5c",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "What is the \"Von Neumann bottleneck\"?",
+    options: [
+      "The processor overheating due to high usage.",
+      "The limitation in performance because the CPU cannot access instructions and data simultaneously over the shared bus.",
+      "The slow speed of input/output devices.",
+      "A security flaw that allows unauthorized access to memory."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-9a027e1b",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "A buffer overflow is a security vulnerability particularly relevant to Von Neumann architecture because:",
+    options: [
+      "It has separate memory for code and data.",
+      "It runs programs sequentially.",
+      "Excess input data can overwrite memory intended for program instructions since they are stored in the same space.",
+      "It uses a very fast data bus."
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-e47f3ec2",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "What is the key feature of the Harvard architecture?",
+    options: [
+      "A single, unified memory for all operations.",
+      "It uses one address space and memory bus for instructions and a separate one for data.",
+      "It is simpler and easier to implement than Von Neumann.",
+      "It primarily uses virtual memory for all its operations."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-6e61b508",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "What is the main advantage of the Harvard architecture's design?",
+    options: [
+      "It has a simpler hardware design.",
+      "It allows for simultaneous access to instructions and data, increasing throughput.",
+      "It uses less physical memory.",
+      "It is more flexible due to a shared memory space."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-92bb4613",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "How does the Modified Harvard Architecture combine features from the other two architectures?",
+    options: [
+      "It uses a single bus but has separate physical memories.",
+      "It separates instruction and data memory but allows them to be accessed more flexibly, sometimes through a shared address space.",
+      "It is identical to the Von Neumann architecture but with a faster CPU.",
+      "It removes the ALU to simplify the design."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-5935f0af",
+    topic: "fc-architecture",
+    difficulty: "medium",
+    question: "Which architecture is most commonly found in modern high-performance CPUs?",
+    options: [
+      "Von Neumann Architecture",
+      "Strict Harvard Architecture",
+      "Modified Harvard Architecture",
+      "A completely new architecture not mentioned in the lecture."
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-2b653f6a",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is the purpose of memory virtualization?",
+    options: [
+      "To physically increase the amount of RAM in a computer.",
+      "To manage how data is stored and accessed by the CPU for efficient performance.",
+      "To permanently store data when the computer is off.",
+      "To speed up the processor's clock cycle."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-0ef94afc",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is \"swapping\" in the context of memory management?",
+    options: [
+      "Moving the CPU to a different motherboard.",
+      "Temporarily moving a process from memory to a backing store (like a hard drive) to free up memory.",
+      "Upgrading the RAM sticks in a computer.",
+      "Exchanging data between two running applications."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-4aac88a7",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is \"External Fragmentation\"?",
+    options: [
+      "When a file is broken into many pieces on a hard drive.",
+      "When a process is too large to fit into memory.",
+      "When total memory space exists to satisfy a request, but it is not in one continuous block.",
+      "Physical damage to the RAM chips."
+    ],
+    correct: 2,
+    explanation: ""
+  },
+
+  {
+    id: "old-63205013",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is the main concept behind \"Paging\"?",
+    options: [
+      "Allocating one single, large block of memory to each process.",
+      "Separating a process into equal-sized pages that can be stored in non-contiguous memory locations.",
+      "Writing memory contents to a piece of paper.",
+      "Using only the hard drive for memory operations."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-269056f5",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "What is the primary benefit of using virtual memory?",
+    options: [
+      "It makes the computer run faster than using physical RAM.",
+      "It allows the system to run larger programs than the physical RAM would allow.",
+      "It eliminates the need for a hard drive.",
+      "It is non-volatile, so data is never lost."
+    ],
+    correct: 1,
+    explanation: ""
+  },
+
+  {
+    id: "old-d38a5f61",
+    topic: "fc-memory",
+    difficulty: "medium",
+    question: "Compared to physical memory (RAM), virtual memory is:",
+    options: [
+      "Faster and smaller",
+      "Faster and larger",
+      "Slower and larger",
+      "Slower and smaller"
+    ],
+    correct: 2,
+    explanation: ""
   }
 ];

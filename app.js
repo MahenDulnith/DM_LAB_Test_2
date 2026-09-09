@@ -1,16 +1,17 @@
 // ═══════════════════════════════════════════════════════
-//  DM Quiz — Application Logic
-//  Features: Quiz engine, performance tracking, weak area detection
+//  Learning Hub — Application Logic
+//  Features: Multi-subject quiz engine, performance tracking, weak area detection
 // ═══════════════════════════════════════════════════════
 
 (function () {
   "use strict";
 
   // ─── Storage Keys ───
-  const STORAGE_KEY = "dm_quiz_data";
+  const STORAGE_KEY = "learning_hub_data";
 
   // ─── State ───
   let state = {
+    selectedSubject: null,
     selectedTopics: [],
     currentQuiz: null,       // { questions, currentIndex, answers, startTime }
     data: loadData(),
@@ -19,10 +20,18 @@
   // ─── Data Persistence ───
   function loadData() {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
+      // Try new key first, then fall back to old key for migration
+      let raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        raw = localStorage.getItem("dm_quiz_data");
+        if (raw) {
+          // Migrate old data to new key
+          localStorage.setItem(STORAGE_KEY, raw);
+          localStorage.removeItem("dm_quiz_data");
+        }
+      }
       if (raw) {
         const parsed = JSON.parse(raw);
-        // Ensure structure
         return {
           questionStats: parsed.questionStats || {},
           history: parsed.history || [],
@@ -48,6 +57,17 @@
   const $ = (sel) => document.querySelector(sel);
   const $$ = (sel) => document.querySelectorAll(sel);
 
+  // ─── Helper: Get topics for a subject ───
+  function getTopicsForSubject(subjectKey) {
+    return Object.entries(TOPICS).filter(([, meta]) => meta.subject === subjectKey);
+  }
+
+  // ─── Helper: Get questions for a subject ───
+  function getQuestionsForSubject(subjectKey) {
+    const topicKeys = getTopicsForSubject(subjectKey).map(([key]) => key);
+    return QUESTIONS.filter((q) => topicKeys.includes(q.topic));
+  }
+
   // ─── Navigation ───
   function initNav() {
     $$(".nav-tab").forEach((tab) => {
@@ -70,11 +90,80 @@
   }
 
   // ═══════════════════════════════════════════
+  //  SUBJECT SELECTOR
+  // ═══════════════════════════════════════════
+  function renderSubjectSelector() {
+    const grid = $("#subjectGrid");
+    grid.innerHTML = "";
+
+    Object.entries(SUBJECTS).forEach(([key, meta]) => {
+      const questionCount = getQuestionsForSubject(key).length;
+      const topicCount = getTopicsForSubject(key).length;
+
+      const card = document.createElement("div");
+      card.className = "subject-card";
+      card.style.setProperty("--subject-color", meta.color);
+      card.innerHTML = `
+        <div class="subject-card-icon">${meta.icon}</div>
+        <div class="subject-card-body">
+          <div class="subject-card-code">${meta.code}</div>
+          <div class="subject-card-name">${meta.label}</div>
+          <div class="subject-card-desc">${meta.description}</div>
+          <div class="subject-card-stats">
+            <span>${questionCount} questions</span>
+            <span>·</span>
+            <span>${topicCount} topics</span>
+          </div>
+        </div>
+      `;
+      card.addEventListener("click", () => selectSubject(key));
+      grid.appendChild(card);
+    });
+  }
+
+  function selectSubject(subjectKey) {
+    state.selectedSubject = subjectKey;
+    state.selectedTopics = [];
+
+    const meta = SUBJECTS[subjectKey];
+
+    // Update header
+    $("#headerBadge").textContent = `${meta.code} · ${meta.shortLabel}`;
+    $("#headerSubtitle").textContent = meta.description;
+
+    // Hide subject selector, show topic selector
+    $("#subjectSelector").style.display = "none";
+    $("#topicSelector").style.display = "block";
+    $("#topicSelectorTitle").textContent = `${meta.label} — Choose Topics`;
+
+    renderTopicSelector();
+  }
+
+  function backToSubjects() {
+    state.selectedSubject = null;
+    state.selectedTopics = [];
+
+    // Update header
+    $("#headerBadge").textContent = "LEARNING HUB";
+    $("#headerSubtitle").textContent = "Multi-Subject MCQ Practice with Performance Tracking";
+
+    // Show subject selector, hide topic selector
+    $("#subjectSelector").style.display = "block";
+    $("#topicSelector").style.display = "none";
+
+    renderSubjectSelector();
+  }
+
+  // ═══════════════════════════════════════════
   //  TOPIC SELECTOR
   // ═══════════════════════════════════════════
   function renderTopicSelector() {
     const grid = $("#topicGrid");
     grid.innerHTML = "";
+
+    // Get topics for the selected subject
+    const subjectTopics = getTopicsForSubject(state.selectedSubject);
+    const subjectQuestions = getQuestionsForSubject(state.selectedSubject);
 
     // "All Topics" card
     const allCard = document.createElement("div");
@@ -84,13 +173,13 @@
       <span class="topic-icon">🎯</span>
       <div class="topic-name">All Topics</div>
       <div class="topic-lab">MIXED QUIZ</div>
-      <div class="topic-count">${QUESTIONS.length} questions</div>
+      <div class="topic-count">${subjectQuestions.length} questions</div>
     `;
     allCard.addEventListener("click", () => toggleTopic("all"));
     grid.appendChild(allCard);
 
     // Individual topic cards
-    Object.entries(TOPICS).forEach(([key, meta]) => {
+    subjectTopics.forEach(([key, meta]) => {
       const count = QUESTIONS.filter((q) => q.topic === key).length;
       const card = document.createElement("div");
       card.className = "topic-card";
@@ -110,13 +199,14 @@
   }
 
   function toggleTopic(topic) {
+    const subjectTopicKeys = getTopicsForSubject(state.selectedSubject).map(([k]) => k);
+
     if (topic === "all") {
-      // Select/deselect all
-      const allSelected = state.selectedTopics.length === Object.keys(TOPICS).length;
+      const allSelected = state.selectedTopics.length === subjectTopicKeys.length;
       if (allSelected) {
         state.selectedTopics = [];
       } else {
-        state.selectedTopics = Object.keys(TOPICS);
+        state.selectedTopics = [...subjectTopicKeys];
       }
     } else {
       const idx = state.selectedTopics.indexOf(topic);
@@ -130,12 +220,14 @@
   }
 
   function updateTopicUI() {
+    const subjectTopicKeys = getTopicsForSubject(state.selectedSubject).map(([k]) => k);
+
     $$(".topic-card").forEach((card) => {
       const t = card.dataset.topic;
       if (t === "all") {
         card.classList.toggle(
           "selected",
-          state.selectedTopics.length === Object.keys(TOPICS).length
+          state.selectedTopics.length === subjectTopicKeys.length
         );
       } else {
         card.classList.toggle("selected", state.selectedTopics.includes(t));
@@ -148,7 +240,6 @@
   function updateWeakQuizButton() {
     const weakQs = getWeakQuestions();
     const btn = $("#btnWeakQuiz");
-    // Always show the button, but disable when no weak questions
     btn.style.display = "inline-flex";
     if (weakQs.length >= 1) {
       btn.disabled = false;
@@ -157,12 +248,11 @@
       btn.disabled = true;
       btn.innerHTML = `🔥 No Weak Areas Yet`;
     }
-    // Update dashboard notification dot
     updateDashboardNotif();
   }
 
   function updateDashboardNotif() {
-    const weakQs = getWeakQuestions();
+    const weakQs = getWeakQuestionsGlobal();
     const tab = $("#tab-dashboard");
     let dot = tab.querySelector(".notif-dot");
     if (weakQs.length >= 1) {
@@ -177,7 +267,7 @@
   }
 
   function renderFocusBanner() {
-    const weakQs = getWeakQuestions();
+    const weakQs = getWeakQuestionsGlobal();
     const banner = $("#focusBanner");
     if (!banner) return;
 
@@ -186,8 +276,11 @@
       const desc = $("#focusBannerDesc");
       const topicCounts = {};
       weakQs.forEach(q => {
-        const label = TOPICS[q.topic].shortLabel;
-        topicCounts[label] = (topicCounts[label] || 0) + 1;
+        const meta = TOPICS[q.topic];
+        if (meta) {
+          const label = meta.shortLabel;
+          topicCounts[label] = (topicCounts[label] || 0) + 1;
+        }
       });
       const topicSummary = Object.entries(topicCounts)
         .map(([name, count]) => `${count} in ${name}`)
@@ -199,10 +292,17 @@
   }
 
   function startFocusQuizFromDashboard() {
-    const weakQs = getWeakQuestions();
+    const weakQs = getWeakQuestionsGlobal();
     if (weakQs.length < 1) return;
-    // Switch to quiz view and start immediately
     switchView("quiz");
+    // Set subject context if possible
+    if (weakQs.length > 0) {
+      const firstTopic = weakQs[0].topic;
+      const topicMeta = TOPICS[firstTopic];
+      if (topicMeta) {
+        state.selectedSubject = topicMeta.subject;
+      }
+    }
     startQuiz(weakQs);
   }
 
@@ -219,34 +319,25 @@
       const statB = state.data.questionStats[b.id];
 
       const getPriorityScore = (stat) => {
-        // High priority for new/unattempted questions
         if (!stat || stat.attempts === 0) return 1000;
-        
-        // For attempted questions, prioritize based on how often they get it wrong
         const accuracy = stat.correct / stat.attempts;
-        const accuracyScore = (1 - accuracy) * 100; // Lower accuracy = higher score
-        
-        // Add bonus points for the sheer number of times they got it wrong
+        const accuracyScore = (1 - accuracy) * 100;
         return accuracyScore + (stat.wrong * 5); 
       };
 
       const scoreA = getPriorityScore(statA);
       const scoreB = getPriorityScore(statB);
 
-      // Sort descending (highest priority first). If same score, randomize slightly.
       if (scoreA === scoreB) return Math.random() - 0.5;
       return scoreB - scoreA;
     });
 
-    // Limit pool to selected length
     if (lengthSetting > 0 && pool.length > lengthSetting) {
       pool = pool.slice(0, lengthSetting);
     }
 
-    // Shuffle the final selected questions so the order isn't completely predictable
     pool = shuffleArray(pool);
 
-    // Optionally shuffle each question's options
     if (shouldShuffle) {
       pool = pool.map((q) => {
         const indices = q.options.map((_, i) => i);
@@ -274,7 +365,8 @@
       maxStreak: 0,
     };
 
-    // Hide selector, show quiz area
+    // Hide selectors, show quiz area
+    $("#subjectSelector").style.display = "none";
     $("#topicSelector").style.display = "none";
     $("#quizArea").classList.add("active");
     $("#resultsScreen").style.display = "none";
@@ -303,11 +395,10 @@
       $("#streakIndicator").style.display = "none";
     }
 
-    // Topic tag class
-    const tagClass =
-      q.topic === "permutations-combinations" ? "tag-pc" :
-      q.topic === "recursion" ? "tag-rc" :
-      q.topic === "graphs" ? "tag-gr" : "tag-tr";
+    // Topic tag — dynamic based on topic metadata
+    const topicMeta = TOPICS[q.topic];
+    const tagStyle = topicMeta ? `background:${topicMeta.color}18; color:${topicMeta.color}; border-color:${topicMeta.color}33` : "";
+    const tagLabel = topicMeta ? `${topicMeta.labSheet} · ${topicMeta.shortLabel}` : q.topic;
 
     const diffClass =
       q.difficulty === "easy" ? "diff-easy" :
@@ -317,7 +408,7 @@
     container.innerHTML = `
       <div class="question-card">
         <div class="question-meta">
-          <span class="question-topic-tag ${tagClass}">${TOPICS[q.topic].labSheet} · ${TOPICS[q.topic].shortLabel}</span>
+          <span class="question-topic-tag" style="${tagStyle}">${tagLabel}</span>
           <span class="question-difficulty ${diffClass}">${q.difficulty}</span>
         </div>
         <div class="question-text">${escapeAndFormatCode(q.question)}</div>
@@ -353,14 +444,12 @@
     const q = quiz.questions[quiz.currentIndex];
     const isCorrect = selectedIndex === q._correctDisplay;
 
-    // Record answer
     quiz.answers.push({
       questionId: q.id,
       selectedIndex,
       correct: isCorrect,
     });
 
-    // Streak
     if (isCorrect) {
       quiz.streak++;
       if (quiz.streak > quiz.maxStreak) quiz.maxStreak = quiz.streak;
@@ -368,7 +457,6 @@
       quiz.streak = 0;
     }
 
-    // Update streak display
     if (quiz.streak >= 3) {
       $("#streakIndicator").style.display = "inline-flex";
       $("#streakCount").textContent = quiz.streak;
@@ -376,10 +464,8 @@
       $("#streakIndicator").style.display = "none";
     }
 
-    // Update stats
     updateQuestionStat(q.id, isCorrect);
 
-    // Visual feedback
     $$(".option-btn").forEach((btn, i) => {
       btn.classList.add("answered");
       if (i === q._correctDisplay) {
@@ -390,16 +476,23 @@
       }
     });
 
-    // Show explanation
     const explArea = $("#explanationArea");
-    explArea.innerHTML = `
-      <div class="explanation-box">
-        <span class="explain-label">${isCorrect ? "✓ CORRECT" : "✗ INCORRECT"} — EXPLANATION</span>
-        ${q.explanation}
-      </div>
-    `;
+    if (q.explanation) {
+      explArea.innerHTML = `
+        <div class="explanation-box">
+          <span class="explain-label">${isCorrect ? "✓ CORRECT" : "✗ INCORRECT"} — EXPLANATION</span>
+          ${q.explanation}
+        </div>
+      `;
+    } else {
+      explArea.innerHTML = `
+        <div class="explanation-box">
+          <span class="explain-label">${isCorrect ? "✓ CORRECT" : "✗ INCORRECT"}</span>
+          ${isCorrect ? "Well done!" : `The correct answer was: ${String.fromCharCode(65 + q._correctDisplay)}`}
+        </div>
+      `;
+    }
 
-    // Show next button
     const actions = $("#questionActions");
     actions.style.display = "flex";
     const btnNext = $("#btnNextQ");
@@ -412,11 +505,10 @@
       }
     });
 
-    // Update live score
     const correctSoFar = quiz.answers.filter((a) => a.correct).length;
     $("#scoreLive").textContent = `✓ ${correctSoFar}`;
-    const pct = ((quiz.currentIndex + 1) / quiz.questions.length) * 100;
-    $("#progressFill").style.width = pct + "%";
+    const progressPct = ((quiz.currentIndex + 1) / quiz.questions.length) * 100;
+    $("#progressFill").style.width = progressPct + "%";
   }
 
   function updateQuestionStat(questionId, isCorrect) {
@@ -449,8 +541,10 @@
     const minutes = Math.floor(elapsed / 60);
     const seconds = elapsed % 60;
 
-    // Save to history
+    // Determine subject from quiz questions
     const topicsUsed = [...new Set(quiz.questions.map((q) => q.topic))];
+    const subjectsUsed = [...new Set(topicsUsed.map(t => TOPICS[t]?.subject).filter(Boolean))];
+    
     state.data.history.unshift({
       date: new Date().toISOString(),
       total,
@@ -458,31 +552,37 @@
       wrong,
       percentage: pct,
       topics: topicsUsed,
+      subjects: subjectsUsed,
       timeSeconds: elapsed,
       maxStreak: quiz.maxStreak,
     });
 
-    // Keep only last 50 entries
     if (state.data.history.length > 50) {
       state.data.history = state.data.history.slice(0, 50);
     }
 
     saveData();
 
-    // Hide quiz, show results
     $("#quizArea").classList.remove("active");
     const resultsScreen = $("#resultsScreen");
     resultsScreen.style.display = "block";
 
-    // Color based on score
     const scoreColor =
       pct >= 80 ? "var(--accent-green)" :
       pct >= 50 ? "var(--accent-yellow)" : "var(--error)";
+
+    const subjectLabel = subjectsUsed.length === 1 && SUBJECTS[subjectsUsed[0]]
+      ? SUBJECTS[subjectsUsed[0]].label
+      : "Mixed Subjects";
 
     resultsScreen.innerHTML = `
       <div class="score-circle" style="--score-pct:${pct}%; border: 3px solid ${scoreColor}22; background: ${scoreColor}08;">
         <span class="score-pct" style="color:${scoreColor}">${pct}%</span>
         <span class="score-label">Score</span>
+      </div>
+
+      <div style="text-align:center; margin-bottom:1rem;">
+        <span style="font-size:13px; color:var(--text-muted);">${subjectLabel}</span>
       </div>
 
       <div class="results-summary">
@@ -512,16 +612,14 @@
       <div class="results-actions">
         <button class="btn btn-primary" id="btnRetryQuiz">🔄 New Quiz</button>
         <button class="btn btn-secondary" id="btnViewDashboard">📊 Dashboard</button>
-        ${getWeakQuestions().length >= 2 ? `
+        ${getWeakQuestionsGlobal().length >= 2 ? `
           <button class="btn btn-weak" id="btnRetryWeak">🔥 Focus Weak Areas</button>
         ` : ""}
       </div>
     `;
 
-    // Confetti on good score
     if (pct >= 80) spawnConfetti();
 
-    // Attach result actions
     $("#btnRetryQuiz").addEventListener("click", () => {
       resetQuizView();
     });
@@ -534,7 +632,7 @@
     const btnWeak = $("#btnRetryWeak");
     if (btnWeak) {
       btnWeak.addEventListener("click", () => {
-        const weakQs = getWeakQuestions();
+        const weakQs = getWeakQuestionsGlobal();
         resetQuizView();
         startQuiz(weakQs);
       });
@@ -543,7 +641,17 @@
 
   function resetQuizView() {
     state.currentQuiz = null;
-    $("#topicSelector").style.display = "block";
+    
+    if (state.selectedSubject) {
+      // Go back to topic selector for the current subject
+      $("#subjectSelector").style.display = "none";
+      $("#topicSelector").style.display = "block";
+    } else {
+      // Go back to subject selector
+      $("#subjectSelector").style.display = "block";
+      $("#topicSelector").style.display = "none";
+    }
+    
     $("#quizArea").classList.remove("active");
     $("#resultsScreen").style.display = "none";
     updateWeakQuizButton();
@@ -552,7 +660,20 @@
   // ═══════════════════════════════════════════
   //  WEAK AREA DETECTION
   // ═══════════════════════════════════════════
+  // Get weak questions for the currently selected subject
   function getWeakQuestions() {
+    const subjectQuestions = state.selectedSubject
+      ? getQuestionsForSubject(state.selectedSubject)
+      : QUESTIONS;
+    
+    return subjectQuestions.filter((q) => {
+      const stat = state.data.questionStats[q.id];
+      return stat && stat.wrong >= 2;
+    });
+  }
+
+  // Get ALL weak questions across all subjects
+  function getWeakQuestionsGlobal() {
     return QUESTIONS.filter((q) => {
       const stat = state.data.questionStats[q.id];
       return stat && stat.wrong >= 2;
@@ -618,7 +739,7 @@
       </div>
     `;
 
-    // Topic breakdown
+    // Topic breakdown — grouped by subject
     const topicStats = getTopicStats();
     const breakdown = $("#topicBreakdown");
     breakdown.innerHTML = "";
@@ -633,32 +754,49 @@
       }
     });
 
-    Object.entries(topicStats).forEach(([topic, stats]) => {
-      const meta = TOPICS[topic];
-      const isWeak = topic === weakestTopic && weakestAccuracy < 70 && stats.attempted > 0;
-      const barColor = meta.color;
-      const accuracy = stats.accuracy !== null ? stats.accuracy : 0;
+    // Group by subject
+    Object.entries(SUBJECTS).forEach(([subjectKey, subjectMeta]) => {
+      const subjectTopics = getTopicsForSubject(subjectKey);
+      const hasAnyData = subjectTopics.some(([key]) => {
+        const stats = topicStats[key];
+        return stats && stats.attempted > 0;
+      });
 
-      const card = document.createElement("div");
-      card.className = `topic-stat-card${isWeak ? " weak-topic" : ""}`;
-      card.dataset.topic = topic;
-      card.innerHTML = `
-        <div class="topic-stat-head">
-          <span class="ts-name">
-            ${meta.shortLabel}
-            ${isWeak ? '<span class="weak-badge">WEAK</span>' : ""}
-          </span>
-          <span class="ts-icon">${meta.icon}</span>
-        </div>
-        <div class="topic-stat-bar">
-          <div class="topic-stat-bar-fill" style="width:${accuracy}%; background:${barColor};"></div>
-        </div>
-        <div class="topic-stat-details">
-          <span>${stats.correct}/${stats.attempted} correct</span>
-          <span class="ts-pct" style="color:${accuracy >= 70 ? "var(--accent-green)" : accuracy >= 40 ? "var(--accent-yellow)" : "var(--error)"}">${stats.accuracy !== null ? accuracy + "%" : "No data"}</span>
-        </div>
+      // Subject header
+      const header = document.createElement("div");
+      header.className = "topic-breakdown-subject-header";
+      header.innerHTML = `
+        <span>${subjectMeta.icon} ${subjectMeta.shortLabel}</span>
       `;
-      breakdown.appendChild(card);
+      breakdown.appendChild(header);
+
+      subjectTopics.forEach(([topic, meta]) => {
+        const stats = topicStats[topic];
+        const isWeak = topic === weakestTopic && weakestAccuracy < 70 && stats.attempted > 0;
+        const barColor = meta.color;
+        const accuracy = stats.accuracy !== null ? stats.accuracy : 0;
+
+        const card = document.createElement("div");
+        card.className = `topic-stat-card${isWeak ? " weak-topic" : ""}`;
+        card.dataset.topic = topic;
+        card.innerHTML = `
+          <div class="topic-stat-head">
+            <span class="ts-name">
+              ${meta.shortLabel}
+              ${isWeak ? '<span class="weak-badge">WEAK</span>' : ""}
+            </span>
+            <span class="ts-icon">${meta.icon}</span>
+          </div>
+          <div class="topic-stat-bar">
+            <div class="topic-stat-bar-fill" style="width:${accuracy}%; background:${barColor};"></div>
+          </div>
+          <div class="topic-stat-details">
+            <span>${stats.correct}/${stats.attempted} correct</span>
+            <span class="ts-pct" style="color:${accuracy >= 70 ? "var(--accent-green)" : accuracy >= 40 ? "var(--accent-yellow)" : "var(--error)"}">${stats.accuracy !== null ? accuracy + "%" : "No data"}</span>
+          </div>
+        `;
+        breakdown.appendChild(card);
+      });
     });
 
     // Focus Mode banner
@@ -669,7 +807,7 @@
   }
 
   function renderWeakQuestions() {
-    const weakQs = getWeakQuestions();
+    const weakQs = getWeakQuestionsGlobal();
     const section = $("#weakQuestionsSection");
     const list = $("#weakQList");
 
@@ -684,7 +822,6 @@
       return;
     }
 
-    // Sort by most wrong first
     const sorted = weakQs.sort((a, b) => {
       const sA = state.data.questionStats[a.id];
       const sB = state.data.questionStats[b.id];
@@ -695,12 +832,13 @@
       .map((q) => {
         const stat = state.data.questionStats[q.id];
         const meta = TOPICS[q.topic];
+        const subjectMeta = meta ? SUBJECTS[meta.subject] : null;
         return `
         <div class="weak-q-item">
           <span class="weak-q-times">${stat.wrong}× wrong</span>
           <div class="weak-q-text">
             ${escapeAndFormatCode(q.question)}
-            <span class="weak-q-topic">${meta.labSheet} · ${meta.shortLabel}</span>
+            <span class="weak-q-topic">${meta ? `${meta.labSheet} · ${meta.shortLabel}` : q.topic}${subjectMeta ? ` — ${subjectMeta.shortLabel}` : ""}</span>
           </div>
         </div>
       `;
@@ -743,6 +881,12 @@
         const minutes = Math.floor(entry.timeSeconds / 60);
         const seconds = entry.timeSeconds % 60;
 
+        // Show subject info
+        const subjectLabels = (entry.subjects || [])
+          .map(s => SUBJECTS[s]?.icon || "")
+          .filter(Boolean)
+          .join(" ");
+
         return `
         <div class="history-item">
           <div class="history-top">
@@ -751,6 +895,7 @@
           </div>
           <div style="display:flex; align-items:center; justify-content:space-between;">
             <div class="history-topics">
+              ${subjectLabels ? `<span class="history-subject-icons">${subjectLabels}</span>` : ""}
               ${entry.topics
                 .map((t) => {
                   const meta = TOPICS[t];
@@ -780,7 +925,6 @@
   }
 
   function escapeAndFormatCode(text) {
-    // Wrap backtick-enclosed text in <code> tags
     return text.replace(/`([^`]+)`/g, "<code>$1</code>");
   }
 
@@ -830,6 +974,11 @@
       panel.style.display = panel.style.display === "none" ? "block" : "none";
     });
 
+    // Back to subjects
+    $("#btnBackToSubjects").addEventListener("click", () => {
+      backToSubjects();
+    });
+
     // Reset data
     $("#btnResetData").addEventListener("click", () => {
       if (confirm("Are you sure? This will clear ALL your quiz history and performance data.")) {
@@ -848,7 +997,7 @@
   // ═══════════════════════════════════════════
   function init() {
     initNav();
-    renderTopicSelector();
+    renderSubjectSelector();
     bindEvents();
   }
 

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DM Quiz — Discrete Mathematics MCQ Trainer</title>
-  <meta name="description" content="Interactive MCQ quiz for IT1160 Discrete Mathematics. Track your performance, identify weak areas, and master Permutations, Recursion, Graphs & Trees.">
+  <title>Learning Hub — MCQ Practice Platform</title>
+  <meta name="description" content="Interactive MCQ quiz platform for university courses. Track your performance, identify weak areas, and master multiple subjects.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
 
   <!-- ═══ HEADER ═══ -->
   <header class="app-header">
-    <span class="badge">IT1160 · Discrete Mathematics</span>
-    <h1>DM Quiz Trainer</h1>
-    <p>Lab Sheets 05–08 · MCQ Practice with Performance Tracking</p>
+    <span class="badge" id="headerBadge">LEARNING HUB</span>
+    <h1>Learning Hub</h1>
+    <p id="headerSubtitle">Multi-Subject MCQ Practice with Performance Tracking</p>
   </header>
 
   <!-- ═══ NAVIGATION ═══ -->
@@ -39,9 +39,20 @@
        ═══════════════════════════════════════ -->
   <section class="view active" id="view-quiz">
 
-    <!-- Topic Selector -->
-    <div class="topic-selector" id="topicSelector">
-      <h2>Choose Topics</h2>
+    <!-- Subject Selector -->
+    <div class="subject-selector" id="subjectSelector">
+      <h2>Choose a Subject</h2>
+      <div class="subject-grid" id="subjectGrid">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+
+    <!-- Topic Selector (hidden until subject is chosen) -->
+    <div class="topic-selector" id="topicSelector" style="display:none;">
+      <div class="topic-selector-header">
+        <button class="btn btn-back" id="btnBackToSubjects">← Subjects</button>
+        <h2 id="topicSelectorTitle">Choose Topics</h2>
+      </div>
       <div class="topic-grid" id="topicGrid">
         <!-- Dynamically populated -->
       </div>
