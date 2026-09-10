@@ -4337,18 +4337,2889 @@ Which statements are correct?`,
     explanation: `A very common mistake is confusing Merge and Join. A Merge point brings together divergent conditional paths (from a Decision). A Join brings together concurrent paths (from a Fork). You cannot use a Merge to combine forked flows.`
   },
   {
-    id: "se_m5_008",
-    topic: "se-module-5",
+    id: "se_friend_1",
+    topic: "se-module-1",
     difficulty: "medium",
     source: "PDF",
-    question: `How is a Loop or Iteration best explicitly modeled in a UML Activity Diagram to show termination conditions?`,
+    question: `What is the primary focus of Software Engineering (SE)?`,
     options: [
-      `By drawing a circle around the action.`,
-      `By using a Decision Node to check the condition, with a transition arrow looping back to a previous action.`,
-      `By placing an exclamation mark (!) inside the action node.`,
-      `It is impossible to model loops in an Activity Diagram.`
+      `Writing code as fast as possible`,
+      `Applying engineering principles to build reliable, efficient, and maintainable software`,
+      `Only testing software before release`,
+      `Designing hardware components`
     ],
     correct: 1,
-    explanation: `While an asterisk (*) can denote repetition, the ideal way to model an iteration with clear termination conditions is to use a Decision Node with guard conditions (e.g., [more items], [no more items]) and loop the transition back.`
+    explanation: ``
+  },
+  {
+    id: "se_friend_2",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following is NOT something SE focuses on, according to the lecture?`,
+    options: [
+      `Following structured processes`,
+      `Ensuring quality at every step`,
+      `Planning across the entire software lifecycle`,
+      `Ignoring the software lifecycle to save time`
+    ],
+    correct: 3,
+    explanation: ``
+  },
+  {
+    id: "se_friend_3",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are benefits of good software engineering?`,
+    options: [
+      `Saves time and money in the long run`,
+      `Protects users and ensures their satisfaction`,
+      `Avoids major failures in critical systems`,
+      `Guarantees the software will have zero bugs forever`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_4",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of these is an example of a critical system mentioned as needing careful software
+engineering?`,
+    options: [
+      `A simple calculator app`,
+      `Flight control software`,
+      `A to-do list app`,
+      `A wallpaper changer app`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_5",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture, why does software engineering matter?`,
+    options: [
+      `It makes coding more complicated`,
+      `It helps avoid major failures in critical systems like banking and hospital systems`,
+      `It removes the need for testing`,
+      `It replaces the need for requirements`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_6",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which best describes the 'Scope' of Programming compared to Software Engineering?`,
+    options: [
+      `Broad, includes the whole software lifecycle`,
+      `Narrow, task-oriented`,
+      `Focused only on deployment`,
+      `Focused only on maintenance`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_7",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the SE vs Programming comparison, what is the 'End Goal' of Software Engineering?`,
+    options: [
+      `Just working code`,
+      `Working, reliable, scalable, and user-validated software`,
+      `Passing a code review`,
+      `Finishing quickly`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_8",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following activities are listed as part of Software Engineering?`,
+    options: [
+      `Analysis`,
+      `Design and architecture`,
+      `Coding`,
+      `Testing, deployment, and maintenance`,
+      `Only A, B, C, and D`,
+      `Only A and B`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_9",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the comparison table, how is 'Teamwork' typically handled in Programming vs
+Software Engineering?`,
+    options: [
+      `Programming requires collaboration; SE is individual`,
+      `Programming is often done individually; SE requires collaboration and coordination in teams`,
+      `Both are always done individually`,
+      `Both always require large teams`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_10",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which 'Process' style is associated with plain Programming according to the comparison table?`,
+    options: [
+      `Follows structured, well-defined processes (e.g., SDLC)`,
+      `May be ad hoc or informal`,
+      `Always follows the Agile framework`,
+      `Always follows the Waterfall model`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_11",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `During what period did 'The Software Crisis' mainly occur?`,
+    options: [
+      `1930s–1950s`,
+      `1960s–1990s`,
+      `2000s–2010s`,
+      `2015–2020`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_12",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following were common causes of failure during the Software Crisis?`,
+    options: [
+      `Over budget`,
+      `Missed deadlines`,
+      `System crashes and disasters`,
+      `Excessive testing`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_13",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What caused the failure of NASA's Mariner 1 rocket, according to the lecture?`,
+    options: [
+      `A missing hyphen in code`,
+      `A software virus`,
+      `A hardware malfunction only`,
+      `A user error during launch`
+    ],
+    correct: 0,
+    explanation: ``
+  },
+  {
+    id: "se_friend_14",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What was the main reason the Therac-25 failure happened?`,
+    options: [
+      `Reused code without adaptation`,
+      `Poor testing and missing safety checks`,
+      `A missing hyphen in code`,
+      `Wrong code update in a trading bot`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_15",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which system lost $440 million in 30 minutes due to a wrong code update, according to the
+lecture?`,
+    options: [
+      `Therac-25`,
+      `Ariane 5 Rocket`,
+      `Knight Capital`,
+      `Mariner 1`
+    ],
+    correct: 2,
+    explanation: ``
+  },
+  {
+    id: "se_friend_16",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the Software Development Life Cycle (SDLC) best described as?`,
+    options: [
+      `A single phase of testing`,
+      `A roadmap for building software the right way`,
+      `A programming language`,
+      `A type of database`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_17",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `According to the lecture, SDLC helps teams to:`,
+    options: [
+      `Meet user needs and expectations`,
+      `Save time and cost by planning ahead`,
+      `Avoid risks and delivery delays`,
+      `Skip the requirements phase`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_18",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is a feasibility study primarily used to determine?`,
+    options: [
+      `The programming language to use`,
+      `Whether the project should be built at all`,
+      `The final price of the software`,
+      `The number of developers needed`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_19",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the output of a feasibility study called?`,
+    options: [
+      `Software Requirements Specification (SRS)`,
+      `Feasibility Report`,
+      `Test Plan`,
+      `System Design Document`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_20",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `A feasibility study helps decide whether a project is:`,
+    options: [
+      `Technically possible`,
+      `Financially affordable`,
+      `Realistic`,
+      `Popular on social media`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_21",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `'Can we build it with the technology we have?' is the key question of which type of feasibility?`,
+    options: [
+      `Economic Feasibility`,
+      `Technical Feasibility`,
+      `Legal Feasibility`,
+      `Schedule Feasibility`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_22",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `'Will the benefits outweigh the expenses?' relates to which type of feasibility?`,
+    options: [
+      `Technical Feasibility`,
+      `Economic Feasibility`,
+      `Operational Feasibility`,
+      `Schedule Feasibility`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_23",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Checking whether a system complies with GDPR falls under which type of feasibility?`,
+    options: [
+      `Legal Feasibility`,
+      `Operational Feasibility`,
+      `Technical Feasibility`,
+      `Economic Feasibility`
+    ],
+    correct: 0,
+    explanation: ``
+  },
+  {
+    id: "se_friend_24",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `'Will users actually use it?' is the key question of which type of feasibility?`,
+    options: [
+      `Schedule Feasibility`,
+      `Operational Feasibility`,
+      `Legal Feasibility`,
+      `Technical Feasibility`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_25",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `'Can we deliver it on time?' relates to which type of feasibility?`,
+    options: [
+      `Schedule Feasibility`,
+      `Economic Feasibility`,
+      `Technical Feasibility`,
+      `Legal Feasibility`
+    ],
+    correct: 0,
+    explanation: ``
+  },
+  {
+    id: "se_friend_26",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are among the five types of feasibility discussed in the lecture?`,
+    options: [
+      `Technical`,
+      `Economic`,
+      `Legal`,
+      `Emotional`,
+      `Operational`,
+      `Schedule`,
+      `Only A, B, C, E, and F`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 6,
+    explanation: ``
+  },
+  {
+    id: "se_friend_27",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which phase is the FIRST of the six key SDLC phases introduced in the lecture?`,
+    options: [
+      `Testing`,
+      `Requirements gathering and Analysis`,
+      `Deployment`,
+      `Maintenance`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_28",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are among the six key SDLC phases mentioned in the lecture?`,
+    options: [
+      `Requirements gathering and Analysis`,
+      `System design`,
+      `Implementation`,
+      `Marketing`,
+      `Testing`,
+      `Deployment`,
+      `Maintenance`,
+      `Only A, B, C, E, F, and G`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 7,
+    explanation: ``
+  },
+  {
+    id: "se_friend_29",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What document is typically produced during Requirements Gathering to clearly capture what the
+client wants?`,
+    options: [
+      `Feasibility Report`,
+      `Software Requirements Specification (SRS)`,
+      `Test Plan`,
+      `User Manual`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_30",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Who is typically involved in requirements gathering, according to the lecture?`,
+    options: [
+      `Clients`,
+      `Users`,
+      `Business analysts`,
+      `Regulatory auditors only`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_31",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `The Requirements Gathering phase happens right after which phase?`,
+    options: [
+      `Testing`,
+      `Feasibility Study`,
+      `Deployment`,
+      `Maintenance`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_32",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What role does the requirements document play between the client and development team?`,
+    options: [
+      `It acts like a contract outlining what will (and won't) be built`,
+      `It's just a suggestion with no real value`,
+      `It replaces the need for testing`,
+      `It is only used after deployment`
+    ],
+    correct: 0,
+    explanation: ``
+  },
+  {
+    id: "se_friend_33",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of these are common techniques for gathering requirements, according to the lecture?`,
+    options: [
+      `Interviews`,
+      `Questionnaires`,
+      `Observations`,
+      `Document analysis`,
+      `Ignoring stakeholders`,
+      `Prototyping`,
+      `Brainstorming`,
+      `Only A, B, C, D, F, and G`,
+      `Only A and B`,
+      `All of the above`
+    ],
+    correct: 7,
+    explanation: ``
+  },
+  {
+    id: "se_friend_34",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `A Functional Requirement describes:`,
+    options: [
+      `How the system should perform`,
+      `What the system should do`,
+      `The legal boundaries of the system`,
+      `The cost of the system`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_35",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `'The system should load within 3 seconds' is an example of which type of requirement?`,
+    options: [
+      `Functional Requirement`,
+      `Non-Functional Requirement`,
+      `Limitation/Constraint`,
+      `Stakeholder requirement`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_36",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `'The system must run on Android only' is an example of:`,
+    options: [
+      `Functional Requirement`,
+      `Non-Functional Requirement`,
+      `Limitation (Constraint)`,
+      `Feasibility Study`
+    ],
+    correct: 2,
+    explanation: ``
+  },
+  {
+    id: "se_friend_37",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the Student Attendance Management System example, which statement is the Non-Functional
+Requirement?`,
+    options: [
+      `The system should allow teachers to mark daily attendance for each student`,
+      `The system should be accessible on both desktop and mobile devices`,
+      `The system must be deployed within the university's local network only`,
+      `None of the above`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_38",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is a stakeholder, as defined in the lecture?`,
+    options: [
+      `Only the person who pays for the software`,
+      `Any person or group who has an interest in the software system`,
+      `Only the developers working on the project`,
+      `Only government regulators`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_39",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are categories of stakeholders mentioned in the lecture?`,
+    options: [
+      `End Users`,
+      `Internal Users`,
+      `External Partners`,
+      `Regulatory Bodies`,
+      `Project Sponsor / Client`,
+      `Competitors`,
+      `Only A, B, C, D, and E`,
+      `Only A and B`,
+      `All of the above`
+    ],
+    correct: 6,
+    explanation: ``
+  },
+  {
+    id: "se_friend_40",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which stakeholder category best describes 'Payment gateways, suppliers, delivery services'?`,
+    options: [
+      `End Users`,
+      `Internal Users`,
+      `External Partners`,
+      `Regulatory Bodies`
+    ],
+    correct: 2,
+    explanation: ``
+  },
+  {
+    id: "se_friend_41",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `'Education ministry, data protection authorities (GDPR)' are examples of which stakeholder
+type?`,
+    options: [
+      `Internal Users`,
+      `Regulatory Bodies`,
+      `Project Sponsor`,
+      `End Users`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_42",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are best practices in requirement gathering?`,
+    options: [
+      `Involve all key stakeholders early in the process`,
+      `Use clear, simple language, avoiding technical jargon`,
+      `Validate requirements with stakeholders using reviews or walkthroughs`,
+      `Guess what users want to save time`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_43",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is a 'walkthrough' in the context of requirement validation?`,
+    options: [
+      `A final product demo to customers`,
+      `A peer review meeting where the team goes through requirements, design, or code step by step`,
+      `A marketing presentation`,
+      `A type of software test`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_44",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are common mistakes in requirement gathering, according to the lecture?`,
+    options: [
+      `Guessing stakeholder needs`,
+      `Using too much technical jargon`,
+      `Ignoring non-functional requirements`,
+      `Involving all key stakeholders early`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_45",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the main purpose of the System Design phase?`,
+    options: [
+      `To write the actual code`,
+      `To translate the SRS into a system blueprint`,
+      `To deploy the software`,
+      `To fix bugs after release`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_46",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `What is typically included in the System Design phase?`,
+    options: [
+      `UI Design`,
+      `Database Schema`,
+      `System Architecture`,
+      `User training manuals`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_47",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is 'unit testing' as described in the Implementation phase?`,
+    options: [
+      `Testing the entire system at once`,
+      `Making sure each small part of the system works correctly on its own`,
+      `Testing only the user interface`,
+      `A type of feasibility study`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_48",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which types of testing are mentioned in the Testing phase?`,
+    options: [
+      `Unit Testing`,
+      `Integration Testing`,
+      `System Testing`,
+      `Acceptance Testing`,
+      `Feasibility Testing`,
+      `Only A, B, C, and D`,
+      `Only A and B`,
+      `All of the above`
+    ],
+    correct: 5,
+    explanation: ``
+  },
+  {
+    id: "se_friend_49",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What does Acceptance Testing check?`,
+    options: [
+      `If small pieces of code work correctly`,
+      `If different modules work well together`,
+      `If the system meets the client's requirements`,
+      `If the code compiles without errors`
+    ],
+    correct: 2,
+    explanation: ``
+  },
+  {
+    id: "se_friend_50",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What typically happens during the Deployment phase?`,
+    options: [
+      `The finished software is installed in the real environment where users will use it`,
+      `The requirements are gathered for the first time`,
+      `The code is written module by module`,
+      `The system undergoes a feasibility study`
+    ],
+    correct: 0,
+    explanation: ``
+  },
+  {
+    id: "se_friend_51",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following happen during the Deployment phase?`,
+    options: [
+      `A pilot release may be used to test with a small group first`,
+      `Users are trained, and user manuals are prepared`,
+      `Help desks or technical support are set up`,
+      `The software requirements are finalized for the first time`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_52",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `When does Software Maintenance begin?`,
+    options: [
+      `Before requirements gathering`,
+      `After the software is deployed`,
+      `During the design phase`,
+      `During testing only`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_53",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Fixing a crash that happens when users try to log in is an example of which type of
+maintenance?`,
+    options: [
+      `Adaptive Maintenance`,
+      `Corrective Maintenance`,
+      `Perfective Maintenance`,
+      `Preventive Maintenance`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_54",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Updating an app to support a new version of Android or iOS is an example of:`,
+    options: [
+      `Corrective Maintenance`,
+      `Adaptive Maintenance`,
+      `Perfective Maintenance`,
+      `Legal Maintenance`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_55",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Adding an online payment option to an existing school system is an example of:`,
+    options: [
+      `Corrective Maintenance`,
+      `Adaptive Maintenance`,
+      `Perfective Maintenance`,
+      `Operational Maintenance`
+    ],
+    correct: 2,
+    explanation: ``
+  },
+  {
+    id: "se_friend_56",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are key ethical values in Software Engineering mentioned in the lecture?`,
+    options: [
+      `Responsibility`,
+      `Transparency`,
+      `Privacy`,
+      `Fairness`,
+      `Profitability`,
+      `Only A, B, C, and D`,
+      `Only A and B`,
+      `All of the above`
+    ],
+    correct: 5,
+    explanation: ``
+  },
+  {
+    id: "se_friend_57",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What does IEEE mainly focus on, according to the lecture?`,
+    options: [
+      `Computer science education only`,
+      `Hardware, electrical, and computer engineering`,
+      `Legal compliance only`,
+      `Marketing standards`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_58",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What does ACM stand for and primarily focus on?`,
+    options: [
+      `Association for Computing Machinery; computer science, education, and software research`,
+      `American Council for Machinery; hardware manufacturing`,
+      `Association of Certified Managers; project management`,
+      `Association for Computer Marketing`
+    ],
+    correct: 0,
+    explanation: ``
+  },
+  {
+    id: "se_friend_59",
+    topic: "se-module-1",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the 'Software Engineering Code of Ethics and Professional Practice' also known as?`,
+    options: [
+      `The ACM-only code from 2018`,
+      `A joint IEEE/ACM code created in 1999 for software engineers`,
+      `A code created exclusively by the BCS`,
+      `A legal requirement in all countries`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_60",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which organizations/codes are mentioned as providing ethical guidelines relevant to software
+engineering?`,
+    options: [
+      `IEEE Code of Ethics`,
+      `ACM Code of Ethics`,
+      `BCS Code of Conduct (UK)`,
+      `Australian Computer Society (ACS) Code of Ethics`,
+      `IFIP Code of Ethics`,
+      `FIFA Code of Conduct`,
+      `Only A, B, C, D, and E`,
+      `Only A and B`,
+      `All of the above`
+    ],
+    correct: 6,
+    explanation: ``
+  },
+  {
+    id: "se_friend_61",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What does SDLC (Software Development Life Cycle) primarily define?`,
+    options: [
+      `How to execute the phases of software development`,
+      `What phases to follow when developing software`,
+      `Which programming language to use`,
+      `The pricing model for the software`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_62",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What does a Software Process Model primarily define?`,
+    options: [
+      `What phases to follow`,
+      `How to execute the SDLC phases`,
+      `The legal requirements of the project`,
+      `The stakeholders involved`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_63",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are given as examples of Software Process Models in the lecture?`,
+    options: [
+      `Waterfall`,
+      `Spiral`,
+      `Agile`,
+      `Feasibility Study`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_64",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the 'How Are They Connected?' comparison, SDLC is described as:`,
+    options: [
+      `A specific implementation`,
+      `A general structure`,
+      `A type of testing`,
+      `A programming framework`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_65",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the house-building analogy from the lecture recording, what do the SDLC phases represent?`,
+    options: [
+      `The specific brand of materials used`,
+      `The basic steps that never change, regardless of how the house is built`,
+      `The architect's personal preference`,
+      `The cost of the house`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_66",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the house-building analogy, what does the 'software process model' represent?`,
+    options: [
+      `The basic steps of building (foundation, walls, roof)`,
+      `The way those basic steps are carried out (all at once vs. floor by floor)`,
+      `The stakeholders of the house`,
+      `The feasibility study of the house`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_67",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which software process model executes SDLC sequentially, according to the lecture?`,
+    options: [
+      `Agile model`,
+      `Waterfall model`,
+      `Spiral model`,
+      `Incremental model`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_68",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which software process model executes SDLC in iterations (sprints)?`,
+    options: [
+      `Waterfall model`,
+      `V-Model`,
+      `Agile model`,
+      `Classical Waterfall model`
+    ],
+    correct: 2,
+    explanation: ``
+  },
+  {
+    id: "se_friend_69",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `According to the 'Evolution of Software Process Models' table, which descriptions are correctly
+matched to their model?`,
+    options: [
+      `Waterfall Model - Linear and phase-based`,
+      `V-Model - Emphasizes validation and testing at each phase`,
+      `Incremental Model - Software delivered in small parts or versions`,
+      `Spiral Model - Delivered in small parts only, with no risk assessment`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_70",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the Waterfall Model, what is the correct order of phases?`,
+    options: [
+      `Design -> Requirements -> Implementation -> Testing -> Deployment -> Maintenance`,
+      `Requirements -> Design -> Implementation -> Testing -> Deployment -> Maintenance`,
+      `Testing -> Requirements -> Design -> Implementation -> Deployment -> Maintenance`,
+      `Requirements -> Implementation -> Design -> Testing -> Deployment -> Maintenance`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_71",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are true about the Classical Waterfall Model's handling of requirements,
+according to the lecture?`,
+    options: [
+      `Requirements are frozen once gathered and approved`,
+      `There is no way to go back to a previous phase to fix an incorrect requirement`,
+      `Errors are typically only discovered in a later stage (Testing)`,
+      `Requirements can be updated at any time without restriction`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_72",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture recording, which version of the Waterfall Model is actually used in
+industry today?`,
+    options: [
+      `Classical Waterfall Model only`,
+      `Neither version is used anymore`,
+      `Iterative Waterfall Model`,
+      `Both are used equally`
+    ],
+    correct: 2,
+    explanation: ``
+  },
+  {
+    id: "se_friend_73",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is a key limitation of the Waterfall Model mentioned in the lecture?`,
+    options: [
+      `It is too flexible for simple projects`,
+      `It is not suitable for projects where requirements may change later`,
+      `It requires too much testing`,
+      `It cannot be used for any real project`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_74",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture recording, in the Classical Waterfall Model, when do requirement errors
+typically surface?`,
+    options: [
+      `During the requirements phase itself`,
+      `During the design phase`,
+      `During the testing phase, which is too late to fix easily`,
+      `They never surface`
+    ],
+    correct: 2,
+    explanation: ``
+  },
+  {
+    id: "se_friend_75",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which system type is given as a good example for using the Waterfall Model?`,
+    options: [
+      `A rapidly changing social media app`,
+      `Payroll or HR Management systems with stable, well-defined requirements`,
+      `A prototype-based mobile game`,
+      `A defense missile control system`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_76",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the key improvement the Iterative Waterfall Model adds over the Classical Waterfall
+Model?`,
+    options: [
+      `Removing the testing phase`,
+      `Allowing feedback and revisions (going back) between phases`,
+      `Combining design and coding into one phase`,
+      `Skipping the feasibility study`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_77",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `According to the lecture, the Iterative Waterfall Model is suitable when:`,
+    options: [
+      `Requirements are mostly clear, but some minor changes may be needed`,
+      `Client feedback is available at the end of each phase`,
+      `The project is a medium-sized system with moderate risk`,
+      `The project requirements are completely unknown and constantly changing`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_78",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture recording, an experienced team building a common system (e.g.,
+payroll) is well suited to which model?`,
+    options: [
+      `Spiral Model`,
+      `Iterative Waterfall Model`,
+      `Prototyping Model`,
+      `Agile Model`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_79",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the benefit of the 'feedback paths' (back arrows) in the Iterative Waterfall Model?`,
+    options: [
+      `They let teams go back to earlier phases to fix problems found later`,
+      `They remove the need for testing`,
+      `They allow skipping the design phase`,
+      `They automatically fix bugs`
+    ],
+    correct: 0,
+    explanation: ``
+  },
+  {
+    id: "se_friend_80",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `For a Student Record Management System where requirements may change based on
+administrative staff feedback, which model does the lecture suggest?`,
+    options: [
+      `Classical Waterfall Model`,
+      `Iterative Waterfall Model`,
+      `Spiral Model`,
+      `V-Model`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_81",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Why is it called the 'V-Model'?`,
+    options: [
+      `Because it stands for 'Very fast' development`,
+      `Because the diagram of the model forms a V shape`,
+      `Because it was invented by someone named V`,
+      `Because it only has version-based releases`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_82",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the primary focus of the V-Model?`,
+    options: [
+      `Rapid prototyping`,
+      `Testing and validation at every stage of development`,
+      `Risk analysis only`,
+      `Continuous customer feedback`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_83",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the V-Model diagram, what happens on the left side?`,
+    options: [
+      `Testing and validation`,
+      `Planning and designing`,
+      `Deployment`,
+      `Maintenance`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_84",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the V-Model, Requirement Gathering corresponds to which testing type on the right side?`,
+    options: [
+      `Unit Testing`,
+      `Integration Testing`,
+      `System Testing`,
+      `Acceptance Testing`
+    ],
+    correct: 3,
+    explanation: ``
+  },
+  {
+    id: "se_friend_85",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `In the V-Model diagram, which of the following are correct development-to-testing pairings?`,
+    options: [
+      `Module Design <-> Unit Testing`,
+      `Software Design <-> Integration Testing`,
+      `System Analysis <-> System Testing`,
+      `Requirement Gathering <-> Coding`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_86",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture recording, when do QA engineers typically begin their work in a normal
+SDLC, compared to the V-Model?`,
+    options: [
+      `Normally they start at the same time as developers in both cases`,
+      `Normally they start later (during testing), but in the V-Model they work in parallel with developers`,
+      `In the V-Model, QA engineers work only after deployment`,
+      `QA engineers are not needed in the V-Model`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_87",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the V-Model, what do QA engineers create immediately after reviewing the SRS (Software
+Requirements Specification) document?`,
+    options: [
+      `The final test report`,
+      `User acceptance test plans and test cases`,
+      `The source code`,
+      `The deployment plan`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_88",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which types of systems is the V-Model best suited for, according to the lecture?`,
+    options: [
+      `Simple prototypes`,
+      `Safety-critical systems like medical devices and automotive systems`,
+      `Small social media apps`,
+      `Quick internal tools`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_89",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the main purpose of the Prototyping Model?`,
+    options: [
+      `To deliver the final product as quickly as possible without feedback`,
+      `To build a quick, rough version of the system to gather accurate feedback before building the final`,
+      `To skip requirements gathering entirely`,
+      `To focus only on risk analysis`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_90",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `What are the steps in the Prototyping Model, according to the lecture?`,
+    options: [
+      `Gather basic requirements`,
+      `Build a quick prototype`,
+      `Show it to the user and get feedback`,
+      `Immediately deploy the prototype as the final system without any changes`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_91",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture recording, what typically happens to the prototype once requirements
+are correctly understood?`,
+    options: [
+      `It is delivered to the client as the final system`,
+      `It is usually discarded, and the real system is built from scratch`,
+      `It is sold separately as a product`,
+      `It replaces the SRS document`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_92",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Why might a client struggle to clearly explain their requirements, according to the lecture
+recording?`,
+    options: [
+      `They are intentionally hiding information`,
+      `They may not be technically sound or computer literate`,
+      `They always know exactly what they want`,
+      `They prefer written specifications only`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_93",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What example is given in the lecture for using the Prototyping Model?`,
+    options: [
+      `A payroll system with stable requirements`,
+      `A university mobile app, using a sample screen to get student feedback`,
+      `A missile guidance system`,
+      `A hospital radiation therapy machine`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_94",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are reasons to use the Prototyping Model, according to the lecture?`,
+    options: [
+      `Helps understand what the user really wants`,
+      `Saves time by avoiding big mistakes`,
+      `Great for projects where requirements are unclear or may change`,
+      `Best for projects with completely fixed, well-known requirements`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_95",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the Prototyping Model, what allows the client to explain their needs more clearly?`,
+    options: [
+      `Reading a written specification document`,
+      `Interacting with a working dummy version of the system`,
+      `Attending a lecture on software engineering`,
+      `Reviewing the final source code`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_96",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is a key risk when using the Prototyping Model, according to the model comparison table?`,
+    options: [
+      `Requirements are always frozen`,
+      `The prototype may be mistaken as the final product, leading to scope creep`,
+      `It requires too much upfront planning`,
+      `It cannot involve the customer at all`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_97",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the Incremental Model, how is the system developed?`,
+    options: [
+      `All at once in a single release`,
+      `Step by step in small parts called increments`,
+      `Only through risk analysis loops`,
+      `Exclusively through a prototype`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_98",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the Incremental Model, what does each increment go through?`,
+    options: [
+      `Only the testing phase`,
+      `The entire SDLC (Requirements -> Design -> Implementation -> Testing -> Deployment)`,
+      `Only the design phase`,
+      `Only requirements gathering`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_99",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What real-world example is used to illustrate the Incremental Model?`,
+    options: [
+      `Therac-25 radiation machine`,
+      `Windows operating system (Windows 7 -> 8 -> 10 -> 11)`,
+      `A single payroll system release`,
+      `The Ariane 5 rocket`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_100",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `According to the lecture, the Incremental Model is suitable when:`,
+    options: [
+      `Working on very large projects`,
+      `Most requirements are known, but the system needs to be developed in phases`,
+      `Quick delivery of working features and early user feedback is needed`,
+      `The project is extremely simple with only one small function`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_101",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture recording, why might a company use the Incremental Model for a broad,
+general-audience product (like an operating system)?`,
+    options: [
+      `Because it targets one specific client with fixed needs`,
+      `Because it will be used by many different people, and functions can be released gradually`,
+      `Because it avoids all testing`,
+      `Because it requires no requirements gathering`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_102",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the Incremental Model, what can happen to earlier increments while later ones are being
+developed?`,
+    options: [
+      `They cannot be changed at all`,
+      `They can be improved based on customer feedback`,
+      `They are deleted`,
+      `They are merged into the final release only`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_103",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What does each 'increment' add to the system, according to the lecture?`,
+    options: [
+      `A completely new, unrelated system`,
+      `New features on top of the previous increment`,
+      `Nothing; increments are identical`,
+      `Only bug fixes, never new features`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_104",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the Spiral Model best described as?`,
+    options: [
+      `A purely linear model`,
+      `A risk-focused and iterative approach combining Waterfall and Prototyping features`,
+      `A model with no testing at all`,
+      `A model used only for small, simple projects`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_105",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `What are the four main sections (quadrants) of each loop in the Spiral Model?`,
+    options: [
+      `Planning`,
+      `Risk Analysis`,
+      `Engineering`,
+      `Evaluation`,
+      `Deployment only`,
+      `Only A, B, C, and D`,
+      `Only A and B`,
+      `All of the above`
+    ],
+    correct: 5,
+    explanation: ``
+  },
+  {
+    id: "se_friend_106",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What happens during the 'Risk Analysis' quadrant of a Spiral Model loop?`,
+    options: [
+      `The system is deployed to all users`,
+      `Potential risks are identified and steps are taken to reduce or eliminate them`,
+      `The final code is written`,
+      `The client signs the contract`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_107",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What happens during the 'Evaluation' quadrant of a Spiral Model loop?`,
+    options: [
+      `The customer reviews the work done, and the next loop is planned based on feedback`,
+      `The requirements are frozen permanently`,
+      `The project is cancelled`,
+      `Only unit testing occurs`
+    ],
+    correct: 0,
+    explanation: ``
+  },
+  {
+    id: "se_friend_108",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `According to the lecture, the Spiral Model is recommended for:`,
+    options: [
+      `Large, complex, or high-risk projects`,
+      `Projects where requirements are not fully known and may change`,
+      `Projects needing frequent reviews, testing, and updates`,
+      `Very small, low-risk, one-person projects`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_109",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which types of systems are given as examples where the Spiral Model is appropriate?`,
+    options: [
+      `Defense systems`,
+      `Aerospace / NASA-related systems`,
+      `Missile guidance software`,
+      `Simple personal blogs`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_110",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture recording, why is the Spiral Model described as a 'combination of
+several models'?`,
+    options: [
+      `Because it uses only Agile principles`,
+      `Because it incorporates SDLC, prototyping, and incremental delivery within its loops`,
+      `Because it has no relationship to any other model`,
+      `Because it replaces the need for SDLC entirely`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_111",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is a key characteristic of the Agile Model?`,
+    options: [
+      `Rigid, one-time delivery with no customer involvement`,
+      `Iterative and incremental development with team collaboration, customer involvement, and flexibility`,
+      `A model that freezes requirements at the start`,
+      `A model used only for hardware development`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_112",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is a 'sprint' in the Agile Model?`,
+    options: [
+      `A single long phase lasting an entire year`,
+      `A short, fixed-length cycle (usually 1-4 weeks) that delivers a working product`,
+      `A type of testing document`,
+      `A stakeholder meeting held once`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_113",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are the two most popular Agile frameworks mentioned in the lecture?`,
+    options: [
+      `Scrum`,
+      `Kanban`,
+      `Waterfall`,
+      `V-Model`,
+      `Only A and B`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_114",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the foundational document that Agile values and principles are based on?`,
+    options: [
+      `The SWEBOK Guide`,
+      `The Agile Manifesto (2001)`,
+      `The ACM Code of Ethics`,
+      `IEEE Software Standard 730`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_115",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture, what makes Agile increasingly popular among companies today?`,
+    options: [
+      `It avoids customer feedback entirely`,
+      `It allows customers to change requirements frequently and get quick releases`,
+      `It requires no trained team members`,
+      `It eliminates the need for testing`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_116",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is required for a development team to successfully follow Agile methodology, according to
+the lecture recording?`,
+    options: [
+      `No special preparation is needed`,
+      `The team needs to be trained in Agile principles`,
+      `The team must use only the Waterfall model first`,
+      `The team must avoid all customer contact`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_117",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following are described as key roles in the Scrum framework?`,
+    options: [
+      `Product Owner - chooses what to build`,
+      `Scrum Master - guides the team`,
+      `Team - builds the product`,
+      `Business Analyst - sole owner of testing`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_118",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which model is described as 'Flow-based' with 'Continuous' delivery, best suited for
+maintenance and support workflows in the Model Comparison table?`,
+    options: [
+      `Scrum (Agile)`,
+      `Kanban (Agile)`,
+      `Spiral`,
+      `V-Model`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_119",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "PDF",
+    question: `In the COVID-19 vaccination appointment system activity, which models were ruled out, and why
+(based on the lecture's reasoning)?`,
+    options: [
+      `Waterfall Model - requires all requirements upfront, no early delivery, no flexible changes`,
+      `V-Model - too heavy on testing, not fast enough for an urgent rollout`,
+      `Prototyping Model - too time-consuming to build a prototype before starting real development`,
+      `Incremental Model - ruled out because it cannot handle changing requirements`,
+      `Only A, B, and C`,
+      `Only B and C`,
+      `All of the above`
+    ],
+    correct: 4,
+    explanation: ``
+  },
+  {
+    id: "se_friend_120",
+    topic: "se-module-2",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture's analysis, which model was identified as the best choice for the
+COVID-19 vaccination appointment system scenario, and why?`,
+    options: [
+      `Spiral Model, because it focuses purely on risk`,
+      `Incremental Model, because it enables early delivery, handles changing requirements, and allows`,
+      `Classical Waterfall Model, because requirements were fully known in advance`,
+      `V-Model, because heavy testing was the top priority`
+    ],
+    correct: 1,
+    explanation: ``
+  },
+  {
+    id: "se_friend_121",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In a traditional software development model, what typically happens if a customer requests
+a major requirement change after 6 months into a 12-month project?`,
+    options: [
+      `The change is implemented instantly with no cost impact`,
+      `Rework is required, costs increase, and delays can occur`,
+      `The project automatically switches to an Agile approach`,
+      `The change is added to the next sprint backlog`
+    ],
+    correct: 1,
+    explanation: `Traditional models struggle with late changes because significant work is already complete, leading to rework, higher cost, and delays.`
+  },
+  {
+    id: "se_friend_122",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following best describes the Agile approach to requirement changes
+compared to the traditional approach?`,
+    options: [
+      `Agile discourages any changes once a sprint has started`,
+      `Agile treats changing requirements as an obstacle to avoid entirely`,
+      `Agile requires a full 12-month plan before development begins`,
+      `Agile embraces changing requirements and adapts more effectively than traditional models`
+    ],
+    correct: 3,
+    explanation: `Agile was introduced specifically to handle changing requirements more effectively than traditional models.`
+  },
+  {
+    id: "se_friend_123",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture, which characteristic is associated with the “Traditional Way” of
+software development?`,
+    options: [
+      `Lack of transparency`,
+      `Highest value delivery`,
+      `High quality within the shortest time`,
+      `Frequent short iterations`
+    ],
+    correct: 0,
+    explanation: `The Traditional Way is described as high cost, resistant to change, and lacking transparency.`
+  },
+  {
+    id: "se_friend_124",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of these is listed as a benefit of the “Modern Way” (Agile) compared to Traditional
+development?`,
+    options: [
+      `Less or no iterations`,
+      `High cost`,
+      `Highest value, high quality, shortest time`,
+      `Changes are not acceptable`
+    ],
+    correct: 2,
+    explanation: `The Modern Way delivers the highest value and quality within the shortest time, unlike the Traditional Way.`
+  },
+  {
+    id: "se_friend_125",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `A customer originally requested a simple online shopping system, but after 6 months
+realizes they also need mobile support and online payments. In a traditional development
+approach, what is the most likely consequence?`,
+    options: [
+      `These features are added for free since planning was flexible`,
+      `These changes are costly and difficult to implement because development is already underway`,
+      `The system automatically detects the new requirement`,
+      `Nothing changes since traditional models are always flexible`
+    ],
+    correct: 1,
+    explanation: `This is the exact example used in the lecture to show why late changes are costly and difficult in traditional development.`
+  },
+  {
+    id: "se_friend_126",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following is NOT one of the challenges of traditional software development
+mentioned in the lecture?`,
+    options: [
+      `Errors may be discovered late`,
+      `Customers may not see the system until the end of the project`,
+      `Teams may build features that users no longer need`,
+      `Software is delivered in small, frequent increments`
+    ],
+    correct: 3,
+    explanation: `Delivering software in small, frequent increments is how Agile helps, not a traditional challenge.`
+  },
+  {
+    id: "se_friend_127",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `How does Agile help address the problem of “requirements may change during
+development”?`,
+    options: [
+      `By adapting to changing requirements through iterative delivery`,
+      `By avoiding customer contact until the final release`,
+      `By locking requirements at the start and never changing them`,
+      `By extending the project timeline indefinitely`
+    ],
+    correct: 0,
+    explanation: `Agile helps by delivering in increments and adapting to changing requirements as they arise.`
+  },
+  {
+    id: "se_friend_128",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `The Agile Manifesto was introduced to the software industry around which year, as
+mentioned in the lecture?`,
+    options: [
+      `1995`,
+      `1980`,
+      `2001`,
+      `2010`
+    ],
+    correct: 2,
+    explanation: `The lecturer states the Agile Manifesto came into the industry around 2000-2001.`
+  },
+  {
+    id: "se_friend_129",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the main difference between “Values” and “Principles” in the Agile Manifesto, as
+explained in the lecture?`,
+    options: [
+      `Values are specific coding techniques, while principles are business goals`,
+      `Values represent the core philosophy, while principles guide how values are applied in practice`,
+      `Values apply only to Scrum, while principles apply only to Kanban`,
+      `There is no difference; the terms are interchangeable`
+    ],
+    correct: 1,
+    explanation: `Values define the philosophy (e.g., wanting to be healthy); principles are the actions that apply that philosophy in practice.`
+  },
+  {
+    id: "se_friend_130",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `How many key Values and Principles does the Agile Manifesto define, according to the
+lecture?`,
+    options: [
+      `3 Values and 10 Principles`,
+      `5 Values and 15 Principles`,
+      `4 Values and 10 Principles`,
+      `4 Values and 12 Principles`
+    ],
+    correct: 3,
+    explanation: `The Agile Manifesto defines 4 key Values and 12 Principles.`
+  },
+  {
+    id: "se_friend_131",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which Agile value emphasizes team collaboration and including customers in the
+process?`,
+    options: [
+      `Individuals and Interactions`,
+      `Working Software`,
+      `Contract Negotiation`,
+      `Following a Plan`
+    ],
+    correct: 0,
+    explanation: `Individuals and Interactions emphasizes team collaboration and customer involvement over rigid processes and tools.`
+  },
+  {
+    id: "se_friend_132",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the Agile Manifesto's comparison table, “Working Software” in Agile is valued over
+which traditional practice?`,
+    options: [
+      `Process and Tools`,
+      `Contract Negotiation`,
+      `Comprehensive Documentation`,
+      `Following a Plan`
+    ],
+    correct: 2,
+    explanation: `Working Software is valued over Comprehensive Documentation in the Agile Manifesto.`
+  },
+  {
+    id: "se_friend_133",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which traditional practice does “Responding to Change” replace in the Agile value
+comparison?`,
+    options: [
+      `Comprehensive Documentation`,
+      `Following a Plan`,
+      `Contract Negotiation`,
+      `Process and Tools`
+    ],
+    correct: 1,
+    explanation: `Responding to Change is valued over Following a Plan.`
+  },
+  {
+    id: "se_friend_134",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which Agile methodology organizes work into short, time-boxed iterations known as
+Sprints?`,
+    options: [
+      `Kanban`,
+      `Extreme Programming`,
+      `Lean Software Development`,
+      `Scrum`
+    ],
+    correct: 3,
+    explanation: `Scrum organizes work into short iterations called Sprints, typically one to four weeks.`
+  },
+  {
+    id: "se_friend_135",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which Agile methodology is primarily represented using a visual board to manage and
+track work?`,
+    options: [
+      `Kanban`,
+      `Scrum`,
+      `Lean Software Development`,
+      `Extreme Programming`
+    ],
+    correct: 0,
+    explanation: `Kanban uses a visual board (with columns and sticky notes/cards) to track the progress of work.`
+  },
+  {
+    id: "se_friend_136",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Extreme Programming (XP) primarily focuses on which of the following?`,
+    options: [
+      `Eliminating waste and maximizing value`,
+      `Visual tracking of tasks on a board`,
+      `Engineering practices and code quality`,
+      `Defining a Sprint Goal`
+    ],
+    correct: 2,
+    explanation: `XP focuses on engineering practices and ensuring high code quality.`
+  },
+  {
+    id: "se_friend_137",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which methodology's main focus is “eliminating waste and maximizing value”?`,
+    options: [
+      `Scrum`,
+      `Lean Software Development`,
+      `Extreme Programming`,
+      `Kanban`
+    ],
+    correct: 1,
+    explanation: `Lean Software Development focuses on eliminating waste and maximizing the value delivered.`
+  },
+  {
+    id: "se_friend_138",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture, roughly how long does a typical Scrum sprint last?`,
+    options: [
+      `6 to 12 months`,
+      `A single day`,
+      `Exactly one year`,
+      `One to four weeks`
+    ],
+    correct: 3,
+    explanation: `Sprints usually last one to four weeks, commonly two to three weeks per the lecturer.`
+  },
+  {
+    id: "se_friend_139",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which statement best distinguishes Agile “methodologies” from Agile “practices”?`,
+    options: [
+      `Methodologies provide the overall structure for managing a project, while practices are specific`,
+      `Methodologies are specific coding techniques; practices define the overall project structure`,
+      `Methodologies and practices mean exactly the same thing`,
+      `Practices are only used in Scrum, while methodologies are used in all frameworks`
+    ],
+    correct: 0,
+    explanation: `Methodologies (e.g., Scrum, Kanban) give overall project structure; practices (e.g., TDD, Pair Programming) are specific implementation techniques.`
+  },
+  {
+    id: "se_friend_140",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In Test-Driven Development (TDD), what is the correct sequence of actions?`,
+    options: [
+      `Write the code first, then write tests, then refactor`,
+      `Deploy the software, then write tests`,
+      `Write the tests before writing the code`,
+      `Skip testing entirely to save time`
+    ],
+    correct: 2,
+    explanation: `In TDD, test cases are written first, and code is then written to satisfy those tests.`
+  },
+  {
+    id: "se_friend_141",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is a key benefit of Pair Programming as described in the lecture?`,
+    options: [
+      `It eliminates the need for any testing`,
+      `Two developers work together, helping catch bugs and improve code quality early`,
+      `It replaces the need for a Scrum Master`,
+      `It is only used in the Waterfall model`
+    ],
+    correct: 1,
+    explanation: `Pair programming lets two developers catch bugs and improve quality collaboratively and quickly.`
+  },
+  {
+    id: "se_friend_142",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Behavior-Driven Development (BDD) primarily focuses on defining system behavior using:`,
+    options: [
+      `Complex technical algorithms only understandable by developers`,
+      `Database schema diagrams`,
+      `Sprint burndown metrics`,
+      `Business-focused scenarios`
+    ],
+    correct: 3,
+    explanation: `BDD defines system behavior using business-focused scenarios understandable by both business and technical people.`
+  },
+  {
+    id: "se_friend_143",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following best defines Scrum?`,
+    options: [
+      `An Agile framework that organizes work into Sprints and emphasizes team collaboration`,
+      `A programming language used for Agile development`,
+      `A type of documentation used only in Waterfall projects`,
+      `A single developer working independently without a team`
+    ],
+    correct: 0,
+    explanation: `Scrum is an Agile framework that divides work into Sprints and relies on team collaboration.`
+  },
+  {
+    id: "se_friend_144",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Who is primarily responsible for representing the customer and prioritizing requirements
+in a Scrum team?`,
+    options: [
+      `Scrum Master`,
+      `Developers`,
+      `Project Manager`,
+      `Product Owner`
+    ],
+    correct: 3,
+    explanation: `The Product Owner represents the customer/stakeholders and prioritizes requirements.`
+  },
+  {
+    id: "se_friend_145",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which Scrum role is described as a “service leader” who supports the team rather than
+assigning tasks?`,
+    options: [
+      `Product Owner`,
+      `Scrum Master`,
+      `Developer`,
+      `Business Analyst`
+    ],
+    correct: 1,
+    explanation: `The Scrum Master acts as a service leader/facilitator, not a task-assigning manager.`
+  },
+  {
+    id: "se_friend_146",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is a common misconception about the Scrum Master's role, as clarified in the
+lecture?`,
+    options: [
+      `That the Scrum Master writes all the code`,
+      `That the Scrum Master only works with customers`,
+      `That the Scrum Master is the same as a traditional project manager or team leader`,
+      `That the Scrum Master owns the product backlog`
+    ],
+    correct: 2,
+    explanation: `The lecture explicitly clarifies the Scrum Master is not a traditional project manager or team lead.`
+  },
+  {
+    id: "se_friend_147",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which role is primarily responsible for designing, developing, testing, and delivering a
+working product increment each sprint?`,
+    options: [
+      `Developers`,
+      `Product Owner`,
+      `Scrum Master`,
+      `Business Analyst`
+    ],
+    correct: 0,
+    explanation: `Developers design, build, test, and deliver the working product increment each sprint.`
+  },
+  {
+    id: "se_friend_148",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Who has the authority to accept or reject completed work at the end of a sprint?`,
+    options: [
+      `Scrum Master`,
+      `Developers`,
+      `Client's IT department`,
+      `Product Owner`
+    ],
+    correct: 3,
+    explanation: `The Product Owner accepts or rejects completed work based on whether it meets requirements.`
+  },
+  {
+    id: "se_friend_149",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `According to the lecture, the Product Owner is NOT the same as which of the following?`,
+    options: [
+      `A stakeholder representative`,
+      `The actual client who sponsors the software`,
+      `The person who maintains the product backlog`,
+      `A member of the Scrum team`
+    ],
+    correct: 1,
+    explanation: `The lecture stresses the Product Owner is not the actual client; the client sponsors the software, while the PO represents customers/stakeholders.`
+  },
+  {
+    id: "se_friend_150",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the “key focus” of the Scrum Master role as stated in the lecture materials?`,
+    options: [
+      `Maximizing the value of the product`,
+      `Delivering working software`,
+      `Helping the team work effectively`,
+      `Writing user stories`
+    ],
+    correct: 2,
+    explanation: `The Scrum Master's key focus is helping the team work effectively.`
+  },
+  {
+    id: "se_friend_151",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which Scrum artifact contains a prioritized list of all requirements, features, and
+improvements for the product?`,
+    options: [
+      `Product Backlog`,
+      `Sprint Backlog`,
+      `Burn Down Chart`,
+      `Definition of Done`
+    ],
+    correct: 0,
+    explanation: `The Product Backlog is the prioritized list of all requirements, features, and improvements.`
+  },
+  {
+    id: "se_friend_152",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the Product Backlog, where do the highest-value items typically appear?`,
+    options: [
+      `At the bottom`,
+      `In a random order`,
+      `Only in Release 3`,
+      `At the top`
+    ],
+    correct: 3,
+    explanation: `High-value items appear at the top of the Product Backlog; lower-valued items toward the bottom.`
+  },
+  {
+    id: "se_friend_153",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Why does the Product Backlog continue to change and evolve throughout a project?`,
+    options: [
+      `Because it is deleted and recreated every sprint`,
+      `Because customer feedback and new requirements are incorporated after each increment`,
+      `Because the Scrum Master edits it randomly`,
+      `Because it must match the Sprint Backlog exactly at all times`
+    ],
+    correct: 1,
+    explanation: `The Product Backlog evolves as customer feedback and new requirements are added after each increment.`
+  },
+  {
+    id: "se_friend_154",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the Sprint Backlog best described as?`,
+    options: [
+      `A complete list of every requirement ever proposed for the product`,
+      `A chart showing remaining work versus time`,
+      `A subset of the Product Backlog containing items selected for a specific sprint`,
+      `A document only the client can edit`
+    ],
+    correct: 2,
+    explanation: `The Sprint Backlog is a subset of the Product Backlog for the items selected for a particular sprint.`
+  },
+  {
+    id: "se_friend_155",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `A Sprint Burn Down Chart typically plots which two variables?`,
+    options: [
+      `Work remaining vs. time`,
+      `Team salary vs. sprint number`,
+      `Number of bugs vs. number of developers`,
+      `Customer satisfaction vs. cost`
+    ],
+    correct: 0,
+    explanation: `A burn down chart is a graphical representation of work remaining versus time.`
+  },
+  {
+    id: "se_friend_156",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In a typical Sprint Burn Down Chart, which axis usually shows the outstanding work
+(backlog)?`,
+    options: [
+      `The horizontal axis`,
+      `Neither axis; it is shown as a pie chart`,
+      `It alternates each sprint`,
+      `The vertical axis`
+    ],
+    correct: 3,
+    explanation: `The outstanding work/backlog is usually on the vertical axis, with time along the horizontal axis.`
+  },
+  {
+    id: "se_friend_157",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the standard template for writing a user story?`,
+    options: [
+      `As a , I will because`,
+      `As a , I want to so that`,
+      `As a , I verify using`,
+      `As a , I assign to`
+    ],
+    correct: 1,
+    explanation: `The standard user story template is: As a , I want to so that .`
+  },
+  {
+    id: "se_friend_158",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following is a well-written user story according to the lecture's criteria?`,
+    options: [
+      `As a customer, I want a database table to store account balances.`,
+      `As a member, I want an SQL query to search books.`,
+      `As a customer, I want to view my account balance so that I can monitor my finances.`,
+      `As a user, I want to generate reports.`
+    ],
+    correct: 2,
+    explanation: `This option correctly identifies a user role, a goal, and a benefit, without technical jargon.`
+  },
+  {
+    id: "se_friend_159",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Why is the user story “As a customer, I want a database table to store account balances”
+considered a poor example?`,
+    options: [
+      `It is too short`,
+      `It does not mention “As a”`,
+      `It includes a technical implementation detail (database) instead of focusing on user value`,
+      `It has too many benefits listed`
+    ],
+    correct: 2,
+    explanation: `User stories should avoid technical implementation details like databases and focus on user value.`
+  },
+  {
+    id: "se_friend_160",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Why is “As a user, I want to generate reports” considered an incomplete user story?`,
+    options: [
+      `It is missing the benefit (“so that...”) explaining why the user wants this`,
+      `It does not specify a technical database structure`,
+      `It uses too many words`,
+      `It does not name a specific report type`
+    ],
+    correct: 0,
+    explanation: `The story lacks the “so that...” clause explaining the benefit to the user.`
+  },
+  {
+    id: "se_friend_161",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are challenges associated with traditional software development,
+as discussed in the lecture?`,
+    options: [
+      `Software is delivered in short, frequent increments`,
+      `Requirements may change during development`,
+      `Customer feedback is gathered and incorporated after every iteration`,
+      `Errors may be discovered late in the process`,
+      `Teams may build features that users no longer need`
+    ],
+    correct: 1,
+    explanation: `Frequent increments and continuous feedback describe Agile, not traditional challenges.`
+  },
+  {
+    id: "se_friend_162",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are the 4 key values defined in the Agile Manifesto?`,
+    options: [
+      `Individuals and Interactions`,
+      `Comprehensive Documentation`,
+      `Customer Collaboration`,
+      `Contract Negotiation`,
+      `Responding to Change`
+    ],
+    correct: 0,
+    explanation: `Comprehensive Documentation and Contract Negotiation are the traditional counterparts, not Agile values.`
+  },
+  {
+    id: "se_friend_163",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are recognized Agile development methodologies mentioned in the
+lecture?`,
+    options: [
+      `Scrum`,
+      `Kanban`,
+      `Waterfall`,
+      `Extreme Programming (XP)`,
+      `Spiral Model`
+    ],
+    correct: 0,
+    explanation: `Waterfall and Spiral are traditional software process models, not Agile methodologies.`
+  },
+  {
+    id: "se_friend_164",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are considered Agile practices (as opposed to methodologies) in
+the lecture?`,
+    options: [
+      `Test-Driven Development (TDD)`,
+      `Scrum`,
+      `Pair Programming`,
+      `Behavior-Driven Development (BDD)`,
+      `Kanban`
+    ],
+    correct: 0,
+    explanation: `Scrum and Kanban are methodologies (overall structure), while TDD, Pair Programming, and BDD are implementation practices.`
+  },
+  {
+    id: "se_friend_165",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are among the three main Scrum roles?`,
+    options: [
+      `Project Manager`,
+      `Business Analyst`,
+      `Product Owner`,
+      `Scrum Master`,
+      `Developers`
+    ],
+    correct: 2,
+    explanation: `Project Manager and Business Analyst are not defined Scrum roles; the three Scrum roles are Product Owner, Scrum Master, and Developers.`
+  },
+  {
+    id: "se_friend_166",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are responsibilities of the Product Owner?`,
+    options: [
+      `Facilitate daily scrum meetings and remove obstacles for the team`,
+      `Define and prioritize requirements`,
+      `Design, develop, and test the software code`,
+      `Maintain the Product Backlog`,
+      `Accept or reject completed work`
+    ],
+    correct: 1,
+    explanation: `Facilitating scrum activities is the Scrum Master's job; designing/coding is the Developers' job.`
+  },
+  {
+    id: "se_friend_167",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are responsibilities of the Scrum Master?`,
+    options: [
+      `Facilitate Scrum activities`,
+      `Promote collaboration and communication among the team`,
+      `Define and prioritize the product backlog`,
+      `Design and develop the software code`,
+      `Remove obstacles that affect the team's progress`
+    ],
+    correct: 0,
+    explanation: `Prioritizing the backlog is the Product Owner's job; coding is the Developers' job.`
+  },
+  {
+    id: "se_friend_168",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are the three main Scrum artifacts?`,
+    options: [
+      `Product Backlog`,
+      `Definition of Done`,
+      `Sprint Backlog`,
+      `Burn Down Chart`,
+      `Release Plan`
+    ],
+    correct: 0,
+    explanation: `The lecture names Product Backlog, Sprint Backlog, and Burn Down Chart as the three main Scrum artifacts.`
+  },
+  {
+    id: "se_friend_169",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are among the four main Scrum activities discussed in the lecture?`,
+    options: [
+      `Sprint Planning`,
+      `Product Backlog Refinement`,
+      `Daily Scrum`,
+      `Sprint Review`,
+      `Sprint Retrospective`
+    ],
+    correct: 0,
+    explanation: `The lecture lists Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective as the four main Scrum activities.`
+  },
+  {
+    id: "se_friend_170",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following statements about Sprint Planning are correct?`,
+    options: [
+      `It is conducted at the beginning of each Sprint`,
+      `Its purpose includes selecting Product Backlog items for the Sprint`,
+      `It results in a clear plan for the upcoming Sprint`,
+      `It is conducted after the Sprint Review to reflect on team performance`,
+      `It includes defining the Sprint Goal`
+    ],
+    correct: 0,
+    explanation: `Reflecting on team performance after the Sprint Review describes the Sprint Retrospective, not Sprint Planning.`
+  },
+  {
+    id: "se_friend_171",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are true about the Daily Scrum?`,
+    options: [
+      `It typically lasts around 15 minutes`,
+      `It is held once per month`,
+      `It addresses what was completed, what's next, and any obstacles`,
+      `It is used to monitor daily progress`,
+      `It replaces the need for a Sprint Review`
+    ],
+    correct: 0,
+    explanation: `The Daily Scrum is held daily (not monthly) and does not replace the Sprint Review.`
+  },
+  {
+    id: "se_friend_172",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are purposes of the Sprint Review?`,
+    options: [
+      `Demonstrate completed work`,
+      `Gather stakeholder feedback`,
+      `Reflect only on team performance with no stakeholder involvement`,
+      `Review progress toward the Sprint Goal`,
+      `Update the Product Backlog if needed`
+    ],
+    correct: 0,
+    explanation: `Reflecting only on team performance without stakeholders describes the Sprint Retrospective, not the Sprint Review.`
+  },
+  {
+    id: "se_friend_173",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are true about the Sprint Retrospective?`,
+    options: [
+      `It focuses on the team and the process`,
+      `It is conducted after the Sprint Review`,
+      `Its main purpose is to demonstrate the product to the client`,
+      `It aims to identify what went well and areas for improvement`,
+      `It results in a plan for improvements in the next Sprint`
+    ],
+    correct: 0,
+    explanation: `Demonstrating the product to the client is the purpose of the Sprint Review, not the Retrospective.`
+  },
+  {
+    id: "se_friend_174",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are elements that should be included in a well-written user story?`,
+    options: [
+      `A clearly identified user role`,
+      `Technical implementation details like database structures`,
+      `A description of the goal the user wants to achieve`,
+      `An explanation of the benefit (“so that...”)`,
+      `SQL queries or code snippets describing functionality`
+    ],
+    correct: 0,
+    explanation: `Good user stories avoid technical implementation details such as databases or SQL queries.`
+  },
+  {
+    id: "se_friend_175",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Based on the burndown chart activity (120 tasks over 5 days: Day1=20, Day2=50, Day3=0,
+Day4=20, Day5=30), which of the following statements are correct?`,
+    options: [
+      `The ideal burn down velocity is 24 tasks per day`,
+      `Day 2 had the highest productivity with 50 tasks completed`,
+      `Day 3 had the lowest productivity with 0 tasks completed`,
+      `The team completed all 120 tasks by the end of Day 5`,
+      `The team completed only 100 tasks in total`
+    ],
+    correct: 0,
+    explanation: `120 tasks / 5 days = 24 tasks/day ideal velocity. 20+50+0+20+30 = 120 tasks total, so the team completed all tasks.`
+  },
+  {
+    id: "se_friend_176",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following correctly match an Agile value to what it replaces in the Traditional
+way?`,
+    options: [
+      `Individuals and Interactions over Process and Tools`,
+      `Working Software over Comprehensive Documentation`,
+      `Customer Collaboration over Contract Negotiation`,
+      `Responding to Change over Comprehensive Documentation`,
+      `Working Software over Following a Plan`
+    ],
+    correct: 0,
+    explanation: `Responding to Change is valued over Following a Plan (not Comprehensive Documentation), and Working Software is valued over Comprehensive Documentation (not Following a Plan) — D and E swap the pairs incorrectly.`
+  },
+  {
+    id: "se_friend_177",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In the Hospital Appointment Management System example, which of the following user
+stories were assigned HIGH priority in the initial Product Backlog?`,
+    options: [
+      `As a patient, I want to register an account so that I can use the appointment system.`,
+      `As a patient, I want to receive appointment reminders so that I do not miss my appointment.`,
+      `As a patient, I want to search for doctors by specialization so that I can find the correct doctor.`,
+      `As a doctor, I want to view my daily appointments so that I can prepare for consultations.`,
+      `As a patient, I want to book an appointment so that I can reserve a consultation time.`
+    ],
+    correct: 0,
+    explanation: `Registration, doctor search, and appointment booking were High priority; reminders were Low and the doctor dashboard was Medium priority.`
+  },
+  {
+    id: "se_friend_178",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are valid reasons given in the lecture for why Sprint 1 of the
+Hospital Appointment System focused on registration and doctor search?`,
+    options: [
+      `They have the highest business value`,
+      `They are core system functionality needed for the system to operate`,
+      `They are the lowest-priority items in the backlog`,
+      `They form a foundation for future features`,
+      `They allow the team to deliver a working product early`
+    ],
+    correct: 0,
+    explanation: `These items were selected because they are high-value, core, foundational, and allow early delivery — not because they were low priority.`
+  },
+  {
+    id: "se_friend_179",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following statements accurately describe the difference between Agile
+“methodologies” and “practices”?`,
+    options: [
+      `Methodologies provide the overall structure for managing a project`,
+      `Practices are specific techniques used during implementation`,
+      `TDD and Pair Programming are examples of methodologies`,
+      `Scrum and Kanban are examples of methodologies`,
+      `Practices provide the overall project structure while methodologies focus on implementation`
+    ],
+    correct: 0,
+    explanation: `TDD and Pair Programming are practices, not methodologies, and option E reverses the correct definitions.`
+  },
+  {
+    id: "se_friend_180",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are true regarding the difference between a Client and a Product
+Owner, as clarified in the lecture?`,
+    options: [
+      `The Product Owner is the same person as the Client`,
+      `The Client sponsors the software and communicates the initial requirements`,
+      `The Product Owner represents customers and stakeholders within the Scrum team`,
+      `The Product Owner prioritizes the requirements after they are collected`,
+      `The Client is always a member of the development team`
+    ],
+    correct: 1,
+    explanation: `The lecture explicitly states the Product Owner is not the same person as the client.`
   }
 ];
