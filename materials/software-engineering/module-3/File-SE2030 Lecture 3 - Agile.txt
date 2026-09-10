@@ -1,0 +1,1845 @@
+Let's get started. So today we are learning about Agile. So, so far in the last lecture,
+
+we have already learned about other software models. So what are the other software models?
+
+Waterfall model, and then iterative model, prototype model, V model, spiral model,
+
+and then incremental model. And then we learned about a brief idea about Agile. Today we will
+
+learn more in depth about Agile. Okay. So Agile is a software process model.
+
+So in today's lecture, these are the main things we will learn. So first thing is the advantage of
+
+the Agile software model rather than the other software development model. So there is a huge
+
+difference between the traditional models and the Agile model. So we will learn about the important
+
+advantages of the Agile software development model rather than the other models. And then last week,
+
+we have discussed that the Agile came into the industry around 2001. And they have certainly like a
+
+released a document called Agile manifesto. So inside that particular document, they do have certain
+
+values and certain principles to explain about Agile software methodology.
+
+Okay. So it's kind of the standards and policies we need to follow in order to adapt the Agile software
+
+process model to our software organization. So we will learn about those things as well. And then there are
+
+some different kinds of Agile methodologies available. So last week we have learned about Scrum is a kind of
+
+Agile methodology. So we will learn in depth about these kind of Agile development methodologies as well. Okay. And the fourth thing, we will go in depth about the Scrum framework. So inside the Scrum framework, so there are some sort of roles and responsibilities are there. So we will learn about Scrum framework. So inside the Scrum framework, so there are some sort of roles and responsibilities are there.
+
+So we will learn about Scrum framework. So we will learn about Scrum framework as well. So those will, we will learn in the Scrum artifacts and some of the Scrum activities as well. And also, we will learn to write simple user stories as well. So these are the main things we're gonna cover in this today's lecture. Okay.
+
+So here you can see. So here you can see. So the content going to be first difference between the traditional and modern methodology means Agile methodology. And we will learn more depth about what is Agile. And in the Scrum, we will learn about more roles and responsibilities. And then we will learn about writing the user stories as well.
+
+Okay. Okay. Okay. Okay. So why Agile is standing unique rather than the other traditional model. So you need to clearly understand Agile is a kind of incremental model. So what's the meaning of incremental model? So we will select set of important features first. And then we will work towards
+
+on those kind of requirements in the first version of the software release. So, that is the basic
+
+traditional incremental model. But when we are talking about Agile, Agile has certain types of
+
+standards. Okay, always Agile will be focused on the team collaboration. And the other thing is
+
+always in the Agile, we will include the customers. Am I right? Yeah. And also, we will always have those
+
+flexibility for the requirement changes in the Agile as well. So, if you are taking about normal
+
+traditional model, let's say if you want, if you have a project gonna finish in 12 months.
+
+So, if the project is going to deliver in the 12 months, in the traditional models, what we can do is,
+
+so we will gather the requirements and pass into the design team and then we will implement. So,
+
+after the implement only, most of the time, we gonna showcase the final product to the customer.
+
+Let's say after 6 months, if the customer needs a new requirement wanted to be changed, that is very
+
+hard in the traditional software process model. Because after 6 months implementation, we are almost
+
+halfway done about the software development of that particular product. So, this is very challenging in
+
+the traditional model. So, we have to rework again. Sometimes, it is cost increase because the developers
+
+wanted to work again towards the new features, right? Sometimes, we have to change entire software.
+
+We have development developed during that 6 months period. So, there are several delays can also occur
+
+because the project deadline might be extended because we have to work towards the new features.
+
+So, there are these kinds of challenges available in the traditional development model. Are we clear?
+
+That's why we are introduced the Agile Software Process Model, where we can deliver the important features in a
+
+short time period. So, if any customers or new clients, they wanted new features, then we can adapt and change
+
+those requirements and work towards the second release in a short time period. So, that's the most advantage about Agile. Are we clear?
+
+Okay. So, you have to know the challenges we are encountering in the traditional way and how we can overcome through the Agile model.
+
+So, here you can see in the traditional way, it is high cost, as I said, when you wanted to change something.
+
+And also, sometimes, the developers may not accept the changes. Okay. And also, there is no less or no iterations.
+
+And there is lack of transparency as well. So, if you are going for Agile or a modern software development way,
+
+it is the highest value, it will deliver higher quality within the shortest time. So, that's the main benefit about the modern technology,
+
+about the software development rather than the traditional software development. Okay.
+
+So, here you can see that we have listed all the challenges we are encountering in the traditional software development.
+
+So, here you can see that we are encountering in the traditional requirement. Okay. So, as I said, in the traditional requirement, requirements may change during the deployment.
+
+So, while they are developing, implementing, sometimes the requirement might be changing. And also, if you are not changing those requirement, at the end, customer going to have a different software rather than their requirement.
+
+So, here you can see that we are going to have a different software development. Okay. So, these are the main challenges we are encountering in the traditional software.
+
+So, here you can see that we are encountering in the traditional software development. So, here you can see that we are encountering in the traditional software development. So, here you can see that we are encountering in the traditional software development. So, here you can see that we are encountering in the traditional software development.
+
+So, here you can see that we are encountering in the traditional software development. So, here you can see that we are encountering in the traditional software development. So, here you can see that we are encountering in the traditional software development. So, here you can see that we can see that we are encountering in the traditional software development.
+
+So, here you can see that we are encountering in the traditional software development. So, here you can see that we are encountering in the traditional software development. So, here you can see that we are encountering in the traditional software development. So, here you can see that we are encountering in the traditional software development.
+
+So, that's the main advantage of the Agile.
+
+And also, as I said, we will always have this customer interaction in the Agile.
+
+Because each and every incremental release, we're going to have that feedback from the customers.
+
+As I said, that is, this model has the flexibility for the changes.
+
+And we can encounter any errors or bugs or any issues in the early stage as well.
+
+So, Agile will help the team to deliver a better software in a quick way to the responding to the changes.
+
+So, that is the main difference between the traditional software development and the Agile.
+
+Okay?
+
+Okay.
+
+Let's go on to the Agile development methodologies.
+
+First, we need to understand Agile manifesto.
+
+Agile manifesto.
+
+As I said, Agile came into the software development around 2000, 2001, right?
+
+So, they have released a certain document.
+
+That particular document is called Agile manifesto.
+
+That Agile manifesto has some certain values and principles.
+
+What is the difference between values and principles?
+
+So, values means kind of standards.
+
+So, let's say you wanted to be healthy.
+
+That is the value.
+
+Okay?
+
+To achieve that value, what are the actions you will take?
+
+You will go to gym.
+
+You will like eat healthy food.
+
+Sometimes you will do yoga.
+
+You will do daily activities, physical activities.
+
+Likewise, you will do certain actions to achieve that particular value.
+
+Am I right?
+
+So, values means it's kind of a philosophy of the Agile.
+
+And that 12 principles are providing the guidance on how these values are applied in the practice.
+
+So, that's the difference.
+
+So, in the Agile manifesto, they have defined 4 key values and 12 principles.
+
+So, we will discuss about these 4 key values in this lecture.
+
+But you have to go through on your own.
+
+You can Google and search and learn about these 12 principles.
+
+Okay?
+
+So, these are the most important 4 key values.
+
+First is individuals and interaction.
+
+What is the meaning of individual and interactions?
+
+Means, we will always interact as a team.
+
+So, as I said, in the Agile, we will always have this team collaboration.
+
+Also, we will always include the customers as well as the interaction.
+
+So, that's why they have mentioned individuals and interaction.
+
+Second thing, working software.
+
+What's the meaning of working software?
+
+So, as I said earlier, each and every increment, we are working towards a workable software.
+
+Okay?
+
+So, first increment, we will focus on the certain requirements, important features.
+
+And then, we will deliver a workable software.
+
+The second increment, we will add the new set of features and the improvement from the previous release as well.
+
+So, each and every increment as a workable software.
+
+That's what they are mentioning here in the working software.
+
+Third is customer collaboration.
+
+What's the meaning of customer collaboration?
+
+As I said, each and every iteration, sorry, increment, we will include the customers as much as we can to get the feedback from them.
+
+Then, only we can adapt to their changes as quick as possible.
+
+So, always we will include the customers in agile software development.
+
+That's what they have mentioned here.
+
+And the fourth one, responding to change.
+
+Responding to change means agile always have this flexibility for the changes.
+
+So, each and every time when customer comes up with the new requirements or the improvement of the previous release, previous increment, we will always be flexible for those changes.
+
+So, these are the key values of the agile mentioned in the agile manifesto.
+
+Okay?
+
+So, this table give a brief explanation about in agile, how are the key values or difference between the traditional way.
+
+So, when we are talking about individuals and interaction, in the traditional way, we will always have tools and process.
+
+Okay?
+
+We won't have like a team-based environment most of the time.
+
+And we won't have this customer interaction as well.
+
+In agile, we are having working software.
+
+And in the traditional way, we will always have this comprehensive documentation.
+
+Okay?
+
+In the agile, we are having the customer feedback and collaboration.
+
+But in the traditional way, we have always contract negotiation.
+
+In the agile, we always have that flexibility for the changes.
+
+But in the traditional way, we will always follow the plant.
+
+Pre-planting only, we will focus in the implementation.
+
+Okay?
+
+So, that's the key difference between the agile values and traditional values.
+
+Okay?
+
+Okay.
+
+So, now we will learn about agile methodologies and practices.
+
+So, agile methodologies means how we gonna do this, perform this agile values or the agile in our software development.
+
+Practices means we will always focus about the implementation.
+
+Okay?
+
+So, first, we will focus about methodologies.
+
+So, here you can see there we can clearly mention methodologies provide the overall structure for managing the project.
+
+Okay?
+
+So, it will give the overall structure of the project.
+
+And these practices are specific techniques we gonna use in the implementation phase.
+
+Okay?
+
+First, we will see about the agile methodologies, which is a structure, overall structure.
+
+So, there are lots of frameworks available in the agile.
+
+But we will discuss about these four important frameworks.
+
+First is scrum.
+
+So, if you are taking, talking about scrum, the scrum framework always focus about the short time periods called sprint.
+
+So, they will act as a team towards the increments and they will work towards certain features in the short time periods called sprints.
+
+So, it will take one to four weeks maximum.
+
+So, usually, they will take like two or three weeks for one sprint.
+
+So, that is very short time period, right?
+
+So, that's how they will work in scrum.
+
+Second is Kanban.
+
+Last week, we have discussed about Kanban framework.
+
+So, this is kind of a visual board representation of the entire software process.
+
+Okay?
+
+So, usually, if you are going for any software companies, they might be having this kind of whiteboard.
+
+And then, they might be having drawing the process of the software development.
+
+And they might be like pasting this sticky note as a milestones.
+
+Okay?
+
+So, those are called visually they are tracking the progress.
+
+So, that's how they are working in the Kanban framework.
+
+Third is extreme programming.
+
+Extreme programming always focus on the code quality.
+
+And they will make sure all the software engineering practices are applied properly or not.
+
+So, this extreme programming framework, they will always focus about the implementation, the development phase of the software.
+
+So, why do we need a code quality?
+
+So, basically, let's say if you are taking two developers, same logic, one developer can write the code in two lines.
+
+And other developer can write the same code in four lines or ten lines.
+
+So, most of the time, two line code is better than four lines code.
+
+Because four lines code takes more time rather than the two lines code.
+
+So, we will always wanted to focus about this code quality because that will depend on the software performance as well in the later stages.
+
+So, if you are not meeting certain engineering practices.
+
+So, if you are not meeting certain engineering practices.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+The other developer can't read or find the code.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+The other developer can't read or find the code.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+So, if you are not meeting certain engineering practices.
+
+And code quality.
+
+The other developer can't read or find the errors from your code.
+
+So, that is very important.
+
+So, in the extreme programming.
+
+They will always focus on the software engineering practices.
+
+And the quality of the code.
+
+And the other one is lean software development.
+
+So, lean software development means.
+
+They will always focus on the eliminating on waste.
+
+And maximizing the value.
+
+So, they will always focus on.
+
+To have the maximized business value.
+
+Of that particular software.
+
+So, these are the four agile methodologies.
+
+Means the structure.
+
+Okay.
+
+So, the organization.
+
+They can change the structure.
+
+Or they can adapt the structure.
+
+The way they want it.
+
+Okay.
+
+So, that is the main thing.
+
+We need to know about agile methodologies.
+
+Okay.
+
+So, now we will move towards the agile practices.
+
+So, what is agile practices?
+
+So, what is agile practices?
+
+So, agile practices.
+
+As I said.
+
+Practices are specific technique used by the development team during the implementation.
+
+So, they will follow certain practices to achieve in the development phase.
+
+Okay.
+
+While coding.
+
+They will follow these practices.
+
+The first practices is.
+
+Test driven development.
+
+So, test driven development means.
+
+You are going to write the test.
+
+Before you are writing the code.
+
+Let's for example.
+
+Let's say.
+
+We are having a feature called discount.
+
+Okay.
+
+So, basically.
+
+If the product price is 100 rupees.
+
+After we are applying 10% discount.
+
+What is the price?
+
+Now, it's 90.
+
+So, current answer should be 90.
+
+So, in the test driven development.
+
+What we will do?
+
+We will write all the test cases for that particular feature.
+
+Before we are writing the code.
+
+So, we will write.
+
+If the product price is 100.
+
+If we are applying 10% discount.
+
+The final product price is 90.
+
+So, that is the first test case.
+
+For that particular test case.
+
+We will write.
+
+If the product price is 100.
+
+If we are applying 10% discount.
+
+The final product price is 90.
+
+So, that is the first test case.
+
+For that particular test case.
+
+We will write the code.
+
+If we are applying 10% discount.
+
+The final product price is 90.
+
+So, that is the first test case.
+
+For that particular test case.
+
+We will write the code.
+
+If we are applying 10% discount.
+
+The final product price is 90.
+
+So, that is the first test case.
+
+For that particular test case.
+
+We will write the code.
+
+If we are applying 10% discount.
+
+The final product price is 90.
+
+So, that is the first test case.
+
+For that particular test case.
+
+We will write the code.
+
+So, why we can't write the code first.
+
+And then test it.
+
+So, what is the benefit of writing the test.
+
+Before the coding.
+
+So, the main advantage is.
+
+We can avoid any later bugs or issues.
+
+In a short time period.
+
+Because we are working towards.
+
+Two week.
+
+Three week.
+
+Short time periods in the Ajaal.
+
+Right?
+
+So, we have to.
+
+Like.
+
+Save our time.
+
+In order to.
+
+Write the code.
+
+So, to easily.
+
+Find out these.
+
+Bugs and errors.
+
+In an earlier way.
+
+In early.
+
+In early.
+
+Stage.
+
+We have to.
+
+We have to.
+
+It is useful.
+
+When you are writing the test.
+
+Cases.
+
+Before writing the code.
+
+Because now.
+
+We are writing the code.
+
+Exactly.
+
+To meet the.
+
+Criteria.
+
+Then.
+
+We will.
+
+Most of the time.
+
+We will avoid these.
+
+Errors.
+
+Okay.
+
+So, then.
+
+It's very easy.
+
+To deliver the.
+
+Error free.
+
+Increment.
+
+Within the short time period.
+
+In the Ajaal.
+
+Okay.
+
+Second thing is.
+
+Power programming.
+
+Power programming means.
+
+Most of the time.
+
+In the Ajaal.
+
+Two developers.
+
+Will be.
+
+Working towards.
+
+Same.
+
+Features.
+
+Or same.
+
+Task.
+
+So, why.
+
+We need.
+
+Two developers.
+
+Two developers.
+
+To work on.
+
+The same.
+
+Task.
+
+Because.
+
+As I previously.
+
+Said.
+
+Agile.
+
+Is always.
+
+Focusing on.
+
+The short time.
+
+Period.
+
+Right.
+
+Two weeks.
+
+Three weeks.
+
+Or a short time.
+
+Period.
+
+Right.
+
+And then.
+
+When you're working.
+
+With.
+
+Two developers.
+
+At the same.
+
+Time.
+
+We can find out.
+
+The bugs.
+
+We can find out.
+
+The bugs.
+
+Easily.
+
+So, one developer.
+
+Can.
+
+Write the code.
+
+In two lines.
+
+As I previously.
+
+Said.
+
+One developer.
+
+Can write the code.
+
+In four lines.
+
+The two line.
+
+Written code.
+
+Is more quality.
+
+Than the other ones.
+
+Right.
+
+So, the other developer.
+
+Can suggest.
+
+Them.
+
+That the two line.
+
+Code.
+
+Is more.
+
+Accurate.
+
+Than the four.
+
+So, they can.
+
+Discuss.
+
+And then.
+
+They can.
+
+Like.
+
+Interact.
+
+Between.
+
+Among them.
+
+To identify.
+
+Any bugs.
+
+Or errors.
+
+In a.
+
+Early stage.
+
+Okay.
+
+So, two.
+
+Developers.
+
+Issues.
+
+For a.
+
+Quick.
+
+Delivery.
+
+India.
+
+That is.
+
+Called.
+
+Power.
+
+Proclaiming.
+
+Third.
+
+One.
+
+Behavior.
+
+Driven.
+
+Development.
+
+Means.
+
+Always.
+
+We will.
+
+Focus.
+
+On.
+
+The.
+
+Business.
+
+Focus.
+
+Scenarios.
+
+That is.
+
+Called.
+
+Behavior.
+
+Driven.
+
+Development.
+
+So,
+
+These.
+
+Are.
+
+The.
+
+Three.
+
+Common.
+
+Practices.
+
+They.
+
+Are.
+
+Using.
+
+In.
+
+The.
+
+Agile.
+
+What.
+
+Is.
+
+The.
+
+Phase.
+
+okay now we will learn about scrum so as i previously said scrum is one of the agile methodology
+
+the structure so if a company or organization a software organization wanted to adopt the scrum
+
+they wanted to have certain structure okay so we will learn about scrum further so what is scrum
+
+so as i said scrum is the agile framework it is one type of framework methodology of the agile
+
+and also as i previously said scrum will be always focused on the sprints called short time period
+
+because we have to deliver the workable software in a short time period so
+
+the work will be divided in the short iteration called sprints okay and in the scrum we will
+
+always work towards the software as a team okay there is a certain team to deliver the structure
+
+why we need a team in the scrum in the agile so basically in the scrum we are focusing on the
+
+sprints called short time period one to four weeks maximum four weeks so if you wanted to deliver a
+
+workable software in two weeks that is very short time so individuals can't work towards all the features
+
+for that short time period so we need a proper structure proper team for helping each other to
+
+deliver those certain important features for that particular increment so that's why scrum will always focus on the team
+
+and also each and every release of the increment we will focus about the customer feedbacks so for customer feedbacks are very important to improve the software product okay so these are the main thing about scrum and we will learn about the roles and responsibility of the scrum and the artifacts means the documentation
+
+so any other things they are maintaining in the scrum and some of the activities of the scrum okay so first
+
+is scrum roles so there as i previously said scrum has a proper team so if you don't have a team you can't achieve the expected features in the shortest time two week three week if you wanted to if you want to workable software obviously you need a team
+
+obviously you need a team so there are some sort of main roles available in the scrum first is product owner so product owner will represent a customer and he will prioritize the requirement scrum master will ensure the scrum practices are followed and support the team and developers
+
+they will build and deliver the product so these roles will work towards to deliver the workable software
+
+in a shortest period called sprints so let's move to this so here you can see right there is a scrum team there is a product owner scrum master and the development team okay
+
+first we will learn about product owner so product owner is a representative of customers and other
+
+stakeholders of the software so product owner is not a client okay remember that one so who's the
+
+actual client client means the ones who are going to sponsor the particular software right
+
+so he will come to software organization and he will say i want a software system for my clothing store
+
+these are the things main things i wanted to do it so that's what client will say to the
+
+the organization right the product owner is kind of a team member even like a representative of the
+
+customers and the stakeholders okay so his responsibilities is after collecting all the
+
+requirements okay so business analyst usually they will collect all the requirements right
+
+so after collecting all these requirements this particular product owner will prioritize the
+
+requirement so why we need to prioritize the requirement
+
+because in the agile in the scrum framework during each and every increment we are focusing
+
+about important features so the first increment we will take about the most important prioritized
+
+requirement for the first increment release then only we will move towards the second prioritize list
+
+okay so prioritizing the requirement in the scrum framework is very important so product owner the
+
+one gonna define and prioritize the requirement and he will maintain a document or the artifact
+
+called product backlog so product backlog means we will have all the prioritized requirement in
+
+one document okay so product owner the one's gonna manage that product backlog okay and he will
+
+communicate with the customer needs to the actual development team and he is the one's gonna define
+
+the important feature that we are going to develop during each and every increment and also after we
+
+are completing our certain increment during that particular sprint the product owner the one's
+
+gonna accept or reject the completed work so key focus is is going to maximize the value of the
+
+the particular software okay the second one is scrum master so scrum master going to be
+
+a support system of the development team agile practices and also he will ensure the agile practices
+
+are applied scrum practices are applied correctly or not so there are different kinds of leadership
+
+available so scrum master is a kind of a service leader service leader means he is going to act like a
+
+servant for the entire development team he is not he is not a traditional project manager or he is not a team
+
+leader or team lead okay that is totally different so basically scrum master going to support if there is any issues
+
+any problems are encountering between the developers or they need extra technologies or tools he will act as a support system
+
+in the scrum framework so he will facilitate the scrum activities he will support the scrum team and he will remove any problems let's say
+
+uh if there is one developer is having difficulties to do the particular task he can help uh in that particular task to collaborate with the other development team so he will if he won't assign any task okay scrum master won't assign any task for the developers that is handled by the development team so he will act as a
+
+he will basically act as a support system okay and also you can see he can promote the
+
+collaboration and the communication between the team members and the most importantly
+
+he will ensure the scrum principles are followed properly or not that is the main
+
+thing the scrum master will do in the scrum agile framework so the key focus is is gonna help the
+
+team work if he effectively as i pre as i said this is very important point the scrum master is
+
+just a facilitator the supporter not a traditional project manager so that is a huge difference
+
+between the scrum master and project manager so the third role developers so developers
+
+usually are going to design and develop and test the software so usually they will you do the unit
+
+testing and then they will complete the sprint backlog so we will learn more about the sprint backlog in
+
+the following slides and they will collaborate with other developers as well so they are mainly
+
+focusing about the software quality okay and deliver this working software in the increment in the each
+
+and every sprint so key focus is always they're gonna deliver the workable software so developers are the
+
+ones gonna implement the actual software right so they these are the key roles and responsibilities
+
+in the scrum framework so the next one we will learn about scrum artifacts
+
+so artifacts means kind of a documents and these ones are providing a transparency
+
+and it's going to help the team okay so there are main scrum artifacts they are maintaining
+
+one is product backlog second sprint backlog and the third one is burned down charts so we will
+
+learn about each and everything in the following slide so basically why we need these kind of
+
+artifacts this is going to help the scrum team to understand what is mostly important what are
+
+the things we need to implement and how much progress we have done so this is very important
+
+in the scrum because we are working in the short time period so we we need to have certain type of a
+
+proper structure otherwise we can't deliver the workable software in the short time period that's
+
+why they are maintaining these kind of artifacts okay so the first one is product backlog as i previously
+
+said product backlog will have all the list of prioritized requirement because we need to have a certain idea about what are the important features we gonna implement so these all prioritize list of requirements features and the improvements from the clients we will have in the product
+
+backlog as i will have in the product backlog as i will have in the product backlog as i said product owner is most
+
+responsible to create defined and prioritize the requirements so he is the one gonna handle and maintain this product backlog document so in the scrum
+
+prioritized requirements are very important because we are working towards the important features first so
+
+usually if you are taking a backlog product backlog it will be a excel or uh we will write certain user stories so we will learn
+
+about more about more about this user stories as well okay
+
+so the first thing is product backlog let's say so as i said in the product backlog we will have all the list
+
+of requirements prioritize requirements
+
+and also we will have those requirements in the correct sequence and the highest priority ones will be in the top for example in the slide they have clearly mentioned so you can see in the top priority items are in the
+
+in the top okay and second set of priority list are allocated in the release two and the third set of
+
+priority list are allocated in the lowest priority so it will always have the correct sequence so the high value items will appear at the top of the product backlog and the lower valued items appear towards the bottom of the product backlog so the product backlog changes and evolves throughout the projects why it is changing
+
+because because after the first because after the first because after the first release sometimes the customer needs a new set of features then we need to go back to the product backlog and we need to add those new features to the product backlog so all the time the product backlog can changes and evolves throughout the project because each and every increment we are getting the client feedback
+
+sometimes in the first increment the client might be not like the way the system performing in certain features then they have to consider in the second increment so we need to include those improvements and the new set of features in our product backlog so that's why all the time the product backlog can changed okay so as i said in the product backlog usually we will have like index cards
+
+like postcards or we will maintain in the excel sheet or we will write the user stories so here we will learn more about the user stories okay so user story means we gonna explain each and every functionality in a non-technical term so why we need to have this description means it gives a better idea about the user story
+
+a better idea about the user story so that's why we are writing the user story it is a convenient format for expressing the desired business value or the feature so we will see so there is a certain template you need to follow when you are writing the user story okay so the first thing as a and then you need to mention the user role
+
+role i want to and then you need to mention the goal of that particular functionality or the
+
+business value so that because of that what is the benefit the actor is going to get okay so as
+
+who i want what so that why so for with the example we will deeply understand about how to
+
+write the user story that is very easy okay so here you can see user stories are crafted in a way that
+
+makes them understandable to both business and technical people so most of the time we will not
+
+have technical terms in this while writing the user stories because we it should be understandable
+
+among the other stakeholders or customers as well so it should be simple but you need to
+
+explain about that particular functionality so for example if you are taking online banking system
+
+we will have several actors like customers can be actor user can be actor employee can be actor so for
+
+each an actor we are going to write the user story in the this particular template okay
+
+So, here you can see, as a customer, I want to view account summary online so that I do not have to wait the month in to view the statement.
+
+So, here the customer is the actor, okay?
+
+As a customer, that is the user role, I want to, so what is the main functionality here?
+
+View the account summary online.
+
+That is the main business value or the functionality.
+
+Because of this particular functionality, so that the customer is going to have the benefit, I do not have to wait till the month in to view the statement.
+
+So, that is the format of the user story.
+
+Okay?
+
+So, as user role, I want to, the main functionality, so that what is the benefit, I am going to get it.
+
+Okay?
+
+The second thing is, as an employee, this is another type of actor, user role.
+
+So, I want to add new customers.
+
+So, main functionality is adding the new customers online.
+
+So, that, because of that, it is going to save the time.
+
+So, this is the benefit, the actor is going to get it.
+
+As a user, I want to update the profile details.
+
+So, update the profile details is the main functionality.
+
+Because of that, the user's detail is going to be up to date.
+
+So, this is the format when you are writing the user story.
+
+So, rather than just mentioning view account summary online, now we know who is the actor going to be involved.
+
+The customer is going to be involved in this certain business value.
+
+And with that particular business value or the functionality, the customer is going to get this benefit.
+
+So, we have more details about that particular functionality.
+
+That's why they are writing as a user story.
+
+Okay?
+
+So, this thing you have to do by yourself.
+
+You need to write down five user stories for a library management system.
+
+For example, as a library member, I want to view my borrowing history.
+
+Yeah?
+
+Always I wanted to see what are the books I have borrowed.
+
+So, that if I perform that particular functionality, so that I can easily get the detail of the books I referred.
+
+So, likewise, you need to write five detailed user stories.
+
+Okay?
+
+So, when you are writing the good user story, you always wanted to focus about this one.
+
+Obviously, you need to have the user role and the goal of the user and the benefit.
+
+What's the benefit?
+
+The user is going to get.
+
+Okay?
+
+And also, please avoid any technical implementation details because the user story should be simple and understandable among everyone.
+
+Okay?
+
+So, in the activity two, there are some samples we have given.
+
+You need to choose what is the good example.
+
+For example, in here, first, as a customer, I want to view my account balance so that I can monitor my finance.
+
+So, they have the user role and the goal is view my account balance so that the benefit is I can monitor my finance.
+
+In the B, they have mentioned, as a customer, I want a database able to store account balance.
+
+So, why B is wrong?
+
+Because it is mentioning about the database, right?
+
+So, here you can see database is a technical word.
+
+So, you should avoid technical terms in the while you are writing the user story.
+
+The second example, as a member, I want to search books so that I can find books.
+
+So, here, what is the user role member?
+
+I want to search books is the functionality.
+
+Because of that, I am getting the benefit.
+
+I can find the books quickly.
+
+So, this is meeting all the criteria of the good user stories.
+
+And what is disadvantage of the B1?
+
+As a member, I want an SQL query to search the books.
+
+Okay.
+
+So, in the B1, why it's a bad use case story?
+
+Because it's mentioning about the SQL query.
+
+So, you should not add any technical terms in the user stories.
+
+In the third example, as a librarian, I want to generate overdue books report so that I can track late returns.
+
+So, here, librarian is the user.
+
+And generate the overdue book report is the functionality goal.
+
+So, the benefit is I can track late return.
+
+So, in the B, they have mentioned as a user, I want to generate report.
+
+So, why the B is a bad user story?
+
+Because we are not having the benefits.
+
+Okay.
+
+So, always you wanted to follow that particular template.
+
+And the 4, compare this again the user story.
+
+So, here, as a customer, I want to save my favorite product.
+
+And the B, as a customer, I want to save my favorite product so that I can find them easily later.
+
+So, what is the disadvantage of the wrong idea about the A user story?
+
+Because we, again, we are not having any benefit here.
+
+Okay.
+
+Customer, save my products.
+
+Okay.
+
+So, that, what is going to get?
+
+So, these are the main important thing you need to follow when you are writing the user story.
+
+So, it should identify the user role.
+
+It should describe the goal the user wants and it should explain the benefit.
+
+Okay.
+
+All the three things they need to mention while writing the user story.
+
+Okay.
+
+Second artifact is sprint backlog.
+
+So, that's all about the product backlog.
+
+Now, we will learn about sprint backlog.
+
+So, sprint backlog means it's a subset of product backlog.
+
+So, what they will do?
+
+So, we will always have the prioritize features and functionalities in the product backlog.
+
+So, we will take about the important prioritize features for that particular sprint.
+
+And we will make a document called sprint backlog.
+
+So, it's kind of a list of the user stories or the functionalities identified by the scrum team to complete during that particular sprint.
+
+So, only that particular features we will have in that particular sprint.
+
+Okay.
+
+So, it is kind of a subset of product backlog.
+
+Okay.
+
+So, we will select what are the features we are going to focus on that particular sprint.
+
+And the second sprint, we will focus another set of prioritized lists from the product backlog.
+
+So, in the scrum, as I previously said, we will always focus in the sprints.
+
+Right.
+
+So, each and every sprint, we will focus on new features and the improvements from the client.
+
+So, we have to prepare the sprint backlog based on the ones we are going to focus on during, only during those particular sprint.
+
+Okay.
+
+The third artifact is sprint burndown chart.
+
+So, sprint burndown chart means it is kind of a graphical representation of the work.
+
+Okay.
+
+So, during, when we are analyzing this burndown chart, it is easily for us to track what are the other tasks left.
+
+So, it is kind of a tracking system.
+
+Okay.
+
+So, usually we will be having vertical and horizontal like normal chart.
+
+In the horizontal way, we will always mention the time period, like days or weeks.
+
+Okay.
+
+Most probably days.
+
+And in the vertical axis, we will have the backlog items.
+
+Okay.
+
+Like the task or the functionalities, we will mention here in the horizontal.
+
+So, this is kind of a very simple burndown chart.
+
+So, you can see, right?
+
+So, day one, day end means day one to day five or something.
+
+And then final day and percentage that remains to do.
+
+So, they are having this during the time how much they have done.
+
+Burndown means how many tasks they are burning in each and every day.
+
+So, how much they are burning each and every day.
+
+So, with the example, we will understand more about this one.
+
+So, here you can see they have given a simple table.
+
+We need to draw the burndown chart and we need to figure out all these things.
+
+Okay.
+
+Calculate these things.
+
+So, you can see a software development team has 120 tasks to complete within five days.
+
+Okay.
+
+So, within five days, we are going to complete 120 tasks.
+
+The number of tasks completed each day is shown below.
+
+So, you can see first day, second day, third day, fourth day, fifth day.
+
+And first day, we are assigned 20.
+
+Second, 50.
+
+Third, we don't have any tasks.
+
+Fourth, we have 20.
+
+And fifth, we do have 30 tasks.
+
+Okay.
+
+So, now you need to draw...
+
+A burndown chart for this one.
+
+And also, you need to calculate the ideal burndown velocity.
+
+Okay.
+
+So, let me share my slide...
+
+Hold on.
+
+Hold on.
+
+Hmm...
+
+Hold on.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Okay.
+
+I think now you can see the burndown chart.
+
+Okay.
+
+So first we will create the ideal burndown velocity.
+
+So you can see here the days there are five days and this is the task.
+
+So 120 tasks we do have it and we are going to burn it during that five.
+
+So ideal burndown velocity means task per day.
+
+So 120 tasks we do have total.
+
+So it's divided by five.
+
+It's 24 tasks per day.
+
+If you are doing 24 tasks per day then the graph should be like this linear.
+
+Okay.
+
+Second thing actual burndown velocity means actually how much we have burnt.
+
+Right.
+
+So we can see the task we have mentioned in the horizontal and the vertical we have mentioned
+
+the days.
+
+Right.
+
+So here you can see 120.
+
+So within the first day how much we have burnt?
+
+20 tasks.
+
+So 120 minus 20 is 100.
+
+Now we have 100 more tasks to do in the second day.
+
+In the 100 and task in the third, third, second day we gonna do 50 tasks.
+
+Then 100 and minus 50, 50 tasks.
+
+So this is the actual burndown velocity.
+
+It means actually how much we have burnt within a day.
+
+Okay.
+
+So highest productivity day means what is the day we have done the most of the task?
+
+That is 50.
+
+Am I right?
+
+Yeah.
+
+And the lowest productivity on the third day we have done anything.
+
+So you have to know how to draw the burndown chart like this.
+
+Okay.
+
+So that is about burndown chart.
+
+So here you can see in this particular diagram in the red color icon that is a normal ideal
+
+velocity progress.
+
+And then if you are taking the actual burndown chart, the other ones mentioned.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So here you can see in the blue color.
+
+So yes, the team completed 120.
+
+So you might get a question in the finals based on this burndown chart.
+
+So please learn how to draw the burndown chart correctly.
+
+So how much they have burned down each and every day.
+
+Okay.
+
+Okay.
+
+So that's about burndown chart.
+
+And the third thing we need to learn about scrum activities.
+
+So there are some activities each and every scrum teams they are making in the daily basis.
+
+The first one is sprint planning.
+
+So in the sprint planning, what they will do, they will design what are the work we are going to complete during that sprint.
+
+So this is usually happening before the, before starting the sprint.
+
+So they will plan what are the important features we, we are going to focus on the first release, first increment.
+
+Okay.
+
+So each and every sprint they will be having before starting the sprint.
+
+They will have this sprint planning.
+
+Okay.
+
+And there is a daily scrum.
+
+Daily scrum means daily.
+
+They will have the discussions and they will have this certain types to monitor the daily activities.
+
+So that is called daily scrum.
+
+The third one is sprint review.
+
+Sprint review means after we completed the first release, first increment, we will gather the feedback from the clients.
+
+Right.
+
+So that is called review.
+
+Not only the client, we will also have the reviews from the other stakeholders as well.
+
+Okay.
+
+Okay.
+
+Other, other involved people in the software as well.
+
+That is called sprint review.
+
+So once we have completed that sprint work, we will have the sprint review.
+
+Okay.
+
+There is another one called sprint retrospective.
+
+Sprint retrospective means it's kind of a reflection of the team performance.
+
+So after we release the particular software in the first increment, usually the development team, they will get together as a team and then they will collaborate together.
+
+And just as a team, they will have this meeting and then they will identify what are the improvements we are going to do in the next sprint.
+
+Do we have any luck or did we encounter any issues in the previous sprint?
+
+So it's kind of a performance.
+
+It's reflection of the team performance of that particular sprint and identify the improvements.
+
+Okay.
+
+So those are the activities they are making in the scrum.
+
+So first they are having sprint planning and the second they are having daily scrum and then they have sprint review and then they are having the sprint retrospective.
+
+Okay.
+
+So each and every slide they are clearly explaining about each and every activity.
+
+So, okay.
+
+In the sprint planning, always they are conducting in the beginning of the sprint.
+
+Okay.
+
+The purpose is the select the product backlog items for the sprint and they will define the goal of that particular sprint and they will create the sprint backlog.
+
+So with the sprint backlog only, we know what are the important features we are going to focus during that particular sprint.
+
+So we will plan this sprint in the beginning of each and every sprint.
+
+Okay.
+
+Second thing is daily scrum.
+
+As I said daily, they have the short daily meeting around 15 minutes as a scrum team to monitor the programs because we have to finish all the tasks within two weeks.
+
+So it is a very short time period.
+
+So we always wanted to have the daily meeting to monitor the daily scrum.
+
+So these are the three key questions you need to focus.
+
+First is what are the completed tasks.
+
+So each and every developer, they might be coming in the front and they might be informing that these are the tasks I have done so far.
+
+These are the current tasks I am going to focus and these are the future tasks I am going to perform.
+
+Likewise, they are going to tell any problem or anything that they are going through in the progress.
+
+So that is what about daily scrum.
+
+So daily, they have this short daily meetings around 15 minutes.
+
+Third thing, as I said, sprint review.
+
+Sprint review means this is conducted at the end of the sprint.
+
+And also what is the purpose of it because we are going to get the customer feedback.
+
+Right.
+
+So each and every sprint after we are conducting the after we are like finish that particular sprint workable software, we have to demonstrate that completed work to the clients to get the feedback.
+
+Okay.
+
+So that is what means sprint review.
+
+So and also we going to update the product backlog if needed.
+
+Why we have to update because sometime the customer give me improvements or they might be new features in the next sprint.
+
+So we have to update the product backlog if needed.
+
+Okay.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, we have to update the product.
+
+So, what is the primary goal of the sprint review?
+
+So, first one is plan the next sprint.
+
+So, planning the next sprint is we are doing in the sprint planning.
+
+Okay.
+
+Second thing, inspect the increment and adapt the product backlog if needed.
+
+So, this is the correct answer.
+
+And the third one to assign new task to new member.
+
+So, this is happening during the sprint.
+
+Okay.
+
+Not after the sprint.
+
+And to conduct the retrospective, it is happening in the sprint retrospective.
+
+So, the correct answer is 2.
+
+Okay.
+
+The next question is sprint retrospective.
+
+So, what is the meaning of sprint retrospective?
+
+It is kind of a team performance reflection, right?
+
+So, third one is the correct answer.
+
+To inspect the team's performance and identify improvements for the next sprint.
+
+Okay.
+
+So, here you can see review the product happening in the sprint review.
+
+Planning the work is happening in the sprint planning.
+
+And coordinating the work between among multiple team members that is coming in the, during the sprint.
+
+So, third one is the most suitable one for the sprint retrospective.
+
+To inspect the team's performance and identify the improvements for the next sprint.
+
+for the next month.

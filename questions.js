@@ -4352,13 +4352,13 @@ IV. Kanban`,
     source: "Recording",
     question: `Consider an ATM system. The 'Withdraw Money' use case always requires the user to be validated first. However, the system only prints a receipt if the user selects 'Yes' for a receipt. How should these relationships be modeled?`,
     options: [
-      `'Validate User' <<extends>> 'Withdraw Money', and 'Print Receipt' <<includes>> 'Withdraw Money'`,
-      `'Validate User' <<includes>> 'Withdraw Money', and 'Print Receipt' <<extends>> 'Withdraw Money'`,
-      `'Withdraw Money' <<includes>> 'Validate User', and 'Print Receipt' <<extends>> 'Withdraw Money'`,
-      `'Withdraw Money' <<extends>> 'Validate User', and 'Withdraw Money' <<includes>> 'Print Receipt'`
+      `'Validate User' ≪extends≫ 'Withdraw Money', and 'Print Receipt' ≪includes≫ 'Withdraw Money'`,
+      `'Validate User' ≪includes≫ 'Withdraw Money', and 'Print Receipt' ≪extends≫ 'Withdraw Money'`,
+      `'Withdraw Money' ≪includes≫ 'Validate User', and 'Print Receipt' ≪extends≫ 'Withdraw Money'`,
+      `'Withdraw Money' ≪extends≫ 'Validate User', and 'Withdraw Money' ≪includes≫ 'Print Receipt'`
     ],
     correct: 2,
-    explanation: `Since validation is mandatory and incorporated into the base use case, 'Withdraw Money' <<includes>> 'Validate User'. Since printing a receipt is optional and only happens under a certain condition, 'Print Receipt' <<extends>> 'Withdraw Money'. Note: The arrow for <<include>> points TO the included use case, and the arrow for <<extend>> points TO the base use case.`
+    explanation: `Since validation is mandatory and incorporated into the base use case, 'Withdraw Money' ≪includes≫ 'Validate User'. Since printing a receipt is optional and only happens under a certain condition, 'Print Receipt' ≪extends≫ 'Withdraw Money'. Note: The arrow for ≪include≫ points TO the included use case, and the arrow for ≪extend≫ points TO the base use case.`
   },
   {
     id: "se_m4_003",
@@ -4370,7 +4370,7 @@ IV. Kanban`,
       `Draw separate association lines from both actors to 'View Timetable'.`,
       `Make 'Postgraduate' a base use case and 'Undergraduate' an extended use case.`,
       `Create a generic 'Student' actor linked to 'View Timetable'. Make 'Undergraduate' and 'Postgraduate' child actors of 'Student' using Generalization.`,
-      `Use an <<include>> relationship between 'Undergraduate' and 'Postgraduate'.`
+      `Use an ≪include≫ relationship between 'Undergraduate' and 'Postgraduate'.`
     ],
     correct: 2,
     explanation: `Actor Generalization reduces cluttered associations. You define a parent actor ('Student') with the common use cases, and let child actors ('Undergraduate', 'Postgraduate') inherit from it while adding their specific use cases.`
@@ -4396,8 +4396,8 @@ IV. Kanban`,
     difficulty: "hard",
     source: "PDF",
     question: `Which of the following statements about Use Case Relationships are TRUE?
-I. An <<include>> use case never stands alone; it only occurs as part of a base use case.
-II. An <<extend>> use case implicitly incorporates behavior at specific extension points based on a condition.
+I. An ≪include≫ use case never stands alone; it only occurs as part of a base use case.
+II. An ≪extend≫ use case implicitly incorporates behavior at specific extension points based on a condition.
 III. In generalization, a child use case inherits all behaviors of the parent but cannot override them.
 IV. An Actor Generalization arrow points from the parent actor to the child actor.`,
     options: [
@@ -4418,7 +4418,7 @@ IV. An Actor Generalization arrow points from the parent actor to the child acto
     options: [
       `Yes, it details the internal logic and loops.`,
       `No, it only communicates WHAT the system will do, acting as a high-level requirements specification for stakeholders.`,
-      `Yes, but only if the <<include>> relationship is used.`,
+      `Yes, but only if the ≪include≫ relationship is used.`,
       `No, it only shows the database schema.`
     ],
     correct: 1,
@@ -4611,7 +4611,7 @@ Which statements are correct?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -4691,7 +4691,7 @@ engineering?`,
       `All of the above`,
       `II and III only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -4756,7 +4756,7 @@ Software Engineering?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -4836,7 +4836,7 @@ lecture?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -4885,7 +4885,7 @@ lecture?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -4981,7 +4981,7 @@ lecture?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 6,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5018,7 +5018,7 @@ lecture?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 7,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5053,7 +5053,7 @@ client wants?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5105,7 +5105,7 @@ client wants?`,
       `All of the above`,
       `II and III only`
     ],
-    correct: 7,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5202,7 +5202,7 @@ Requirement?`,
       `All of the above`,
       `II and III only`
     ],
-    correct: 6,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5252,7 +5252,7 @@ type?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5286,7 +5286,7 @@ type?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5320,7 +5320,7 @@ type?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5355,7 +5355,7 @@ type?`,
       `All of the above`,
       `II and III only`
     ],
-    correct: 5,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5404,7 +5404,7 @@ type?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5485,7 +5485,7 @@ maintenance?`,
       `All of the above`,
       `II and III only`
     ],
-    correct: 5,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5552,7 +5552,7 @@ engineering?
       `All of the above`,
       `II and III only`
     ],
-    correct: 6,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5601,7 +5601,7 @@ engineering?
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5696,7 +5696,7 @@ matched to their model?
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5731,7 +5731,7 @@ according to the lecture?
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5828,7 +5828,7 @@ Model?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -5954,7 +5954,7 @@ administrative staff feedback, which model does the lecture suggest?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -6035,7 +6035,7 @@ Requirements Specification) document?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -6101,7 +6101,7 @@ recording?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -6195,7 +6195,7 @@ recording?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -6277,7 +6277,7 @@ developed?`,
       `All of the above`,
       `II and III only`
     ],
-    correct: 5,
+    correct: 0,
     explanation: ``
   },
   {
@@ -6326,7 +6326,7 @@ developed?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -6345,7 +6345,7 @@ developed?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -6410,7 +6410,7 @@ several models'?`,
       `All of the above`,
       `I and III only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -6475,7 +6475,7 @@ the lecture recording?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {
@@ -6511,7 +6511,7 @@ maintenance and support workflows in the Model Comparison table?`,
       `All of the above`,
       `I and II only`
     ],
-    correct: 4,
+    correct: 0,
     explanation: ``
   },
   {

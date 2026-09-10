@@ -1,0 +1,1471 @@
+for into the chat yeah yeah you can save that that is your tentative schedule puta
+
+yes will it be like get sent to us yeah yeah you can save it the thing is you don't have a separate
+
+in the course web page i told you that is having the other regular batches uh tentative schedule
+
+so that is different the things are same but the dates are different that's why okay now we'll yeah
+
+you haven't sent it still sitting in the chat box you haven't sent it yet really yes yeah sorry sorry
+
+i did okay okay now only i sent it yeah sorry sorry sorry i thought i said press the button no
+
+you can take it now okay now uh this is the second lecture second lecture is software process
+
+models or we say software development models so last week i think matisha can remember we
+
+did something called sdlc we did some introduction to sdlc and we discussed finally about ethics so if i
+
+give you a summary of last week quickly now initially we discussed what is software engineering and we
+
+discussed that is not something what we simply call programming because programming means what you do
+
+what you do in a programming lab you just compile uh write a program to solve a particular particular
+
+small task and then you compile it and run and you get the output that is simply what we call programming
+
+but software engineering is something little bit more than that so that's the thing initially we
+
+discussed in the last week lecture because software engineering means not only programming
+
+in software engineering actually it is uh actually we can say it is one step programming
+
+is one step in software engineering because software engineering means we have to uh in order to develop a
+
+software software we have to do a lot of more things than just coding so first of all we have to gather
+
+the requirement and then based on that requirement we have to design the software after that we have to
+
+implement it and then we have to test it and then we have to deploy it and maintenance those are the the
+
+steps we have to follow in order to the create a software but coding is just a one step so that's what where we started
+
+and then we discussed when we develop a software we have to follow a proper process as we discussed earlier
+
+and if not a software crisis can happen the failures can happen then then we discussed to develop a software there
+
+there is a proper process that process is called sdlc software development life cycle so in this sdlc
+
+there are phases so what are the phases first one is requirement gathering and analysis next one is design
+
+implementation testing and then deployment and maintenance so then we discussed before starting
+
+this the first phase what we call the requirement gathering and analysis we have to do something called
+
+feasibility study so feasibility study so feasibility study means simply what we do we check whether it is
+
+possible to do this project or not that's the simple question we are asking in feasibility study is it
+
+possible to do this project the answer can be yes or no if the answer is yes no problem we continue with the
+
+first phase we start the first phase and continue if the answer for the feasibility question is no
+
+then simply we have to ignore the project and we have to forget about it so that is the situation so feasibility means simply what happens in the feasible study we check whether it is possible to do this project or not so then feasibility we have to check several things like five things we discussed one is technical feasibility
+
+technical feasibility means we check whether developing this project is technically feasible whether we have the needed technology whether we have the needed software so that is a development side then the customer side the user side we have to check whether the customers having the need needed technology to use this particular product for an example if you take assume you are going to develop a mobile application for a rural farmer
+
+whether the customers having the need needed technology to use this particular product.
+
+For an example, if you take assume you are going to develop a mobile application for a rural farmers
+
+to do something for some kind of agricultural activity, then assume those areas they don't have
+
+a proper network. So, developing this kind of application is not technically feasible because
+
+we know definitely they because of the network issue, they cannot use this application. So,
+
+technically it is not feasible. So, that is the idea of technical feasibility. The second one is
+
+schedule feasibility. Schedule feasibility means within the agreed time is it possible to complete
+
+this project. Assume there is a project, the scope is like one year project, but the client is asking the
+
+outcome within three months. So, that is not that the schedule feasibility is not there, it is not
+
+possible to complete. So, we have to check that one. Then we have something called economical feasibility.
+
+Economical feasibility means according to the allocated budget, is it possible to complete this project, that is
+
+economical feasibility. Economically, is it possible to do this? Then the next one is operational feasibility.
+
+What is operational feasibility? Whether the people, that means the users of the system are willing to use this system. For an example, again, we can take that rural farmers. Sometimes they may not know to use the mobile phone or they don't have any, they are not computer literate. They don't have any idea about this kind of things. So, they may reluctant to use the system. Then it is useless to develop something like that.
+
+So, operational feasibility is not there. So, operational feasibility is not there. So, what is the other one? Economic, legal feasibility. Last one is legal feasibility. That means, legal feasibility is not going to apply for all the projects. But sometimes, there may be some legal barriers to do some projects. Some because of the government laws and regulations, it may not possible to complete like that because of the government.
+
+government rules and regulations in that case again legal barrier is there so
+
+there's no way to continue the project so those are the different types of
+
+feasibility study if all these things are ok only we can go for this SDLC now
+
+under SDLC the first phase is requirement gathering and analysis so
+
+simply what happens now if you want to develop a software you have to gather the
+
+requirement you have to meet the client you have to discuss with them you have
+
+to gather the requirement and you have to analyze it now when it comes to
+
+requirement gathering we have to deal with a term called stakeholders so in a
+
+project who are the stakeholders stakeholder means any person directly or
+
+indirectly affected by the system directly or indirectly so the
+
+management people they are stakeholders then the sponsors they are stakeholders if there are any
+
+suppliers or someone related to the company they are stakeholders and the end users they are also
+
+stakeholders so among these stakeholders the most important part is the end user end user means any
+
+person directly involved with the system that means directly use the system those people we call end users so normally when we gather requirements we have to gather the requirements from all the stakeholders but mainly we have to contact contact the end users because they are the ones know this project very well then ok requirement we can gather the requirements from the end users so what are the techniques then we discuss what are the techniques those the techniques are
+
+we can do we can do interviews with them or we can do focus groups that means group discussions with them or we can distribute questionnaires to them then we can go for prototyping that means we create a dummy model and show them and through that we gather the requirement there is another way and today we are talking about that prototyping we can do some brainstorming
+
+So, we are talking about that prototyping sessions that means we are taking their creative ideas to develop our system so likewise there are several methods to gather the requirements after gathering requirements the next phase is now we have to gather the requirement and within the same phase we have to do another thing we have to categorize these gathered requirement into three types functional requirements non-functional constraints so what are the functional requirements functional
+
+requirements means the functions of the system. So, out of the gathered requirement you have to
+
+identify, you have to go through the requirements and identify what are the functions of the system,
+
+functional requirements means that. Then non-functional requirements, non-functional
+
+means performance related requirements, availability, reliability that kind of things
+
+coming under non-functional requirements. Then the constraints is the third one. Constraint means
+
+the limitations. That means sometimes the customer may say I need this system to work only within the
+
+local level, local network. Then that is a constraint. So, you have to create the system according to that.
+
+Sometimes they say this mobile application should only run on Android only. So, that may for some
+
+reason that maybe they are constrained. So, you have to accept that because he is your client.
+
+Because they are building the system for them. So, you have to accept that. So, constraints means
+
+something like that some barriers from the limitations not barriers actually limitations
+
+from the customer side. So, those are the three things now the gathered requirements we have to categorize.
+
+And then with this categorize requirements limitations and the functional non-functional requirements we are
+
+moving to the design stage. The second phase is the design stage. So, here what we do we gather we
+
+based on the gathered requirements we design the software. So, that is simply clear. We design the software. So,
+
+we can do high level design as well as we can do low level design. So, we can draw different diagrams. Now,
+
+later you are learning something called unified UML diagram. So, all these UML diagrams coming under this
+
+design phase. So, we create that design phase. So, we create that in the design phase. And then with this
+
+design now at the end of the design phase we have the design. We move to the implementation phase. That
+
+means we are going to implement the system. So, in that phase we can use any suitable program in languages,
+
+language and using tools and techniques we can implement the design software. And the next phase is we are
+
+moving to testing. That means now created software we need to test. So, testing there are several types.
+
+Basic one is unit testing. That means when we develop the software normally we develop it as modules,
+
+separate modules. So, each module we need to test separately. That is called unit testing.
+
+Each module we will say two, three modules A, B, C. So, A, B, C you need to test separately.
+
+So, that is called unit testing. Once you complete the unit testing now A, B, C working separately without any problem.
+
+Then you combine A and B and that subsystem you test again. That is called integration testing.
+
+You integrate component by component A, B, C and then each subsystem you test. That is called integration testing.
+
+Then the third one is system testing. That means once you complete the integration testing,
+
+finally you will end up with the whole system complete system. So, then the whole system you test at once.
+
+That is called system testing. After that the next testing type is user acceptance testing. Now,
+
+normally unit testing through system testing conducted by development team. But this user acceptance testing,
+
+normally actual users are involved in. They test the system and see whether it is working properly.
+
+So, that is testing phase and then if it is tested and no errors and if there are any errors, we can fix them.
+
+And finally, we can move to deployment stage. So, deployment means we are going to install the system in the
+
+client environment. So, in that case what we have to do sometimes we do pilot releases. Pilot releases means
+
+we release the software only to selected set of computers in the client environment, not to all the computers.
+
+Then for like two weeks, they just run those, they just run the system in those machines only.
+
+And they do a pilot test that is working properly. After two weeks like time, if it is working properly,
+
+then gradually they introduce the system to other machines as well to the whole company. So, that is,
+
+that kind of thing you can do under deployment stage. And additionally, in the deployment stage,
+
+you have to create user manuals, different supporting documents. Sometimes you have to train the people.
+
+That means the end users you have to train. If they feel like difficult to adapt to this new system,
+
+then sometimes you have to create FAQs for them. And sometimes you have to open help desk for them for
+
+some time. So, likewise, you have to help the end users of that client environment to use the system
+
+and get used to that. And finally, at the end of the deployment stage, we are moving to the maintenance
+
+stage. So, maintenance stage means after that we are starting maintaining the software. Now, it is fully
+
+used within the client environment. So, maintenance, there are three things. Corrective maintenance,
+
+adaptive maintenance, perfective maintenance. So, simple simplest one is the corrective maintenance.
+
+Corrective maintenance means if there are any errors in the system that you deployed,
+
+it is a must you have to fix it. That is corrective maintenance. The next one is adaptive maintenance.
+
+Adaptive maintenance means sometimes after three months, the client may say,
+
+Now, now the system means we need to, now it is working only for Android. Can you change it to work in the IOS as well?
+
+Then so that is adaptive, adding to a new environment. That is a request to adapt the
+
+system into a new environment. So, that is called adaptive maintenance. Other one is perfective maintenance.
+
+Perfective maintenance means after like one year, normally business models are changing, business are evolving.
+
+So, today they have some set of functions in their business, but after one year definitely
+
+they may have different set of functions. But the current system that you have developed,
+
+those new functions are not included. So, like after one year like time, they may say,
+
+now we have some new functions, can you please include those functions also into the system.
+
+So, they may request something like that. So, they are asking you to make the system perfect.
+
+So, we call that as perfective maintenance. So, we have corrective, adaptive and perfective
+
+maintenance. So, those are the three types of maintenance. So, that is the end of SDLC briefly.
+
+And the latter part of the last week lecture, we discussed about ethics. So, simply ethics means
+
+we have to divide in between what is good and bad. So, as a professional, now one day you are going
+
+to work as a professional in the IT industry. So, you have to think what is good and what is wrong.
+
+So, there are sometimes there are no rules, but you have to behave ethically. That's the thing.
+
+Now, one example we took, assume you are the software developer of a particular project. And you know,
+
+in this particular system, now you already developed it, but still there are some errors, bugs.
+
+Some known bugs are there, but you couldn't fix those things yet. But your higher management is asking
+
+you to release the system to the customer because the deadline is nearby.
+
+Now, as a professional person, software engineer, what is the decision you take? That is,
+
+where there is a place where are these ethics coming into action? What is the decision you take? Now,
+
+the higher management is forcing you to release the system quickly with the bugs. But you know,
+
+there are some bugs and that may cause some harm to the client environment. So, as a professional person,
+
+as a responsible person, what you will do? That's why we need something called ethics. So, under ethics,
+
+there are something called code of ethics developed by different institutions. Like IEEE, they have their
+
+code of ethics. ACM, they have their code of ethics. And different countries like
+
+BCS, they have British Computer Society, they have their own code of ethics. ACM, they have code of ethics.
+
+So, different code of ethics are there. So, all these things ultimately talk about the well-being of
+
+general public. So, when you take a decision as a professional, you have to think about the well-being
+
+of public, not only one party. That's what the main idea behind this ethics. And there are different code
+
+of ethics. You don't need to remember those things, but you have to behave accordingly. So, that's the
+
+summary of the last week lecture. Now, we will move to today's lecture. Today's lecture is software
+
+development model. So, simply what we call the software process model. Now, what is the connection?
+
+Now, these are the learning outcomes. At the end of this lecture, you should be able to answer these
+
+questions. That's the meaning of learning outcomes. And these are the topics we are going to discuss today.
+
+Now, first thing is, what is the connection between what we call SDLC and the software process model?
+
+So, Putala, remember in my lectures, I am not going to read slide by word by word. I will just explain
+
+the meaning of these things. Let surely you can go through this content in the slide. Now, what this slide simply says,
+
+it says what is the connection between the last week lecture and today's lecture? Now, what was the last
+
+week lecture? SDLC, software development life cycle. Now, today we are going to talk about something
+
+called software process model. So, what is the connection between these two? So, the connection is
+
+something like this. I will take an example, general example. Assume, you are going to now,
+
+Mathisha and Mahima are going to build a house. Now, both of you meet an architect and both of you can
+
+explain your requirement. So, Mathisha may tell the architect, I want to build my own house and these
+
+are the things I want. I need two floors in my house. I want to build the whole thing at once. Two floors,
+
+the whole house at once. That is the Mathisha's decision. Now, the Mahima can meet the architect and tell,
+
+I also want to build the house. I also want to build the house but for the moment I do not have enough money.
+
+So, what is my plan? I want to build the first floor first and then later I am planning to build the second
+
+floor. Now, Mathisha is going to build the whole house at once. The Mahima is going to build
+
+only the first floor. Now, when both of these are going to build this house, the steps, the basic steps
+
+we need to follow. When we build a house, is it going to change? That is the question. So,
+
+what are the basic steps? If you build a house, the whole thing or a part, what are the basic steps?
+
+You have to put the foundation. Then you have to build the walls. Then you have to create the roof.
+
+Then you have to do wiring, plumbing and other things, the tiling or whatever the thing. So,
+
+those are the basic steps. So, whether you are going to build the house as a whole thing at once
+
+or whether you are going to build the only one part, these basic steps are not going to change.
+
+That means now, Mahima also has to build the farm, put the foundation for the first floor.
+
+In that area. Then build the walls for the first floor. Then create the, if it is not a roof, if it is
+
+a concrete, put the concrete, that is like the roof for the first floor. Then plumbing, wiring, those
+
+things need to be done at least for that particular part. So, what I want to tell you, even though the
+
+way we are doing different, the basic steps are same. If you want to build a house, the basic steps are
+
+always same. What is different thing? The way you build it. One person build it at once, the other person
+
+build it step by step. So, this SDLC and software process model collection also same. So, whatever the
+
+process model, the back end is SDLC. That means, whatever the process model you follow to build your
+
+software, in the back end, you have to follow these phases, requirement gathering, design, implementation,
+
+testing, deployment and maintenance. But what is the difference? The way you execute these phases.
+
+That is the difference. So, that is the connection between SDLC. So, what I want to tell you ultimately,
+
+all these software process models, there are several software process models. That means, there are
+
+different ways of building software. That is the meaning of a software process model, a way of building a
+
+software. So, there are different ways, there are different process models. But all these software
+
+process models, the back end is, you are executing this SDLC in a one manner, in a different way.
+
+So, always SDLC is based for any software process model. So, remember that. Now, we will move to the
+
+next slide. Now, here again, it says how it is connected. And there are several software process
+
+models. Now, these are the things we are going to talk about. Waterfall model, V model, incremental model,
+
+spiral model, prototyping model and the latest one is agile methodology. Now, we will start with the first
+
+one, waterfall model. Now, actually, this waterfall model is very, waterfall model, there are two types,
+
+two things. One is called classical waterfall model. That is the first Proftia process model introduced,
+
+classical waterfall model. And later, this classical waterfall model improved little bit by doing a small
+
+adjustment. That is called iterative waterfall model. So, whatever, whether it is classical or iterative,
+
+the waterfall model is the most basic way of developing a software. So, what, why we call this as a
+
+waterfall model, because this when you draw a diagram for this model, this is the diagram you can draw.
+
+So, in this diagram, you can see it is like a cascade of waterfall. That is why we call this model as waterfall model.
+
+So, in this waterfall model, again, I told you whatever the process model, the backbone is SDLC. Now, this is the way
+
+we execute this SDLC in this waterfall model, one after the other sequentially. That means, initially,
+
+you will do the feasibility study. So, actually, that is not inside the SDLC, but we will take it as a step.
+
+And then, after completing the feasibility study, you will do the analysis means requirement gathering and
+
+analysis based, then complete the requirement gathering and analysis. After that, we do go for design. After
+
+that, we do implementation, then we test it and we deploy and maintain. So, that is the waterfall model,
+
+especially the classical waterfall model. So, here, now, this waterfall model, there is a problem. What is the,
+
+there are several problems? The main problem is, in this waterfall model, when you take the first phase,
+
+requirement gathering and analysis, once you gather the requirement in this waterfall model,
+
+we are going to freeze this requirement, freeze in the sense, after that, once we gather the requirement and
+
+we get the approval from the customer, after that, we are not going to, we are not willing to change that
+
+requirement later. So, that problem is there. Requirements cannot change at the middle, that is not possible in this,
+
+what we call this classical waterfall model. So, here, what happens? Now, you gather the requirement,
+
+the customer will give you the requirement and you gather the requirement, but actually, you do not know
+
+whether you gather the correct requirement, you gather something. And now, you freeze the requirement. You feel like,
+
+okay, this is the actual requirement of the client. Then, with that, you go to the design phase. Assume, when you are doing the design,
+
+now, sometimes that is the nature. When we do something only, we understand there are some errors.
+
+So, in the same way, when you design the software, sometimes you may feel like this requirement should be changed. We feel like it is wrong.
+
+Then, in this classical waterfall model, theoretically, there is no way to go back. There is no way to go back and correct that incorrect requirement.
+
+So, what happens? So, what happens is all these errors coming out in this classical waterfall model when you do testing phase. So, look at this model, testing is a later stage. So, until then, there is no way to correct these errors. So, that is a big problem in this classical waterfall model.
+
+So, because that is one thing. So, because that is one thing, there is a major problem with this classical waterfall model, there is no way to go back to the previous phase and correct the errors. Because of this problem, later, another waterfall model introduced called iterative waterfall model. So, what is this iterative waterfall model? This is same as classical waterfall model, but
+
+something newly added. So, here you can see in between these phases, there are some back arrows. Back arrows, these are called feedback paths. So, what happens in this feedback path? So, as I told you earlier, in the requirement gathering, you gather the requirement and thinking that that is correct, you go to the design. When you do the design, if you find
+
+any errors, any errors, any errors, any errors, now in this iterative waterfall model, you can go back because there is a feedback path. You can go back to requirement gathering phase and correct the requirement and come back. So, in the same way, when you do implementation, if you find like this requirement, this design, this part of the design should be changed, then you can go back to the design and correct the design. Now, if you want to go back further, like to up to requirement gathering
+
+and change it, change it and come back, that possibility is there. So, when you compare waterfall model and the iterative waterfall model, the better one is iterative waterfall model because it is having feedback paths. But there are some anyway, so because of that, when we compare classical and iterative, the people, if a person using waterfall model, they go for iterative waterfall model. Now, the classical one is not used today.
+
+Okay, we are not using classical waterfall model. Okay, we are not using classical waterfall model. If you want to use waterfall model, we have to go for iterative one. Okay, but there are some situations, this waterfall, this iterative waterfall model is suitable.
+
+So, what are the situations, this waterfall model is suitable. If there is a project where the requirements are very clear and simple, you can do that project using iterative waterfall model. And the other thing, when you look at the project, if you know the requirements are very rare to be changed, then you can go for iterative waterfall model.
+
+So, if you look at the project, then if you look at the project, then you can go for iterative waterfall model. And also, if the development team people has experience, if they have experience of developing the same system.
+
+Now, for an example, assume you have to, they are very well experienced development team.
+
+Now, they are getting a project to develop a payroll system.
+
+Now, we know payroll system nowadays a very common system.
+
+Everybody knows about payroll system functions and it is something very common.
+
+And this well experienced development team may have very good experience of developing previous payroll systems.
+
+Then they already know the requirement.
+
+So, they have a lot of good experience of similar systems.
+
+So, they can use the iterative waterfall model and do that project.
+
+But if you have very complex projects, if you have any projects where requirements can be frequently changed,
+
+then if you have any projects you want to take the customer feedback frequently, then waterfall model, whether even the iterative waterfall model is,
+
+not good.
+
+So, then we need another solution.
+
+So, for that we have some other process model.
+
+So, the starting point is waterfall model.
+
+Now, there is another one.
+
+What is that?
+
+Okay.
+
+There is an activity.
+
+Think of an example, student record system.
+
+Would you use waterfall or iterative waterfall for it?
+
+Justify your answer with one reason.
+
+So, definitely we know better to go for iterative waterfall model.
+
+Okay.
+
+So, iterative waterfall model is better.
+
+Why it is better?
+
+You have to give the answer because student record management system, some requirements may change based on the feedback from the administrative staff.
+
+So, it is better to go for this iterative waterfall model where you can go back to the previous phase and correct the things.
+
+Okay.
+
+So, answer is iterative waterfall model.
+
+Now, we are going to discuss about another process model called V model.
+
+Now, why we call this as V model?
+
+When we draw a diagram for this model, the shape, it is like a V shape.
+
+Okay.
+
+That is why we call this as V model.
+
+So, in this V model, at what time we use this V model, if you want to specifically test a particular system, something like safety critical systems, medical related system.
+
+If it is a medical related system, we need to test it thoroughly.
+
+Because if it is a medical related system, if it is giving a wrong decision, assume you are developing application to check whether a particular, you are inputting some reports and you decide whether that patient is having a cancer or not.
+
+Then that kind of system is very critical because you are giving a very critical decision.
+
+So, you have to test this system very thoroughly.
+
+Otherwise, if the system will give a wrong output, that can be make a very big problem.
+
+And the normal person, if the system gives that you have a cancer, can you imagine the situation?
+
+The mental depression and everything will happen.
+
+So, we have to be very careful when we develop this what we call the safety critical system or simply the medical system.
+
+So, when we have to develop something like that, better to follow this V models of TIA process model.
+
+So, what is happening here in this V model?
+
+Now, in this V, you can see two sides, left side and the right side.
+
+This right side of the V totally allocated for testing.
+
+That means a lot of, that means a large amount of time allocated for testing in this model.
+
+So, simply what happened in this V model?
+
+Now, V model start from this left side top.
+
+Okay, left side top.
+
+Somewhere here, requirement gathering.
+
+So, here what happens?
+
+Now, another thing happened.
+
+Now, normally in software development life cycle, software testers, what we call the QA engineers, normally these QA engineers coming to action in the latter part of the development.
+
+That means, during the testing phase normally.
+
+But in this V model, these QA engineers start their work parallely with the software engineers.
+
+So, how it happens?
+
+Now, in this V model, this side, the right side, we have the software engineers, sorry, left side.
+
+This side, we have the QA engineers, right side.
+
+So, initially, the software engineers gather the requirements with the BAS, business analyst.
+
+And they create a document called requirement, software requirement specification, SRS document.
+
+Then in this V model, what happens?
+
+This software engineers will pass that document to the QA engineers.
+
+They create it.
+
+And that's why this arrow is there, the first arrow.
+
+Then the QA engineers, what they do?
+
+They look at this SRS document, the gathered requirements.
+
+And based on that, they create user acceptance test plans.
+
+Okay.
+
+Not testing.
+
+They can't do testing because we haven't completed the system yet.
+
+What they do?
+
+They create the user acceptance test plans and the test cases.
+
+They create the plan and the test cases and keep.
+
+Okay.
+
+Now, software engineers, now when they create the test plan, sometimes they may find errors
+
+in the requirements.
+
+In that case, that's why this arrow is, there are two arrowheads in both sides.
+
+Then the QA engineers will inform the SC, there should be error in this requirement.
+
+Can you please check?
+
+Then the SC people, they will check it again.
+
+If there are any errors, they can fix.
+
+Okay.
+
+Then, okay, now that is recommend gathering phase happening and parallely the QA engineers
+
+create the acceptance test plan and the test cases.
+
+Then software engineers, now go for design phase.
+
+So, first of all, they create the high level design of the system, high level design.
+
+Then this high level design, they again send to the QA engineers in the other side.
+
+Okay.
+
+Then what this QA engineers will do?
+
+Based on the high level design, they create system test plans and the test cases.
+
+They just create the plan only.
+
+Okay.
+
+Then the software engineers, based on the high level design in the left side, now they do
+
+low level design, module wise design.
+
+Then what happens?
+
+Then what happens?
+
+Then what happens?
+
+Then what happens?
+
+They send this low level, the module wise design to the QA engineers in the right side.
+
+Now the QA engineers look at the low level design.
+
+They create integration test plans.
+
+Okay.
+
+Okay.
+
+Then, now the software engineers, they create the individual modules.
+
+They design the individual modules.
+
+They send to the QA engineers and they do, they create unit test plans.
+
+Unit test plans.
+
+And the test cases.
+
+And the bottom of the V is allocated for the coding phase.
+
+Now, when we execute, we start from the left hand side top.
+
+Requirement gathering, all these phase that are coming under design.
+
+And the bottom is coding.
+
+And the whole, the right side, the total part is allocated for testing.
+
+So, more time allocated for testing.
+
+Now, when, after the coding, now the QA engineers already created this test plan.
+
+They already have the unit test plans, integration test plans, system test plans, and the acceptance test plans.
+
+So, what they have to do simply, they have to execute these test plans already created.
+
+Initially, they execute the unit test plan, then the integration test plan, system test plan, and the acceptance test plans.
+
+So, that is how the V model is working.
+
+So, V model is better, what I told you, when there is a project that you want to test thoroughly, we can go for V model.
+
+Okay.
+
+The next one is prototyping model, another process model.
+
+Now, prototyping model we use in a situation where the requirements are very not clear.
+
+Because there are some clients, now most of the time, the clients are the business people.
+
+Some people are not computer literate.
+
+So, we can't expect all our clients are computer literate and they are very sound in their technical.
+
+They are not technically sound, most of the people.
+
+Then what happens when we ask the question, what kind of system you need and what are the functions, they may explain something, but that may not actually they need.
+
+Most of the time that happens, they explain something, but they don't know how to explain it properly.
+
+That's the problem.
+
+Now, as a software engineer, and now you can ask them first of all, okay, what kind of system you need.
+
+Then they will try to explain as they know, they will explain I need this function, that function, this function should be like this.
+
+Likewise, they will explain.
+
+Then when you hear their explanation, you may feel like they are not now.
+
+From your experience as a software engineer, you can think, okay, they are explaining, but that explanation is not clear.
+
+It's not clear to you.
+
+You can't exactly identify what are the actual requirements they need.
+
+In that case, in that kind of situation, if you are facing such situation, you can use the prototyping model to build your software.
+
+What is this prototyping model?
+
+You initially, okay, you do a quick requirement gathering.
+
+That means you meet the client and quickly, like within one day, you just get the idea and do a quick requirement gathering.
+
+That means roughly you ask questions and understand what kind of thing they expect.
+
+Then you come back to your place and you create a dummy system, what we call the prototype.
+
+So, prototype is a dummy system, but it is a working dummy system.
+
+So, you create this prototype.
+
+Then what you do, you go back to the client and show this prototype and ask, can you check this prototype?
+
+And tell me whether it is what you actually expected.
+
+Now, normally what is the nature of people, when you explain something, you can't do it sometimes.
+
+But when someone show you something and ask questions, now you have something to experience.
+
+You have a system somehow.
+
+It is a dummy system, but kind of a working system.
+
+Then when you look at the system, you can map your thoughts in the system and you can understand, okay, this is what I need.
+
+Oh, this place should change.
+
+This is not what I expected.
+
+So, with the prototype, this client will be able to explain the system more clearly.
+
+So, they may look at you, the prototype and will tell you, okay, these functions are okay, but in this function, I need to do this change.
+
+I need this one in another way.
+
+So, they will explain, give you feedback.
+
+So, you come back and you refine the prototype, update it according to the given feedback.
+
+Then you go again to the client and show it again.
+
+So, likewise, you get the feedback, refine it.
+
+Again, get the feedback, you refine it.
+
+You continue this cycle until they say, okay, now the whole system is okay for me.
+
+On that day, that means indirectly what you have done through this prototyping.
+
+You gathered indirectly all the requirements correctly.
+
+So, at that time, you can stop improving your prototype because now you know the prototype will show you all the actual functions they need.
+
+Then in prototyping, another thing is there, normally we are not converting the prototype into actual system by putting patches.
+
+Normal thing is we should discard the prototype because now we just use the prototype as a tool to gather requirements only.
+
+Not to deliver it to the client.
+
+So, now your purpose fulfilled.
+
+You wanted to gather the requirement correctly.
+
+So, you use the prototype.
+
+If it is okay now, you can discard the prototype and now you can build the actual system from the scratch.
+
+That is what we call the prototyping model.
+
+These are the steps.
+
+Gather basic requirements.
+
+Build a quick prototype.
+
+Show it to the customer or the user.
+
+Get their feedback and improve it.
+
+These three and four steps can go in a cycle.
+
+And the last one, once you are happy about the system or the prototype, build the real system by discarding the prototype.
+
+Okay.
+
+Prototype model is better when you can't understand really what your client needs.
+
+So, you can avoid very big mistakes.
+
+So, you can avoid very big mistakes.
+
+And this is good, very good when the requirements are unclear.
+
+All the requirements can change frequently.
+
+In that cases also, this is better.
+
+Okay.
+
+Now, that is prototyping model.
+
+Now, we discussed three models.
+
+Waterfall model under that two classical and iterative.
+
+V model and the prototyping model.
+
+Now, we are going to talk about the fourth one.
+
+The fourth one is incremental model.
+
+So, incremental model, the best example is how this Windows operating system evolution.
+
+Now, if we think about Windows operating system, now Windows is not something they develop for a particular set of people.
+
+That means now, normally what we do in companies most of the time for that particular software, they are separate specific client.
+
+Okay.
+
+Specific client.
+
+For an example, assume you are going to develop a payroll system for Slit Finance Department.
+
+So, who is your client?
+
+Slit Finance Department.
+
+So, you do not need to think about general commands, general payroll system functions.
+
+You need to know, but you do not need to worry because specifically you are designing and developing it for Slit.
+
+But when we, when Microsoft developed this Windows operating system, that is not something like that.
+
+They wanted to develop, to use by everybody in the world.
+
+Around the world, everybody should use this.
+
+Then this kind of incremental model may be a good solution.
+
+So, in this incremental model, what happens?
+
+We do very frequent releases.
+
+That is the special thing in this model.
+
+We do frequent releases.
+
+So, what we do in this incremental model?
+
+Most of the time, this incremental model is good when you have to develop little bit large, complex software systems.
+
+That means, if a particular system is having assumed, you have to develop a system with 20 functions.
+
+So, you, we know we cannot develop all 20 functions at once.
+
+And until we develop all 20 functions, the client also cannot wait.
+
+So, definitely you have to develop something partially and give them to use.
+
+While they are using that, you can start developing the rest.
+
+So, like we are releasing something version wise.
+
+Now, this is similar to the example we took earlier, house building example.
+
+That means, this is like, incremental model is like the Mahima scenario.
+
+First of all, complete the first flow.
+
+Then, that is version 1 of the house.
+
+Then, complete this version 2, second flow.
+
+If you have a third flow, that is version 3.
+
+So, incremental model, what happens?
+
+We gather the requirements.
+
+And out of the requirements, we select what are the functions we include in the version 1.
+
+What are the functions we include in version 1.
+
+Then, what we do in this version 1, we decide, okay, these are the, now, we select only basic functions first.
+
+Because people going to use this system version 1.
+
+So, the basic functions should be there.
+
+Otherwise, it is useless to use such kind of system.
+
+So, basic things should be there.
+
+So, you select out of, assume there are 10 functions, out of 10 for the version 1, you are selecting 3.
+
+Then, you build the system version 1 for that 3 functions and release it to the customers.
+
+While the customers using that version, now, customer is happy because they have something, they have something to use.
+
+While they are using version 1, you start the work on version 2.
+
+Now, version 2 is having previous 3 functions plus another 2 added, now 5 functions.
+
+Now, while you are developing this version 2, sometimes the client may give you some, show you some errors in the version 1 functions.
+
+Or they can give you feedback, this version 1, this function can be improved like this.
+
+So, they can give you that kind of things as well.
+
+So, you can improve version 2, the already existing functions with that feedback.
+
+So, you release the version 2.
+
+And then, version 3.
+
+Now, you are releasing version 2, the people start using version 2.
+
+While they are using version 2, you start working on version 3.
+
+Now, version 3 is having 7 functions.
+
+Previous 5 and another new 2 functions introduced.
+
+So, likewise, without completing everything at once, you release the software as version wise.
+
+That is called incremental model.
+
+So, I think that is clear.
+
+So, the best example is Windows operating system.
+
+Now, initially they released Windows 7.
+
+While the people using Windows 7, they worked on Windows 8.
+
+So, then after some time, they released Windows 8, then Windows 10, Windows 11.
+
+Now, these are different versions of Windows.
+
+So, they have used incremental model to build the operating system.
+
+And there is another model.
+
+That is the last model, not the last model.
+
+There is another one called agile.
+
+Now, another model is spiral model.
+
+Now, this spiral model is somewhat little bit critical.
+
+A little bit not critical.
+
+It is complex.
+
+Little bit complex model to follow.
+
+Because of that, we are, we use this model little bit rarely.
+
+So, in what kind of situation this spiral model is good?
+
+When you have to develop very dangerous systems.
+
+What are the dangerous systems if you want to develop a defense related thing?
+
+Like if you want to develop a software for a missile?
+
+That can be very dangerous.
+
+If you made a mistake, that can be very dangerous.
+
+So, defense related systems, better to use for this spiral model.
+
+So, systems related, software systems related to aircrafts.
+
+NASA like phases, they, if they build a software, they can use the spiral model.
+
+Because those mistakes, one thing is very dangerous.
+
+Other thing is, those mistakes are very costly.
+
+Because of that, better to go for this spiral model.
+
+So, why, why this spiral model is good for this risk related software?
+
+The reason in this spiral model, I will show you the diagram.
+
+So, here it says, this project, spiral model is good when you have large, complex, high risk projects.
+
+Large, complex, high risk projects.
+
+Especially for those high risk projects.
+
+Because defense and aerospace systems, where mistakes can be very costly or dangerous,
+
+requirements often change as the system develops.
+
+Now, this is the spiral model.
+
+So, this spiral model actually, this is a combination of several models.
+
+Combination of several models.
+
+That means, inside the spiral model, SDLC is running.
+
+Okay.
+
+SDLC is running.
+
+And inside the spiral model, the prototyping model also there.
+
+And inside the spiral model, incremental model is following.
+
+Incremental model also following.
+
+That is why we say spiral model is kind of a combination of several models.
+
+So, in this spiral model, you have the spiral like this.
+
+Okay.
+
+And the spiral again, you can say divide into four sections.
+
+Starting from here, the first one is we call the requirement gathering.
+
+Okay.
+
+This is not requirement gathering.
+
+It is planning phase.
+
+This is actually planning area.
+
+This first one.
+
+Then this is risk evaluation area.
+
+Risk management area.
+
+Then this is called design and development area.
+
+This is the evolution area.
+
+Fourth one.
+
+Planning stage.
+
+Risk analysis stage.
+
+Design, development, testing, everything happened here.
+
+And this is evolution.
+
+That means, taking the user feedback and go to the next level.
+
+Now, in this spiral model, this one spiral starting from here, coming here, up to here.
+
+Okay.
+
+One spiral.
+
+When you complete one spiral, you will complete SDLC phases.
+
+Okay.
+
+So, when you go through, now, when you go through this planning, you will do that requirement gathering, analysis phase related to the, another thing.
+
+When you complete one spiral, somewhere here, you release version 1.
+
+Then you do the version 2 here.
+
+Version 2, you release here.
+
+Then you start the version 3 and version 3, you release here.
+
+Then you start working for version 4.
+
+That is how it goes.
+
+And each and every version, there is a prototype is happening.
+
+It builds the prototype as well.
+
+Every spiral, every version, they create a prototype and verify the requirement from the customer.
+
+And what happens in the spiral when the spiral is going on?
+
+For one version, first part of the spiral, they do planning.
+
+That means, requirement gathering and analysis.
+
+Then for that planned phase, during the second section, I mean the second section, this area, for that planned task, it is the risk analysis is happening.
+
+Analyze the risk.
+
+What are any, what are the risks?
+
+If there are any risks, identify the mitigation strategies as well.
+
+What are the risks involved in this version of the system?
+
+If there are any risks involving, mitigation strategies will identify.
+
+Then the third part.
+
+Third part, that design, development, testing, all these things happening here.
+
+Design now, risk identified and mitigated.
+
+Then design the system, develop the system and test.
+
+Then the evolution means, we get the customer feedback for that particular version.
+
+And at the end, we release version 1.
+
+Then we start planning on version 2.
+
+Planning the version 2, risk analysis for version 2, design development test version 2, user testing of version 2 and release it.
+
+Then we planning version 3, risk analysis of version 3, design development and testing, user testing of version 3, release it.
+
+That is how the spiral model is going on.
+
+Now, this is somewhat complex model.
+
+So, rarely we use this process model to develop software.
+
+So, this is good for very complex risk associated projects.
+
+The last process model is agile model.
+
+So, this agile model, Putala, I am not going to discuss today because the third lecture is totally about agile.
+
+Now, under agile is methodology.
+
+Under this, there are several technologies are there.
+
+Under agile, there are several techniques like Scrum, Kanban, extreme programming, likewise.
+
+Now, in the third lecture, we are going to select one, a popular one called Scrum.
+
+And we are going to discuss how this Scrum is happening, basically.
+
+Okay.
+
+So, agile methodology is there.
+
+So, I am not going to discuss it now, today because we are going to discuss it in the third lecture, little bit in detail.
+
+So, what is the importance of this agile?
+
+One thing is, now incremental model, what we do, we quickly we release the different versions.
+
+So, that feature also there with this agile.
+
+In agile, every, we call it a sprint.
+
+At the end of each sprint, we develop and release a software.
+
+So, that feature is there.
+
+Quick, customers can have quick releases.
+
+The most important thing in this agile is, you can get customer feedback frequently.
+
+That means, at the end of each sprint, customer can give the feedback and change the requirement.
+
+So, in this agile model, the most important part is, customers can change the requirements time to time.
+
+So, that is a very good change in this agile model.
+
+That is why today, companies, this agile model is very popular.
+
+Because now, most of the time in our projects, the requirements are changing.
+
+So, somehow, we have to accept.
+
+So, as a developer, we cannot say, no, no, we cannot do changes at the middle.
+
+We have to freeze the requirement after gathering.
+
+We cannot say like that.
+
+So, the nature is, the things are changing.
+
+So, we have to, as the development team, we have to accept that.
+
+So, this agile model is designed to accept that user changes frequently.
+
+So, this agile methodology among all the other process models, now the companies mainly moving to this agile methodology.
+
+So, under agile, there are several things, especially two things, Scrum and the Kanban.
+
+So, in the next lecture, we will talk about Scrum methodology a little bit in detail.
+
+There are things I am not going to talk.
+
+Product owners, Scrum master, development team, and there are some elements like path logs.
+
+So, we will discuss that in that next week lecture.
+
+And this table shows the comparison between these software process models.
+
+And this says how to select a particular process model.
+
+Okay.
+
+Now, look at this activity.
+
+Now, this activity says you must rapidly deploy a nationwide COVID-19 vaccination appointment system while the pandemic is still spreading.
+
+Now, what is the scenario?
+
+Now, assume you are in this COVID-19 pandemic.
+
+Now, you are within the pandemic, pandemic era.
+
+Now, what happens?
+
+You are a software engineer and you have given the task to develop a vaccination appointment system.
+
+Now, the pandemic is still spreading.
+
+So, you have to, now what you have to think?
+
+You have to give this solution very quickly.
+
+Which SDLC model would you adapt to deliver usable features quickly and why?
+
+Which one is suitable for this scenario?
+
+Which process model you may use?
+
+That is the question it is asking.
+
+Now, you have heard about waterfall models, incremental model, prototyping model, spiral model, V model.
+
+Which one is better according to this scenario?
+
+What do you think?
+
+Okay.
+
+What do you think?
+
+Waterfall model.
+
+Yes.
+
+Waterfall model.
+
+Will it, now waterfall model put that.
+
+Now, anyway, there are two, classical and iterative, but classical waterfall model we are not going to use.
+
+There are a lot of drawbacks.
+
+But iterative still people using, but I told you, iterative waterfall model is better when you have very common systems, very simple systems.
+
+Systems which, where the requirements are very clear.
+
+But this COVID-19 pandemic means something new to people.
+
+We do not know.
+
+And the vaccination appointment system is not something very common.
+
+So, waterfall model is not going to work here.
+
+And the other thing in waterfall model, we cannot have a quick output.
+
+Okay.
+
+Now, this table shows the answer.
+
+Okay.
+
+Waterfall model suitability is poor.
+
+Why?
+
+Requires all requirements upfront, no early delivery, no flexible changes.
+
+That means waterfall model is not supporting for early deliveries.
+
+Waterfall model is not supporting for changes of requirements.
+
+So, all the things should be there.
+
+All the requirements should be there.
+
+But the pandemic is running.
+
+The situation can change time to time.
+
+So, we cannot guarantee the requirements are not going to change.
+
+So, waterfall model suitability is poor.
+
+Then iterative waterfall model, that also limited.
+
+Why?
+
+There are some flexibilities there.
+
+It is allowing to going back.
+
+But still slow and not ideal for urgent rollout.
+
+Now, we need some system urgent.
+
+So, that urgent thing will not support by this either of this waterfall models.
+
+Now, you have to think about V model.
+
+This is not suitable.
+
+Why?
+
+V model is very heavy testing.
+
+It is having very heavy testing now.
+
+Now, here what we have to understand.
+
+Now, the pandemic is spreading.
+
+We need this system very quickly.
+
+Time constraint is there.
+
+Always you have to think about this.
+
+We need something very quickly.
+
+So, V model is testing the system throughout a long time.
+
+So, that is not suitable for the, to build something like this quickly.
+
+Spiral model.
+
+It is too complex.
+
+Risk is focused.
+
+So, this is suitable for very high risk, large system.
+
+So, spiral is not going to work.
+
+Then agile, agile is possible.
+
+We can think agile is possible because it will deliver the things quickly one after the other.
+
+That means quick delivery is possible.
+
+And changes of requirements also possible.
+
+But the thing is, to follow agile methodology, this development team, now normal development team cannot follow agile principles.
+
+To follow agile, someone should know about agile.
+
+That means simply what we can say, this development team need to agile trained.
+
+They need to be agile trained.
+
+But here the problem is, we don't know during this pandemic, whether our development team is agile trained.
+
+That guarantee is not there.
+
+That's why here it says this is possible.
+
+But if the team is not agile trained, we have to forget about this agile method, process model as well.
+
+Then prototyping is not suitable.
+
+Why?
+
+We don't have time to create a prototype and gather a requirement because we need to develop the system quickly.
+
+We don't have that much of time.
+
+So, it takes too much time to develop the prototype even.
+
+So, totally out.
+
+Prototyping model, totally out.
+
+Then the other suitable one is, according to agile trained thing and everything,
+
+the suitable one is incremental model is the best choice according to this situation.
+
+Why?
+
+It is enabling early delivery.
+
+Handle changing requirements are possible because when we release a version 2,
+
+we can change the requirements.
+
+Allow feedback based on updates.
+
+So, the people can give feedback.
+
+That means, version 1, you release of the appointment system.
+
+While the government use the version 1, you work on version 2 and you get the feedback and improve the version 2.
+
+So, the client or the government can have a quick system to use plus they can change requirements at the end of each version.
+
+So, the best choice is incremental model.
+
+So, in the process model, another thing you should know, we cannot say this model, there are no hard rules in between these process models.
+
+We can't say, okay, this project agile only, this project incremental only, this project prototyping.
+
+There is nothing like that.
+
+According to the situation, according to the client requirement, sometimes two, three models may suitable.
+
+Then out of that, you have to further analyze and decide what is the best model out of these three.
+
+That's how it goes.
+
+Otherwise, there is no exactly for this kind.
+
+There is no any hard rules like this kind of projects incremental.
+
+This kind of projects V model.
+
+There is nothing like that, okay.
+
+So, you have to get the idea of these process models.
+
+Then according to the scenario or the situation, you have to decide what is the best models to use.
+
+So, that's the end of the second lecture.
+
+Then this assignment briefing, I will show you.
+
+The recording, I will stop here.

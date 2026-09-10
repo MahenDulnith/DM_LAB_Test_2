@@ -1,0 +1,2949 @@
+100. Okay, let's start. I think you can see my screen. Now, last week, we couldn't finish
+
+this use case diagram lecture. So, what I am going to do, I am going to finish it today and we are going
+
+to start the activity diagram. And remember now, the next assessment is the midterm, the eighth week,
+
+I think before the week before the new year. So, anyway, you will get questions up to the activity
+
+diagram including that. So, today I am going to start activity diagram. So, definitely before the
+
+midterm, we may be able to complete the activity diagram. Now, tomorrow also you have the
+
+physical lecture starting from 8.30. So, sometimes I may now, we didn't do any tutorials, actual
+
+tutorials are for you, but we will randomly discuss some questions. So, tomorrow sometimes I may start
+
+discussing the tutorials because you will get questions up to midterm. But midterm, that is
+
+MCQs. You don't have to draw anything, nothing structured, all are MCQs. So, now you can start
+
+going through the content and get ready for the midterm, getting ready for the midterm.
+
+Tomorrow, we will discuss and we have two more diagrams. We have to discuss the sequence diagram
+
+and the use case, sorry, state machine diagram. Before the midterm, according to the schedule,
+
+we have to finish those two diagrams. And after the midterm, all the UML diagrams we finished and we are
+
+moving to some other aspects like some testing aspects and design patterns and supportive processes at the end
+
+of the midterm, the later part of the lecture series. Anyway, for midterm, you will assist until activity diagram, including that. Okay. Now, I think you remember what we discussed last week. We discussed there is something called UML, unified modeling language. So, we, that is a graphical language we use to represent
+
+our system graphically. Now, we are talking about software development. How to develop a software properly. So, this UML mainly we use during the design phase of the SDLC. We discussed that. Here now, in use case diagrams, what we do? Initially, this is the most of the time, this is the first diagram we draw for any
+
+software system that we are planning to develop. Because by looking at the diagram, what are the things that we can understand? We can understand one thing, what are the functions of the system? That is very important. You should understand clearly, sorry, what are the functions in the system? And the other thing we can understand by looking at this particular diagram is, who are the actors of the system? Actors in the sense. Now, in the diagram sense, we call as actors, but the actors in the sense, the users of the system.
+
+So, we can understand the system. So, we can understand who are the functions. So, we can understand who are the, what are the functions, who are the users and how these functions and actors or the users connected. That means, which user execute which function. Okay. So, that idea we can take. Okay. Then, to draw this diagram, we discussed, we have to know different notations, components in the diagram. If you know the notations easily, you can draw a sequence,
+
+use case diagram, use case diagram for a given scenario. Now, first thing, what we discussed is the system. That means, when you draw a use case diagram, I told you, you have to draw a rectangular boundary. So, outside the boundary, we draw what we call the actors and inside the boundary, we draw what we call the use cases.
+
+Okay. Then, then connect with the actors. Okay. So, this is what we call the system boundary. System boundary. Okay. Then, I think that is clear.
+
+Next one, the most important part is the use case. Use case is what? Sorry, the actor. Actor is the person who is going to execute the functions. So, in a use case diagram, there can be many actors.
+
+So, all the actors or the direct users of the system, we indicate in our system. Most of the time, I told you, these actors are human users. Most of the time. But sometimes, these actors can be external hardware or some other systems connected to this particular system.
+
+But most of the time, these actors represent human users. So, what is the notation we use? We use the stick figure to indicate the actor. And near the stick figure, we write the name of the actor like manager, customer, assistant, secretary, likewise. Okay.
+
+Then, the next important part is use case. So, use case is the most important thing in this use case diagram. These indicate the functions of the system. One use case represents one major function in the system. Assume your system is having four functions.
+
+Then, then your system or the high level diagram should have four major use cases. There can be include and extended use cases additionally. But there should be minimum main four use cases because one use case indicates one major function. So, what is the notation for a use case? I told you that is oval shape. We use the oval shape. And inside this, we write a verb noun phrase something like generate report.
+
+or validation, validate user or validate or we can say print bill if it is a use case.
+
+So, likewise, this is the way we are writing the use cases.
+
+Then now, we know how to draw the actors and how to draw the system boundary and the use cases.
+
+Then the next what we have to do, we have to connect these use cases and the actors.
+
+To connect the actors and the use cases, we use something called relationships.
+
+And under relationships, I told you, there are two types, actor-related relationships,
+
+use case-related relationships.
+
+Actor-related relationships, there are two types, association and the generalization.
+
+What is this association means?
+
+That is the simplest case of relationship.
+
+We have the actor and we have the use case.
+
+We will say dummy use case A.
+
+Then association means you just indicate this actor is going to execute this use case
+
+by drawing a solid line like this, connecting the actor and the use case.
+
+This is called association.
+
+A simple solid line in between the actor and the corresponding use case.
+
+So, this is called, again I am telling association.
+
+So, association is very easy.
+
+If this user is doing another use case, you can draw a solid line like this.
+
+If you have another user, now this is user P, this is user Q and this is the use case C.
+
+Use case C executed by actor Q.
+
+So, this is association.
+
+So, this is association.
+
+Then the next one is we have something called generalization.
+
+That means actors we can generalize.
+
+So, generalization we use when we, to reduce the number of associations in our diagram.
+
+That is the main purpose because when you have so many associations, so that your diagram become a mess.
+
+It is very difficult to read the diagram.
+
+So, in UML diagrams, all the diagrams, it is a must.
+
+We have to keep our diagram as much as simple.
+
+Simple as much as possible.
+
+So, that is the way we have to draw our UML diagrams.
+
+Otherwise, if you draw very crowded diagrams, we may not be able to understand the diagram.
+
+So, because of that, we have to make the diagram simple as much as possible, but containing all the needed information.
+
+Reduce the number of association is one way of making use case diagram simple.
+
+For that, what we can do, we can use generalization.
+
+So, in what kind of cases we are using generalization, assume that we have two actors in our system.
+
+Okay.
+
+This person is the manager and this person is the assistant.
+
+Okay.
+
+Now, the assistant can execute use case A and B.
+
+Manager can execute use case C and D.
+
+Okay.
+
+Now, I draw the association.
+
+But according to the scenario, it says the manager is a higher level person.
+
+Because of that, all the functions can be executed by the assistant also, possible by the manager as well.
+
+If you have a scenario like that, what you have to do?
+
+In the normal manner, how can you indicate that?
+
+You have to draw again two associations connecting like this.
+
+But when you draw more and more associations, I told you, your diagram becomes very crowded.
+
+To reduce that, what we can do, instead of these associations, okay, without drawing these two lines, we can draw a generalization arrow in between this assistant and the manager.
+
+Now, what is the meaning of this?
+
+This becomes the parent and this becomes the child.
+
+Okay.
+
+So, inheritance relationship is there.
+
+Parent, child can access all the things related to parents.
+
+This is the idea of this actor generalization.
+
+So, you do not need to add unwanted associations.
+
+That is the meaning of generalization.
+
+By adding generalization arrows, you can reduce the number of associations in your diagram and you can make your diagram less crowded.
+
+Okay.
+
+So, I think that is clear.
+
+So, this is actor relationship for the generalization.
+
+These are some examples we discussed.
+
+And then we are coming to use case related relationships.
+
+Use case related relationships, there are three.
+
+What are these three?
+
+Include, extend and again we have use case related generalization.
+
+So, what is the meaning of this include?
+
+Include means when you execute any main use case, sometimes during the process, you have to do something else.
+
+You have to execute another use case.
+
+And some work.
+
+Okay.
+
+When you execute during the process of the main use case, sometimes you may have to do something.
+
+Additional thing.
+
+But that particular thing coming under the process of the main use case.
+
+So, that is why we use the name include.
+
+The included use case is included in the main use case.
+
+So, how can you show that?
+
+You have the main use case.
+
+You have the actor.
+
+Actor is accessing the main use case A.
+
+Main use case A is having a included use case B.
+
+So, you draw a dashed arrow pointing towards the main use case.
+
+And top of the arrow you write include.
+
+Sorry.
+
+Sorry.
+
+Other way around.
+
+The arrow head is wrong.
+
+That is why I just said.
+
+Here the actor.
+
+Association.
+
+And B.
+
+This is called the included use case.
+
+Included use case.
+
+Then for this one we call.
+
+This is the base use case.
+
+So, what is the connection?
+
+You draw a dashed arrow pointing towards the included use case.
+
+And you write include.
+
+This is the way you have to indicate include relationship.
+
+So, include relationship indicate.
+
+Use case B is within the process of use case B somewhere.
+
+It is not a must.
+
+You must do B first and then come to A.
+
+No.
+
+Within the process of, this is the flow of A somewhere you have to execute B.
+
+Somewhere in the process you have to execute B.
+
+That is the idea.
+
+Okay.
+
+Included use case.
+
+B is included in A.
+
+This is the way you have to represent that.
+
+Base use case and the included use case.
+
+Most of the time the user validation is something like included use case.
+
+User validation.
+
+Because when you want to now, if you consider ATN, when you want to withdraw money, check balance, transfer money, deposit money, whatever the thing.
+
+First of all, you have to authenticate the user, validate the user.
+
+So, whatever the process of withdraw money, somewhere you have to validate the user.
+
+The process of transfer money, somewhere you have to validate the user.
+
+Check account balance process, somewhere you have to validate the user.
+
+Now, according to this, the validation comes first.
+
+First of all, we do the validation before the withdrawal or transfer money or check balance.
+
+We check the, validate the user and then we withdraw.
+
+But anyway, it is not a must.
+
+The included use case can execute anywhere in the process of the base use case.
+
+Okay.
+
+So, that is include relationship.
+
+The next one.
+
+Extend relationship.
+
+It is like the opposite.
+
+The drawing, the opposite.
+
+The arrowhead is opposite.
+
+Now, the arrowhead is pointing towards the base use case.
+
+Extend relationship means when you execute your main use case, sometimes we do some things
+
+when a particular condition becomes true only.
+
+They are not always.
+
+Okay.
+
+All these things are not a must to include.
+
+Now, there is nothing like, okay, in a use case diagram, you must include, include, the
+
+must, the include should be there.
+
+Extend must should be there.
+
+No, it is not a must.
+
+According to the scenario, if you have include, draw that.
+
+If you have extend, draw that.
+
+Otherwise, it can be normal use case diagram without include an extend.
+
+But most of the time, at least one or two extend include, maybe they are in your diagrams.
+
+Okay.
+
+So, extend relationship means when we execute the main use case, if a particular condition
+
+becomes true only, there are some things we do.
+
+So, that is how we indicate that kind of things in a use case diagram.
+
+Now, here again, we have the actor and we have the base use case A and this is the extended
+
+use case.
+
+Now, this is the extended use case and this is the base use case.
+
+Now, we draw the arrow this side and top of the arrow we write extend. And here we need another
+
+thing. We have to write, we have to divide this oval, the base use case oval into 2. The second
+
+half we have to write the extension point. What is the extension point? If student is a foreign
+
+student, then we perform, we is perform visa check. That is the example we discussed last
+
+week. Now, this is the registration, this is a registration, register student. But when
+
+the student is a foreign student, at that time only, we perform the visa check. So, extended
+
+use case will execute only if this condition becomes true only. Otherwise, it is optional.
+
+We just ignore. That is the extended relationship.
+
+And the last one, generalization, use case generalization. Use case generalization means
+
+same idea. The use cases also may have different categories. Okay, one good example is payment.
+
+According to the scenario, payments can be done using cash, online transfer, cash on delivery
+
+or something like that. So, this is the generalization. You can draw the generalization arrow to this.
+
+Payments, different methods are there. Okay. So, this is the use case generalization.
+
+Again, parent-child relationship is there. Use case scenario. Okay. Now, we are coming to the
+
+word topic. Use case scenario. That means now in this use case diagram, we can't just draw the diagram and
+
+start the work. We have to do something additionally. What is that? We have to write something called use case scenario.
+
+What is this use case scenario means? Simply, I am not going to go through, read all these descriptions.
+
+Use case scenario means what we do here actually.
+
+All the, now we have use cases in our use case diagram. For all the main use cases, most of the time for the main
+
+use cases we do this. We write what is happening inside. How this particular generate bill will happen.
+
+How this register student will happen. Something like that. To write this use case scenario, we use a format,
+
+a tabular format. We use a tabular format and there is a standard template. Now, standard template is having so many
+
+things that we have to fill. But there are some most important things. So, when you draw, when you write a use case scenario,
+
+you can use the essential things. Use case scenario, here it says use case scenario describes what happens,
+
+everything goes to plan. It is written under the assumption that everything is okay, no errors or problems
+
+occur and it leads directly to the direct outcome of the use case. So, the use case scenario will explain
+
+how the things will go on. Okay, now this is the template for the use case scenario. You have to give a name for the use case.
+
+Number, name, you have to give a name for the use case and you have to mention
+
+the actor, the primary actor of the use case, preconditions. That means to do this use case, anything need to fulfill first preconditions.
+
+And so, these are the important things. Okay, but the actual scenario, there are so many things.
+
+So, you don't need to worry about all these things. At least you have to write these things. Okay,
+
+you have to give a use case number. You use a tabular format. Okay, two column tabular format. Number should be there.
+
+For use cases, we give a number 1, 2, 3. Then for the use case, you have to give a name, register student.
+
+Then summary thing, it is not a must. Okay, priority also people mention in a system, what is the priority
+
+of this use case? It is not a must. If you have precondition, you can write, if you have precondition,
+
+if you can write, post condition means after the use case, what will happen? Now, for an example,
+
+withdraw money, what is the precondition? The ATM should be locked on. To do the withdraw,
+
+the ATM machine should be turned on. That is the idea, precondition. Post condition means once we complete
+
+this withdraw money, what happens? User has withdrawn money and received a receipt. That is the outcome,
+
+final outcome. That is we write as post condition. And I am just writing the important things. If you
+
+have precondition, write, otherwise just ignore. If you don't have information, just ignore. But at least
+
+a number, name, primary user, primary actor, that means who is going to execute this? That must be there.
+
+Now, according to this, bank customer is the primary actor. Then the trigger also, if you want, you can
+
+write, but not a must. Trigger means what is the event that, what is the reason behind this executing of
+
+this use case? Now, in the ATM machine, withdraw money will execute when the user press the button of
+
+withdraw money. That's the trigger. That's the reason for starting this process. Now, for any process to
+
+start, there should be a trigger or a reason. This trigger means the reason for the starting of this use
+
+case. Now, here the withdraw money, the reason is someone has pressed the withdraw button. That's the reason.
+
+Then this scenario will start. Then this is the most important thing. You have to write the main scenario.
+
+Main scenario. And you have to write the extension. That is also important. It's also important. The
+
+issues, open issues, no need. It is not a must. Okay. So, at least you need the number,
+
+name, minimum things, actor, primary actor, then main scenario, extensions.
+
+That's it. Okay. At least these three things, these five things you should indicate in your use case.
+
+So, use case scenario you write in a tabular format like this.
+
+Okay. Now, try this activity. We'll try this activity. Write a use case scenario for borrowing a book.
+
+You could consider the process given below as the manual system procedure.
+
+The member identifies him or herself to librarian and indicate which books they wish to borrow.
+
+If it is acceptable, now what is the use case name borrowing a book? So, you can start
+
+writing your use case scenario. You can write your use case scenario.
+
+Now, use case scenario number one will say. Okay. Then name of the use case. Use case name
+
+is borrowing a book. Then who is the actor who is going to execute this member, library member.
+
+Then you had to write the main flow. What is the main flow means when everything happens
+
+correctly. What is the flow you have to follow? Remember when you write the main scenario, main flow,
+
+always think everything happens correctly. That means, when you and if you have to enter something,
+
+you enter it correctly. When you have to enter some other thing, everything happens correctly. That is
+
+called the you write the success scenario. Under main flow, you write the success scenario. That means,
+
+if you do it correctly, how it will smoothly execute. Extension means, there are some places where the
+
+people can make mistakes. Extension is the place where we write those things. If a person enter a wrong
+
+P, what we can do? But when you write the main flow, you write only the success scenario. You think
+
+the person is the expert in this system using this particular use case and he is entering everything
+
+very nicely, correctly. So, step by step, what will happen? We write the success scenario. Okay. So,
+
+here we give a number one. Name is borrow a book. If you want, you can write a summary. Summary is
+
+user borrowing a specific book and precondition. This user has to access to the system to do this. First
+
+condition, user gets the confirmation at the end. Prime reactor is the user. Okay. Trigger also. User chose
+
+borrow a book option. That is the trigger for this. Okay. But minimum, these things you have to write.
+
+Then you have to write the main scenario. I told you main scenario. When it comes to main scenario,
+
+you have to divide it into three columns. Okay. Three columns. That means, you have to write a step. For both main
+
+scenario and extension, remember, starting from the main scenario and the extension, you need another column.
+
+That means, the second column, you have to divide into two. One is called the step. Because for each
+
+and every step, you have to give a number. That is called the step. One, two, here you can see one,
+
+two, three, four, up to six. Likewise, you must give a number because in the extension, you indicate a
+
+particular step using that number. Now, here you can say a, one, a, one, b, likewise. Because of that, putting
+
+this number is a must, you must put these numbers. Okay. So, remember, starting from the main scenario,
+
+the table, the second column, you have to divide into two. Okay. One is small column for the step number
+
+and then this is called the action. Okay. So, this is the way you have to write. The first part is two columns,
+
+number, name, we will just say actor only. Actor. Okay. Then starting from the next one,
+
+you divide this into another one. Main scenario, step, action. Then you have one, two, three. Then again,
+
+when it comes to extensions also, you have again, step, action, one, a, that's how we go one, b, likewise.
+
+You remember that. Then, okay. Now, main scenario I told you, we write the success scenario. What
+
+happens if everything goes well? What happens here? The member identify him or herself to the librarian
+
+and indicate which book they wish to borrow. If it is acceptable for them to borrow these books,
+
+they are not marked for reference only or the number of books on loan to the customer is less than some
+
+predetermined maximum. Then the books are loaned to the customer for a specified loan period.
+
+The member's loan record is updated to reflect the loan books. The library's card index system is
+
+updated to show who has borrowed the book. Now, that is the thing we have to write. Now, first of all,
+
+what happens? User logs into the system. Now, success scenario. User logs into the system. User scan the
+
+ISVN of the book. System checks the validity of the request. System checks the validity. System show the
+
+summary of the request with the user's membership details. Now, here the thing is, when you check the
+
+validity, we assume that T is a valid user. System shows the summary of the request with the user
+
+membership details. User confirms the request summary. System displays the confirmation message.
+
+That means this is the way you have to request the books that they want to borrow.
+
+Okay. Now, this is the you write only the success scenario. What happens if everything goes well?
+
+Extension means now for each and every step you have to go and reach it. Is there anything can happen
+
+wrongly in this particular action? Now, take the first one. User logs into the system. Now, in the main
+
+scenario, we think, okay, login to the system is happening smoothly. But we know sometimes user can make
+
+mistakes when we log into the system. So, extension means you have to write what should do if they
+
+enter invalid details. Okay. Now, that's why step number 1A. What can happen under this step 1?
+
+One thing, system notifies login details are invalid. Assume one problem can happen. User enters wrong
+
+login details. Then under extension, you had to write, okay, system notifies login details are invalid,
+
+then then exit the system. Okay. Then sometimes, user enter the things correctly, but the membership may be
+
+invalid for some reason. Under this step 1, the things can happen. The things, the places where we can go
+
+wrong. That's what you have to check. But other things can happen. One thing is user is a valid member,
+
+but enter wrong details. Well, user even faster. Then what happens? We write 1A, system notifies login
+
+details are invalid to the user. You have your login details are invalid and exit from the system.
+
+Another thing can happen with the same step. User can be a, not a valid membership. He is not having a valid
+
+membership. Then what happens? Then the next one that, that both steps belong to the same step. That's why we
+
+say 1A, 1B. If you have another one, 1C, 1D. Likewise, you can go. 1B is what system notifies
+
+invalid membership and exit. System will indicate you are an invalid member and then exit. Okay. So,
+
+those are the things can happen under action 1. Now, we will go to the step 2. User scans the ISBN of the book.
+
+Okay. Now, main access scenario, we write the success case. ISBN is correct. But there can be situation.
+
+Person scanned this wrongly. Then what we can do? Here again, we write the extension. 2A,
+
+system cannot read ISBN. That can happen. Ask the user to enter the ISBN manually. Okay. Now, the system
+
+checks user scan the ISBN. Sometimes the system may not be able to read the ISBN. Then what is the
+
+solution for that? Ask the user to enter the ISBN manually. Now, this according to that particular
+
+scenario. Okay. Now, if you realize the system is doing a different thing for that, you would write that.
+
+So, this is not a master code. According to my scenario, what are the precautions we take? Something
+
+like that. Okay. Now, third step. System checks the validity of the request. Now, if everything correct,
+
+we can go to the fourth step. We assume it is valid request. But sometimes it is not, request may be not
+
+valid. Then under extension we write what we will do. 3A, system notifies the title of the reference
+
+only and exit. Okay. Now, system checks the validity of the request. So, there are two things according to
+
+the scenario. I think you can remember. Scenario says when a person is making a request to borrow a book,
+
+if it is acceptable for them to borrow these books, these two things should fulfill. What are the two
+
+things? The book should not mark as reference only. Now, in our library also there are books called
+
+reference only. Those things I can't borrow. I can just read only within the library only. And sometimes
+
+now for a particular member, we have the maximum number of books that we can borrow like 3, 5. Now,
+
+if I exceed that limit again, I am not allowed to do that. I am not allowed to do that if I am exceeding
+
+the limit. So, that also a problem. Now, those two things we handle here under 3. Two things can happen.
+
+When check the validity. One is 3A is what? System notifies the title of the book is reference only
+
+and exit. The system may show this is reference only book and exit because you can't borrow.
+
+3B, system notifies the user your maximum limit has exceeded. So, you cannot borrow this book and exit.
+
+Okay. Then fourth one. System show the summary of the request with the user's membership details.
+
+Now, is anything can have wrong happened here? No. Okay. Because it is just something the system
+
+will display to the user. System show the summary of the request with the user's membership details.
+
+So, there is no extension for that step. So, understand that some steps, no,
+
+no extensions. Then ignore. Then go to the next one. User confirms the request summary. Okay. User confirms.
+
+That is the success scenario. User confirms the request summary. But there may be a situation.
+
+Sometimes the user may request to cancel the request for some reason. Suddenly,
+
+he may change the mind. He decides that I am not going to borrow this book. If the user not
+
+cancel the request. At this point, the system will exit. That is the extension point. 5.
+
+Sorry, sorry. That is 5A. 6 is, this is 5A. User confirms the request summary. If the user not
+
+confirms, what happens? Okay. This is coming with this. Okay. For 6, there is no extension. That means,
+
+user confirms the request summary. That is the best case. Without any problem, user confirms the request.
+
+But sometimes, user may not confirm. Then what happens? You have to indicate under extension. 5A. User
+
+cancel the request. System will exit. And this next one, 10 is wrong. 6. Step 6. System display the
+
+confirmation message. There has nothing to do with that. No way to go wrong. It is just a display only.
+
+So, there is no extension for this particular step. This is the way you have to write use case scenarios.
+
+Okay. So, that is the end of this particular lecture. Please try out use case tutorial. Then you can
+
+try out another scenarios. Okay. I think this is clear. This is the end of use case.
+
+Let's check. Shall we move to the next one? Activity diagram one? Yes. Okay.
+
+Are you all clear, Putala? Use case diagram? Just try out some tutorial questions. Then you can do that.
+
+in last week's lab we had to grow a use case diagram ah then you you already know okay the
+
+use case scenario is just writing a table for that particular each use case that's the thing
+
+now another thing tomorrow mr asikala will be on leave so mr shavendri another
+
+instructor i told her to conduct the lab puta she will conduct the lab but the thing is evaluation
+
+mr shikala will take take in another week because you have only few members in the batch no so we
+
+have enough time the evaluation this is the viva mr shikala will take in another week because the next
+
+tomorrow we have to take viva but shavendri will only conduct the lab and she will discuss our labs
+
+are actually related to our project all the things that you should learn how to draw that diagram in
+
+that rodotio and then you have to apply that into your project okay so tomorrow you have the lab but
+
+the viva will not happen that viva will take in another day by miss tashikala
+
+okay now we are going to start another uml diagram called activity diagram so activity diagram we use
+
+now in this lecture these are the content we are going to discuss about what is activity diagram and
+
+the elements then they ask called something called partitioning activity diagram likewise we are going to
+
+discuss and these are the lesson learning outcomes at the end simply at the end of this lecture
+
+all of you should be able to draw an activity diagram for a given small scenario okay activity diagrams
+
+we use to display the activities of a system we use to display activities of a system using activity diagram
+
+so mainly in activity diagram we represent what is happening inside a use case scenario graphically okay
+
+now use case diagram show what are the major functions in the system who are the users of that system and which
+
+function accessed by which user that indication you can get by get from the use case diagram then i told you
+
+in the use cases of this use case diagram we write something called use case
+
+scenarios scenario means you already know it is a tabular format thing for each main use case we write a
+
+scenario what are the main flow success success scenario and extension what happens if something went wrong
+
+something like that now to explain the things in the use case scenarios mainly sometimes we draw activity diagrams for a given description as well but most of the time we use this activity diagram
+
+to graphically represent what is inside the use case scenario graphically represent what is inside the use case scenario
+
+so we use this activity diagram to analyze individual use cases in detail so identify the functionality of the use cases and analyze the individual use cases in detail so this is a simple activity diagram okay just to understand at the end of this lecture all of you should be able to draw something like this activity diagram is something like this
+
+there's a starting point there's a starting point there's a ending point and it is like a nice flow okay i told you i will tell you how to draw this and in this activity diagram we have little bit more components now in the use case diagram you should know the system boundary actor use cases and then relationships under that you have association generalization include extend so those things only
+
+but when it comes to the activity diagram there are little bit more notations remember that okay now we will start again first of all you have to learn notation by notation very clearly then you can draw the diagram very easily now in this activity diagram to start the diagram in this particular activity diagram the first thing
+
+you have to indicate now use case diagram when you draw the diagram we can understand how to
+
+read that we have actors separately we have use cases and there's association to connect these
+
+actors and use cases and easily we can understand okay this actor is going to execute this use case
+
+this actor is going to execute this use case as well and there's another actor he is going to
+
+execute this and this actor can execute the other person's things as well so generalization is there
+
+so likewise it's very clear to read but activity diagram it is kind of a flow it indicate a flow
+
+because of that you have to clearly understand what is the starting point of that diagram and
+
+ending point then only you can start reading the diagram for that we use two special nodes we called
+
+as nodes two special nodes in this activity diagram one is initial node the other one is called the final
+
+node so what is the indicate of the initial node another name we call start node start node we use
+
+to indicate the starting point of the diagram then the reader knows okay to read this diagram i have to
+
+start from here. So, what is the notation? It is a black colour dot like this, black colour dot.
+
+Then to indicate the ending of the diagram, we use another notation that is
+
+empty circle within that black colour dot. So, these are the two notations. Remember,
+
+this is the initial node, the black colour one,
+
+the other one is final node. Okay, so those are the most important things. Then,
+
+now in your diagram, you know, okay, you indicate starting point, ending point. Now, in between this,
+
+you have to draw something. So, in this activity diagram, the in-between steps,
+
+we called actions. Action nodes, we draw using a rounded rectangle. Okay, we use a rounded rectangle
+
+like this to draw the action node. And inside the rounded rectangle, one rounded rectangle indicate
+
+one action, one step like this, one step. Okay, one action or one step. Then when you write the name of this
+
+action, you write a verb phrase, something like this, generate report, a short name kind of thing. Okay,
+
+when we write, you will understand. Then now, you know how to draw actions like this. You will say dummy actions, a and b. Now, the next thing, now these things need to connect. To connect these things, you need something called transitions. Transitions are indicated by arrows. That means, here, you use arrows to indicate the flow of the diagram.
+
+Now, the reader knows. Now, normally, this activity diagrams also we draw inside a boundary. So, this boundary is very common to any UML diagram. Once we draw the diagram, we indicate using a boundary.
+
+It is not like the boundary. Now, use case diagram. Now, use case diagram, the boundary, the actors are outside.
+
+Use it. But this one also we indicate using a normal boundary. Now, here also same. So, normally, UML diagrams, we use a boundary to show the area of the diagram.
+
+This system boundary. This system boundary is a little bit different. Okay, this in there. Separate two elements in the diagram. Okay. Now, here, we use transitions. Transition means simply arrows. The arrow head indicates which direction you had to read the diagram. Now, I feel like, okay, I have to start from here. Then activity action A will happen. Then action B will happen. And then, we go to the end.
+
+So, that is the end. So, that is the way we have to understand. Okay. Transition is just arrow. First action, second action, end.
+
+Now, this is sample diagram. Now, this is sample diagram. Starting node. Validate membership. Issue the DVD. Take payment. And that is the end.
+
+Now, this use case may be issuing a borough DVD use case. This is the scenario steps.
+
+Okay. Now, there is a small activity. Can you try to draw a simple activity diagram for this?
+
+Now, you know how to draw the initial node, ending node, actions. And then, what you need? You need transitions, arrows.
+
+Try to do this.
+
+Draw an activity diagram for becoming a registered member of the CES Rilakkuk learning management system.
+
+Thank you.
+
+Thank you.
+
+Then a few registration forms need to be filled out.
+
+The next one, fill registration forms.
+
+Then what happens?
+
+A deposit of 3,000 must be paid to the bank and the payment slip should be uploaded.
+
+Okay.
+
+We will take both together.
+
+Deposit.
+
+Deposit.
+
+Deposit.
+
+And slip upload.
+
+Slip upload, upload, slip.
+
+Okay.
+
+Should be to auditory system.
+
+The system will generate the ID.
+
+Then what happens?
+
+Generate ID.
+
+And that's the end.
+
+Okay.
+
+So, this is the way you have to do.
+
+Upload the NIC.
+
+Fill required forms.
+
+Keep deposit.
+
+And upload both together.
+
+Show the ID.
+
+That means you can write in your own words.
+
+No need to use the exact word.
+
+Show ID.
+
+And that's the end.
+
+So, this is a very simple activity diagram.
+
+Okay.
+
+So, this is what you have to do.
+
+There are some other notations.
+
+This is a very simple form of activity diagram.
+
+We use only the two special nodes and the normal actions and the transitions only.
+
+Okay.
+
+Now, this is the most common, that means not common, simplest way of drawing activity diagram.
+
+Only the normal actions.
+
+But there are some situations where you have to take some decisions.
+
+If this happens because there are like if else conditions in programming.
+
+If this happens, we go in one path.
+
+If something else happens, we go in another path.
+
+If you have something like that, we can't only use these normal actions.
+
+We need something additional.
+
+To indicate any decision point, we introduce another notation for this activity diagram that is called decision node.
+
+Decision node we use to control a decision related, control related situation.
+
+Like if else statements in programming languages.
+
+Okay.
+
+That means if something happens, true what happens, false what happens.
+
+This decision is represented using a special notation called a diamond.
+
+We indicate a diamond.
+
+Okay.
+
+Okay.
+
+Okay.
+
+And in this diamond, just single input.
+
+Input is one.
+
+Input is one.
+
+Then we can have multiple outputs.
+
+Single input, multiple outputs in a decision node.
+
+The notation is the diamond.
+
+Okay.
+
+And the other thing in this output, you must write a guard condition.
+
+The condition that means if a valid member, we do some action.
+
+Action A.
+
+Okay.
+
+Okay.
+
+If invalid member, invalid, what we do?
+
+It's like this.
+
+We execute the action P first.
+
+Then we have to take, we do validate kind of thing.
+
+Okay.
+
+We don't write anything inside this.
+
+We don't write anything inside this.
+
+We don't write anything inside this.
+
+Diamond P, then the diamond.
+
+Then multiple outputs.
+
+If valid, what we do?
+
+We do execute action A. If invalid, we execute action B. Okay.
+
+It's like this.
+
+Decision node is like this.
+
+Decision branch is represented by a diamond at the branch point.
+
+A guard expression for each possibility, for each coming line, you have to put a guard condition.
+
+Like this.
+
+This is called guard condition.
+
+If this condition becomes true, only this path will execute.
+
+If this condition becomes true, only this path will execute.
+
+That's the idea.
+
+Each branch must have a guard condition.
+
+That is a must.
+
+Each output branch must have a guard condition.
+
+The flow of control flow down the single path where the branch condition is true.
+
+If this path is true, there is no limit of the number of branches each branch point may have.
+
+So, you can have any number of outside branches, but single input.
+
+And the other thing, all these branches, outgoing branches will not execute.
+
+Whatever becomes true only will execute.
+
+That is obvious.
+
+If the valid member, this path only will execute.
+
+If the membership is invalid, this path only will execute.
+
+Only one path will execute when it comes to execution of the decision node.
+
+Okay.
+
+So, we can have multiple decisions.
+
+Like this.
+
+Or the third one, if you have three, it's a bird, it's a plane, you can write.
+
+Without writing the other one, you can just write else.
+
+Anything else?
+
+Okay.
+
+This is the way we have to execute.
+
+Okay.
+
+Now, there is another node called merge node.
+
+Merge node is not a must.
+
+Okay.
+
+Remember, using a merge node is not a must.
+
+This merge node actually we use to connect several incoming flows into one to well organize
+
+our diagram.
+
+That is the main idea.
+
+Otherwise, without a merge node, we can draw our diagram.
+
+It's like this.
+
+Now, assume you have several activities coming from a condition.
+
+Like this.
+
+Now, you have ABC.
+
+Guard condition 1.
+
+Guard condition 2.
+
+Guard condition 3.
+
+Okay.
+
+Now, we execute three things.
+
+If this is true, we execute A. If this is true, we execute B. If this is true, execute.
+
+Somehow, finally, we come to end.
+
+What we can do?
+
+We can draw like this.
+
+This is also possible.
+
+Or else, the same thing we can do.
+
+Now, if this ABC is like this.
+
+I am just adding.
+
+We use the merge node.
+
+We use the merge node.
+
+That means we merge node.
+
+merge node.
+
+also, the notation.
+
+is diamond.
+
+But, if this is true, we execute A. If this is true, we execute B. If this is true, execute.
+
+Somehow, finally, we come to end.
+
+What we can do?
+
+We can draw like this.
+
+This is also possible.
+
+Or else, the same thing we can do.
+
+Now, if this ABC is like this.
+
+I am just.
+
+We use the merge node.
+
+That means we merge node also.
+
+The notation is diamond.
+
+What is the difference between this merge node and the decision node?
+
+This is having multiple inputs.
+
+I think you remember decision node, single input, multiple outputs.
+
+Here merge node, multiple inputs, single output.
+
+And no guard conditions.
+
+Merge node, no guard conditions.
+
+We are not writing any guard condition.
+
+This is just to connect the multiple flows together.
+
+To make your diagram more well organized.
+
+Now, this one, I can do something like this.
+
+Now, this is one method.
+
+This is another method.
+
+But this diagram is more clear than this.
+
+Not clear, well organized.
+
+So, merge node is not a must.
+
+But we use that to well organize the system.
+
+Okay.
+
+Remember that.
+
+But the notation is same as the decision node.
+
+But decision node is doing some work.
+
+But merge node is not doing any work.
+
+No guard condition.
+
+Just to connect several flows together.
+
+And make your diagram well organized.
+
+Okay.
+
+Are you all clear, Puthela?
+
+Yes.
+
+So, I am not going to read these things.
+
+Just explaining the things as my own.
+
+So, let's shall read the slides.
+
+Okay.
+
+This is says the merge node is like end if in this programming languages.
+
+End if in the side of codes and the closing curly bracket in the programming languages.
+
+It is just merging the flow into one.
+
+That's it.
+
+Okay.
+
+Not taking any decision, nothing.
+
+Okay.
+
+Now, this is the example having both decision node and the merge node.
+
+So, which one is the decision node?
+
+First one node.
+
+Second one.
+
+What is the decision node?
+
+First one.
+
+Okay.
+
+Yeah.
+
+You see A, B.
+
+A is the decision node.
+
+How can you identify there is a decision node?
+
+One indication is what?
+
+Single input, multiple outputs.
+
+And the other one, the outputs are having a guard condition.
+
+Second one is a merge.
+
+How can you identify?
+
+Multiple inputs, single output and no guard condition for the output.
+
+Okay.
+
+So, this is the decision node.
+
+What is the decision node?
+
+First one.
+
+Okay.
+
+Yeah.
+
+Yeah.
+
+You see A, B.
+
+A is the decision node.
+
+How can you identify there is a decision node?
+
+One indication is what?
+
+Single input, multiple outputs.
+
+And the other one, the outputs are having a guard condition.
+
+No guard condition for the output or input.
+
+Okay.
+
+I think that's clear.
+
+Okay.
+
+Try out activity two.
+
+Try out.
+
+I'll give you some time.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+what happens? Economy class people, by default, they have 30 kg, but if they want more, they can
+
+go up to 10 kg by paying additional amount. But business class people, they automatically getting
+
+40 kg at once. Now, if it is economy class, then we have to ask from the traveler, do need,
+
+check the baggage allowance. Okay. Economy class, then we have to check the baggage allowance.
+
+If they need more, if they say no, 30 is enough, that means they go with the default baggage.
+
+They decided to go with the default baggage. If they say no, 30 is enough, we just go out.
+
+If they say I need more baggage, that means 10 kg more, then what is the activity they have to do?
+
+They have to pay a deposit, additional payment. Then we use the merge note. Now, these two parts
+
+need to merge together. Now, without drawing this arrow like this and this arrow like this, the better way is,
+
+without doing this, we can have a merge note to connect these two flows.
+
+And this, if it is a business class person, now in the other hand,
+
+is already getting 40, that is the maximum allowance. So, they can't ask more. So, directly they go to the filling the form.
+
+But this economy class people, they have to go through this process and then they have to come to this mandatory form filling.
+
+Now, both cases, they have to come to this activity mandatory form filling.
+
+Then, after that, they select a travel date. Again, there is a decision. If the travel date is,
+
+flight is available on that date,
+
+they can book a ticket. Otherwise, cancel the process and exit.
+
+Then again, the decision note,
+
+if it is available, again, this is missing.
+
+Available, we book a ticket. If it is unavailable, cancel the booking and exit.
+
+And both coming to the end. Here also, if you want, you can have a merge note.
+
+Hello?
+
+Merge note is not a must, I told you, if you want.
+
+But this kind of places,
+
+that is good to have.
+
+Here, actually, no need.
+
+This kind of places, two floors, you must connect to one and go into, through a one.
+
+At the middle of the process, if you have something like this,
+
+then you can have
+
+merge note. But here, if you want, you can add.
+
+Otherwise, just connect to the end note.
+
+So, this is the activity
+
+to answer.
+
+Okay. So, that is about
+
+decision note and the merge note.
+
+Usage of decision note and the merge note.
+
+Then, there is another notation.
+
+Now, this is something we use rarely,
+
+but we need to remember,
+
+we need to learn.
+
+Now, there is something called
+
+sub-activity or sub-actions.
+
+Sub-activity or call-action.
+
+Sub-activity or call-action means
+
+now, when we draw our activity diagrams,
+
+sometimes, there are some
+
+activities or actions.
+
+Inside that, there are some steps.
+
+That is large activities.
+
+Inside that activity, there are some additional, several steps will happen.
+
+Now, when you draw your diagram, you can decide whether you are going to draw these sub-activities
+
+also as actions or you are going to just draw a high-level activity diagram.
+
+High-level activity diagram means you just draw, you just show only the important main actions only.
+
+If you decide like that, but decide like that, you can draw only the main actions.
+
+But you want to tell the reader, this particular action is little bit large.
+
+This is having this, this, this kind of sub-action.
+
+And I draw that in another diagram.
+
+If you want to, now sometimes because of the space limitation also, you can do that.
+
+When you draw the diagram, if the space is not enough to draw all the sub-actions,
+
+you can decide, okay, I draw the main high-level activity diagram here.
+
+And I indicate the user, this action may having sub-actions and it may describe it in other place.
+
+For that, we use this sub-action or the call-action, sub-activity or the call-action.
+
+Sub-action means, now here is the example.
+
+Now, to indicate this sub-activity, we use this rake symbol.
+
+This is called rake symbol.
+
+This rake symbol, that means now there is an activity diagram.
+
+Start, choose the menu.
+
+Initially, we choose the menu.
+
+And then, there is a merge node.
+
+We have merge node.
+
+And we choose the menu item.
+
+We choose the menu item.
+
+And then, again, if you want to add something else, this is like a cycle.
+
+You are going back.
+
+That's why the merge node is used to make the flow more clear.
+
+Okay.
+
+Then, there is an activity or the action called confirm order.
+
+Now, according to this particular scenario, confirm order is having its own sub-actions.
+
+Provide the payment details and then provide shipment details.
+
+But, in this main diagram, you don't want to show this.
+
+In the main diagram, you don't need to show this.
+
+Then, what happens?
+
+What you will do?
+
+You will show this rake symbol.
+
+In this, normally, we put that inside the rounded rectangle.
+
+Bottom, right-hand side corner.
+
+We indicate this red single.
+
+When you look at this symbol, the reader should know this confirm order action is having sub-actions.
+
+These sub-actions are not indicated here, but it will indicate in another diagram.
+
+So, this is called this other diagram.
+
+You can draw a separate diagram in another place.
+
+And, this is called the frame.
+
+The one I told you, even for the activity use case diagram, whatever the diagram, the name we use for this border, we use the frame.
+
+In the frame, we have, this is what we call the frame name box.
+
+Frame name box.
+
+Normally, activity diagrams also, there should be a name box.
+
+This main diagram also, you have to indicate select menu or something.
+
+Select menu, the name of the diagram.
+
+Now, in the name box, what you have to do?
+
+In the name box, this action name you have to put.
+
+Then, only the reader knows.
+
+This confirm order is explained in this diagram.
+
+You write confirm order.
+
+Then, what are the sub-actions related to that?
+
+We will say A and B.
+
+You indicate inside that.
+
+So, this way, you can reduce the space for a particular one single diagram.
+
+You can use only a limited space and draw the diagram.
+
+Or else, unimportant things, you can draw separately.
+
+And, if someone needs only, they can go to the second diagram and see what are the sub-actions.
+
+This is the usage of sub-activity or the cold action.
+
+Remember the rake symbol.
+
+Okay.
+
+See, if the scenario is turning.
+
+This particular action is having its own sub-actions.
+
+Then, you should know I have to indicate a rake symbol.
+
+Okay.
+
+So, this is something additional.
+
+Not very frequently used thing.
+
+But, if you want, you can use the rake symbol and indicate.
+
+This action may have additional action.
+
+But, that will not show here.
+
+It will indicate in another diagram.
+
+The connection makes the same name you have to indicate in this name box as well.
+
+From the name, they read a map.
+
+Confirm order.
+
+Confirm order.
+
+From the name, they know.
+
+Okay.
+
+These two actions belong to this.
+
+I think that's clear.
+
+Then, another thing.
+
+Fork and join.
+
+In activity diagram, there is something called fork and join.
+
+Fork and join, we use to indicate parallel activities.
+
+Fork and join, we use to indicate parallel activities in the process.
+
+So, this parallel activities mean, you already know parallel activities, two activities happen concurrently.
+
+Now, this fork is to indicate the parallel activity.
+
+Join, this fork and join must come together.
+
+Not like now decision node and merge node is not a must to have.
+
+Now, normally decision node is to divide the flow into several multiple parts.
+
+Then, merge node is to connect multiple parts to a single flow again.
+
+But, it is not a must to have a merge node.
+
+Always after decision node.
+
+It is not a must.
+
+But, when it comes to fork and join, these two words going together always.
+
+Fork and join.
+
+So, in this fork and join, what happens?
+
+When you draw a fork, you must draw a join after that.
+
+That means, fork is used to indicate parallel activities.
+
+Now, decision node activities are not parallel.
+
+Those are two different alternative parts only.
+
+But, if you have exactly the scenario says these two actions are parallel, you have to use fork.
+
+If there is fork, there must be a join after that.
+
+Remember that.
+
+Fork and join always going together.
+
+You can't have a fork without a join.
+
+Okay.
+
+So, remember that.
+
+Fork and join.
+
+The notation is thin, filled rectangle.
+
+Okay.
+
+Thin rectangle.
+
+Fork means, like the decision node, one input, multiple outputs.
+
+But, no guard conditions.
+
+These are parallel activities.
+
+Okay.
+
+A and B.
+
+A, B.
+
+Parallel activities.
+
+Okay.
+
+Then, join also.
+
+Again, same thing.
+
+Join.
+
+Multiple inputs.
+
+Single outputs.
+
+Output.
+
+Okay.
+
+Always these two things going together.
+
+That means, you draw like this.
+
+P.
+
+You are coming from P.
+
+You have the fork.
+
+And, you execute Q and R.
+
+This is the fork.
+
+And, soon after the parallel activities, you have to join it to a join.
+
+This is join and join.
+
+You can draw another activity and go to and do anything.
+
+Okay.
+
+Fork and join coming together.
+
+I think this is clear.
+
+I think this is clear.
+
+When you have a fork, there must be a join after that.
+
+Fork and joins are used to show activities that can occur at the same time in parallel.
+
+This does not mean that the activities must occur concurrently in the finished software system.
+
+It means the order of the execution of the activities can be whatever is convenient for the implementation.
+
+Fork and join.
+
+Fork is when a single flow of control split into two or more parallel flows of control represent a split in flow of control like this.
+
+Fork, unlike a branch point, the control flow down all four paths.
+
+With a branch point, the control flows down only one path.
+
+Okay.
+
+So, fork and join.
+
+So, what you have to remember, fork and join, you must, when there is a fork, there must be a join.
+
+Now, but decision node, it is not a must to have a merge after the decision node.
+
+It is not a must.
+
+Okay.
+
+Fork and join.
+
+Every fork must have a join associated with it.
+
+Remember that.
+
+You can draw this vertically or horizontally like this.
+
+Both cases, okay.
+
+If you draw the diagram in this way, this is also possible.
+
+This fork and join, you can draw vertically or horizontally.
+
+And this is an example.
+
+Buy food and drinks.
+
+Cook dinner.
+
+Open white bottle happen parallely.
+
+Then have dinner after the join.
+
+Validate member.
+
+If valid member, we do update the DVD status and issue DVD happening parallely.
+
+Then join, take the payment.
+
+After these two parallel activities, we take the payment.
+
+And else, this is the decision node.
+
+Now, decision node having a merge node is not a must.
+
+But when there is a join, there must be a fork.
+
+Sorry.
+
+When there is a fork, there must be a join.
+
+Try this activity 3.
+
+3.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+can start, start attending classes will happen after the join. After join these parallel activities,
+
+they attend the classes and that is the end. Incorrect things directly come into the end.
+
+So, this is the way of using fork and join. Now, another thing, iteration.
+
+Iteration means now when you have to do something again and again,
+
+loop, loops, how to indicate looping activities in activity diagrams. This is indicated by this
+
+iteration. In this iteration, we use a special symbol called asterisk. To indicate the iteration,
+
+we use the symbol asterisk. So, that means if a particular action can happen again and again.
+
+Now, look at this one. First of all, now this is issuing a DVD. Validate the membership. Now,
+
+it is not talking about whether the member is valid or not. Then directly go to issue DVD. Now, here,
+
+before making the payment, that particular person can take many DVDs. That means the
+
+shop can issue many DVDs. That means issuing DVDs can happen several times, iteratively. Then to
+
+indicate that particular action is happening several times, you can use this asterisk mark inside the
+
+action. So, this indicates this issue DVD can happen several times. Several DVDs can issue and then take
+
+the payment for the whole lot. An asterisk inside the action state indicates that it may be need to be
+
+performed more than once. This notation is used to show iteration without the unnecessary details of a loop
+
+construct. The next action state does not occur until the loop is finished. Until this loop is finished,
+
+until the number of DVDs, all things issued, take payment will not happen. And there is another method
+
+to show the iteration, better method than the asterisk. Now, the asterisk is the sense, we have no idea at what time
+
+we go out. Okay? This is just telling this action is happening again and again only. But if you want to
+
+tell it in more detail, we can go to this alternative method of iteration. Instead of this asterisk, what we can do,
+
+we can use this merge node, issue DVD, then we use the decision node. We can use a decision node. Then,
+
+if that person need more DVD, if this is true, we go back to issue DVD. Else means no need more DVDs, take payment.
+
+So, this one needs more to the reader. So, this method of representation is better than the using the asterisk. But anyway, we can use two methods to show the iteration. Simply what we want to tell, this issue DVD can happen again and again.
+
+Okay, now that's the latter part of the activity diagram. These are the common mistakes. Incorrect use of forks, branch points, merge points and joins can happen.
+
+After the join, if you use a merge node, this is wrong. Okay? You can't do this. If there's a fork, there must be a join.
+
+Then loops. You can't show a loop like this. Okay? To indicate the loops, you can use the asterisk or decision node method.
+
+And there's another activity. Try out this activity. Try this.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+The last part is swim lanes.
+
+There is something called swim lanes in the activity diagrams.
+
+Now, look at this.
+
+Now, this is developing a software system for a client.
+
+Now, these are some steps.
+
+You have to draw this activity diagram.
+
+project manager first gather the requirements ui engineer develops the prototype pm shows
+
+the prototype to client till the client is satisfied uie that means the till the client
+
+ui engineer will modify the prototype client sign off the prototype once the client is satisfied
+
+ui engineer develop the ui screens and software engineer develop system once both system and ui
+
+development are done sc integrate the system pm delivers the system to client client sign off the
+
+delivery now this is not a direct use case scenario this is just a description now you have asked to
+
+draw an activity diagram for that okay this is not a use case scenario this is just a description for
+
+the overall system for that overall thing overall process you have to draw the activity diagram how
+
+the activities will happen now here who's going to start this now anyway the actors we don't care about
+
+actors in the activity diagram but anyway this says who are the actors as well project manager we just
+
+want to identify what are the actions project manager gather the requirements so we start as
+
+gathering requirement then the ui engineer develop the prototype develop the prototype then show the
+
+prototype to client show the prototype to client here the client is satisfied ui engineer modifies the
+
+prototype then you should feel now okay that means this modification can happen several times can go through several cycles
+
+Now, that means you have to indicate an iteration.
+
+Modify, show it to the client.
+
+If client is not satisfied, modify again.
+
+Okay.
+
+So, you can show that using the decision node.
+
+Okay.
+
+Show the prototype.
+
+If not satisfied, modify the prototype and going back to showing prototype.
+
+This cycle will continue until at one time the customer will satisfy with the prototype.
+
+Okay.
+
+So, this is the iteration.
+
+Same thing you can show using this asterisk mark.
+
+Then, it is just modify the prototype can happen several times.
+
+Develop the prototype and the modify prototype can happen several times.
+
+Or you can have in between this show the prototype, then modify prototype you can put the asterisk.
+
+Instead of that, you can show.
+
+This is the better method.
+
+You also feel that.
+
+Okay.
+
+Then, we will go back to the scenario.
+
+Okay.
+
+Client sign of the prototype.
+
+Okay.
+
+Once it is satisfied, client sign of the prototype.
+
+Once the client is satisfied, UI engineer develop the screen.
+
+Software engineer develop the system.
+
+Once both are done, SC integrate the system.
+
+That means, from this line, step 7, you should feel this 6 is parallel activities.
+
+What are the parallel activities?
+
+Developing the UI and the system development happen parallelly.
+
+Then, once both done, we integrate the system.
+
+That is the fork.
+
+We integrate the system.
+
+Then, PM delivers the system and client sign of the delivery.
+
+Then, deliver the system and sign off.
+
+So, this is what you can draw for this activity 4.
+
+And the same thing you can indicate using the asperic in this way.
+
+Okay.
+
+Then, there is another concept in this activity diagram called partitioning.
+
+Partitioning means is now normally, so far what we have learned, how to draw this activity diagram as a 1.
+
+Okay.
+
+But in this activity diagram, sometimes we divide these actions according to different categories.
+
+That means, according to our scenario, if we know who are the people going to execute these actions,
+
+actor-wise, we can divide into swim lanes.
+
+We call this as swim lanes.
+
+Okay.
+
+Partitions of swim lanes.
+
+Why we use this name?
+
+Now, in a swimming pool, we have for each swimmer, there is a swim lane.
+
+So, that swimmer should swim within that swim lane, the allocated lane.
+
+He or she cannot go here and there.
+
+That idea is here.
+
+For the one set of activities, there is a one path, given path.
+
+All that category activities need to draw in that path.
+
+When you draw the diagram, all the actions belongs to that partition or the swim lane need to draw in that column.
+
+That means, the workflow, we divide into columns now.
+
+Okay.
+
+Then, sometimes we use, we categorize the swim lanes based on, we can draw it horizontally or vertically.
+
+That means, for this direction also, you can draw by writing the names.
+
+Oh, this is the most preferred way.
+
+You can name the swim lanes based on the customers.
+
+Sorry, based on the actors or based on the departments.
+
+Okay.
+
+Partition in swim lanes, order department is subclass of the subdepartment.
+
+So, we can do it in that way as well.
+
+That means, now, according to this example, now, this example, we will go back to the previous example.
+
+Here, each and every step, it indicates who is executing this action.
+
+Sometimes, the scenario, we say, this finance department will do this.
+
+HR department will do this.
+
+Marketing department will do the next action.
+
+Likewise.
+
+Then, department-wise, you can draw swim lanes.
+
+Now, according to this example form, it is talking about the actors.
+
+This actor will do this.
+
+The other actor will do the other one.
+
+Likewise.
+
+Each step is having an allocated category.
+
+If you have something like that, you can use this concept of swim lanes or the partitions.
+
+You can use the concept of swim lanes or the partitions.
+
+Okay.
+
+Now, here it says, for each step, there is a person.
+
+That means, first of all, the diagram you can divide into, according to the number of users you have.
+
+Lanes.
+
+PM.
+
+UIE.
+
+Then client.
+
+Any order.
+
+No specific code.
+
+I am just writing.
+
+Software engineer.
+
+Those are the people.
+
+Okay.
+
+Now, initially, project manager.
+
+You can draw the initial node somewhere here.
+
+Project manager.
+
+Now, that action you draw here.
+
+Gather requirement.
+
+Okay.
+
+Then UI engineer develop the prototype.
+
+Now, develop the prototype.
+
+Develop prototype.
+
+You draw here.
+
+Under UI engineer.
+
+Under that column.
+
+Then, PM shows the prototype.
+
+Now, show prototype.
+
+Again.
+
+Coming here.
+
+The arrows you draw accordingly.
+
+Show prototype.
+
+Then, till the client is satisfied, UI, he modifies the prototype.
+
+Who's modified the prototype?
+
+This person.
+
+Modify prototype.
+
+Show the prototype.
+
+And, modify the prototype.
+
+Then, you can use the merge node.
+
+Decision node.
+
+If not satisfied.
+
+Not satisfied.
+
+Do this.
+
+If satisfied, what happens?
+
+Client.
+
+That was not there in the previous answer.
+
+But, I am going to draw.
+
+Client.
+
+Find the prototype.
+
+Then, satisfy.
+
+Satisfy.
+
+Satisfy.
+
+Client.
+
+Sign the prototype.
+
+That's coming under the client column.
+
+Sign the prototype.
+
+After that, once the client satisfied, UIE develop the UI screens.
+
+Now, you draw the fork.
+
+Here, UI development.
+
+And, the SC do the system development.
+
+When both finish, who's going to integrate the system?
+
+SC.
+
+System integration happens here.
+
+You draw the join.
+
+And, like this.
+
+System integration.
+
+Okay.
+
+Okay.
+
+Then, the PM deliver the...
+
+Now, who's going to deliver the project?
+
+Deliver the system.
+
+Who's going to do that?
+
+PM.
+
+Deliver the system.
+
+Then, client.
+
+Sign off.
+
+And, that's it.
+
+This is how you draw it.
+
+Okay.
+
+Divide into sim lanes.
+
+Now, the reader is very clear.
+
+Okay.
+
+These two activities.
+
+Gather, recommend, and show prototype.
+
+Doing by PM.
+
+This developed prototype.
+
+Modified prototype.
+
+Prototype happening by the UI engineer.
+
+Client will sign the prototype.
+
+And, sign off the final system.
+
+SC will develop the system.
+
+Integrate the system.
+
+So, that's very clear.
+
+So, department wise also.
+
+We can divide like this.
+
+Is it clear, Putala?
+
+What you have to do?
+
+Yes or no?
+
+Yes.
+
+Okay.
+
+So, this is the sample answer.
+
+The same thing.
+
+Sorry.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+Again, you have to use sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+This is the idea of sim lanes.
+
+So, this customer department wise, you can draw the order.
+
+And these are the activity diagram notations.
+
+And that is all about activity diagrams.
+
+Now, we have covered the content to the midterm.
+
+Midterms, you will get the questions up to activity diagram.
+
+But all are MCQs.
+
+But multiple answer questions are there.
+
+So, you have to be careful because minus marks.
+
+For one hour, net exam quiz.
+
+All MCQs.
+
+And 35 questions may be there.
+
+Because some questions are not hard.
+
+So, there may be 35 questions.
+
+For the midterm.
+
+So, that's all for today.
+
+And we are all.
+
+Now, it's 10:26.
+
+Do you have any question?
+
+No means.
+
+Are you all clear?
+
+So, I will put the recording to the course web.
+
+So, you can go through that.

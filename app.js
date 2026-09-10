@@ -368,6 +368,8 @@
     // Hide selectors, show quiz area
     $("#subjectSelector").style.display = "none";
     $("#topicSelector").style.display = "none";
+    $(".app-header").style.display = "none";
+    $("#navTabs").style.display = "none";
     $("#quizArea").classList.add("active");
     $("#resultsScreen").style.display = "none";
 
@@ -567,6 +569,8 @@
     $("#quizArea").classList.remove("active");
     const resultsScreen = $("#resultsScreen");
     resultsScreen.style.display = "block";
+    $(".app-header").style.display = "block";
+    $("#navTabs").style.display = "flex";
 
     const scoreColor =
       pct >= 80 ? "var(--accent-green)" :
@@ -655,6 +659,8 @@
     
     $("#quizArea").classList.remove("active");
     $("#resultsScreen").style.display = "none";
+    $(".app-header").style.display = "block";
+    $("#navTabs").style.display = "flex";
     updateWeakQuizButton();
   }
 
@@ -926,7 +932,15 @@
   }
 
   function escapeAndFormatCode(text) {
-    return text.replace(/`([^`]+)`/g, "<code>$1</code>");
+    if (!text) return "";
+    let formatted = text.replace(/`([^`]+)`/g, "<code>$1</code>");
+    
+    // Format Roman numeral lists (e.g. " I. ", " II. ") to ensure they break nicely
+    formatted = formatted.replace(/\s+(I|II|III|IV|V|VI)\.\s+/g, "<br><br><strong style='color:var(--accent-blue)'>$1.</strong> ");
+    
+    // Convert remaining newlines to line breaks
+    formatted = formatted.replace(/\n/g, "<br>");
+    return formatted;
   }
 
   function spawnConfetti() {
