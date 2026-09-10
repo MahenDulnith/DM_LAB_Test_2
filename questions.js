@@ -58,6 +58,9 @@ const SUBJECTS = {
 const TOPICS = {
     "se-module-1": { label: "Introduction to Software Engineering & SDLC", shortLabel: "Intro to SE & SDLC", subject: "software-engineering", labSheet: "Module 1", color: "#8e44ad", icon: "📖" },
     "se-module-2": { label: "Software Process Models", shortLabel: "Process Models", subject: "software-engineering", labSheet: "Module 2", color: "#9b59b6", icon: "🔄" },
+    "se-module-3": { label: "Agile Development Methodologies & Scrum", shortLabel: "Agile & Scrum", subject: "software-engineering", labSheet: "Module 3", color: "#34495e", icon: "🏃" },
+    "se-module-4": { label: "Use Case Diagrams & Scenarios", shortLabel: "Use Case Diagrams", subject: "software-engineering", labSheet: "Module 4", color: "#e67e22", icon: "👤" },
+    "se-module-5": { label: "Activity Diagrams", shortLabel: "Activity Diagrams", subject: "software-engineering", labSheet: "Module 5", color: "#27ae60", icon: "🛤️" },
 
   // ═══ DISCRETE MATHEMATICS ═══
   "permutations-combinations": {
@@ -3932,4 +3935,420 @@ const QUESTIONS = [
         correct: 1,
         explanation: `As stated in the lecture, the Iterative Waterfall Model is acceptable and often used for straightforward, very common systems with highly stable and clear requirements, like a standard payroll system.`
     },
+  {
+    id: "se_m3_001",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Consider the following statements regarding the Agile Manifesto values:
+I. Working software is valued over comprehensive documentation.
+II. Following a plan is valued over responding to change.
+III. Contract negotiation is valued over customer collaboration.
+IV. Individuals and interactions are valued over processes and tools.
+
+Which of the above statements are correct?`,
+    options: [
+      `I and II only`,
+      `I and IV only`,
+      `II, III, and IV`,
+      `All of the above`
+    ],
+    correct: 1,
+    explanation: `According to the Agile Manifesto, the 4 key values are: Individuals and interactions over processes and tools, Working software over comprehensive documentation, Customer collaboration over contract negotiation, and Responding to change over following a plan.`
+  },
+  {
+    id: "se_m3_002",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following is NOT a defined role in the Scrum framework?`,
+    options: [
+      `Product Owner`,
+      `Scrum Master`,
+      `Project Manager`,
+      `Developer`
+    ],
+    correct: 2,
+    explanation: `The Scrum framework defines exactly three roles: Product Owner, Scrum Master, and Developers. There is no traditional 'Project Manager' role in Scrum; the Scrum Master acts as a facilitator, not a manager.`
+  },
+  {
+    id: "se_m3_003",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following artifacts are officially used in Scrum to provide transparency and manage work?
+I. Sprint Retrospective
+II. Product Backlog
+III. Sprint Backlog
+IV. Burn Down Charts`,
+    options: [
+      `II and III only`,
+      `I, II, and III`,
+      `II, III, and IV`,
+      `All of the above`
+    ],
+    correct: 2,
+    explanation: `The three main Scrum artifacts mentioned in the lecture are the Product Backlog, Sprint Backlog, and Burn Down Charts. The Sprint Retrospective is an activity (event), not an artifact.`
+  },
+  {
+    id: "se_m3_004",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `A team conducts a daily 15-minute meeting. During this meeting, a developer asks the Scrum Master to assign them a new task for the day. Is this correct according to Scrum principles?`,
+    options: [
+      `Yes, the Scrum Master assigns tasks during the Daily Scrum.`,
+      `Yes, but the Product Owner must approve the task assignment.`,
+      `No, the Daily Scrum is for answering three key questions (What I did, What I will do, Obstacles), not for assigning tasks.`,
+      `No, tasks should only be assigned during the Sprint Retrospective.`
+    ],
+    correct: 2,
+    explanation: `The Daily Scrum is a short meeting to monitor progress using three key questions. It is not a status meeting for a manager to assign tasks; developers manage their own work from the Sprint Backlog.`
+  },
+  {
+    id: "se_m3_005",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Evaluate the following User Story:
+'As a database administrator, I want an SQL query so that I can search for books in the library.'
+Why is this considered a POOR user story?`,
+    options: [
+      `It does not clearly identify the user role.`,
+      `It includes technical implementation details ('SQL query') instead of a business goal.`,
+      `It does not state the benefit ('So that...').`,
+      `There is nothing wrong with this user story; it is well-written.`
+    ],
+    correct: 1,
+    explanation: `A good user story should avoid technical implementation details (like 'SQL query' or 'database table') and instead focus on the business goal and benefit (e.g., 'I want to search books so that I can find them quickly').`
+  },
+  {
+    id: "se_m3_006",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the primary difference between the Sprint Review and the Sprint Retrospective?`,
+    options: [
+      `The Review focuses on improving the process, while the Retrospective focuses on demonstrating the product.`,
+      `The Review demonstrates completed work to stakeholders (focus on product), while the Retrospective identifies improvements for the team's workflow (focus on process).`,
+      `The Review is done daily, while the Retrospective is done monthly.`,
+      `There is no difference; they are two names for the same meeting.`
+    ],
+    correct: 1,
+    explanation: `The Sprint Review is focused on the Product (demonstrating the increment to stakeholders), whereas the Sprint Retrospective is focused on the Process (reflecting on team performance and identifying improvements).`
+  },
+  {
+    id: "se_m3_007",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Who is primarily responsible for maintaining and prioritizing the Product Backlog?`,
+    options: [
+      `The Scrum Master`,
+      `The Development Team`,
+      `The Stakeholders`,
+      `The Product Owner`
+    ],
+    correct: 3,
+    explanation: `The Product Owner represents the customer/stakeholders and is solely responsible for creating, maintaining, and prioritizing the items in the Product Backlog.`
+  },
+  {
+    id: "se_m3_008",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "PDF",
+    question: `A team has 120 tasks to complete over a 5-day sprint. On Day 1 they complete 20, Day 2 they complete 50, and Day 3 they complete 0. What is the Ideal Burn Down Velocity, and did they meet it on Day 3?`,
+    options: [
+      `Ideal is 20 tasks/day; Yes, they met it on Day 3.`,
+      `Ideal is 24 tasks/day; No, they completed 0 tasks on Day 3.`,
+      `Ideal is 50 tasks/day; No, they completed 0 tasks on Day 3.`,
+      `Ideal is 120 tasks/day; Yes, they met it.`
+    ],
+    correct: 1,
+    explanation: `Ideal Burn Down Velocity = Total Tasks / Total Days = 120 / 5 = 24 tasks per day. On Day 3, their actual velocity was 0 tasks, which is below the ideal.`
+  },
+  {
+    id: "se_m3_009",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Which of the following are Agile PRACTICES (techniques used during implementation) rather than Agile METHODOLOGIES (overall project management structures)?
+I. Scrum
+II. Test-Driven Development (TDD)
+III. Pair Programming
+IV. Kanban`,
+    options: [
+      `I and IV only`,
+      `II and III only`,
+      `I, II, and III`,
+      `All of the above`
+    ],
+    correct: 1,
+    explanation: `Scrum, Kanban, XP, and Lean are Agile Methodologies (structures). TDD, Pair Programming, and BDD are Agile Practices (specific techniques used by developers).`
+  },
+  {
+    id: "se_m3_010",
+    topic: "se-module-3",
+    difficulty: "easy",
+    source: "PDF",
+    question: `In Scrum, what dictates the priority of items placed in the Product Backlog?`,
+    options: [
+      `The alphabetical order of the features.`,
+      `The technical difficulty of the tasks (hardest first).`,
+      `The business value (highest value items at the top).`,
+      `The preference of the developers.`
+    ],
+    correct: 2,
+    explanation: `In Scrum, work is prioritized so that the highest-value items appear at the top of the Product Backlog and are completed first.`
+  },
+  {
+    id: "se_m4_001",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In a Use Case Diagram, what does the 'System Boundary' represent?`,
+    options: [
+      `The maximum budget limit of the project.`,
+      `The boundary between the physical system and the external actors who interact with it.`,
+      `The timeline constraints of the sprint.`,
+      `The division between the frontend and backend databases.`
+    ],
+    correct: 1,
+    explanation: `The System Boundary (represented by a rectangle) marks the boundary between the system being developed and the external entities (actors) that interact with it.`
+  },
+  {
+    id: "se_m4_002",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Recording",
+    question: `Consider an ATM system. The 'Withdraw Money' use case always requires the user to be validated first. However, the system only prints a receipt if the user selects 'Yes' for a receipt. How should these relationships be modeled?`,
+    options: [
+      `'Validate User' <<extends>> 'Withdraw Money', and 'Print Receipt' <<includes>> 'Withdraw Money'`,
+      `'Validate User' <<includes>> 'Withdraw Money', and 'Print Receipt' <<extends>> 'Withdraw Money'`,
+      `'Withdraw Money' <<includes>> 'Validate User', and 'Print Receipt' <<extends>> 'Withdraw Money'`,
+      `'Withdraw Money' <<extends>> 'Validate User', and 'Withdraw Money' <<includes>> 'Print Receipt'`
+    ],
+    correct: 2,
+    explanation: `Since validation is mandatory and incorporated into the base use case, 'Withdraw Money' <<includes>> 'Validate User'. Since printing a receipt is optional and only happens under a certain condition, 'Print Receipt' <<extends>> 'Withdraw Money'. Note: The arrow for <<include>> points TO the included use case, and the arrow for <<extend>> points TO the base use case.`
+  },
+  {
+    id: "se_m4_003",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Recording",
+    question: `In a university system, both 'Undergraduate' and 'Postgraduate' actors can execute the 'View Timetable' use case. However, only 'Postgraduate' can 'Book Lab'. To simplify the diagram, how should you model the actors?`,
+    options: [
+      `Draw separate association lines from both actors to 'View Timetable'.`,
+      `Make 'Postgraduate' a base use case and 'Undergraduate' an extended use case.`,
+      `Create a generic 'Student' actor linked to 'View Timetable'. Make 'Undergraduate' and 'Postgraduate' child actors of 'Student' using Generalization.`,
+      `Use an <<include>> relationship between 'Undergraduate' and 'Postgraduate'.`
+    ],
+    correct: 2,
+    explanation: `Actor Generalization reduces cluttered associations. You define a parent actor ('Student') with the common use cases, and let child actors ('Undergraduate', 'Postgraduate') inherit from it while adding their specific use cases.`
+  },
+  {
+    id: "se_m4_004",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Recording",
+    question: `When writing a Use Case Scenario in a tabular format, what is the primary rule for writing the 'Main Scenario' (Main Flow)?`,
+    options: [
+      `It must list every single error that could possibly happen.`,
+      `It is written under the assumption that everything is okay, no errors occur, and it leads directly to the successful outcome (Success Scenario).`,
+      `It must only contain code snippets.`,
+      `It describes the hardware requirements of the server.`
+    ],
+    correct: 1,
+    explanation: `The Main Scenario (or Happy Path) describes the specific sequence of events when everything goes to plan, without errors. Variations and errors are documented in the 'Extensions' section.`
+  },
+  {
+    id: "se_m4_005",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following statements about Use Case Relationships are TRUE?
+I. An <<include>> use case never stands alone; it only occurs as part of a base use case.
+II. An <<extend>> use case implicitly incorporates behavior at specific extension points based on a condition.
+III. In generalization, a child use case inherits all behaviors of the parent but cannot override them.
+IV. An Actor Generalization arrow points from the parent actor to the child actor.`,
+    options: [
+      `I and II only`,
+      `II and III only`,
+      `I, II, and IV`,
+      `I and III only`
+    ],
+    correct: 0,
+    explanation: `I and II are true. III is false because a child use case CAN add to or override the parent's behavior. IV is false because the generalization arrow (hollow triangle) always points from the Child to the Parent.`
+  },
+  {
+    id: "se_m4_006",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "PDF",
+    question: `Does a Use Case Diagram explain exactly HOW the system will implement its features (e.g., algorithms and code)?`,
+    options: [
+      `Yes, it details the internal logic and loops.`,
+      `No, it only communicates WHAT the system will do, acting as a high-level requirements specification for stakeholders.`,
+      `Yes, but only if the <<include>> relationship is used.`,
+      `No, it only shows the database schema.`
+    ],
+    correct: 1,
+    explanation: `Use case diagrams capture the functional requirements from a user's perspective (WHAT the system does), but do not go into technical implementation details (HOW it does it).`
+  },
+  {
+    id: "se_m4_007",
+    topic: "se-module-4",
+    difficulty: "easy",
+    source: "Recording",
+    question: `In a Use Case Scenario, what does the 'Pre-condition' describe?`,
+    options: [
+      `The final output shown to the user after the task is done.`,
+      `The state or criteria that must be true before the use case can begin execution (e.g., 'User has logged into ATM').`,
+      `The event that triggers the use case to start.`,
+      `The alternative paths if an error occurs.`
+    ],
+    correct: 1,
+    explanation: `Preconditions define what needs to be true before the use case can successfully execute. Postconditions define what will be true after successful execution.`
+  },
+  {
+    id: "se_m4_008",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Recording",
+    question: `If a user enters an invalid PIN during the 'Withdraw Money' use case, where should this alternative path be documented in the Use Case Specification Template?`,
+    options: [
+      `Under 'Main Scenario'`,
+      `Under 'Pre-conditions'`,
+      `Under 'Extensions' or 'Alternative Flows'`,
+      `It should not be documented at all.`
+    ],
+    correct: 2,
+    explanation: `The 'Extensions' (or Alternative Flows) section is used to describe what happens when variations to the main scenario arise, such as errors (e.g., invalid PIN, insufficient funds).`
+  },
+  {
+    id: "se_m5_001",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "PDF",
+    question: `In an Activity Diagram, what is the UML equivalent of an IF/ELSE statement, where the flow of control goes down ONLY ONE mutually exclusive path?`,
+    options: [
+      `Fork Node`,
+      `Join Node`,
+      `Merge Node`,
+      `Decision/Branch Node`
+    ],
+    correct: 3,
+    explanation: `A Decision/Branch node (diamond) splits the flow based on guard conditions (e.g., [valid], [invalid]), and the control flows down only the single path where the condition is true.`
+  },
+  {
+    id: "se_m5_002",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Consider the following statements regarding Forks and Joins in Activity Diagrams:
+I. A Fork splits a single flow into two or more concurrent flows.
+II. Control flows down ALL paths emerging from a Fork node.
+III. A Join merges divergent conditional branches back into a single flow.
+IV. Every Fork must eventually have a corresponding Join.
+
+Which statements are correct?`,
+    options: [
+      `I and II only`,
+      `I, II, and IV`,
+      `I, III, and IV`,
+      `All of the above`
+    ],
+    correct: 1,
+    explanation: `I, II, and IV are correct. III is false because a JOIN merges concurrent/parallel flows (from a fork). To merge conditional branches (from a decision node), you must use a MERGE node, not a Join.`
+  },
+  {
+    id: "se_m5_003",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "PDF",
+    question: `What is the purpose of 'Swimlanes' (Partitions) in an Activity Diagram?`,
+    options: [
+      `To group actions that belong to the same organizational unit or business actor.`,
+      `To indicate loops and iterations.`,
+      `To model database tables.`,
+      `To show the timeline of the project in weeks.`
+    ],
+    correct: 0,
+    explanation: `Swimlanes (Partitions) are used to group activities based on who or what is responsible for executing them (e.g., 'Customer', 'Finance Department', 'System').`
+  },
+  {
+    id: "se_m5_004",
+    topic: "se-module-5",
+    difficulty: "easy",
+    source: "PDF",
+    question: `How is the 'Initial/Start Node' represented in a UML Activity Diagram?`,
+    options: [
+      `A solid filled black circle`,
+      `A hollow circle with a dot inside (bullseye)`,
+      `A diamond shape`,
+      `A rounded rectangle`
+    ],
+    correct: 0,
+    explanation: `The Start/Initial node is represented by a solid filled black circle. The Final/End node is represented by a filled circle inside a hollow circle (bullseye).`
+  },
+  {
+    id: "se_m5_005",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "PDF",
+    question: `A business process requires the 'Fulfillment Department' to prepare goods, and SIMULTANEOUSLY the 'Customer Service Department' to send an invoice. Once BOTH are complete, the order is closed. Which nodes must be used to model this?`,
+    options: [
+      `A Decision node to start, and a Merge node to close.`,
+      `A Fork node to start the simultaneous activities, and a Join node to wait for both to finish before closing.`,
+      `A Merge node to start, and a Fork node to close.`,
+      `A single continuous Transition arrow through all activities.`
+    ],
+    correct: 1,
+    explanation: `Because the activities happen concurrently (at the same time), a Fork node (thick bar) is used to split the flow, and a Join node (thick bar) is used to wait for both parallel threads to complete before proceeding.`
+  },
+  {
+    id: "se_m5_006",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "PDF",
+    question: `If an action in an Activity Diagram has a small 'rake-style' symbol (a pitchfork/trident icon) inside it, what does this indicate?`,
+    options: [
+      `The action is a loop that repeats indefinitely.`,
+      `The action causes an error or exception.`,
+      `The action is a 'Call Action' or 'Sub Activity', meaning it is defined in detail on another separate activity diagram.`,
+      `The action requires manual human intervention.`
+    ],
+    correct: 2,
+    explanation: `The rake symbol indicates a Call Behavior Action (Sub Activity). It means the activity is complex and its internal steps are detailed in a completely separate activity diagram.`
+  },
+  {
+    id: "se_m5_007",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "PDF",
+    question: `Which of the following is a COMMON MISTAKE when drawing Activity Diagrams?`,
+    options: [
+      `Using a Merge point to merge concurrent flows from a Fork.`,
+      `Writing verbs in the present tense inside Action nodes.`,
+      `Using Guard conditions on branches coming out of a Decision node.`,
+      `Using a Fork node to model parallel activities.`
+    ],
+    correct: 0,
+    explanation: `A very common mistake is confusing Merge and Join. A Merge point brings together divergent conditional paths (from a Decision). A Join brings together concurrent paths (from a Fork). You cannot use a Merge to combine forked flows.`
+  },
+  {
+    id: "se_m5_008",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "PDF",
+    question: `How is a Loop or Iteration best explicitly modeled in a UML Activity Diagram to show termination conditions?`,
+    options: [
+      `By drawing a circle around the action.`,
+      `By using a Decision Node to check the condition, with a transition arrow looping back to a previous action.`,
+      `By placing an exclamation mark (!) inside the action node.`,
+      `It is impossible to model loops in an Activity Diagram.`
+    ],
+    correct: 1,
+    explanation: `While an asterisk (*) can denote repetition, the ideal way to model an iteration with clear termination conditions is to use a Decision Node with guard conditions (e.g., [more items], [no more items]) and loop the transition back.`
+  }
 ];
