@@ -7726,5 +7726,6420 @@ Owner, as clarified in the lecture?
     ],
     correct: 0,
     explanation: `The lecturer explains that in Agile's short time periods, two developers working together can 'find out bugs easily' and 'discuss and interact among them to identify any bugs or errors in an early stage' for quick delivery.`
+  },
+  {
+    id: "se_new_add_479",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are stages within each loop of the Spiral Model?
+ I. Maintenance
+ II. Sprint Retrospective
+ III. Planning
+ IV. Risk Analysis
+ V. Sprint Planning`,
+    options: [
+      `III and IV only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Models Each spiral loop: Planning -> Risk Analysis -> Engineering -> Evaluation. Sprint Planning is Scrum.`
+  },
+  {
+    id: "se_new_add_480",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Actors in a use case diagram may represent which of the following?
+ I. Human users
+ II. A use case inside the system boundary
+ III. The system being modelled itself
+ IV. A table inside the system's own database
+ V. External hardware`,
+    options: [
+      `I and V only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Actors are roles EXTERNAL to the system: human users, external hardware, or other systems - never the system itself or its internals.`
+  },
+  {
+    id: "se_new_add_481",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about a MERGE node are correct?
+ I. It synchronizes parallel flows coming from a fork
+ II. It brings two or more branch paths back together
+ III. The diamond symbol for a merge is optional
+ IV. It is the UML equivalent of ENDIF in pseudo code
+ V. Each outgoing edge of a merge must have a guard condition`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Diagram Merge joins alternative (branch) paths, not parallel flows - that is a join. Its diamond is optional.`
+  },
+  {
+    id: "se_new_add_482",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Use Case Specification Template, a Priority value of 5 means:`,
+    options: [
+      `It will be done in Sprint 5`,
+      `Highest priority`,
+      `Medium priority`,
+      `Lowest priority`,
+      `The use case has 5 extensions`
+    ],
+    correct: 1,
+    explanation: `Priority is 1-5 where 1 = lowest and 5 = highest.`
+  },
+  {
+    id: "se_new_add_483",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the V-Model, the Requirements phase on the left side is matched with which testing activity on the right side?`,
+    options: [
+      `Acceptance testing`,
+      `System design review`,
+      `Unit testing`,
+      `Regression testing`,
+      `Integration testing SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 2`
+    ],
+    correct: 0,
+    explanation: `Models The lecture's example: Requirements -> Acceptance Testing.`
+  },
+  {
+    id: "se_new_add_484",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In which year was the joint IEEE/ACM Software Engineering Code of Ethics created?`,
+    options: [
+      `2018`,
+      `2001`,
+      `1995`,
+      `1999`,
+      `2020`
+    ],
+    correct: 3,
+    explanation: `Ethics Joint IEEE/ACM code: 1999. ACM code last updated 2018; IEEE code 2020; Agile Manifesto 2001.`
+  },
+  {
+    id: "se_new_add_485",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `When a student enrolls in a university, a visa check is performed ONLY if the student is foreign. How should "Perform Visa Check" relate to "Enroll in University"?`,
+    options: [
+      `"Enroll in University" ≪include≫ "Perform Visa Check"`,
+      `"Perform Visa Check" ≪extend≫ "Enroll in University" (with an extension point for foreign students)`,
+      `"Perform Visa Check" is a generalization of "Enroll in University"`,
+      `"Enroll in University" ≪extend≫ "Perform Visa Check"`,
+      `An association line between the two use cases`
+    ],
+    correct: 1,
+    explanation: `Conditional/optional behaviour = extend; the arrow goes from the extending use case to the base.`
+  },
+  {
+    id: "se_new_add_486",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which user story is written BEST according to the guidelines in the lecture?`,
+    options: [
+      `As a member, I want to reserve a book.`,
+      `I want the system to have a reservation feature so that it is complete.`,
+      `As a member, I want to reserve a book that is currently on loan so that I can borrow it as soon as it is returned.`,
+      `As a member, I want a MySQL table to store borrowed books so that data is saved.`,
+      `As a user, I want to manage books.`
+    ],
+    correct: 2,
+    explanation: `A good story names a clear role, a goal, and a benefit ('so that'), without technical details.`
+  },
+  {
+    id: "se_new_add_487",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `What happens to the flow of control at a FORK?`,
+    options: [
+      `It follows only the path whose guard condition is true`,
+      `It chooses a path randomly`,
+      `It stops until a merge node is reached`,
+      `It returns to the initial node`,
+      `It flows down ALL of the outgoing paths SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`
+    ],
+    correct: 4,
+    explanation: `Diagram At a fork control goes down all paths; at a branch (decision) it goes down only one.`
+  },
+  {
+    id: "se_new_add_488",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A hospital is considering a new patient-record system. Management's main worry is: "Will our nurses feel confident enough to switch to it and actually use it every day?" Which feasibility type is this?`,
+    options: [
+      `Economic feasibility`,
+      `Operational feasibility`,
+      `Technical feasibility`,
+      `Schedule feasibility`,
+      `Legal feasibility`
+    ],
+    correct: 1,
+    explanation: `Ethics Operational feasibility asks whether users will accept and use the system in the real world.`
+  },
+  {
+    id: "se_new_add_489",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `An app is updated so that it keeps working after users upgrade to a new version of iOS. No new features are added. Which type of maintenance is this?`,
+    options: [
+      `Emergency maintenance`,
+      `Perfective maintenance`,
+      `Adaptive maintenance`,
+      `Preventive maintenance`,
+      `Corrective maintenance`
+    ],
+    correct: 2,
+    explanation: `Ethics Adaptive maintenance changes software to work in a new environment (e.g. new OS version).`
+  },
+  {
+    id: "se_new_add_490",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In an activity diagram, swimlanes are used to show:`,
+    options: [
+      `Activity partitions, often organisational units or business actors responsible for actions`,
+      `Guard conditions`,
+      `Parallel execution threads`,
+      `The order in which loops execute`,
+      `The system boundary`
+    ],
+    correct: 0,
+    explanation: `Diagram Swimlanes are the notation for activity partitions.`
+  },
+  {
+    id: "se_new_add_491",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A developer writes clear documentation explaining exactly how a recommendation algorithm uses customer data. Which key ethical value does this MOST directly demonstrate?`,
+    options: [
+      `Responsibility`,
+      `Fairness`,
+      `Transparency`,
+      `Profitability`,
+      `Privacy`
+    ],
+    correct: 2,
+    explanation: `Ethics Transparency = being honest about how the software works.`
+  },
+  {
+    id: "se_new_add_492",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are fields in the Use Case Specification Template shown in the lecture?
+ I. Guard Condition
+ II. Trigger
+ III. Extensions
+ IV. Preconditions
+ V. Sprint Goal SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 4`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Template: Number, Name, Summary, Priority, Pre/Postconditions, Primary/Secondary Actors, Trigger, Main Scenario, Extensions, Open Issues.`
+  },
+  {
+    id: "se_new_add_493",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following testing types were listed in the Testing phase of the SDLC lecture?
+ I. System testing
+ II. Unit testing
+ III. Integration testing
+ IV. Regression testing
+ V. Acceptance testing`,
+    options: [
+      `I, II, and III only`,
+      `I, II, and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `, E Ethics The four listed types were Unit, Integration, System and Acceptance testing. Regression testing was not listed.`
+  },
+  {
+    id: "se_new_add_494",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Complete the Agile value: "Working software over ______".`,
+    options: [
+      `Contract negotiation`,
+      `Customer collaboration`,
+      `Processes and tools`,
+      `Following a plan`,
+      `Comprehensive documentation`
+    ],
+    correct: 4,
+    explanation: `Working software over comprehensive documentation.`
+  },
+  {
+    id: "se_new_add_495",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The Ariane 5 rocket exploded about 40 seconds after launch. According to the lecture, WHY did it fail?`,
+    options: [
+      `A missing hyphen in the code`,
+      `Poor testing and missing safety checks`,
+      `The rocket's hardware could not support the new software`,
+      `Code was reused without proper adaptation`,
+      `A wrong code update was pushed to a trading bot`
+    ],
+    correct: 3,
+    explanation: `Ethics Ariane 5: reused code without proper adaptation. Missing hyphen = Mariner 1; poor testing = Therac-25.`
+  },
+  {
+    id: "se_new_add_496",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statement about an INCLUDED use case is correct?`,
+    options: [
+      `It is drawn with a solid line and a hollow triangle`,
+      `It never stands alone; it only occurs as part of a larger base use case`,
+      `It must always be linked directly to an actor`,
+      `It inherits the behaviour of the base use case`,
+      `It is optional and runs only when a condition is true`
+    ],
+    correct: 1,
+    explanation: `The included use case never stands alone - it is part of the base that includes it.`
+  },
+  {
+    id: "se_new_add_497",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, activity diagrams are used for which purposes?
+ I. Modeling business processes
+ II. Showing class inheritance hierarchies
+ III. Clarifying concurrency issues
+ IV. Analyzing individual use cases in detail
+ V. Designing the database schema`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Diagram Uses: business processes, analysing functionality to identify use cases, analysing use cases in detail, clarifying concurrency.`
+  },
+  {
+    id: "se_new_add_498",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statement correctly describes the relationship between the SDLC and a software process model?`,
+    options: [
+      `The SDLC defines how phases are executed; a process model defines which phases exist`,
+      `The SDLC is a specific implementation, while a process model is a general structure`,
+      `A process model replaces the SDLC completely`,
+      `Each process model uses a completely different set of phases from the SDLC`,
+      `The SDLC defines what phases to follow; a process model defines how to execute those phases`
+    ],
+    correct: 4,
+    explanation: `Models SDLC = WHAT phases (general structure). Process model = HOW to carry them out (specific implementation).`
+  },
+  {
+    id: "se_new_add_499",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `An action node containing a small rake-style symbol indicates:`,
+    options: [
+      `An action that repeats many times`,
+      `A decision point`,
+      `A parallel flow`,
+      `A call action / sub-activity defined in more detail in another activity diagram`,
+      `The end of the activity`
+    ],
+    correct: 3,
+    explanation: `Diagram The rake symbol marks a call action (sub activity) detailed on another diagram.`
+  },
+  {
+    id: "se_new_add_500",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A government office needs a payroll system. The requirements are fully documented, signed off and extremely unlikely to change. Which model fits BEST?`,
+    options: [
+      `Waterfall model`,
+      `Prototyping model`,
+      `Spiral model`,
+      `Kanban`,
+      `Agile (Scrum)`
+    ],
+    correct: 0,
+    explanation: `Models Waterfall suits stable, well-defined requirements (example given: Payroll / HR systems). Q Type Answer Lecture Why`
+  },
+  {
+    id: "se_new_add_501",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the model comparison table, which drawback belongs to the Prototyping model?`,
+    options: [
+      `May lack clear deadlines`,
+      `Complex and expensive`,
+      `No feedback until the end`,
+      `Requires stable architecture upfront`,
+      `The prototype may be mistaken for the final product; scope creep SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 6`
+    ],
+    correct: 4,
+    explanation: `Models Prototyping drawbacks: prototype mistaken as final, scope creep.`
+  },
+  {
+    id: "se_new_add_502",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In which situations is the Incremental Model recommended?
+ I. When every development phase must have a matching test phase for safety
+ II. Very large projects
+ III. When quick delivery of working features and early feedback is needed
+ IV. When requirements are completely unknown and change daily
+ V. When you want to spread risk across multiple stages`,
+    options: [
+      `II, III, and V only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Models Incremental: large projects, most reqs known, quick delivery, spread risk. Matching test phases = V-Model.`
+  },
+  {
+    id: "se_new_add_503",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the comparison table, Kanban is BEST suited for:`,
+    options: [
+      `Maintenance and support workflows`,
+      `Simple projects with one final delivery`,
+      `High-risk, large-scale projects`,
+      `Safety-critical systems`,
+      `Teams needing structure and fixed roles`
+    ],
+    correct: 0,
+    explanation: `Models Kanban: flow-based, continuous delivery; best for maintenance and support workflows.`
+  },
+  {
+    id: "se_new_add_504",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statement BEST captures how Software Engineering differs from programming, as described in the lecture?`,
+    options: [
+      `Software engineering is usually done individually, while programming requires team coordination`,
+      `Software engineering focuses mainly on coding and debugging specific features`,
+      `Software engineering covers the whole software lifecycle using structured processes, while programming is narrow and task-oriented`,
+      `Programming follows the SDLC strictly, while software engineering may be ad hoc`,
+      `Programming produces working code, while software engineering produces only design documents`
+    ],
+    correct: 2,
+    explanation: `Ethics SE = broad, whole lifecycle, structured process; programming = narrow, task-oriented, may be ad hoc.`
+  },
+  {
+    id: "se_new_add_505",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A use case model mainly captures which kind of requirements?`,
+    options: [
+      `Legal requirements`,
+      `Non-functional requirements`,
+      `Hardware constraints`,
+      `Functional requirements`,
+      `Database design requirements SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 7`
+    ],
+    correct: 3,
+    explanation: `The use case model captures the functional requirements (WHAT the system does).`
+  },
+  {
+    id: "se_new_add_506",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `What is the typical time-box for the Daily Scrum?`,
+    options: [
+      `15 minutes`,
+      `Half a day`,
+      `5 minutes`,
+      `1 hour`,
+      `30 minutes SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 8`
+    ],
+    correct: 0,
+    explanation: `The Daily Scrum is a short meeting, typically 15 minutes.`
+  },
+  {
+    id: "se_new_add_507",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about the Agile model (as presented in Lecture 2) are correct?
+ I. It is based on the Agile Manifesto (2001)
+ II. It is only suitable when requirements are fixed
+ III. Agile values rigid processes over people and interactions
+ IV. Software is built in small usable parts called sprints, usually 1-4 weeks
+ V. Each sprint delivers a working product`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Models Agile values people/interactions over rigid processes and suits changing requirements.`
+  },
+  {
+    id: "se_new_add_508",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which Scrum event has 'The Product' as its main focus?`,
+    options: [
+      `Backlog creation`,
+      `Sprint Retrospective`,
+      `Sprint Planning`,
+      `Daily Scrum`,
+      `Sprint Review`
+    ],
+    correct: 4,
+    explanation: `Sprint Review focuses on the product; Retrospective focuses on team and process.`
+  },
+  {
+    id: "se_new_add_509",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which software failure is correctly matched with its cause?`,
+    options: [
+      `Mariner 1 - reused code without adaptation`,
+      `Therac-25 - a wrong code update to a trading bot`,
+      `Therac-25 - poor testing and missing safety checks`,
+      `Ariane 5 - a missing hyphen in the code`,
+      `Knight Capital - poor testing and missing safety checks SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 2`
+    ],
+    correct: 2,
+    explanation: `Ethics Therac-25: poor testing, missing safety checks -> radiation overdoses.`
+  },
+  {
+    id: "se_new_add_510",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are factors listed for choosing a software process model?
+ I. Time to market requirements
+ II. Risk level
+ III. The programming language's syntax
+ IV. User feedback
+ V. Team style`,
+    options: [
+      `I, II, and IV only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `, E Models Factors: fixed vs changing requirements, size & complexity, risk level, time to market, team style, user feedback.`
+  },
+  {
+    id: "se_new_add_511",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A company is building software that controls the braking system of a car. Every development phase must have a matching, pre-planned test phase. Which model is MOST suitable?`,
+    options: [
+      `V-Model`,
+      `Prototyping`,
+      `Incremental`,
+      `Classic Waterfall`,
+      `Kanban`
+    ],
+    correct: 0,
+    explanation: `Models V-Model is ideal for safety-critical systems (medical devices, automotive).`
+  },
+  {
+    id: "se_new_add_512",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The Main scenario of a use case is best described as:`,
+    options: [
+      `The scenario where the user cancels`,
+      `The list of open issues`,
+      `The scenario describing all possible errors`,
+      `The 'happy path' where everything goes to plan and leads to the desired outcome`,
+      `The scenario run only by secondary actors`
+    ],
+    correct: 3,
+    explanation: `Main scenario assumes no errors or problems occur.`
+  },
+  {
+    id: "se_new_add_513",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In a Sprint Burn Down Chart, what is usually shown on the VERTICAL axis?`,
+    options: [
+      `Sprint number`,
+      `Completed story points only`,
+      `Time (days)`,
+      `Outstanding work (remaining backlog)`,
+      `Number of team members`
+    ],
+    correct: 3,
+    explanation: `Vertical axis = remaining/outstanding work; horizontal = time.`
+  },
+  {
+    id: "se_new_add_514",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which change is an example of PERFECTIVE maintenance?`,
+    options: [
+      `Adding an online payment option to a school system`,
+      `Updating the app to support a new Android version`,
+      `Fixing a crash that occurs when users log in`,
+      `Moving the system to a new server because the old one is retired`,
+      `Correcting a wrong tax calculation reported by users SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`
+    ],
+    correct: 0,
+    explanation: `Ethics Perfective = adding features or improving performance.`
+  },
+  {
+    id: "se_new_add_515",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Hospital Appointment System example, what was the goal of Sprint 1?`,
+    options: [
+      `Complete all Product Backlog items`,
+      `Implement appointment reminders first`,
+      `Build the doctor's dashboard`,
+      `Deliver a Minimum Viable Product (MVP) that lets patients start using the system`,
+      `Write the full documentation before coding`
+    ],
+    correct: 3,
+    explanation: `Sprint 1 goal: MVP using the highest-value, core features.`
+  },
+  {
+    id: "se_new_add_516",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of these user stories are POORLY written according to the lecture guidelines?
+ I. As a user, I want to generate reports.
+ II. As a librarian, I want to generate overdue book reports so that I can track late returns.
+ III. As a member, I want an SQL query to search books.
+ IV. As a customer, I want a database table to store account balances.
+ V. As a patient, I want to receive appointment reminders so that I do not miss my appointment.`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Poor stories contain technical details (DB table, SQL) or are vague with no clear role/benefit.`
+  },
+  {
+    id: "se_new_add_517",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Lean Software Development mainly focuses on:`,
+    options: [
+      `Eliminating waste and maximizing value`,
+      `Fixed-length sprints`,
+      `Two developers working on the same task`,
+      `Visualizing tasks on a board`,
+      `Writing tests before code`
+    ],
+    correct: 0,
+    explanation: `Lean = eliminate waste, maximize value.`
+  },
+  {
+    id: "se_new_add_518",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statement BEST describes "Agile" as defined in the lecture?`,
+    options: [
+      `Another name for the Scrum framework`,
+      `A documentation standard published by IEEE`,
+      `A single, fixed method for managing software projects`,
+      `A testing technique where tests are written before code`,
+      `An umbrella term for a set of methods and practices based on the values and principles of the Agile Manifesto`
+    ],
+    correct: 4,
+    explanation: `Agile is an umbrella term; Scrum, Kanban, XP, Lean are methods under it.`
+  },
+  {
+    id: "se_new_add_519",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, the flow of events in a use case scenario should include:
+ I. The basic flow and alternative (exceptional) flows
+ II. How and when the use case starts and ends
+ III. When the use case interacts with the actors
+ IV. The database indexing strategy
+ V. What objects are exchanged`,
+    options: [
+      `I, II, and III only`,
+      `I, II, and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `, E Database indexing is a design/implementation detail, not part of the flow of events.`
+  },
+  {
+    id: "se_new_add_520",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `How is an INCLUDE relationship drawn?`,
+    options: [
+      `A dashed arrow labelled ≪include≫, from the included use case to the base`,
+      `A thick synchronization bar`,
+      `A dashed arrow labelled ≪include≫, from the base use case to the included use case`,
+      `A solid line with a hollow triangle pointing to the base`,
+      `A plain solid line with no arrow SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 4`
+    ],
+    correct: 2,
+    explanation: `Include: dashed arrow from base -> included. (Extend points the opposite way: extending -> base.)`
+  },
+  {
+    id: "se_new_add_521",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which stakeholder classifications are CORRECT?
+ I. A payment gateway - External partner
+ II. A delivery supplier - End user
+ III. Teachers managing classes in a school app - External partner
+ IV. A university board funding the system - Project sponsor / Client
+ V. A data protection authority - Regulatory body`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics Teachers/admin staff = internal users; suppliers/delivery services = external partners.`
+  },
+  {
+    id: "se_new_add_522",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The Spiral model combines features of which two models?`,
+    options: [
+      `Agile and Kanban`,
+      `Scrum and Waterfall`,
+      `Incremental and Kanban`,
+      `V-Model and Incremental`,
+      `Waterfall and Prototyping`
+    ],
+    correct: 4,
+    explanation: `Models Spiral = Waterfall + Prototyping, with risk analysis in each loop.`
+  },
+  {
+    id: "se_new_add_523",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the System Design phase, what does the LOW-LEVEL design describe?`,
+    options: [
+      `The list of stakeholders`,
+      `The detailed logic and components`,
+      `The acceptance test results`,
+      `The feasibility of the project`,
+      `The overall structure of the system`
+    ],
+    correct: 1,
+    explanation: `Ethics High-level = overall structure; low-level = detailed logic and components.`
+  },
+  {
+    id: "se_new_add_524",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which activities belong to the Deployment phase?
+ I. Creating the database schema
+ II. A pilot release to a small group first
+ III. Training users and preparing user manuals
+ IV. Writing unit tests for each module
+ V. Setting up a help desk or FAQs SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 5`,
+    options: [
+      `II, III, and V only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics Unit testing = implementation; database schema = design.`
+  },
+  {
+    id: "se_new_add_525",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `How does the Iterative Waterfall model mainly differ from the classic Waterfall model?`,
+    options: [
+      `It builds a quick prototype first`,
+      `It delivers the product in sprints`,
+      `It removes the testing phase`,
+      `It adds a risk analysis step to every phase`,
+      `It allows the team to go back to earlier phases when problems are found`
+    ],
+    correct: 4,
+    explanation: `Models Iterative Waterfall keeps the same phases but allows feedback and going back.`
+  },
+  {
+    id: "se_new_add_526",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `An analyst sits beside supermarket cashiers for a full day to see where they waste time during checkout. Which requirements-gathering technique is this?`,
+    options: [
+      `Document analysis`,
+      `Interviews`,
+      `Observation`,
+      `Brainstorming`,
+      `Questionnaires`
+    ],
+    correct: 2,
+    explanation: `Ethics Observation = watching how tasks are done to find pain points.`
+  },
+  {
+    id: "se_new_add_527",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Why is using a Decision node preferred over an asterisk (*) for showing iteration?`,
+    options: [
+      `The asterisk is not valid UML`,
+      `The asterisk does not show the loop termination condition or number of repetitions`,
+      `Decision nodes run faster`,
+      `The asterisk can only be used in swimlanes`,
+      `Decision nodes create parallel flows`
+    ],
+    correct: 1,
+    explanation: `Diagram Asterisk hides termination conditions and repetition count; a decision node makes them explicit.`
+  },
+  {
+    id: "se_new_add_528",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which questions help identify use cases for an actor?
+ I. Will the actor need to inform the system about sudden, external changes?
+ II. What programming language will implement this?
+ III. What will the database table be named?
+ IV. Does the actor need to be informed about certain occurrences in the system?
+ V. Will the actor create, store, change, remove, or read data in the system?`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Use case identification is about what the actor needs from the system, not implementation.`
+  },
+  {
+    id: "se_new_add_529",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `How is the INITIAL node drawn in an activity diagram?`,
+    options: [
+      `A hollow circle`,
+      `A circle with a filled circle inside`,
+      `A filled (solid) circle`,
+      `A thick bar`,
+      `A diamond`
+    ],
+    correct: 2,
+    explanation: `Diagram Initial = filled circle; final = circle with a filled circle inside (bullseye).`
+  },
+  {
+    id: "se_new_add_530",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, the text inside an action node should be:`,
+    options: [
+      `A guard condition in square brackets`,
+      `A verb phrase in the present tense (e.g. 'Generate Report')`,
+      `The name of the swimlane`,
+      `A past-tense sentence`,
+      `A noun describing the actor SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 6`
+    ],
+    correct: 1,
+    explanation: `Diagram Actions are written as present-tense verb phrases. Q Type Answer Lecture Why`
+  },
+  {
+    id: "se_new_add_531",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the comparison table, which is the drawback of the Incremental model?`,
+    options: [
+      `Requires a stable architecture upfront`,
+      `May lack clear deadlines`,
+      `Rigid schedules and roles`,
+      `Prototype may be mistaken as final`,
+      `No feedback until the end`
+    ],
+    correct: 0,
+    explanation: `Models Incremental: requires stable architecture upfront.`
+  },
+  {
+    id: "se_new_add_532",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `When is a feasibility study carried out?`,
+    options: [
+      `After the requirements are written in the SRS`,
+      `After deployment, to check user satisfaction`,
+      `During the system design phase`,
+      `Before starting the actual software development process`,
+      `During acceptance testing`
+    ],
+    correct: 3,
+    explanation: `Ethics It is done before development to answer 'Should we build this system?'.`
+  },
+  {
+    id: "se_new_add_533",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following were listed as key ethical values in Software Engineering?
+ I. Popularity
+ II. Profitability
+ III. Privacy
+ IV. Responsibility
+ V. Speed of delivery`,
+    options: [
+      `III and IV only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Ethics The four values: Responsibility, Transparency, Privacy, Fairness.`
+  },
+  {
+    id: "se_new_add_534",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The outgoing alternatives from a Decision node are:`,
+    options: [
+      `Always limited to two`,
+      `Executed one after another`,
+      `All executed in parallel`,
+      `Not labelled`,
+      `Mutually exclusive`
+    ],
+    correct: 4,
+    explanation: `Diagram Decision = conditional flow; alternatives are mutually exclusive (like IF/ELSE).`
+  },
+  {
+    id: "se_new_add_535",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which is the correct order of steps in the Prototyping model?`,
+    options: [
+      `Gather basic requirements -> Build prototype -> Show user -> Get feedback and improve -> Build real system`,
+      `Gather basic requirements -> Build real system -> Show user -> Build prototype -> Feedback`,
+      `Build prototype -> Gather basic requirements -> Show user -> Feedback -> Build real system`,
+      `Gather basic requirements -> Show user -> Get feedback -> Build prototype -> Build real system`,
+      `Show user -> Gather basic requirements -> Build prototype -> Build real system -> Feedback SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 7`
+    ],
+    correct: 0,
+    explanation: `Models Requirements -> quick prototype -> show user -> feedback/improve -> real system once users are happy.`
+  },
+  {
+    id: "se_new_add_536",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Windows 7 -> Windows 8 -> Windows 10 -> Windows 11 was used as an example of which model?`,
+    options: [
+      `Incremental`,
+      `V-Model`,
+      `Classic Waterfall`,
+      `Spiral`,
+      `Prototyping`
+    ],
+    correct: 0,
+    explanation: `Models Each Windows version was presented as an increment.`
+  },
+  {
+    id: "se_new_add_537",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about USE CASE generalization are correct?
+ I. It is drawn as a dashed arrow labelled ≪generalize≫
+ II. The child may add to or override the parent's behaviour
+ III. The child use case inherits the behaviour and meaning of the parent
+ IV. It is drawn with a solid line and hollow triangle pointing to the parent
+ V. The child can never add new behaviour`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Generalization notation: solid line + hollow triangle at the parent.`
+  },
+  {
+    id: "se_new_add_538",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A defence contractor is building a new missile-guidance system. Mistakes would be very costly and dangerous, and requirements are expected to change as the system develops. Which model is MOST suitable?`,
+    options: [
+      `Prototyping`,
+      `Waterfall`,
+      `Spiral`,
+      `Iterative Waterfall`,
+      `Kanban`
+    ],
+    correct: 2,
+    explanation: `Models Spiral suits high-risk, large, changing projects like defence/aerospace.`
+  },
+  {
+    id: "se_new_add_539",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to Lecture 3, Scrum work is performed in sprints of:`,
+    options: [
+      `Three months`,
+      `Any length decided daily`,
+      `Exactly one week`,
+      `Exactly six weeks`,
+      `Up to a calendar month SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 2`
+    ],
+    correct: 4,
+    explanation: `Sprints are iterations of up to a calendar month.`
+  },
+  {
+    id: "se_new_add_540",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The lecture states that requirements gathering 'acts like a contract'. This means it:`,
+    options: [
+      `Must be completed by the Scrum Master`,
+      `Outlines what will (and won't) be built between the client and development team`,
+      `Fixes the project price permanently`,
+      `Is a legally binding document signed by lawyers`,
+      `Replaces the need for testing`
+    ],
+    correct: 1,
+    explanation: `Ethics It is the foundation for design, implementation and testing, stating what will and won't be built.`
+  },
+  {
+    id: "se_new_add_541",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The ACM Code of Ethics and Professional Conduct was last updated in:`,
+    options: [
+      `2020`,
+      `2014`,
+      `2018`,
+      `1999`,
+      `2001`
+    ],
+    correct: 2,
+    explanation: `Ethics ACM: 2018. IEEE: 2020. Joint IEEE/ACM SE code: 1999.`
+  },
+  {
+    id: "se_new_add_542",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to 'How to choose a model', which statement about team style is correct?`,
+    options: [
+      `Team style has no effect on model choice`,
+      `Flexible teams suit Scrum; structured teams prefer Kanban`,
+      `Only Waterfall works for structured teams`,
+      `Structured teams suit Scrum; flexible teams may prefer Kanban`,
+      `Both Scrum and Kanban require no roles`
+    ],
+    correct: 3,
+    explanation: `Models Structured teams -> Scrum; flexible teams -> Kanban.`
+  },
+  {
+    id: "se_new_add_543",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Another name for a transition in an activity diagram is:`,
+    options: [
+      `Control flow (edge)`,
+      `Swimlane`,
+      `Partition`,
+      `Extension point`,
+      `Guard SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`
+    ],
+    correct: 0,
+    explanation: `Diagram Transition = control flow / directed flow / edge.`
+  },
+  {
+    id: "se_new_add_544",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In an EXTEND relationship, the base use case:`,
+    options: [
+      `May stand alone, but under certain conditions its behaviour may be extended`,
+      `Inherits the extending use case's behaviour`,
+      `Is optional behaviour`,
+      `Must always execute the extending use case`,
+      `Can never stand alone`
+    ],
+    correct: 0,
+    explanation: `Base = mandatory behaviour; extending use case = optional behaviour.`
+  },
+  {
+    id: "se_new_add_545",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `At the end of a sprint, a team shows the finished 'Register' and 'Search Doctor' features to hospital management and collects their comments to update the backlog. Which Scrum event is this?`,
+    options: [
+      `Sprint Retrospective`,
+      `Backlog refinement by the Scrum Master`,
+      `Sprint Planning`,
+      `Daily Scrum`,
+      `Sprint Review`
+    ],
+    correct: 4,
+    explanation: `Sprint Review: demonstrate the increment, gather stakeholder feedback, adapt the Product Backlog.`
+  },
+  {
+    id: "se_new_add_546",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A mobile health app must follow national regulations on storing patients' medical data. Checking this BEFORE development is part of which feasibility type?`,
+    options: [
+      `Operational`,
+      `Schedule`,
+      `Legal`,
+      `Economic`,
+      `Technical`
+    ],
+    correct: 2,
+    explanation: `Ethics Legal feasibility: laws, policies and regulations (e.g. GDPR, data protection).`
+  },
+  {
+    id: "se_new_add_547",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which well-known failure is linked to 'a missing hyphen in the code'?`,
+    options: [
+      `Therac-25`,
+      `Mariner 1 (NASA)`,
+      `Ariane 5`,
+      `Knight Capital`,
+      `The Y2K bug`
+    ],
+    correct: 1,
+    explanation: `Ethics Mariner 1 veered off course and self-destructed due to a missing hyphen.`
+  },
+  {
+    id: "se_new_add_548",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Why is the V-Model useful, according to the lecture?`,
+    options: [
+      `It has no testing phase`,
+      `It skips documentation`,
+      `It delivers the product in every sprint`,
+      `It lets users see a prototype before design`,
+      `It helps catch errors early by planning tests as soon as each phase begins`
+    ],
+    correct: 4,
+    explanation: `Models Tests are planned alongside each development phase.`
+  },
+  {
+    id: "se_new_add_549",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Order Processing System, the shop works on credit, so payment is NOT required before delivery. How should 'Handle Payment' relate to 'Fill Order / Deliver Order'?`,
+    options: [
+      `They should be connected with a merge node only`,
+      `Payment should come after the final node`,
+      `Payment must come before a decision to deliver`,
+      `They should be on parallel flows after a fork`,
+      `Payment should be in the same action as delivery SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 4`
+    ],
+    correct: 3,
+    explanation: `Diagram Independent activities that can happen in any order are modelled in parallel (fork/join).`
+  },
+  {
+    id: "se_new_add_550",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A team must complete 90 story points in a 6-day sprint. What is the ideal burn down velocity?`,
+    options: [
+      `12 points per day`,
+      `540 points per day`,
+      `15 points per day`,
+      `16 points per day`,
+      `18 points per day`
+    ],
+    correct: 2,
+    explanation: `90 / 6 = 15 points per day.`
+  },
+  {
+    id: "se_new_add_551",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following is NOT a characteristic of the 'Traditional Way' in the lecture comparison?`,
+    options: [
+      `Lack of transparency`,
+      `Delivers the highest value in the shortest time`,
+      `Errors detected only in the latter part of the SDLC`,
+      `High cost`,
+      `Changes are not acceptable`
+    ],
+    correct: 1,
+    explanation: `Highest value / high quality / shortest time describe the Modern way.`
+  },
+  {
+    id: "se_new_add_552",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, how does Agile help overcome traditional development challenges?
+ I. Delivers the whole system in one final release
+ II. Delivers software in small increments
+ III. Avoids writing any documentation at all
+ IV. Freezes requirements at the start of the project
+ V. Encourages regular customer feedback`,
+    options: [
+      `II and V only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Agile delivers small increments with regular feedback; it does not freeze requirements or use one final release.`
+  },
+  {
+    id: "se_new_add_553",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are among the 8 principles of the IEEE/ACM Software Engineering Code of Ethics?
+ I. Public
+ II. Government
+ III. Shareholders
+ IV. Colleagues
+ V. Profit`,
+    options: [
+      `I and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Ethics 8 principles: Public, Client, Product, Judgment, Management, Profession, Colleagues, Self.`
+  },
+  {
+    id: "se_new_add_554",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the comparison table, 'No feedback until the end' is a drawback of which model?`,
+    options: [
+      `V-Model`,
+      `Kanban`,
+      `Waterfall`,
+      `Incremental`,
+      `Spiral`
+    ],
+    correct: 2,
+    explanation: `Models Waterfall is linear with one final delivery, so feedback comes late.`
+  },
+  {
+    id: "se_new_add_555",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The purpose of INTEGRATION testing is to:`,
+    options: [
+      `Make sure different modules work well together`,
+      `Check the feasibility of the project`,
+      `Train end users`,
+      `Check if the system meets the client's requirements`,
+      `Check each function on its own SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 5`
+    ],
+    correct: 0,
+    explanation: `Ethics Unit = each piece; Integration = modules together; System = whole; Acceptance = client requirements.`
+  },
+  {
+    id: "se_new_add_556",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, Software Engineering applies engineering principles to build software that is:
+ I. Guaranteed to be free of all bugs
+ II. Reliable
+ III. Efficient
+ IV. Written by a single programmer
+ V. The cheapest possible regardless of quality`,
+    options: [
+      `II and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Ethics Reliable, efficient and easy to maintain - SE does not guarantee bug-free software.`
+  },
+  {
+    id: "se_new_add_557",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which are the FOUR basic components of a use case diagram?
+ I. Transitions
+ II. Use cases
+ III. System
+ IV. Swimlanes
+ V. Actors`,
+    options: [
+      `II, III, and V only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Components: System, Actors, Use cases, Relationships. Swimlanes and transitions belong to activity diagrams.`
+  },
+  {
+    id: "se_new_add_558",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which 'Delivery Style' pairings from the comparison table are CORRECT?
+ I. Scrum - Every sprint
+ II. Prototyping - Partial releases
+ III. Kanban - Continuous
+ IV. Waterfall - One final delivery
+ V. Spiral - One final delivery`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Models Spiral = incremental; Prototyping = evolves through user feedback; Incremental = partial releases.`
+  },
+  {
+    id: "se_new_add_559",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A use case name should typically be written as:`,
+    options: [
+      `A question`,
+      `A verb-noun phrase (e.g. 'Reserve a Room')`,
+      `An actor name`,
+      `A noun only (e.g. 'Room')`,
+      `A past-tense sentence`
+    ],
+    correct: 1,
+    explanation: `Use case names are verb-noun phrases.`
+  },
+  {
+    id: "se_new_add_560",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `An activity partition is defined as:`,
+    options: [
+      `The final node of a sub-activity`,
+      `A group of guard conditions`,
+      `A part of the diagram that repeats`,
+      `A decision with more than two branches`,
+      `An activity group for actions that have some common characteristic SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 6`
+    ],
+    correct: 4,
+    explanation: `Diagram Partitions group actions with a common characteristic (e.g. department). Q Type Answer Lecture Why`
+  },
+  {
+    id: "se_new_add_561",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In 'Research Rabbit', if the research area a user searches for isn't available, the user can suggest it. How should 'Suggest Research Area' be modelled?`,
+    options: [
+      `As a separate actor`,
+      `'Suggest Research Area' ≪extend≫ 'Search Groups'`,
+      `'Suggest Research Area' as a child of 'Search Groups'`,
+      `'Search Groups' ≪include≫ 'Suggest Research Area'`,
+      `'Search Groups' ≪extend≫ 'Suggest Research Area'`
+    ],
+    correct: 1,
+    explanation: `It only happens under a condition (area not found), so it extends Search Groups.`
+  },
+  {
+    id: "se_new_add_562",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statement describes a common mistake noted in the lecture?`,
+    options: [
+      `Writing action names as verb phrases`,
+      `Using a filled circle as the initial node`,
+      `Adding guard conditions to decision branches`,
+      `Using a merge point to bring together parallel flows (a merge joins divergent paths, not flows)`,
+      `Using swimlanes for departments`
+    ],
+    correct: 3,
+    explanation: `Diagram Parallel flows must be synchronized by a JOIN, not a merge.`
+  },
+  {
+    id: "se_new_add_563",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the ATM 'Withdraw Money' specification example, what was the PRECONDITION?`,
+    options: [
+      `User has logged into the ATM`,
+      `User has chosen to withdraw money`,
+      `User has received a receipt`,
+      `User has sufficient funds`,
+      `System displays a welcome message`
+    ],
+    correct: 0,
+    explanation: `Precondition: logged into ATM. Trigger: chose to withdraw. Postcondition: money withdrawn, receipt received.`
+  },
+  {
+    id: "se_new_add_564",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `"The system should allow users to reset their password through an email link." This is a:`,
+    options: [
+      `Non-functional requirement`,
+      `Feasibility criterion`,
+      `Constraint`,
+      `Functional requirement`,
+      `Maintenance type`
+    ],
+    correct: 3,
+    explanation: `Ethics It describes WHAT the system should do - functional.`
+  },
+  {
+    id: "se_new_add_565",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statement about Knight Capital is correct according to the lecture?`,
+    options: [
+      `It self-destructed after veering off course`,
+      `It lost $440 million in 30 minutes because of a wrong code update in a stock trading bot`,
+      `It lost $40 million in 440 minutes due to a missing hyphen`,
+      `It exploded 40 seconds after launch due to reused code`,
+      `It gave patients radiation overdoses`
+    ],
+    correct: 1,
+    explanation: `Ethics Knight Capital: $440M in 30 minutes, wrong code update in a trading bot.`
+  },
+  {
+    id: "se_new_add_566",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the sub-partitioning example, 'Order Department' is shown as:`,
+    options: [
+      `A subclass of the Department class`,
+      `An actor of the Department`,
+      `A decision node`,
+      `A use case`,
+      `A fork`
+    ],
+    correct: 0,
+    explanation: `Diagram Sub-partitioning: Order Department is a subclass of Department.`
+  },
+  {
+    id: "se_new_add_567",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Complete the Agile value: "Customer collaboration over ______".`,
+    options: [
+      `Working software`,
+      `Contract negotiation`,
+      `Comprehensive documentation`,
+      `Following a plan`,
+      `Processes and tools`
+    ],
+    correct: 1,
+    explanation: `Customer collaboration over contract negotiation.`
+  },
+  {
+    id: "se_new_add_568",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A sub-activity (call action) is:`,
+    options: [
+      `An optional use case`,
+      `An action inside a swimlane`,
+      `A decision with guards`,
+      `An action that must be performed twice`,
+      `An activity that is defined in more detail on another activity diagram`
+    ],
+    correct: 4,
+    explanation: `Diagram Call actions reference another activity diagram.`
+  },
+  {
+    id: "se_new_add_569",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The lecture compares the SDLC to a house blueprint. What point does this analogy make?`,
+    options: [
+      `Only design is important`,
+      `Software must be built by civil engineers`,
+      `SDLC gives structure to every phase from planning to maintenance`,
+      `Testing is optional`,
+      `Software is cheaper than houses SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 2`
+    ],
+    correct: 2,
+    explanation: `Ethics 'Would you build a house without a blueprint?' - SDLC gives structure.`
+  },
+  {
+    id: "se_new_add_570",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A nationwide vaccination-appointment system must be deployed very quickly while the pandemic is spreading, with features added as needs change. Which model fits BEST?`,
+    options: [
+      `Iterative Waterfall`,
+      `Classic Waterfall`,
+      `V-Model`,
+      `A single big-bang release`,
+      `Agile (e.g. Scrum)`
+    ],
+    correct: 4,
+    explanation: `Models Fast delivery + changing needs -> Agile.`
+  },
+  {
+    id: "se_new_add_571",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A university wants feedback on a new portal from all 5,000 students within one week. Which technique is MOST efficient?`,
+    options: [
+      `Questionnaires (online surveys)`,
+      `One-on-one interviews`,
+      `Observation`,
+      `Pair programming`,
+      `Document analysis`
+    ],
+    correct: 0,
+    explanation: `Ethics Questionnaires collect feedback from a larger group.`
+  },
+  {
+    id: "se_new_add_572",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `How are items ordered in the Product Backlog?`,
+    options: [
+      `Randomly, then sorted by developers`,
+      `By the estimated hours only, smallest first`,
+      `By the date they were added`,
+      `Alphabetically`,
+      `High-value items at the top; lower-valued items towards the bottom SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`
+    ],
+    correct: 4,
+    explanation: `Highest-value items are completed first.`
+  },
+  {
+    id: "se_new_add_573",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about Decision (branch) nodes are correct?
+ I. It is drawn as a diamond
+ II. Guard conditions are optional
+ III. Each branch must have a guard condition
+ IV. A decision node must have exactly two branches
+ V. Control flows down all branches at the same time`,
+    options: [
+      `I and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Diagram Decision: diamond + guard on each branch; no limit on branches. Flowing down all branches is a FORK.`
+  },
+  {
+    id: "se_new_add_574",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which description matches IEEE as presented in the lecture?`,
+    options: [
+      `A UK body focusing on public interest`,
+      `World's largest society for computing professionals, focusing on computer science education`,
+      `An Australian ICT society`,
+      `A global body for engineering, computing and electronics that publishes standards like IEEE 802.11`,
+      `The creator of the Agile Manifesto`
+    ],
+    correct: 3,
+    explanation: `Ethics IEEE: hardware/electrical/computer engineering; publishes standards (802.11 Wi-Fi).`
+  },
+  {
+    id: "se_new_add_575",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `CA Sri Lanka LMS registration: upload NIC image, then complete forms, then pay Rs. 3,000, then the system shows the student ID. Which modelling is MOST appropriate?`,
+    options: [
+      `A fork after 'Upload NIC' and a join before 'Display ID'`,
+      `A simple sequence of action nodes connected by transitions from the initial node to the final node`,
+      `Swimlanes for each action with no transitions`,
+      `A merge node after 'Pay Deposit'`,
+      `A decision node after each action`
+    ],
+    correct: 1,
+    explanation: `Diagram The steps happen one after another with no conditions or parallelism.`
+  },
+  {
+    id: "se_new_add_576",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A use case scenario is defined as:`,
+    options: [
+      `A list of test cases`,
+      `A burn down chart for use cases`,
+      `A formal description of the specific sequence of events between the system and actors during a use case instance`,
+      `The system boundary`,
+      `A drawing of all actors`
+    ],
+    correct: 2,
+    explanation: `Scenarios describe the flow of events for a use case instance.`
+  },
+  {
+    id: "se_new_add_577",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `For a Hotel Management System, which of the following is NOT a valid actor?`,
+    options: [
+      `Receptionist`,
+      `Reserve a Room`,
+      `Hotel Manager`,
+      `Guest`,
+      `External payment gateway SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 4`
+    ],
+    correct: 1,
+    explanation: `'Reserve a Room' is a use case (verb-noun), not an actor.`
+  },
+  {
+    id: "se_new_add_578",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which process model executes the SDLC phases in iterations called sprints?`,
+    options: [
+      `V-Model`,
+      `Waterfall`,
+      `Classic Spiral`,
+      `Agile`,
+      `Iterative Waterfall`
+    ],
+    correct: 3,
+    explanation: `Models Agile executes SDLC in iterations (sprints); Waterfall executes it sequentially.`
+  },
+  {
+    id: "se_new_add_579",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about the INCLUDE relationship are correct?
+ I. The included use case never stands alone
+ II. The included use case runs only when an extension-point condition is true
+ III. The base use case is complete and works without the included use case
+ IV. The base use case explicitly incorporates the behaviour of another use case
+ V. It is drawn as a dashed arrow from the included use case to the base`,
+    options: [
+      `I and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Include arrow goes from base -> included. Condition-based optional behaviour is EXTEND.`
+  },
+  {
+    id: "se_new_add_580",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The Prototyping model is MOST suitable when:`,
+    options: [
+      `The team only does maintenance work`,
+      `The system is safety-critical`,
+      `No users are available`,
+      `Requirements are unclear or may change`,
+      `Requirements are fixed and signed off`
+    ],
+    correct: 3,
+    explanation: `Models Prototyping helps users clarify what they really want.`
+  },
+  {
+    id: "se_new_add_581",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A team has 100 tasks for a 5-day sprint. Tasks completed: Day 1 = 18, Day 2 = 22, Day 3 = 20, Day 4 = 15, Day 5 = 20. How many tasks remain at the END of Day 3?`,
+    options: [
+      `60`,
+      `45`,
+      `38`,
+      `42`,
+      `40`
+    ],
+    correct: 4,
+    explanation: `100 - (18 + 22 + 20) = 40.`
+  },
+  {
+    id: "se_new_add_582",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following is NOT one of the three Daily Scrum questions?`,
+    options: [
+      `Which new features should be added to the Product Backlog?`,
+      `Are there any obstacles blocking my progress?`,
+      `What did I complete since the last Daily Scrum?`,
+      `(All of the others are Daily Scrum questions)`,
+      `What will I work on next?`
+    ],
+    correct: 0,
+    explanation: `Adding features to the backlog is the Product Owner's backlog management, not a Daily Scrum question.`
+  },
+  {
+    id: "se_new_add_583",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Users report that the app crashes whenever they try to log in. The team fixes it. This is:`,
+    options: [
+      `Corrective maintenance`,
+      `Deployment`,
+      `Acceptance testing`,
+      `Perfective maintenance`,
+      `Adaptive maintenance SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 5`
+    ],
+    correct: 0,
+    explanation: `Ethics Corrective maintenance fixes bugs found after deployment.`
+  },
+  {
+    id: "se_new_add_584",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the SLIIT Library System, a fine is calculated only when books are overdue. This is modelled as:`,
+    options: [
+      `A generalization from 'Calculate Fine' to 'Borrow Book'`,
+      `'Overdue Books' ≪include≫ 'Calculate Fine'`,
+      `'Calculate Fine' ≪extend≫ 'Overdue Books'`,
+      `'Borrow Book' ≪include≫ 'Calculate Fine'`,
+      `'Calculate Fine' as an actor`
+    ],
+    correct: 2,
+    explanation: `Conditional behaviour -> extend.`
+  },
+  {
+    id: "se_new_add_585",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, which are ways to store the Product Backlog?
+ I. Sprint Retrospective notes
+ II. Written as user stories
+ III. In Excel
+ IV. A burn down chart
+ V. Index cards or post-its on the wall`,
+    options: [
+      `II, III, and V only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Index cards/post-its, Excel, or as user stories.`
+  },
+  {
+    id: "se_new_add_586",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are FUNCTIONAL requirements for an online shop?
+ I. The system shall generate a monthly sales report
+ II. The system must be built using Java only
+ III. Pages shall load within 3 seconds
+ IV. Customers shall be able to track their orders
+ V. An admin shall be able to deactivate a user account`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics Load time = non-functional; 'Java only' = constraint.`
+  },
+  {
+    id: "se_new_add_587",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `What is the SECOND step in each loop of the Spiral Model?`,
+    options: [
+      `Evaluation`,
+      `Engineering`,
+      `Planning`,
+      `Risk Analysis`,
+      `Deployment`
+    ],
+    correct: 3,
+    explanation: `Models Planning -> Risk Analysis -> Engineering -> Evaluation.`
+  },
+  {
+    id: "se_new_add_588",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statement about the Scrum Master is correct?`,
+    options: [
+      `The Scrum Master accepts or rejects completed work`,
+      `The Scrum Master represents the customer`,
+      `The Scrum Master is a facilitator, not a traditional project manager`,
+      `The Scrum Master owns the Product Backlog`,
+      `The Scrum Master is a traditional project manager who assigns tasks`
+    ],
+    correct: 2,
+    explanation: `The lecture notes the Scrum Master is a facilitator.`
+  },
+  {
+    id: "se_new_add_589",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Use cases describe WHAT a system will do. What do they NOT go into detail about?`,
+    options: [
+      `The system boundary`,
+      `Who uses the system`,
+      `The goals of the actors`,
+      `The functional requirements`,
+      `HOW the system will do it SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 6`
+    ],
+    correct: 4,
+    explanation: `Use cases do not describe HOW the system does anything.`
+  },
+  {
+    id: "se_new_add_590",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The purpose of a feasibility study is to decide whether the project is:
+ I. Already approved by users after testing
+ II. Financially affordable
+ III. Technically possible
+ IV. Already fully coded
+ V. Guaranteed to be bug-free`,
+    options: [
+      `II and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Ethics Technically possible, financially affordable and realistic.`
+  },
+  {
+    id: "se_new_add_591",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which details about the ATM 'Withdraw Money' specification example are correct?
+ I. Extension 5a: system notifies user that account funds are insufficient
+ II. Precondition: user has received a receipt
+ III. Trigger: user has chosen to withdraw money
+ IV. Postcondition: user has withdrawn money and received a receipt
+ V. Primary actor: ATM Technician`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Primary actor was Bank Customer; precondition: user has logged into ATM.`
+  },
+  {
+    id: "se_new_add_592",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which question BEST represents ECONOMIC feasibility?`,
+    options: [
+      `Will the benefits outweigh the expenses?`,
+      `Do we have the required servers?`,
+      `Will staff accept the system?`,
+      `Can we go live before the new school year?`,
+      `Does the system comply with GDPR?`
+    ],
+    correct: 0,
+    explanation: `Ethics Economic feasibility = is it worth the cost.`
+  },
+  {
+    id: "se_new_add_593",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `How is the FINAL (activity final) node drawn?`,
+    options: [
+      `A hollow diamond`,
+      `A circle containing a smaller filled circle (bullseye)`,
+      `A rounded rectangle`,
+      `A thick bar`,
+      `A filled circle SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 7`
+    ],
+    correct: 1,
+    explanation: `Diagram Initial = filled circle; Final = bullseye.`
+  },
+  {
+    id: "se_new_add_594",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A tax-filing system MUST go live before the tax season starts in 4 months. Checking whether this is realistic with available resources is:`,
+    options: [
+      `Technical feasibility`,
+      `Operational feasibility`,
+      `Legal feasibility`,
+      `Schedule feasibility`,
+      `Economic feasibility`
+    ],
+    correct: 3,
+    explanation: `Ethics Schedule feasibility: can we deliver on time?`
+  },
+  {
+    id: "se_new_add_595",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `An activity diagram models:`,
+    options: [
+      `Database tables`,
+      `Activities of a system, dependencies between activities, and workflows`,
+      `Only the actors of a system`,
+      `Classes and their attributes`,
+      `Hardware deployment`
+    ],
+    correct: 1,
+    explanation: `Diagram Activity diagram = activities, dependencies, workflows.`
+  },
+  {
+    id: "se_new_add_596",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The 'Software Crisis' refers to which period?`,
+    options: [
+      `1950s-1960s only`,
+      `1960s-1990s`,
+      `1990s-2020s`,
+      `1940s-1950s`,
+      `2000s-2010s`
+    ],
+    correct: 1,
+    explanation: `Ethics 1960s-1990s: projects over budget, late, crashing.`
+  },
+  {
+    id: "se_new_add_597",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following is NOT a key feature of the classic Waterfall model?`,
+    options: [
+      `Each phase has clear goals and deliverables`,
+      `Linear, step-by-step process`,
+      `Suitable for projects whose requirements change frequently`,
+      `Simple and easy to understand`,
+      `Each phase is completed before moving to the next SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 2`
+    ],
+    correct: 2,
+    explanation: `Models Waterfall is NOT suitable when requirements may change.`
+  },
+  {
+    id: "se_new_add_598",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which code of ethics comes from the UK and focuses on public interest, professional competence and accountability?`,
+    options: [
+      `ACM Code of Ethics`,
+      `IFIP Code of Ethics`,
+      `IEEE Code of Ethics`,
+      `ACS Code of Ethics`,
+      `BCS Code of Conduct`
+    ],
+    correct: 4,
+    explanation: `Ethics BCS = British Computer Society (UK).`
+  },
+  {
+    id: "se_new_add_599",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A use case represents:`,
+    options: [
+      `A test step`,
+      `A unit of interaction between a user and the proposed system`,
+      `The system boundary`,
+      `An external person who uses the system`,
+      `A database table`
+    ],
+    correct: 1,
+    explanation: `A use case is a unit of behaviour / interaction.`
+  },
+  {
+    id: "se_new_add_600",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Scrum consists of which three elements?`,
+    options: [
+      `Roles, Artifacts and Activities`,
+      `Values, Principles and Contracts`,
+      `Actors, Use Cases and Relationships`,
+      `Planning, Risk Analysis and Evaluation`,
+      `Phases, Gates and Deliverables`
+    ],
+    correct: 0,
+    explanation: `Scrum = Roles, Artifacts, Activities.`
+  },
+  {
+    id: "se_new_add_601",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Actor generalization is drawn from which concept?`,
+    options: [
+      `Polymorphic SQL`,
+      `Encapsulation`,
+      `Agile values`,
+      `Inheritance in Object-Oriented Programming`,
+      `Database normalization`
+    ],
+    correct: 3,
+    explanation: `Actor generalization comes from OOP inheritance.`
+  },
+  {
+    id: "se_new_add_602",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the user story template, the 'So that...' part explains:`,
+    options: [
+      `The technical implementation`,
+      `The user role`,
+      `The priority`,
+      `The benefit`,
+      `The sprint number`
+    ],
+    correct: 3,
+    explanation: `As a <role> I want to <goal> so that <benefit>.`
+  },
+  {
+    id: "se_new_add_603",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about a Sprint Burn Down Chart are correct?
+ I. It is a graphical representation of work left to do versus time
+ II. It shows each developer's individual salary cost
+ III. It is useful for predicting when all the work will be completed
+ IV. It is a run chart of completed work that rises over time
+ V. Time is shown on the vertical axis SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`,
+    options: [
+      `I and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `It shows REMAINING work falling over time (vertical = work left, horizontal = time).`
+  },
+  {
+    id: "se_new_add_604",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which model's approach is described as 'Validation-based' in the comparison table?`,
+    options: [
+      `Waterfall`,
+      `V-Model`,
+      `Kanban`,
+      `Spiral`,
+      `Prototyping`
+    ],
+    correct: 1,
+    explanation: `Models V-Model: validation-based approach.`
+  },
+  {
+    id: "se_new_add_605",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A team builds a sample screen for a university mobile app, collects student feedback, improves it, and only then builds the full app. Which model is this?`,
+    options: [
+      `Kanban`,
+      `Incremental`,
+      `Prototyping`,
+      `V-Model`,
+      `Waterfall`
+    ],
+    correct: 2,
+    explanation: `Models Lecture example of the Prototyping model.`
+  },
+  {
+    id: "se_new_add_606",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A customer asks for an online shopping system. After 6 months they realize they need mobile support and online payments. In a traditional approach, the main problem is that:`,
+    options: [
+      `The customer is not allowed to request changes by law`,
+      `The changes are free to add`,
+      `The system is already fully tested for mobile`,
+      `These changes can be costly and difficult to implement`,
+      `Agile would reject the change`
+    ],
+    correct: 3,
+    explanation: `Agile was introduced to handle changing requirements more effectively.`
+  },
+  {
+    id: "se_new_add_607",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `An asterisk (*) inside an action state indicates that:`,
+    options: [
+      `The action is the final node`,
+      `The action is optional`,
+      `The action is parallel`,
+      `The action is a sub-activity`,
+      `The action may need to be performed more than once`
+    ],
+    correct: 4,
+    explanation: `Diagram Asterisk = iteration.`
+  },
+  {
+    id: "se_new_add_608",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the requirements context, a 'walkthrough' is:`,
+    options: [
+      `A user training session after deployment`,
+      `A peer review meeting where the team goes through requirements, design or code step by step`,
+      `A sprint event`,
+      `A prototype screen`,
+      `A type of questionnaire SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 4`
+    ],
+    correct: 1,
+    explanation: `Ethics Walkthroughs validate requirements with stakeholders.`
+  },
+  {
+    id: "se_new_add_609",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are COMMON MISTAKES listed for activity diagrams?
+ I. Treating a merge point as if it merges parallel flows
+ II. Missing guard conditions on loops
+ III. Starting the diagram with a filled circle
+ IV. Drawing actions as rounded rectangles
+ V. Incorrect use of forks, branch points, merge points and joins`,
+    options: [
+      `I, II, and V only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Diagram Rounded rectangles and a filled initial circle are correct notation.`
+  },
+  {
+    id: "se_new_add_610",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Pair Programming means:`,
+    options: [
+      `Two developers work together on the same task`,
+      `Using two programming languages`,
+      `Two teams working on two products`,
+      `Writing tests before code`,
+      `A developer and a tester reviewing requirements`
+    ],
+    correct: 0,
+    explanation: `Pair programming is an Agile practice.`
+  },
+  {
+    id: "se_new_add_611",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the 'Extensions' section of a use case specification, a step labelled '3a' means:`,
+    options: [
+      `Step 3 is repeated`,
+      `Priority 3`,
+      `Open issue number 3`,
+      `The third actor`,
+      `An alternative/branching path that arises at step 3 of the main scenario`
+    ],
+    correct: 4,
+    explanation: `Extensions list branching actions linked to main scenario steps.`
+  },
+  {
+    id: "se_new_add_612",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which fields appear in the Use Case Specification Template?
+ I. Summary
+ II. Burn down velocity
+ III. Postconditions
+ IV. Secondary Actor(s)
+ V. Open Issues`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `, E Burn down velocity is a Scrum concept.`
+  },
+  {
+    id: "se_new_add_613",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In a Learning Management System, a guest who wants to attend a workshop MUST register first. How is this modelled?`,
+    options: [
+      `No relationship is needed`,
+      `'Register' as a child of 'Attend Workshops'`,
+      `'Attend Workshops' ≪include≫ 'Register'`,
+      `'Attend Workshops' ≪extend≫ 'Register'`,
+      `'Register' ≪extend≫ 'Attend Workshops' SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 5`
+    ],
+    correct: 2,
+    explanation: `Mandatory behaviour -> include (base -> included).`
+  },
+  {
+    id: "se_new_add_614",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which technique brings users together to discuss needs, agree on priorities and clarify conflicts?`,
+    options: [
+      `Workshops or focus groups`,
+      `Questionnaires`,
+      `Document analysis`,
+      `Observation`,
+      `Unit testing`
+    ],
+    correct: 0,
+    explanation: `Ethics Workshops/focus groups = group discussions.`
+  },
+  {
+    id: "se_new_add_615",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The Sprint Backlog is also referred to in the lecture as the:`,
+    options: [
+      `Product Backlog`,
+      `Increment list`,
+      `Release backlog`,
+      `Feasibility backlog`,
+      `Burn down log`
+    ],
+    correct: 2,
+    explanation: `Sprint backlog (release backlog).`
+  },
+  {
+    id: "se_new_add_616",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the SE vs Programming table, which statements describe PROGRAMMING?
+ I. Requires collaboration and coordination in teams
+ II. The process may be ad hoc or informal
+ III. Scope is narrow and task-oriented
+ IV. Useful for quick scripts or prototypes
+ V. End goal is working, reliable, scalable and user-validated software`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics Team coordination and user-validated scalable software describe SE.`
+  },
+  {
+    id: "se_new_add_617",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In which situations should the Spiral model be used?
+ I. Requirements are not fully known and may change
+ II. When you want the cheapest and simplest process
+ III. The project is large, complex or high-risk
+ IV. A small, simple project with a fixed low budget
+ V. Requirements are completely fixed and fully known upfront`,
+    options: [
+      `I and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Models Spiral: large/complex/high-risk, changing requirements. It is complex and expensive, not for small cheap fixed projects.`
+  },
+  {
+    id: "se_new_add_618",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `ACCEPTANCE testing checks whether:`,
+    options: [
+      `The system meets the client's requirements`,
+      `The code follows coding standards`,
+      `Each small function works correctly`,
+      `Modules work well together`,
+      `The feasibility report is approved`
+    ],
+    correct: 0,
+    explanation: `Ethics Acceptance testing = client requirements are met.`
+  },
+  {
+    id: "se_new_add_619",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the comparison table, what is the drawback of the Iterative Waterfall model?`,
+    options: [
+      `No feedback until the end`,
+      `Scope creep`,
+      `Complex and expensive`,
+      `Still limited flexibility`,
+      `May lack clear deadlines`
+    ],
+    correct: 3,
+    explanation: `Models Iterative Waterfall: still limited flexibility. Q Type Answer Lecture Why`
+  },
+  {
+    id: "se_new_add_620",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Hospital management decides appointment reminders MUST be available before launch because many patients miss appointments. What should happen?`,
+    options: [
+      `PBI-01 (register) should be lowered to Low`,
+      `PBI-04 should be removed from the backlog`,
+      `PBI-05 (appointment reminders) should be raised from Low to High`,
+      `Nothing - priorities cannot change once set`,
+      `The sprint should be cancelled`
+    ],
+    correct: 2,
+    explanation: `The Product Backlog evolves; the PO re-prioritizes based on business value.`
+  },
+  {
+    id: "se_new_add_621",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `How is a swimlane (partition) drawn?`,
+    options: [
+      `Two, usually parallel lines (horizontal or vertical) with a name in a box at one end`,
+      `A rounded rectangle with a rake symbol`,
+      `A dashed rectangle with ≪partition≫`,
+      `A thick bar`,
+      `A diamond with guards`
+    ],
+    correct: 0,
+    explanation: `Diagram Swimlane notation from the lecture.`
+  },
+  {
+    id: "se_new_add_622",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `After enrolment, a student must (1) register for the seminar and pay, and (2) attend the overview presentation - in any order - before attending classes. How should this be modelled?`,
+    options: [
+      `A decision after 'Enroll' and a merge before 'Attend Classes'`,
+      `A fork after 'Enroll' and a merge before 'Attend Classes'`,
+      `Two separate activity diagrams`,
+      `An asterisk on 'Enroll'`,
+      `A fork after 'Enroll' and a join before 'Attend Classes'`
+    ],
+    correct: 4,
+    explanation: `Diagram Concurrent activities that must both finish -> fork + join.`
+  },
+  {
+    id: "se_new_add_623",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, why does even good software need maintenance over time?
+ I. Because deployment always fails
+ II. Technology updates
+ III. Because unit testing is never done
+ IV. New user needs
+ V. Because source code expires after one year`,
+    options: [
+      `II and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Ethics Change comes from new needs, technology updates and security risks.`
+  },
+  {
+    id: "se_new_add_624",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Scrum overview in Lecture 2, which role 'Chooses what to build'?`,
+    options: [
+      `Scrum Master`,
+      `The Team`,
+      `Project Sponsor`,
+      `Stakeholders`,
+      `Product Owner SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 7`
+    ],
+    correct: 4,
+    explanation: `Models Product Owner chooses what to build; Scrum Master guides; Team builds.`
+  },
+  {
+    id: "se_new_add_625",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Qatar Airways: after selecting a class, Economy passengers check baggage (and maybe pay a deposit), while Business passengers go straight on. Which node brings these two alternative paths back together before the booking process?`,
+    options: [
+      `Final node`,
+      `Merge`,
+      `Fork`,
+      `Initial node`,
+      `Join`
+    ],
+    correct: 1,
+    explanation: `Diagram Alternative (mutually exclusive) paths are brought together with a merge.`
+  },
+  {
+    id: "se_new_add_626",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which actions show ETHICAL behaviour by a software engineer?
+ I. Collecting extra personal data 'just in case' it is useful later
+ II. Being honest about how the software works
+ III. Avoiding discrimination or bias in the system
+ IV. Not sharing user data without their permission
+ V. Silently releasing software with known critical bugs to meet a deadline`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics Privacy, fairness, transparency and responsibility are key values.`
+  },
+  {
+    id: "se_new_add_627",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Lecture 2 states that Agile 'is not one specific method'. Instead, it is:`,
+    options: [
+      `A programming language`,
+      `A type of Waterfall`,
+      `A testing tool`,
+      `A philosophy based on a set of values and principles`,
+      `A documentation template`
+    ],
+    correct: 3,
+    explanation: `Models Teams apply Agile through frameworks like Scrum and Kanban.`
+  },
+  {
+    id: "se_new_add_628",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A sprint has 150 story points over 10 days. At the end of Day 4, 100 points remain. Compared to the ideal line, the team is:`,
+    options: [
+      `Exactly on track`,
+      `Behind schedule by 10 points`,
+      `Behind schedule by 50 points`,
+      `Finished`,
+      `Ahead of schedule by 10 points`
+    ],
+    correct: 1,
+    explanation: `Ideal: 15/day -> after Day 4, 150 - 60 = 90 should remain. 100 remain -> 10 points behind.`
+  },
+  {
+    id: "se_new_add_629",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `St John York University: counselors are categorized into IT, Business and Science by expertise. How is this BEST modelled?`,
+    options: [
+      `Actor generalization with 'Counselor' as the parent actor`,
+      `Three ≪include≫ relationships`,
+      `A decision node`,
+      `Three separate systems`,
+      `Three ≪extend≫ relationships SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`
+    ],
+    correct: 0,
+    explanation: `Specialised counselor types are child actors of Counselor.`
+  },
+  {
+    id: "se_new_add_630",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The IFIP Code of Ethics comes from:`,
+    options: [
+      `The Australian Computer Society`,
+      `The Institute of Electrical and Electronics Engineers`,
+      `The International Federation for Information Processing`,
+      `The British Computer Society`,
+      `The Association for Computing Machinery`
+    ],
+    correct: 2,
+    explanation: `Ethics IFIP promotes ethical computing globally.`
+  },
+  {
+    id: "se_new_add_631",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Complete the Agile value: "Individuals and interactions over ______".`,
+    options: [
+      `Contract negotiation`,
+      `Working software`,
+      `Customer collaboration`,
+      `Responding to change`,
+      `Processes and tools`
+    ],
+    correct: 4,
+    explanation: `Individuals and interactions over processes and tools.`
+  },
+  {
+    id: "se_new_add_632",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In a library system, 'Registered Member' inherits from 'Guest', and 'Premium Member' inherits from 'Registered Member'. Who has the MOST rights?`,
+    options: [
+      `The Librarian`,
+      `Registered Member`,
+      `Premium Member`,
+      `All have equal rights`,
+      `Guest SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 4`
+    ],
+    correct: 2,
+    explanation: `Each child inherits all parent behaviour and can add more, so the lowest child has the most.`
+  },
+  {
+    id: "se_new_add_633",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The Main Scenario in the specification template should be written in which format?`,
+    options: [
+      `Code pseudo-steps`,
+      `Actor-actor-actor`,
+      `Only system steps`,
+      `System-user-system (alternating)`,
+      `A single paragraph`
+    ],
+    correct: 3,
+    explanation: `The template says the happy path should be in a 'system-user-system, etc.' format.`
+  },
+  {
+    id: "se_new_add_634",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `For a mobile app giving rural farmers weather and market prices, the concern "Farmers may not trust or be comfortable using an app for farming advice" relates to:`,
+    options: [
+      `Operational feasibility`,
+      `Technical feasibility`,
+      `Economic feasibility`,
+      `Legal feasibility`,
+      `Schedule feasibility`
+    ],
+    correct: 0,
+    explanation: `Ethics Operational: will people accept and use it?`
+  },
+  {
+    id: "se_new_add_635",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A synchronization bar is:`,
+    options: [
+      `A dashed line between swimlanes`,
+      `A circle used to end a flow`,
+      `A thick horizontal or vertical bar used for forks and joins`,
+      `A diamond used for decisions`,
+      `The label on a guard`
+    ],
+    correct: 2,
+    explanation: `Diagram Forks and joins use a synchronization bar.`
+  },
+  {
+    id: "se_new_add_636",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about the SDLC and process models are TRUE?
+ I. The SDLC is a general structure; a process model is a specific implementation
+ II. The same phases are used across models
+ III. The SDLC defines HOW; a process model defines WHAT
+ IV. The Waterfall model executes the SDLC in sprints
+ V. Each model organizes, iterates or emphasizes the phases differently`,
+    options: [
+      `I, II, and V only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Models SDLC = what; model = how. Waterfall is sequential.`
+  },
+  {
+    id: "se_new_add_637",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the SE vs Programming table, what is the END GOAL of Software Engineering?`,
+    options: [
+      `Working code`,
+      `Working, reliable, scalable and user-validated software`,
+      `A quick script`,
+      `A debugged function`,
+      `A prototype`
+    ],
+    correct: 1,
+    explanation: `Ethics Programming's end goal = working code.`
+  },
+  {
+    id: "se_new_add_638",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following is a LIMITATION (constraint) rather than a non-functional requirement?`,
+    options: [
+      `The system should be easy to use for first-time users`,
+      `The system should load within 3 seconds`,
+      `The system must use the university's existing Oracle database licence`,
+      `The system should be available 24/7`,
+      `The system should support 500 concurrent users SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 5`
+    ],
+    correct: 2,
+    explanation: `Ethics Constraints are fixed boundaries/rules; the others describe performance qualities.`
+  },
+  {
+    id: "se_new_add_639",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Iterative Waterfall model, if problems are found during Testing, the team can:`,
+    options: [
+      `Return to an earlier phase such as Design to fix them`,
+      `Only fix them in the next product version`,
+      `Skip to Deployment`,
+      `Build a throwaway prototype`,
+      `Start a new sprint`
+    ],
+    correct: 0,
+    explanation: `Models Iterative Waterfall allows going back to earlier phases.`
+  },
+  {
+    id: "se_new_add_640",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `During the Implementation phase, each module is tested on its own to make sure it works correctly. This is called:`,
+    options: [
+      `System testing`,
+      `Pilot testing`,
+      `Integration testing`,
+      `Unit testing`,
+      `Acceptance testing`
+    ],
+    correct: 3,
+    explanation: `Ethics Unit testing is done module by module during implementation. Q Type Answer Lecture Why`
+  },
+  {
+    id: "se_new_add_641",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `For the 'Dirgayu' patient-management case, which relationships are CORRECT?
+ I. 'Verify Passport' ≪include≫ 'Admit Patient'
+ II. 'Verify Passport' ≪extend≫ 'Admit Patient' (only for foreign patients)
+ III. Medical records generalized into 'Severe (red line)' and 'Low risk (blue line)'
+ IV. 'Admit Patient' ≪extend≫ 'Provide Vaccination Details'
+ V. 'Admit Patient' ≪include≫ 'Provide Vaccination Details' SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 6`,
+    options: [
+      `II, III, and V only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Vaccination details are always needed (include); passport only for foreigners (extend).`
+  },
+  {
+    id: "se_new_add_642",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which Scrum activity's main purpose is 'Monitor progress'?`,
+    options: [
+      `Sprint Retrospective`,
+      `Sprint Planning`,
+      `Sprint Review`,
+      `Product Backlog creation`,
+      `Daily Scrum`
+    ],
+    correct: 4,
+    explanation: `Planning = plan; Daily = monitor; Review = product; Retro = process.`
+  },
+  {
+    id: "se_new_add_643",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Spiral model, each loop of the spiral represents:`,
+    options: [
+      `A sprint retrospective`,
+      `A single line of code`,
+      `A new customer`,
+      `A release of the final product`,
+      `A phase of the project, with the product improved each time`
+    ],
+    correct: 4,
+    explanation: `Models The project moves through loops repeatedly.`
+  },
+  {
+    id: "se_new_add_644",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following is a use of activity diagrams listed in the lecture?`,
+    options: [
+      `Specifying hardware deployment`,
+      `Analyzing system functionality to identify the use cases`,
+      `Recording sprint velocity`,
+      `Defining database table columns`,
+      `Showing class attributes`
+    ],
+    correct: 1,
+    explanation: `Diagram Activity diagrams can help identify use cases.`
+  },
+  {
+    id: "se_new_add_645",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, the IDEAL way to represent an iteration (loop) is:`,
+    options: [
+      `A swimlane`,
+      `An asterisk only`,
+      `A fork and join`,
+      `A call action`,
+      `A decision node with guard conditions`
+    ],
+    correct: 4,
+    explanation: `Diagram Decision nodes show the termination condition explicitly.`
+  },
+  {
+    id: "se_new_add_646",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Compare: (A) "As a customer, I want to save my favourite products so that I can find them easily later." (B) "As a customer, I want to save my favourite products." Why is A better?`,
+    options: [
+      `A has a clearer user role`,
+      `B contains technical details`,
+      `B has no goal`,
+      `A mentions a database`,
+      `A explains the benefit using 'so that' SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 7`
+    ],
+    correct: 4,
+    explanation: `Both have role and goal; only A states the benefit.`
+  },
+  {
+    id: "se_new_add_647",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `For the 'Developing a Software System for a Client' scenario, which modelling choices are CORRECT?
+ I. A join before 'Integrate UI with System'
+ II. A merge node to synchronize UI development and software development
+ III. A fork before 'Gather Requirements'
+ IV. A loop using a decision node with a guard like [not satisfied] back to 'Modify Prototype'
+ V. A fork after the prototype is approved for 'Develop UI Screens' and 'Develop Software System'`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Diagram Synchronizing parallel flows needs a join, not a merge.`
+  },
+  {
+    id: "se_new_add_648",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Complete the Agile value: "Responding to change over ______".`,
+    options: [
+      `Contract negotiation`,
+      `Processes and tools`,
+      `Comprehensive documentation`,
+      `Individuals and interactions`,
+      `Following a plan`
+    ],
+    correct: 4,
+    explanation: `Responding to change over following a plan.`
+  },
+  {
+    id: "se_new_add_649",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A government portal has mostly known requirements. The team delivers the tax-filing module first, then licensing, then online payments, each fully working. Which model is this?`,
+    options: [
+      `Waterfall`,
+      `Kanban`,
+      `V-Model`,
+      `Prototyping`,
+      `Incremental`
+    ],
+    correct: 4,
+    explanation: `Models Delivered in functional units, each through the full SDLC.`
+  },
+  {
+    id: "se_new_add_650",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which activity is an example of the Deployment phase?`,
+    options: [
+      `Interviewing teachers`,
+      `Designing the database schema`,
+      `Fixing a bug reported months after launch`,
+      `Writing input validation for the login page`,
+      `Installing the school management system on the school's network server SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 2`
+    ],
+    correct: 4,
+    explanation: `Ethics Deployment = installing in the real environment.`
+  },
+  {
+    id: "se_new_add_651",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to 'How to choose a model', a HIGH-RISK project needs risk assessment, so the ideal model is:`,
+    options: [
+      `Spiral`,
+      `Iterative Waterfall`,
+      `Prototyping`,
+      `Kanban`,
+      `Waterfall`
+    ],
+    correct: 0,
+    explanation: `Models Risk level -> Spiral.`
+  },
+  {
+    id: "se_new_add_652",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In Activity 5 (software system for a client, with swimlanes), which set of swimlanes is MOST appropriate?`,
+    options: [
+      `Client, Project Manager, UI Engineer, Software Engineer`,
+      `Fork, Join, Merge, Decision`,
+      `Frontend, Backend, Database`,
+      `Requirements, Design, Coding, Testing`,
+      `Sprint 1, Sprint 2, Sprint 3`
+    ],
+    correct: 0,
+    explanation: `Diagram Partitions correspond to the business actors performing the actions.`
+  },
+  {
+    id: "se_new_add_653",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A guard expression is:`,
+    options: [
+      `The label of a fork`,
+      `The final node of an activity`,
+      `A condition written for each possible path leaving a decision node`,
+      `The name of a swimlane`,
+      `A type of action`
+    ],
+    correct: 2,
+    explanation: `Diagram Each branch must have a guard condition.`
+  },
+  {
+    id: "se_new_add_654",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about Kanban are correct?
+ I. Work is organized into fixed-length sprints
+ II. It focuses on visualizing tasks on a board
+ III. It manages a continuous flow of work
+ IV. It may lack clear deadlines
+ V. It is best for teams needing structured roles`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Models Fixed sprints and structured roles describe Scrum.`
+  },
+  {
+    id: "se_new_add_655",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `When is Sprint Planning conducted?`,
+    options: [
+      `After the Retrospective of the same sprint`,
+      `Every day`,
+      `At the end of each sprint`,
+      `Once per project`,
+      `At the beginning of each sprint SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`
+    ],
+    correct: 4,
+    explanation: `Sprint Planning starts each sprint.`
+  },
+  {
+    id: "se_new_add_656",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the comparison table, the Spiral model's delivery style is:`,
+    options: [
+      `Incremental`,
+      `Continuous`,
+      `One final delivery`,
+      `Evolves through user feedback`,
+      `Every sprint`
+    ],
+    correct: 0,
+    explanation: `Models Spiral: risk-driven approach, incremental delivery.`
+  },
+  {
+    id: "se_new_add_657",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `What happened in the Therac-25 incident?`,
+    options: [
+      `A spacecraft veered off course`,
+      `Patients received massive radiation overdoses`,
+      `A company lost $440 million`,
+      `A hospital lost all its patient records`,
+      `A rocket exploded after launch`
+    ],
+    correct: 1,
+    explanation: `Ethics Therac-25: radiation overdoses due to poor testing and missing safety checks.`
+  },
+  {
+    id: "se_new_add_658",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which are NON-FUNCTIONAL requirements for a student attendance system?
+ I. The system should allow teachers to mark daily attendance
+ II. The system should be accessible on both desktop and mobile devices
+ III. The interface should be usable by first-time users without training
+ IV. The system must be deployed within the university's local network only
+ V. The system should handle 1,000 concurrent users`,
+    options: [
+      `II, III, and V only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics Marking attendance = functional; local-network only = constraint.`
+  },
+  {
+    id: "se_new_add_659",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The lecture says forks and joins show activities that can occur 'at the same time'. What does this actually mean?`,
+    options: [
+      `The activities must run on separate CPUs`,
+      `The order of execution can be whatever is convenient for the implementation`,
+      `The activities must start at exactly the same second`,
+      `Only one activity will run`,
+      `The activities are optional`
+    ],
+    correct: 1,
+    explanation: `Diagram It does not mean they must be concurrent in the finished software.`
+  },
+  {
+    id: "se_new_add_660",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which notation pairings from the Relationship Summary are CORRECT?
+ I. Include - a dashed arrow labelled ≪include≫
+ II. Extend - a solid line with a filled arrowhead
+ III. Use case generalization - a dashed arrow labelled ≪generalize≫
+ IV. Association - a dashed arrow labelled ≪association≫
+ V. Association - a solid line`,
+    options: [
+      `I and V only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Generalization is a solid line with hollow triangle; extend is a dashed arrow labelled <<extend>>.`
+  },
+  {
+    id: "se_new_add_661",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which user story VIOLATES the guideline 'avoid technical implementation details'?`,
+    options: [
+      `As a lecturer, I want to upload notes so that students can access them.`,
+      `As a member, I want to renew a book so that I can keep it longer.`,
+      `As a student, I want to view my exam results so that I can track my progress.`,
+      `As an admin, I want a REST endpoint /users/delete so that I can remove users.`,
+      `As a guest, I want to browse courses so that I can choose one. SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 4`
+    ],
+    correct: 3,
+    explanation: `A REST endpoint is a technical implementation detail.`
+  },
+  {
+    id: "se_new_add_662",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the Relationship Summary table, EXTEND is the insertion of additional behaviour into a base use case that:`,
+    options: [
+      `Is an actor`,
+      `Explicitly describes the insertion`,
+      `Inherits from it`,
+      `Does not know about it`,
+      `Must always execute it`
+    ],
+    correct: 3,
+    explanation: `Include: base explicitly describes the insertion. Extend: base does not know about it.`
+  },
+  {
+    id: "se_new_add_663",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `For which project would the V-Model be the LEAST suitable?`,
+    options: [
+      `A pacemaker monitoring system`,
+      `A social media mobile app whose features change every few weeks`,
+      `Avionics control software`,
+      `Airbag control software`,
+      `Software for a medical infusion pump`
+    ],
+    correct: 1,
+    explanation: `Models V-Model suits safety-critical systems and is costly to change late.`
+  },
+  {
+    id: "se_new_add_664",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements describe the classic Waterfall model?
+ I. A linear and step-by-step process
+ II. Software is delivered in sprints
+ III. Each phase has clear goals and deliverables
+ IV. Each phase is completed before moving to the next
+ V. Teams can easily return to earlier phases`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Models Returning to earlier phases = Iterative Waterfall.`
+  },
+  {
+    id: "se_new_add_665",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statement about actors is correct?`,
+    options: [
+      `Actors are drawn inside the system boundary`,
+      `Actors are use cases with no relationships`,
+      `Actors are internal components of the system`,
+      `Actors have direct interactions with the system`,
+      `Actors are always human`
+    ],
+    correct: 3,
+    explanation: `Actors are external and interact directly.`
+  },
+  {
+    id: "se_new_add_666",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A team with 120 tasks over 5 days completes: Day 1 = 20, Day 2 = 30, Day 3 = 15, Day 4 = 25, Day 5 = 30. Which day had the LOWEST productivity, and did they finish on time?`,
+    options: [
+      `Day 1; Yes`,
+      `Day 4; Yes`,
+      `Day 3; Yes`,
+      `Day 1; No`,
+      `Day 3; No SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 5`
+    ],
+    correct: 2,
+    explanation: `Lowest = Day 3 (15). Total = 120, so all tasks were completed.`
+  },
+  {
+    id: "se_new_add_667",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which is NOT a responsibility of the Scrum Master?`,
+    options: [
+      `Facilitating Scrum activities`,
+      `Promoting collaboration and communication`,
+      `Removing obstacles`,
+      `Accepting or rejecting completed work`,
+      `Ensuring Scrum principles are followed`
+    ],
+    correct: 3,
+    explanation: `Accepting/rejecting work is the Product Owner's responsibility.`
+  },
+  {
+    id: "se_new_add_668",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `'Maintaining traceability' in requirement gathering means:`,
+    options: [
+      `Tracking the location of users`,
+      `Logging user login attempts`,
+      `Tracking requirements through design, development and testing`,
+      `Tracking the project budget`,
+      `Recording who wrote each line of code`
+    ],
+    correct: 2,
+    explanation: `Ethics Traceability links requirements to later phases.`
+  },
+  {
+    id: "se_new_add_669",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which descriptions of professional bodies are CORRECT?
+ I. ACM - publishes the IEEE 802.11 Wi-Fi standard
+ II. ACM - focus on computer science, education and software research
+ III. ACS - tailored for ICT professionals in Australia; includes privacy, respect and social impact
+ IV. BCS - focus on public interest, professional competence and accountability
+ V. IEEE - world's largest society for computing professionals`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics ACM is the world's largest computing society; IEEE publishes 802.11.`
+  },
+  {
+    id: "se_new_add_670",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which questions belong to TECHNICAL feasibility?
+ I. Does our current network and server setup support the new system?
+ II. Is the timeline realistic?
+ III. Will staff feel confident adapting to the new system?
+ IV. Will the benefits outweigh the expenses?
+ V. Do we have the required hardware?`,
+    options: [
+      `I and V only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Ethics Benefits vs expenses = economic; staff confidence = operational; timeline = schedule.`
+  },
+  {
+    id: "se_new_add_671",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the ATM include example, 'Withdraw Money', 'Transfer Money' and 'Check Account Balance' all include which use case?`,
+    options: [
+      `Calculate Fine`,
+      `Print Receipt`,
+      `Dispense Card`,
+      `Validate User`,
+      `Register SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 6`
+    ],
+    correct: 3,
+    explanation: `Common behaviour (Validate User) is put in its own use case. Q Type Answer Lecture Why`
+  },
+  {
+    id: "se_new_add_672",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following appear on the 'Modern Way' side of the Traditional vs Modern comparison?
+ I. Lack of transparency
+ II. High quality
+ III. Highest value
+ IV. Changes are not acceptable
+ V. High cost`,
+    options: [
+      `II and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Modern: highest value, high quality, shortest time. High cost, no changes, lack of transparency = Traditional.`
+  },
+  {
+    id: "se_new_add_673",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Use Case Specification Template, the 'Trigger' is:`,
+    options: [
+      `An open issue`,
+      `What is true after the use case`,
+      `The action that causes the use case to begin`,
+      `The final step of the main scenario`,
+      `What must be true before the use case`
+    ],
+    correct: 2,
+    explanation: `e.g. 'User has chosen to withdraw money'.`
+  },
+  {
+    id: "se_new_add_674",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A flow of control is also known as a:`,
+    options: [
+      `Guard`,
+      `Thread`,
+      `Swimlane`,
+      `Partition`,
+      `Merge`
+    ],
+    correct: 1,
+    explanation: `Diagram The lecture states a flow of control is also known as a thread.`
+  },
+  {
+    id: "se_new_add_675",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In Lecture 2's list of example process models, the Spiral model is described as:`,
+    options: [
+      `Combines design and prototyping in a repeated cycle`,
+      `Each phase is completed one after another`,
+      `Small fast iterations with regular feedback`,
+      `Testing at every stage`,
+      `Visual flow of tasks`
+    ],
+    correct: 0,
+    explanation: `Models Spiral: design + prototyping in a repeated cycle.`
+  },
+  {
+    id: "se_new_add_676",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `For St John York University, which modelling decisions are CORRECT?
+ I. 'Registered Student' is a child actor of the normal 'User'
+ II. 'User' is a child actor of 'Registered Student'
+ III. 'Search Programs' generalized into 'Research Programs' and 'Taught Programs'
+ IV. 'Show Enrollment Requirements' ≪extend≫ 'Search Programs' (if the user needs)
+ V. 'Book Discussion' ≪include≫ 'Search Programs' SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 7`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `A registered student has access to all features of a normal user -> Registered Student inherits from User.`
+  },
+  {
+    id: "se_new_add_677",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `"Does our company have developers skilled in blockchain for this project?" This question belongs to:`,
+    options: [
+      `Operational feasibility`,
+      `Schedule feasibility`,
+      `Technical feasibility`,
+      `Legal feasibility`,
+      `Economic feasibility`
+    ],
+    correct: 2,
+    explanation: `Ethics Technical feasibility includes required skills.`
+  },
+  {
+    id: "se_new_add_678",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to 'How to choose a model', large, complex systems needing structure and risk control should use:`,
+    options: [
+      `Waterfall only`,
+      `Spiral or V-Model`,
+      `Kanban or Scrum`,
+      `Iterative Waterfall only`,
+      `Prototyping only`
+    ],
+    correct: 1,
+    explanation: `Models Project size & complexity factor.`
+  },
+  {
+    id: "se_new_add_679",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The Agile model is BEST for:`,
+    options: [
+      `Projects with fixed, stable requirements`,
+      `Safety-critical avionics`,
+      `Projects where requirements may change frequently and fast delivery is important`,
+      `Projects with no customer involvement`,
+      `Projects needing one final delivery`
+    ],
+    correct: 2,
+    explanation: `Models Examples: mobile apps, cloud SaaS.`
+  },
+  {
+    id: "se_new_add_680",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `An education ministry sets rules that a school management system must follow. It is which type of stakeholder?`,
+    options: [
+      `Regulatory body`,
+      `Project sponsor`,
+      `External partner`,
+      `Internal user`,
+      `End user SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 2`
+    ],
+    correct: 0,
+    explanation: `Ethics Regulatory bodies set rules or standards.`
+  },
+  {
+    id: "se_new_add_681",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A rounded rectangle labelled 'Generate Report' is a(n):`,
+    options: [
+      `Decision node`,
+      `Fork`,
+      `Swimlane`,
+      `Action node`,
+      `Initial node`
+    ],
+    correct: 3,
+    explanation: `Diagram Actions are rounded rectangles with verb phrases.`
+  },
+  {
+    id: "se_new_add_682",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Why was Agile introduced, according to the lecture?`,
+    options: [
+      `To make documentation longer`,
+      `To replace testing`,
+      `To handle changing requirements more effectively`,
+      `To remove the need for customers`,
+      `To force fixed contracts`
+    ],
+    correct: 2,
+    explanation: `Traditional approaches struggled with changing requirements.`
+  },
+  {
+    id: "se_new_add_683",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which questions should you ask for each actor to identify use cases?
+ I. Will the actor perform a system start-up or shutdown?
+ II. Does the actor need to be informed about certain occurrences in the system?
+ III. How will the database be normalized?
+ IV. What are the primary tasks the actor wants the system to perform?
+ V. What colour should the actor icon be?`,
+    options: [
+      `I, II, and IV only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Identification focuses on actor needs.`
+  },
+  {
+    id: "se_new_add_684",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A team has 80 tasks for a 4-day sprint. At the end of Day 2, 30 tasks remain. The team is:`,
+    options: [
+      `Behind schedule by 30 tasks`,
+      `Ahead of schedule by 10 tasks`,
+      `Exactly on the ideal line`,
+      `Behind schedule by 10 tasks`,
+      `Ahead by 30 tasks`
+    ],
+    correct: 1,
+    explanation: `Ideal: 20/day -> 40 should remain after Day 2. Only 30 remain -> 10 ahead.`
+  },
+  {
+    id: "se_new_add_685",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Hospital example, why were appointment reminders and the doctor dashboard deferred?`,
+    options: [
+      `They were impossible to build`,
+      `They had the highest priority`,
+      `They improve the system but are not essential for the first working version`,
+      `The customer rejected them`,
+      `They belonged to another product`
+    ],
+    correct: 2,
+    explanation: `Core features first; others in later sprints.`
+  },
+  {
+    id: "se_new_add_686",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `During the software crisis, many projects failed due to:
+ I. System crashes and disasters
+ II. Excessive use of UML diagrams
+ III. Missing deadlines
+ IV. Too many Agile ceremonies
+ V. Going over budget SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`,
+    options: [
+      `I, III, and V only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics Over budget, missed deadlines, crashes and disasters.`
+  },
+  {
+    id: "se_new_add_687",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which activities belong to the RISK ANALYSIS stage of a spiral loop?
+ I. Deploy the final product
+ II. Customer reviews the work done
+ III. Analyze and take steps to reduce or eliminate risks
+ IV. Identify potential risks such as cost, time and technical challenges
+ V. Set goals and define system requirements`,
+    options: [
+      `III and IV only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Models Customer review = Evaluation; setting goals = Planning.`
+  },
+  {
+    id: "se_new_add_688",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements comparing a FORK and a BRANCH (decision) are correct?
+ I. A fork requires a guard condition on each path
+ II. A fork uses a synchronization bar; a branch uses a diamond
+ III. A branch must always be followed by a join
+ IV. At a fork, control flows down all paths
+ V. At a branch, control flows down only one path`,
+    options: [
+      `II, IV, and V only`,
+      `I, II, and IV only`,
+      `II and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Diagram Branches are closed by merges; forks by joins.`
+  },
+  {
+    id: "se_new_add_689",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the lecture, requirements are written down clearly in a document called the:`,
+    options: [
+      `Test Plan`,
+      `Software Requirements Specification (SRS)`,
+      `Feasibility Report`,
+      `Sprint Backlog`,
+      `User Manual`
+    ],
+    correct: 1,
+    explanation: `Ethics SRS; the design phase translates it into a blueprint.`
+  },
+  {
+    id: "se_new_add_690",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the 'Borrow a book' sample answer, '3a - System notifies the title is for Reference Only, exits' is part of the:`,
+    options: [
+      `Main scenario`,
+      `Extensions (alternative flows)`,
+      `Trigger`,
+      `Postconditions`,
+      `Preconditions`
+    ],
+    correct: 1,
+    explanation: `Extensions are branching actions from main scenario steps.`
+  },
+  {
+    id: "se_new_add_691",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, what makes a GOOD user story?
+ I. Explain the benefit ('So that...')
+ II. Clearly identify the user role
+ III. Specify the database schema to be used
+ IV. State the programming language to be used
+ V. Describe the goal the user wants to achieve`,
+    options: [
+      `I, II, and V only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Good stories: role, goal, benefit, and NO technical implementation details.`
+  },
+  {
+    id: "se_new_add_692",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Order Processing: 'Customer service can close the order only after completing all the above activities'. Immediately before 'Close Order' there should be a:`,
+    options: [
+      `Initial node`,
+      `Merge node`,
+      `Decision node`,
+      `Join`,
+      `Fork SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 4`
+    ],
+    correct: 3,
+    explanation: `Diagram All parallel activities must finish -> join.`
+  },
+  {
+    id: "se_new_add_693",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `What is the FIRST step of the Prototyping model?`,
+    options: [
+      `Show it to the user`,
+      `Build a quick prototype`,
+      `Get feedback`,
+      `Gather basic requirements`,
+      `Build the real system`
+    ],
+    correct: 3,
+    explanation: `Models Gather basic requirements -> build prototype -> show -> feedback -> real system.`
+  },
+  {
+    id: "se_new_add_694",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Use case diagrams help demonstrate the ______ of the proposed system to clients.`,
+    options: [
+      `Low-level code`,
+      `Deployment servers`,
+      `Database indexes`,
+      `Sprint velocity`,
+      `High-level behaviour`
+    ],
+    correct: 4,
+    explanation: `They show high-level behaviour.`
+  },
+  {
+    id: "se_new_add_695",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which basic component shows 'which actors are involved in which use cases'?`,
+    options: [
+      `Relationships / Links`,
+      `Use cases`,
+      `Actors`,
+      `System boundary`,
+      `System`
+    ],
+    correct: 0,
+    explanation: `Relationships link actors and use cases.`
+  },
+  {
+    id: "se_new_add_696",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A Decision node is similar to which programming construct?`,
+    options: [
+      `An IF/ELSE statement`,
+      `A class declaration`,
+      `A thread start`,
+      `A return statement`,
+      `A for-loop header`
+    ],
+    correct: 0,
+    explanation: `Diagram Decision = IF/ELSE; Merge = ENDIF / '}'.`
+  },
+  {
+    id: "se_new_add_697",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `What is the key focus of the Product Owner?`,
+    options: [
+      `Delivering working software`,
+      `Maximizing the value of the product`,
+      `Helping the team work effectively`,
+      `Removing obstacles`,
+      `Writing test cases`
+    ],
+    correct: 1,
+    explanation: `PO: value. SM: team effectiveness. Developers: working software.`
+  },
+  {
+    id: "se_new_add_698",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which technique descriptions are CORRECT?
+ I. Document analysis - study current reports, forms or system manuals
+ II. Interviews - online surveys sent to a large group
+ III. Prototyping - mockups or sample screens for early feedback
+ IV. Observation - group discussions to resolve conflicts
+ V. Brainstorming - quickly generate ideas with stakeholders SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 5`,
+    options: [
+      `I, III, and V only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics Interviews = one-on-one/small group; surveys = questionnaires; group discussions = workshops.`
+  },
+  {
+    id: "se_new_add_699",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The team makes the report-generation feature run twice as fast. No bug was reported and the environment did not change. This is:`,
+    options: [
+      `Adaptive maintenance`,
+      `Deployment`,
+      `Corrective maintenance`,
+      `Integration testing`,
+      `Perfective maintenance`
+    ],
+    correct: 4,
+    explanation: `Ethics Perfective = new features or enhanced performance.`
+  },
+  {
+    id: "se_new_add_700",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which activities happen in the Implementation phase?
+ I. Installing the software in the real environment
+ II. Gathering requirements through interviews
+ III. Writing code based on the design documents
+ IV. Building the system module by module
+ V. Preparing user manuals and help desk support`,
+    options: [
+      `III and IV only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Ethics Manuals/help desk and installation = Deployment; interviews = Requirements.`
+  },
+  {
+    id: "se_new_add_701",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `What is the KEY difference between include and extend?`,
+    options: [
+      `Include is optional; extend is mandatory`,
+      `There is no difference`,
+      `Include is always part of the base behaviour; extend happens only under certain conditions`,
+      `Include is between actors; extend is between use cases`,
+      `Both are always optional`
+    ],
+    correct: 2,
+    explanation: `Include = mandatory/common behaviour; extend = conditional/optional.`
+  },
+  {
+    id: "se_new_add_702",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following could be ACTORS of a hotel management system?
+ I. Reserve Room
+ II. External payment gateway system
+ III. The Room table in the system's own database
+ IV. Receptionist
+ V. Guest`,
+    options: [
+      `II, IV, and V only`,
+      `I, II, and IV only`,
+      `II and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Actors are external roles (people, hardware, other systems).`
+  },
+  {
+    id: "se_new_add_703",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The Daily Scrum is:`,
+    options: [
+      `A short daily meeting held by the Scrum Team to monitor progress`,
+      `A 2-hour planning meeting`,
+      `A meeting where the PO accepts work`,
+      `A monthly meeting with stakeholders`,
+      `A meeting held only when there are problems`
+    ],
+    correct: 0,
+    explanation: `Typically 15 minutes, answering three questions.`
+  },
+  {
+    id: "se_new_add_704",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The joint IEEE/ACM code is known as the:`,
+    options: [
+      `IEEE Code of Conduct`,
+      `ACM Professional Guidelines`,
+      `IFIP Ethical Charter`,
+      `Software Engineering Code of Ethics and Professional Practice`,
+      `Agile Manifesto SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 6`
+    ],
+    correct: 3,
+    explanation: `Ethics Created in 1999 with 8 principles.`
+  },
+  {
+    id: "se_new_add_705",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Activity partitions often correspond to:`,
+    options: [
+      `Loop counters`,
+      `Database tables`,
+      `Guard conditions`,
+      `Test cases`,
+      `Organizational units or business actors`
+    ],
+    correct: 4,
+    explanation: `Diagram e.g. Customer Service, Finance, Fulfillment departments. Q Type Answer Lecture Why`
+  },
+  {
+    id: "se_new_add_706",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, the three main Scrum artifacts are:`,
+    options: [
+      `Sprint Planning, Review and Retrospective`,
+      `Product Owner, Scrum Master and Developers`,
+      `User stories, Epics and Tasks`,
+      `Product Backlog, Sprint Backlog and Burn Down Charts`,
+      `SRS, Design Document and Test Plan`
+    ],
+    correct: 3,
+    explanation: `Roles and activities are different Scrum elements.`
+  },
+  {
+    id: "se_new_add_707",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The V-Model is a variation of which model?`,
+    options: [
+      `Agile`,
+      `Spiral`,
+      `Prototyping`,
+      `Kanban`,
+      `Waterfall`
+    ],
+    correct: 4,
+    explanation: `Models V-Model is a Waterfall variation focusing on testing at every stage.`
+  },
+  {
+    id: "se_new_add_708",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which are key features of the Incremental model?
+ I. The system is built and delivered in smaller functional units
+ II. The whole system is delivered at once at the end
+ III. Feedback from earlier increments can improve future ones
+ IV. Increments skip testing to save time
+ V. Each increment adds new features`,
+    options: [
+      `I, III, and V only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Models Each increment goes through the full SDLC including testing.`
+  },
+  {
+    id: "se_new_add_709",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which are the three main roles of a Scrum Team?
+ I. Team Leader
+ II. Developers
+ III. Project Manager
+ IV. Product Owner
+ V. Business Analyst`,
+    options: [
+      `II and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Scrum roles: Product Owner, Scrum Master, Developers. Team Leader, PM and BA are not Scrum roles.`
+  },
+  {
+    id: "se_new_add_710",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which failure occurred about 40 seconds after launch?`,
+    options: [
+      `Therac-25`,
+      `Mariner 1`,
+      `Windows 8`,
+      `Knight Capital`,
+      `Ariane 5 SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 7`
+    ],
+    correct: 4,
+    explanation: `Ethics Ariane 5 exploded 40 seconds after launch.`
+  },
+  {
+    id: "se_new_add_711",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Who accepts or rejects completed work in Scrum?`,
+    options: [
+      `Product Owner`,
+      `Developers`,
+      `Stakeholders directly`,
+      `Project Manager`,
+      `Scrum Master`
+    ],
+    correct: 0,
+    explanation: `The PO accepts or rejects completed work.`
+  },
+  {
+    id: "se_new_add_712",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In use case generalization, the arrow is drawn:`,
+    options: [
+      `As a dashed line labelled ≪generalize≫`,
+      `Without any arrowhead`,
+      `From child to parent with a hollow triangle at the parent`,
+      `From parent to child with a filled arrowhead`,
+      `From actor to use case`
+    ],
+    correct: 2,
+    explanation: `Hollow triangle points to the parent (general) use case.`
+  },
+  {
+    id: "se_new_add_713",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Every fork must have:`,
+    options: [
+      `A call action`,
+      `A merge node`,
+      `A guard condition`,
+      `An associated join`,
+      `A swimlane`
+    ],
+    correct: 3,
+    explanation: `Diagram Parallel flows must be synchronized back with a join.`
+  },
+  {
+    id: "se_new_add_714",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In Lecture 3, Kanban is described as a methodology where:`,
+    options: [
+      `Work is managed using a visual board`,
+      `Waste is the only focus`,
+      `Tests are written first`,
+      `Work is organized into sprints`,
+      `Two developers share a task`
+    ],
+    correct: 0,
+    explanation: `Kanban = visual board.`
+  },
+  {
+    id: "se_new_add_715",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of these failures from the lecture was mainly a FINANCIAL loss rather than physical destruction or human injury?`,
+    options: [
+      `All of them were purely financial`,
+      `Knight Capital`,
+      `Mariner 1`,
+      `Therac-25`,
+      `Ariane 5 SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 2`
+    ],
+    correct: 1,
+    explanation: `Ethics Knight Capital lost $440 million in 30 minutes.`
+  },
+  {
+    id: "se_new_add_716",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `When the execution of an action node completes, execution:`,
+    options: [
+      `Returns to the initial node`,
+      `Proceeds to the node found on the output flow (transition)`,
+      `Waits for a guard on the action`,
+      `Stops permanently`,
+      `Jumps to a random node`
+    ],
+    correct: 1,
+    explanation: `Diagram Transitions connect nodes.`
+  },
+  {
+    id: "se_new_add_717",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the lecture, use cases act as a means of:`,
+    options: [
+      `Writing source code`,
+      `Designing databases`,
+      `Estimating sprint velocity`,
+      `Testing performance`,
+      `Communicating with stakeholders about what the system is intended to do`
+    ],
+    correct: 4,
+    explanation: `Excellent for communicating with non-development people.`
+  },
+  {
+    id: "se_new_add_718",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A team has 60 tasks for a 3-day sprint and completes 15, 25 and 20 tasks on Days 1-3. What was the actual velocity on Day 2, and did the team finish?`,
+    options: [
+      `25; Yes`,
+      `15; Yes`,
+      `25; No`,
+      `40; Yes`,
+      `20; No`
+    ],
+    correct: 0,
+    explanation: `Day 2 = 25 tasks. 15 + 25 + 20 = 60 -> finished.`
+  },
+  {
+    id: "se_new_add_719",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which requirements-gathering technique creates mockups or sample screens so users can visualize the system?`,
+    options: [
+      `Brainstorming`,
+      `Document analysis`,
+      `Prototyping`,
+      `Interviews`,
+      `Observation`
+    ],
+    correct: 2,
+    explanation: `Ethics Showing examples = prototyping.`
+  },
+  {
+    id: "se_new_add_720",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about use case scenarios are correct?
+ I. Scenarios can only be drawn as activity diagrams
+ II. The main scenario assumes everything is okay and no errors occur
+ III. A scenario is a formal description of the flow of events during a use case instance
+ IV. Scenarios only include successful flows
+ V. Alternative scenarios are never documented`,
+    options: [
+      `II and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Alternative flows ARE part of the scenario (extensions).`
+  },
+  {
+    id: "se_new_add_721",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `"The system should be available 99.9% of the time." This is a:`,
+    options: [
+      `Stakeholder`,
+      `Constraint`,
+      `Functional requirement`,
+      `Use case`,
+      `Non-functional requirement SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`
+    ],
+    correct: 4,
+    explanation: `Ethics Availability describes HOW well the system performs.`
+  },
+  {
+    id: "se_new_add_722",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The merge point is the UML equivalent of which symbol in C/C++/Java?`,
+    options: [
+      `( )`,
+      `==`,
+      `{`,
+      `}`,
+      `//`
+    ],
+    correct: 3,
+    explanation: `Diagram Merge = ENDIF or closing brace '}'.`
+  },
+  {
+    id: "se_new_add_723",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the V-Model, testing and validation activities are placed on the:`,
+    options: [
+      `Outside the V`,
+      `Bottom only`,
+      `Left side of the V`,
+      `Top only`,
+      `Right side of the V`
+    ],
+    correct: 4,
+    explanation: `Models Left = planning/design; right = testing/validation.`
+  },
+  {
+    id: "se_new_add_724",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A client can only describe vague ideas and expects to change their mind often. Which model is LEAST suitable?`,
+    options: [
+      `Spiral`,
+      `Prototyping`,
+      `Classic Waterfall`,
+      `Incremental with feedback`,
+      `Agile (Scrum)`
+    ],
+    correct: 2,
+    explanation: `Models Waterfall needs clearly known, stable requirements.`
+  },
+  {
+    id: "se_new_add_725",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about Scrum are correct?
+ I. It divides work into short iterations called sprints
+ II. It requires the full specification to be frozen before Sprint 1
+ III. It defines no roles
+ IV. Feedback is collected regularly to improve the product
+ V. Teams deliver working software at the end of each sprint`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Scrum has defined roles and adapts to change.`
+  },
+  {
+    id: "se_new_add_726",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to the SE vs Programming table, which activities does Software Engineering include?
+ I. Analysis
+ II. Only writing quick scripts
+ III. Deployment
+ IV. Only coding and debugging
+ V. Architecture`,
+    options: [
+      `I, III, and V only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics SE: analysis, design, architecture, coding, testing, deployment, maintenance.`
+  },
+  {
+    id: "se_new_add_727",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following is NOT one of the four key Agile values (the preferred left-side items)?`,
+    options: [
+      `Responding to change`,
+      `Working software`,
+      `Individuals and interactions`,
+      `Customer collaboration`,
+      `Contract negotiation SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 4`
+    ],
+    correct: 4,
+    explanation: `Contract negotiation is the right-side (traditional) item.`
+  },
+  {
+    id: "se_new_add_728",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are INCLUDE relationships from the lecture examples?
+ I. 'Search Item' includes 'Suggest Add Item to Library'
+ II. 'Borrow Book' includes 'Validate Member'
+ III. 'Withdraw Money' includes 'Validate User'
+ IV. 'Buy a Course' includes 'Register'
+ V. 'Overdue Books' includes 'Calculate Fine'`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Calculate Fine and Suggest Add Item were EXTEND examples.`
+  },
+  {
+    id: "se_new_add_729",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `'Validate member' leads to [valid member] and [else]. For a valid member, 'Issue DVD' and 'Take Payment' can happen in any order. The correct node sequence after 'Validate member' is:`,
+    options: [
+      `Merge, then fork`,
+      `Decision, then (on the valid path) a fork`,
+      `Fork, then decision`,
+      `Decision, then merge on the valid path`,
+      `Join, then decision`
+    ],
+    correct: 1,
+    explanation: `Diagram First choose a path (decision); then split into parallel actions (fork).`
+  },
+  {
+    id: "se_new_add_730",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `For the farmers' app: "Collecting farmers' locations and phone numbers may be restricted by data protection laws." This concern relates to:`,
+    options: [
+      `Legal feasibility`,
+      `Economic feasibility`,
+      `Operational feasibility`,
+      `Technical feasibility`,
+      `Schedule feasibility`
+    ],
+    correct: 0,
+    explanation: `Ethics Laws and regulations -> legal feasibility.`
+  },
+  {
+    id: "se_new_add_731",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `If fast time-to-market is needed, which models does the lecture recommend?`,
+    options: [
+      `Waterfall or V-Model`,
+      `V-Model or Spiral`,
+      `Iterative Waterfall only`,
+      `Agile, Scrum or Incremental`,
+      `Spiral only`
+    ],
+    correct: 3,
+    explanation: `Models Time to market factor.`
+  },
+  {
+    id: "se_new_add_732",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Spiral model, what happens in the EVALUATION stage?`,
+    options: [
+      `The final product is deployed without review`,
+      `Code is written`,
+      `Goals are set`,
+      `Risks are identified`,
+      `The customer reviews the work, and the next loop is planned based on feedback`
+    ],
+    correct: 4,
+    explanation: `Models Evaluation: customer review -> plan next iteration.`
+  },
+  {
+    id: "se_new_add_733",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the 'Withdraw Money' example, 'Should the system ask if the user wants to see the balance?' appears under:`,
+    options: [
+      `Trigger`,
+      `Open Issues`,
+      `Extensions`,
+      `Main Scenario`,
+      `Preconditions SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 5`
+    ],
+    correct: 1,
+    explanation: `Open issues are unresolved questions.`
+  },
+  {
+    id: "se_new_add_734",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which was NOT a selection criterion for the Sprint 1 user stories in the Hospital example?`,
+    options: [
+      `Deliver a working product early`,
+      `Lowest development effort regardless of value`,
+      `Core system functionality`,
+      `Highest business value`,
+      `Foundation for future features`
+    ],
+    correct: 1,
+    explanation: `Selection was value-driven, not effort-driven.`
+  },
+  {
+    id: "se_new_add_735",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are listed under 'Controls' in the elements of an activity diagram?
+ I. Initial / Start
+ II. Final / End
+ III. Swimlane
+ IV. Fork
+ V. Decision / Branch`,
+    options: [
+      `I, II, and IV only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `, E Diagram Swimlanes are partitions, not controls (merge and join are also controls).`
+  },
+  {
+    id: "se_new_add_736",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `SYSTEM testing is used to:`,
+    options: [
+      `Check the feasibility report`,
+      `Train users`,
+      `Test the whole system to see if it behaves correctly`,
+      `Test a single function`,
+      `Test two modules together`
+    ],
+    correct: 2,
+    explanation: `Ethics System testing = whole system.`
+  },
+  {
+    id: "se_new_add_737",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which were listed as key Scrum meetings in Lecture 2?
+ I. Sprint Review
+ II. Risk Analysis Review
+ III. Feasibility Review
+ IV. Sprint Planning
+ V. Daily Stand-up SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 6`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Models Scrum meetings: Sprint Planning, Daily Stand-up, Sprint Review, Retrospective. Risk analysis belongs to Spiral.`
+  },
+  {
+    id: "se_new_add_738",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which is the BEST user story for a library system?`,
+    options: [
+      `As a system, I want to store books.`,
+      `As a user, I want reports.`,
+      `As a librarian, I want to see overdue books.`,
+      `As a librarian, I want to see a list of overdue books so that I can contact members who have not returned them.`,
+      `As a librarian, I want an SQL view of overdue books.`
+    ],
+    correct: 3,
+    explanation: `Clear role, goal and benefit, no technical detail.`
+  },
+  {
+    id: "se_new_add_739",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In Software Engineering, 'ethics' is defined as:`,
+    options: [
+      `The set of moral values that help us decide what is right or wrong in our actions`,
+      `The IEEE 802.11 standard`,
+      `A set of coding standards`,
+      `Laws passed by the government`,
+      `A software testing method SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 7`
+    ],
+    correct: 0,
+    explanation: `Ethics Ethics guide how professionals design, develop, test and use software.`
+  },
+  {
+    id: "se_new_add_740",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which maintenance-type pairings are CORRECT?
+ I. Adaptive - updating the app to work with a new OS version
+ II. Corrective - fixing a bug found after deployment
+ III. Corrective - migrating the system to a new cloud platform
+ IV. Perfective - adding a new feature
+ V. Adaptive - adding a dark-mode feature requested by users`,
+    options: [
+      `I, II, and IV only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Ethics Dark mode = perfective; migrating to a new platform = adaptive.`
+  },
+  {
+    id: "se_new_add_741",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `According to Lecture 2, Scrum sprints are usually:`,
+    options: [
+      `1 year`,
+      `2-4 weeks`,
+      `1 day`,
+      `3-6 months`,
+      `Unlimited`
+    ],
+    correct: 1,
+    explanation: `Models Scrum: fixed-length cycles, usually 2-4 weeks.`
+  },
+  {
+    id: "se_new_add_742",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which symbol is typically used to represent an actor?`,
+    options: [
+      `A diamond`,
+      `An oval`,
+      `A filled circle`,
+      `A stick figure`,
+      `A rounded rectangle`
+    ],
+    correct: 3,
+    explanation: `Ovals are use cases.`
+  },
+  {
+    id: "se_new_add_743",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `If frequent user feedback is critical, which models are MOST suitable?`,
+    options: [
+      `Classic Waterfall with one final delivery`,
+      `None`,
+      `V-Model`,
+      `Agile-based models`,
+      `Waterfall SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 2`
+    ],
+    correct: 3,
+    explanation: `Models User feedback factor.`
+  },
+  {
+    id: "se_new_add_744",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about Agile methodologies and practices are TRUE?
+ I. TDD is an Agile practice
+ II. Kanban is an Agile practice
+ III. Pair Programming is an Agile methodology
+ IV. Lean Software Development is an Agile methodology
+ V. XP is an Agile methodology`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Pair programming = practice; Kanban = methodology.`
+  },
+  {
+    id: "se_new_add_745",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which requirements-gathering technique uses one-on-one or small group conversations?`,
+    options: [
+      `Observation`,
+      `Brainstorming`,
+      `Document analysis`,
+      `Questionnaires`,
+      `Interviews`
+    ],
+    correct: 4,
+    explanation: `Ethics Interviews = talking to users.`
+  },
+  {
+    id: "se_new_add_746",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `The V-Model is a variation that focuses on:`,
+    options: [
+      `Continuous flow`,
+      `Eliminating waste`,
+      `Testing at every stage of development`,
+      `Customer collaboration`,
+      `Rapid prototypes`
+    ],
+    correct: 2,
+    explanation: `Models V = Verification and Validation.`
+  },
+  {
+    id: "se_new_add_747",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statement about Decision nodes is FALSE?`,
+    options: [
+      `Each branch must have a guard`,
+      `They are drawn as diamonds`,
+      `A decision node is limited to a maximum of two branches`,
+      `Control flows down the single path whose condition is true`,
+      `The alternatives are mutually exclusive`
+    ],
+    correct: 2,
+    explanation: `Diagram There is no limit on the number of branches.`
+  },
+  {
+    id: "se_new_add_748",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about the Iterative Waterfall model are correct?
+ I. It is designed mainly around risk analysis in each loop
+ II. It delivers working software at the end of every sprint
+ III. It follows the same step-by-step phases as classic Waterfall
+ IV. Teams can go back to earlier phases if needed
+ V. It removes the testing phase to save time SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 3`,
+    options: [
+      `III and IV only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Models Sprints = Agile; risk loops = Spiral.`
+  },
+  {
+    id: "se_new_add_749",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the 'Traditional Way', errors can be detected:`,
+    options: [
+      `Only in the latter part of the SDLC`,
+      `At every sprint`,
+      `Before requirements`,
+      `Never`,
+      `Daily`
+    ],
+    correct: 0,
+    explanation: `A traditional-way characteristic.`
+  },
+  {
+    id: "se_new_add_750",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the context of SDLC, the Waterfall model:`,
+    options: [
+      `Skips the testing phase`,
+      `Uses no phases`,
+      `Executes SDLC phases sequentially`,
+      `Runs all phases in parallel`,
+      `Executes SDLC phases in sprints`
+    ],
+    correct: 2,
+    explanation: `Models Waterfall = sequential; Agile = iterative sprints.`
+  },
+  {
+    id: "se_new_add_751",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `On a burn down chart, the ACTUAL line stays ABOVE the IDEAL line for most of the sprint. This means the team is:`,
+    options: [
+      `Exactly on schedule`,
+      `Finished early`,
+      `Behind schedule`,
+      `Adding no work`,
+      `Ahead of schedule`
+    ],
+    correct: 2,
+    explanation: `More remaining work than ideal = behind.`
+  },
+  {
+    id: "se_new_add_752",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about iteration in activity diagrams are correct?
+ I. The next action does not occur until the loop is finished
+ II. An asterisk inside an action shows it may be performed more than once
+ III. Iteration must always be modelled with a fork
+ IV. The asterisk shows the exact number of repetitions
+ V. A decision node is preferred because it shows the termination condition`,
+    options: [
+      `I, II, and V only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Diagram The asterisk hides termination conditions and repetition count.`
+  },
+  {
+    id: "se_new_add_753",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about the Use Case Specification Template are correct?
+ I. Postconditions describe what is true after the use case successfully executes
+ II. The Trigger is the last step of the main scenario
+ III. It was adapted from A. Cockburn's 'Basic Use Case Template'
+ IV. Preconditions describe what is true after the use case executes
+ V. Priority ranges from 1 (lowest) to 5 (highest)`,
+    options: [
+      `I, III, and V only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Preconditions = true BEFORE; Trigger = action that starts the use case.`
+  },
+  {
+    id: "se_new_add_754",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In which relationship does the base use case explicitly describe the insertion of another use case's behaviour?`,
+    options: [
+      `Extend`,
+      `Actor generalization`,
+      `Include`,
+      `Use case generalization`,
+      `Association`
+    ],
+    correct: 2,
+    explanation: `Include = explicit; extend = base does not know about it.`
+  },
+  {
+    id: "se_new_add_755",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Requirements specification using graphical notations includes:`,
+    options: [
+      `Use case diagrams/scenarios and activity diagrams`,
+      `Source code`,
+      `Burn down charts and Kanban boards`,
+      `Gantt charts only`,
+      `ER diagrams only`
+    ],
+    correct: 0,
+    explanation: `Covered in Lectures 4 and 5.`
+  },
+  {
+    id: "se_new_add_756",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `For 'Research Rabbit', which relationships are CORRECT?
+ I. 'Suggest Research Area' ≪include≫ 'Search Groups'
+ II. 'Request More Details' ≪extend≫ 'Search Groups'
+ III. 'Search Groups' ≪include≫ 'Request More Details'
+ IV. 'Suggest Research Area' ≪extend≫ 'Search Groups'
+ V. 'Submit EOI' is a child (generalization) of 'Search Groups' SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 5`,
+    options: [
+      `II and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`,
+      `V only`
+    ],
+    correct: 0,
+    explanation: `Both happen only if the user is interested / the area is not available -> extend.`
+  },
+  {
+    id: "se_new_add_757",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Order Processing System (Activity 6), which set of swimlanes fits the scenario BEST?`,
+    options: [
+      `Customer Service, Fulfillment, Finance`,
+      `Developers, Testers, Scrum Master`,
+      `Initial, Action, Final`,
+      `Fork, Join, Merge`,
+      `Sales, Marketing, HR`
+    ],
+    correct: 0,
+    explanation: `Diagram Departments named in the scenario.`
+  },
+  {
+    id: "se_new_add_758",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `'Product Backlog items are placed in the correct sequence' means:`,
+    options: [
+      `Items never change order`,
+      `Items are grouped by developer`,
+      `Items are sorted alphabetically`,
+      `Items are numbered by creation date`,
+      `Items are ordered by value, with the highest-value items at the top`
+    ],
+    correct: 4,
+    explanation: `Highest-value items are done first.`
+  },
+  {
+    id: "se_new_add_759",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `'Dirgayu': 'Medical officer can do all the tasks which a registered nurse can do.' How is this modelled?`,
+    options: [
+      `An ≪extend≫ between the two actors`,
+      `Registered Nurse is a child of Medical Officer`,
+      `They are the same actor`,
+      `Medical Officer is a child actor of Registered Nurse (generalization arrow to Registered Nurse)`,
+      `An ≪include≫ between the two actors`
+    ],
+    correct: 3,
+    explanation: `The child inherits all parent behaviour.`
+  },
+  {
+    id: "se_new_add_760",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which set of real-world systems was given in the lecture as examples that must be built with proper SE practices?`,
+    options: [
+      `Music players, photo editors and alarms`,
+      `Banking apps, hospital systems and flight control software`,
+      `Games, calculators and chat apps`,
+      `Blogs, portfolios and wikis`,
+      `Spreadsheets, word processors and browsers`
+    ],
+    correct: 1,
+    explanation: `Ethics Critical systems where failure is costly.`
+  },
+  {
+    id: "se_new_add_761",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Management tells you to release a product with known serious bugs to meet a deadline. Following the IEEE/ACM code, the MOST appropriate action is to:`,
+    options: [
+      `Blame the testers`,
+      `Release it and stay silent`,
+      `Quit immediately without informing anyone`,
+      `Delete the bug reports`,
+      `Honestly raise the risks, putting the public interest and product quality first SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 6`
+    ],
+    correct: 4,
+    explanation: `Ethics The code places the public and product quality first.`
+  },
+  {
+    id: "se_new_add_762",
+    topic: "se-module-3",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which is the correct user story template?`,
+    options: [
+      `So that <benefit>, the <database> will <goal>`,
+      `As a <user role> I want to <goal> so that <benefit>`,
+      `I want <goal> as a <role>`,
+      `As a <benefit> I want to <role> so that <goal>`,
+      `As a <system> I shall <function>`
+    ],
+    correct: 1,
+    explanation: `As a <role>, I want to <goal>, so that <benefit>.`
+  },
+  {
+    id: "se_new_add_763",
+    topic: "se-module-2",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `After seeing each prototype, users keep asking for new features, pushing the project beyond its original boundaries. This prototyping drawback is called:`,
+    options: [
+      `Risk analysis`,
+      `Technical debt`,
+      `Regression`,
+      `Refactoring`,
+      `Scope creep`
+    ],
+    correct: 4,
+    explanation: `Models Listed drawback of Prototyping.`
+  },
+  {
+    id: "se_new_add_764",
+    topic: "se-module-1",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `While testing a registration form, a tester enters an email without an '@' symbol. This is an example of:`,
+    options: [
+      `Economic feasibility`,
+      `Perfective maintenance`,
+      `Requirements gathering`,
+      `Testing with invalid input to check the system responds properly`,
+      `Deployment`
+    ],
+    correct: 3,
+    explanation: `Ethics Testing uses valid and invalid inputs.`
+  },
+  {
+    id: "se_new_add_765",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which diagram is recommended for clarifying concurrency issues?`,
+    options: [
+      `Activity diagram`,
+      `Burn down chart`,
+      `Feasibility report`,
+      `Use case diagram`,
+      `User story`
+    ],
+    correct: 0,
+    explanation: `Diagram Forks and joins show concurrent flows.`
+  },
+  {
+    id: "se_new_add_766",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Qatar Airways: 'If a flight is available, book the ticket. If unavailable, cancel the booking and the process ends.' This is modelled with:`,
+    options: [
+      `A swimlane for each flight`,
+      `A join before 'Book Ticket'`,
+      `An asterisk on 'Select Travel Date'`,
+      `A fork after 'Select Travel Date'`,
+      `A decision node with [available] / [unavailable] guards; the unavailable path leads to 'Cancel Booking' then a final node SE2030 Software Engineering - Midterm Mock Papers (practice only) Page 7`
+    ],
+    correct: 4,
+    explanation: `Diagram Mutually exclusive outcomes -> decision with guards.`
+  },
+  {
+    id: "se_new_add_767",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In which situations does the lecture say activity diagrams should be used?
+ I. Modelling business processes
+ II. Showing the physical deployment of hardware nodes
+ III. Designing database table schemas
+ IV. Clarifying concurrency issues
+ V. Analysing system functionality to identify the use cases
+ VI. Analysing individual use cases in detail`,
+    options: [
+      `I, IV, V, and VI only`,
+      `I, II, IV, and V only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `All four correct options are on the 'When to Use Activity Diagrams?' slide. Database schemas and hardware deployment are modelled with other diagrams.`
+  },
+  {
+    id: "se_new_add_768",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the 'Elements of an Activity Diagram' slide, which of these is NOT listed under 'Controls'?`,
+    options: [
+      `Transition`,
+      `Nodes (Decision, Merge, Fork, Join)`,
+      `Initial/Start`,
+      `Final/End`
+    ],
+    correct: 0,
+    explanation: `The slide lists three groups: Action, Transition and Controls. Transition is its own group. Controls contain Initial, Final and the Nodes.`
+  },
+  {
+    id: "se_new_add_769",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which two types of ACTION are listed in the lecture?`,
+    options: [
+      `Call Action and Return Action`,
+      `Simple Action and Complex Action`,
+      `Simple Action and Call Action`,
+      `Primary Action and Secondary Action`
+    ],
+    correct: 2,
+    explanation: `Action is divided into Simple Action and Call Action (a call action is a sub activity).`
+  },
+  {
+    id: "se_new_add_770",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which notation represents the INITIAL (start) node?`,
+    options: [
+      `A hollow circle`,
+      `A filled circle inside another circle`,
+      `A small diamond`,
+      `A filled (solid) circle`
+    ],
+    correct: 3,
+    explanation: `The initial node is a filled circle. A filled circle within a circle (bullseye) is the final node, which is a common mix-up.`
+  },
+  {
+    id: "se_new_add_771",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which notation represents the FINAL (end) node?`,
+    options: [
+      `A hollow diamond`,
+      `A thick black bar`,
+      `A filled circle within a circle`,
+      `A single filled circle IT2030 - Lecture 5: Activity Diagrams | Practice Questions Page 2`
+    ],
+    correct: 2,
+    explanation: `The final node is a filled circle inside a circle (bullseye).`
+  },
+  {
+    id: "se_new_add_772",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `How is an action node represented?`,
+    options: [
+      `A rectangle with sharp corners`,
+      `A diamond`,
+      `A rounded rectangle`,
+      `An oval / ellipse`
+    ],
+    correct: 2,
+    explanation: `Actions are rounded rectangles. Ovals are use cases (previous lecture), and diamonds are decision/merge nodes.`
+  },
+  {
+    id: "se_new_add_773",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `According to the naming guideline for action nodes, which is the BEST label?`,
+    options: [
+      `Generate Report`,
+      `Report`,
+      `Report Generated`,
+      `Reporting System`
+    ],
+    correct: 0,
+    explanation: `Action text should be a verb phrase in the present tense. 'Report Generated' is past tense, and the others are nouns.`
+  },
+  {
+    id: "se_new_add_774",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which statement correctly describes the relationship between an action and an activity?`,
+    options: [
+      `An action is a sequence of activities`,
+      `An action and an activity are unrelated elements`,
+      `An activity is a single task, while an action is the whole workflow`,
+      `An activity is a sequence of actions`
+    ],
+    correct: 3,
+    explanation: `An action is a single task that needs to be done. An activity is a sequence of actions.`
+  },
+  {
+    id: "se_new_add_775",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `A transition is also known by which of the following names?
+ I. Control flow
+ II. Edge
+ III. Swimlane
+ IV. Directed flow
+ V. Guard`,
+    options: [
+      `I, II, and IV only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The slide says a transition is also known as a control flow, directed flow or edge. A guard is a condition on a flow, and a swimlane is a partition.`
+  },
+  {
+    id: "se_new_add_776",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the 'Sub Partitioning in SwimLanes' example, the columns are labelled «external» Customer and «attribute» Department / Order Dept. What does the slide say about Order Dept?`,
+    options: [
+      `Order department is an external actor, like Customer`,
+      `Order department is a sub activity called from Customer`,
+      `Order department is a subclass of the Department class`,
+      `Department is a subclass of Order department`
+    ],
+    correct: 2,
+    explanation: `The slide states that Order Dept is a subclass of the Department class, shown as a sub-partition. Customer is marked «external».`
+  },
+  {
+    id: "se_new_add_777",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Activity 1 (CA Sri Lanka LMS registration): based on the scenario as written, which set of elements is appropriate?`,
+    options: [
+      `An initial node, a sequence of actions connected by transitions, and a final node - no decision or fork is required`,
+      `A decision node after 'Upload NIC' with [valid] / [invalid] guards`,
+      `A fork after 'Upload NIC' because forms and deposit are separate steps`,
+      `Swimlanes for Student, Finance and Admin departments IT2030 - Lecture 5: Activity Diagrams | Practice Questions Page 3`
+    ],
+    correct: 0,
+    explanation: `The scenario has no conditions and no concurrency ('first... then... once these steps are completed'). It is a simple sequential flow. Do not add elements the scenario does not describe.`
+  },
+  {
+    id: "se_new_add_778",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Activity 1: what is the correct order of actions?`,
+    options: [
+      `Upload NIC image -> Pay Rs. 3,000 deposit -> Display student ID -> Complete registration forms`,
+      `Upload NIC image -> Complete registration forms -> Pay Rs. 3,000 deposit -> Display student ID`,
+      `Complete registration forms -> Upload NIC image -> Pay Rs. 3,000 deposit -> Display student ID`,
+      `Pay Rs. 3,000 deposit -> Upload NIC image -> Complete registration forms -> Display student ID`
+    ],
+    correct: 1,
+    explanation: `The student FIRST uploads the NIC image, THEN completes the forms and pays the deposit. Once these steps are done, the system displays the ID.`
+  },
+  {
+    id: "se_new_add_779",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `What does a decision node represent?`,
+    options: [
+      `A parallel flow of control where all alternatives execute`,
+      `An activity that is defined on another diagram`,
+      `A conditional flow of control where the alternatives are mutually exclusive`,
+      `The merging of several flows of control into one`
+    ],
+    correct: 2,
+    explanation: `A decision is a conditional flow and only one alternative is taken. 'All execute' describes a fork.`
+  },
+  {
+    id: "se_new_add_780",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the example 'Receive Order -> decision -> [order rejected] Close Order / [order accepted] Fill Order', what happens when the order is ACCEPTED?`,
+    options: [
+      `Fill Order executes, then Close Order`,
+      `Both Fill Order and Close Order execute`,
+      `Close Order executes first, then Fill Order`,
+      `Receive Order -> Fill Order -> final node; Close Order is not executed`
+    ],
+    correct: 3,
+    explanation: `Only the path whose guard is true is followed. Both paths end at the final node independently.`
+  },
+  {
+    id: "se_new_add_781",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the 'Multiple Branches' example, one outgoing flow is labelled [else]. When is it taken?`,
+    options: [
+      `When none of the other guard conditions are true`,
+      `Always, in addition to the path whose guard is true`,
+      `It is never taken; [else] marks an error in the diagram`,
+      `Before any other guard is evaluated`
+    ],
+    correct: 0,
+    explanation: `[else] is the catch-all path, similar to 'else' in programming.`
+  },
+  {
+    id: "se_new_add_782",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about guard conditions are correct?
+ I. They are written inside the diamond shape
+ II. [else] can be used as a catch-all guard
+ III. They are required on each outgoing flow of a fork
+ IV. Every outgoing branch of a decision node must have one
+ V. They are written in square brackets, e.g. [valid member] IT2030 - Lecture 5: Activity Diagrams | Practice Questions Page 4`,
+    options: [
+      `II, IV, and V only`,
+      `I, II, and IV only`,
+      `II and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Guards go in square brackets on the flows leaving a decision. Fork flows have no guards, because all of them are always taken.`
+  },
+  {
+    id: "se_new_add_783",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `What is the purpose of a merge node?`,
+    options: [
+      `To split one flow of control into several parallel flows`,
+      `To merge the flow of control from two or more branch points back together`,
+      `To choose one path based on a condition`,
+      `To wait until all concurrent flows complete before continuing`
+    ],
+    correct: 1,
+    explanation: `A merge brings alternative branch paths back together. Waiting for all concurrent flows is a JOIN, and splitting is a FORK.`
+  },
+  {
+    id: "se_new_add_784",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the DVD example (Validate Membership -> decision [Valid Member] / [Else]), which path does an INVALID member take?`,
+    options: [
+      `Validate Membership -> Call Police -> Issue DVDs -> final node`,
+      `Validate Membership -> Issue DVDs -> Take Payment -> final node`,
+      `Validate Membership -> Call Police -> merge -> final node`,
+      `Validate Membership -> Take Payment -> Call Police -> final node`
+    ],
+    correct: 2,
+    explanation: `An invalid member takes the [Else] branch to Call Police, then that path merges with the other one before the final node.`
+  },
+  {
+    id: "se_new_add_785",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Activity 2 (Qatar Airways booking): which elements are needed in a correct diagram?
+ I. A decision after selecting the class (Economy vs Business)
+ II. A decision on whether a flight is available on the selected date
+ III. A merge where the Economy and Business paths come back together before the information form
+ IV. A join after 'Book Ticket' and 'Cancel Booking' before the end
+ V. A fork after registration so both classes are processed at the same time
+ VI. A decision on whether the member requires extra baggage`,
+    options: [
+      `I, II, III, and VI only`,
+      `I, II, III, and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The member chooses ONE class, so it is a decision, not a fork. Book and Cancel are alternative outcomes (only one happens), so a join would never complete.`
+  },
+  {
+    id: "se_new_add_786",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Activity 2: a member selects BUSINESS class. What is the next action?`,
+    options: [
+      `Pay a deposit for additional baggage`,
+      `Complete the mandatory information form`,
+      `Check the baggage allowance`,
+      `Cancel the booking`
+    ],
+    correct: 1,
+    explanation: `Business class includes 40 kg by default, so the member proceeds directly to the booking process, which starts with the information form.`
+  },
+  {
+    id: "se_new_add_787",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Activity 2: an ECONOMY member does NOT need extra baggage. Which action is skipped?`,
+    options: [
+      `Pay deposit for additional baggage`,
+      `Select travel date`,
+      `Check baggage allowance`,
+      `Complete mandatory information form`
+    ],
+    correct: 0,
+    explanation: `Economy members always check the baggage allowance (default 30 kg). The deposit is paid only if more baggage is needed.`
+  },
+  {
+    id: "se_new_add_788",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Activity 2: no flight is available on the selected date. What does the scenario say happens?`,
+    options: [
+      `The flow returns to the registration step`,
+      `The flow loops back so the member selects another date`,
+      `The member cancels the booking and the process ends`,
+      `The ticket is booked for the next available date IT2030 - Lecture 5: Activity Diagrams | Practice Questions Page 5`
+    ],
+    correct: 2,
+    explanation: `The scenario says the member must cancel the booking and the process ends. It is tempting to add a loop, but the scenario does not describe one.`
+  },
+  {
+    id: "se_new_add_789",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which symbol indicates a call action / sub activity?`,
+    options: [
+      `A rake-style symbol inside the action symbol`,
+      `A filled circle inside the action symbol`,
+      `A double border around the action symbol`,
+      `An asterisk inside the action symbol`
+    ],
+    correct: 0,
+    explanation: `The rake symbol marks a sub activity. The asterisk marks iteration, which is a classic trap.`
+  },
+  {
+    id: "se_new_add_790",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the 'Confirm Order' sub activity example, what does the ConfirmOrder diagram contain?`,
+    options: [
+      `Choose menu item -> Confirm Order`,
+      `Provide payment details -> Provide shipment details`,
+      `Choose Menu -> Choose menu item`,
+      `Provide shipment details -> Provide payment details`
+    ],
+    correct: 1,
+    explanation: `The expanded ConfirmOrder diagram has its own start node, then Provide payment details, then Provide shipment details, then its own final node.`
+  },
+  {
+    id: "se_new_add_791",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `What are forks and joins used to show?`,
+    options: [
+      `Mutually exclusive alternative paths`,
+      `Activities that can occur at the same time (in parallel)`,
+      `The department responsible for each action`,
+      `Actions that must be repeated`
+    ],
+    correct: 1,
+    explanation: `Forks and joins model parallelism. Alternatives are decisions, repetition is iteration, and responsibilities are swimlanes.`
+  },
+  {
+    id: "se_new_add_792",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `The lecture says forked activities can occur 'in parallel'. What does this actually mean?`,
+    options: [
+      `The order of execution can be whatever is convenient for the implementation; they need not run concurrently in the finished system`,
+      `They must always run one after another in the order they are drawn`,
+      `They must run on separate CPU threads in the finished software`,
+      `They must start and finish at exactly the same moment`
+    ],
+    correct: 0,
+    explanation: `The slide explicitly says parallel does NOT mean the activities must occur concurrently in the finished system. Only the ordering is flexible.`
+  },
+  {
+    id: "se_new_add_793",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which statement defines a FORK?`,
+    options: [
+      `A single flow chooses one of several alternative paths`,
+      `Two or more flows of control merge into a single flow`,
+      `A flow repeats the same action several times`,
+      `A single flow of control splits into two or more parallel (concurrent) flows IT2030 - Lecture 5: Activity Diagrams | Practice Questions Page 6`
+    ],
+    correct: 3,
+    explanation: `Fork = split into parallel flows. Join = the reverse. Decision = choose one path.`
+  },
+  {
+    id: "se_new_add_794",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the 'is the number odd' example (Yes: add 5, multiply by 5, display; No: add 7, multiply by 7, display; then add 20), what is the final value if the input number is 3?`,
+    options: [
+      `130`,
+      `60`,
+      `40`,
+      `90`
+    ],
+    correct: 1,
+    explanation: `3 is odd, so the Yes path is taken: (3 + 5) x 5 = 40 is displayed. After the merge, add 20 gives 60. Only ONE branch runs, so the values are not added together.`
+  },
+  {
+    id: "se_new_add_795",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the coffee example (Making Coffee -> fork -> Adding Coffee and Steaming Milk -> join -> end), which statement is correct?`,
+    options: [
+      `Both Adding Coffee and Steaming Milk must complete before the final node is reached`,
+      `Steaming Milk must finish before Adding Coffee can start`,
+      `Only one of Adding Coffee or Steaming Milk is performed`,
+      `Adding Coffee is repeated until the milk is ready`
+    ],
+    correct: 0,
+    explanation: `The fork starts both flows, and the join waits for both before continuing.`
+  },
+  {
+    id: "se_new_add_796",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which description fits a JOIN rather than a MERGE?`,
+    options: [
+      `One flow is split into several concurrent flows`,
+      `Two or more concurrent flows are combined into one, and control continues only after all of them have completed`,
+      `Alternative paths from a branch point come back together, where only one path was active`,
+      `A conditional choice is made between several flows`
+    ],
+    correct: 1,
+    explanation: `A join synchronizes parallel flows started by a fork. A merge rejoins alternative paths from a decision, where only one was ever active.`
+  },
+  {
+    id: "se_new_add_797",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which rule does the lecture state about forks and joins?`,
+    options: [
+      `Every fork must have a merge associated with it`,
+      `Every join must be preceded by a decision node`,
+      `Every fork must have a join associated with it`,
+      `Every decision must have a join associated with it`
+    ],
+    correct: 2,
+    explanation: `The Join slide says every fork must have a join associated with it.`
+  },
+  {
+    id: "se_new_add_798",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the 'Activity Diagram Notations' summary slide, one path leaves the decision node, bypasses the fork/join section, and goes directly to the merge node. What does this show?`,
+    options: [
+      `The merge node waits for both the bypass path and the join output before continuing`,
+      `The bypass path runs in parallel with the forked actions`,
+      `The bypass path is an error, because every decision must lead to a fork`,
+      `If that decision's condition leads that way, the parallel section is skipped and the two alternative paths rejoin at the merge node`
+    ],
+    correct: 3,
+    explanation: `The decision chooses ONE path: either through the fork/join section or the bypass. The merge rejoins these alternative paths, and it does not wait for both.`
+  },
+  {
+    id: "se_new_add_799",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In Fork and Join Example 1 (buy food and drinks -> cook dinner / open wine bottle -> have dinner), when does 'have dinner' start?`,
+    options: [
+      `As soon as EITHER cook dinner or open wine bottle completes`,
+      `After BOTH cook dinner and open wine bottle have completed`,
+      `Before the wine bottle is opened`,
+      `In parallel with cook dinner`
+    ],
+    correct: 1,
+    explanation: `The join waits for all incoming flows before 'have dinner' starts.`
+  },
+  {
+    id: "se_new_add_800",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In Fork and Join Example 2, which actions are executed for an INVALID member?`,
+    options: [
+      `Validate member, Cancel Order`,
+      `Validate member, Update DVD Status, Issue DVD, Take payment`,
+      `Validate member, Cancel Order, Take payment`,
+      `Validate member, Issue DVD, Cancel Order`
+    ],
+    correct: 0,
+    explanation: `The [else] branch goes to Cancel Order and then straight to the final node. The fork, join and payment are skipped.`
+  },
+  {
+    id: "se_new_add_801",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In Fork and Join Example 2, which statements are correct for a VALID member?
+ I. Cancel Order also executes, in parallel with Issue DVD
+ II. Update DVD Status and Issue DVD can occur in parallel
+ III. Take payment happens only after both Update DVD Status and Issue DVD complete
+ IV. Take payment runs in parallel with Issue DVD
+ V. The decision node is evaluated before the fork`,
+    options: [
+      `II, III, and V only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Decision first ([valid member]), then fork (update and issue in parallel), then join, then Take payment.`
+  },
+  {
+    id: "se_new_add_802",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Activity 3 (Enrolling in a University): which elements should a correct diagram include?
+ I. A decision after the form is submitted, with guards for correct / incorrect
+ II. A join before 'Attend classes'
+ III. The incorrect path leading to 'Reject application' and then the final node
+ IV. A fork after submitting the form so rejection and enrolment both happen
+ V. A merge diamond (instead of a join) before 'Attend classes'
+ VI. A fork after 'Enroll in university' so both post-enrolment activities run concurrently IT2030 - Lecture 5: Activity Diagrams | Practice Questions Page 8`,
+    options: [
+      `I, II, III, and VI only`,
+      `I, II, III, and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Correct/incorrect is a choice (decision). The two activities after enrolment are concurrent (fork + join). A merge would not wait for both activities to finish.`
+  },
+  {
+    id: "se_new_add_803",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `When iteration is shown with an asterisk (e.g. Issue DVD*), when does the next action (Take payment) occur?`,
+    options: [
+      `At any point during the loop`,
+      `After the first iteration, in parallel with the remaining iterations`,
+      `Before the loop starts`,
+      `Only after the loop has finished`
+    ],
+    correct: 3,
+    explanation: `The slide says the next action state does not occur until the loop is finished.`
+  },
+  {
+    id: "se_new_add_804",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Why does the lecture say a decision node is ideal for representing iteration, instead of an asterisk?
+ I. A decision node with guards such as [need more DVD] / [else] makes the loop condition explicit
+ II. A decision node allows all iterations to run in parallel
+ III. The asterisk does not show the number of repetitions
+ IV. The asterisk is not valid UML notation
+ V. The asterisk does not highlight the loop termination conditions`,
+    options: [
+      `I, III, and V only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The asterisk IS shown as valid notation, but it hides the termination conditions and the number of repetitions. A decision node with guards makes them visible.`
+  },
+  {
+    id: "se_new_add_805",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the iteration alternative method example, which way does the [need more DVD] flow from the decision node lead?`,
+    options: [
+      `To the final node`,
+      `Back to Issue DVD`,
+      `Forward to Take payment`,
+      `Back to Validate Membership`
+    ],
+    correct: 1,
+    explanation: `[need more DVD] loops back to Issue DVD. [else] continues to Take payment.`
+  },
+  {
+    id: "se_new_add_806",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the common-mistake diagram (Request Service -> fork -> Pay / Take order -> merge diamond -> Deliver Order), what is the error?`,
+    options: [
+      `The fork should have guard conditions on both outgoing flows`,
+      `Deliver Order should come before Pay`,
+      `Request Service should be drawn as a decision diamond`,
+      `The fork sends control down both paths, but a merge diamond only merges divergent paths, so a join bar should be used`
+    ],
+    correct: 3,
+    explanation: `Parallel flows started by a fork must be synchronized by a JOIN. A merge is only for alternative paths from a decision.`
+  },
+  {
+    id: "se_new_add_807",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Complete the statement from the Common Mistakes slide: 'The merge point indicates a merging of divergent ______, not ______.'`,
+    options: [
+      `paths ... flows`,
+      `threads ... actions`,
+      `decisions ... branches`,
+      `flows ... paths IT2030 - Lecture 5: Activity Diagrams | Practice Questions Page 9`
+    ],
+    correct: 0,
+    explanation: `Merge = divergent PATHS (from a decision). Parallel FLOWS (threads from a fork) need a join.`
+  },
+  {
+    id: "se_new_add_808",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `The Common Mistakes slide shows a loop from ActionState3 back to ActionState2 marked with a red X. What is the stated mistake?`,
+    options: [
+      `Loops are never allowed in activity diagrams`,
+      `Guard conditions should be mentioned for the loop`,
+      `Loops must always be drawn using a fork and join`,
+      `Loops must always be drawn as sub activities`
+    ],
+    correct: 1,
+    explanation: `Loops are allowed, but guard conditions must be shown so the reader knows when to repeat and when to exit.`
+  },
+  {
+    id: "se_new_add_809",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Activity 4 (Developing a software system): which statements describe a correct diagram?
+ I. The process begins with 'Gather client requirements'
+ II. 'Sign off delivery' happens in parallel with 'Deliver system'
+ III. 'Integrate UI with system' starts as soon as either development activity finishes
+ IV. A decision with guards such as [not satisfied] loops back so the prototype is modified and presented again
+ V. A join comes before 'Integrate UI with system'
+ VI. After approval, a fork starts 'Develop UI screens' and 'Develop software system'`,
+    options: [
+      `I, IV, V, and VI only`,
+      `I, II, IV, and V only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The loop continues until the client approves. The two development activities are concurrent (fork/join), and integration happens only after both complete. Sign-off comes after delivery.`
+  },
+  {
+    id: "se_new_add_810",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Activity 4: the client is NOT satisfied with the prototype. What happens next?`,
+    options: [
+      `The UI Engineer modifies the prototype, and the Project Manager presents it to the client again`,
+      `The Software Engineer starts developing the system anyway`,
+      `The process ends without a deliverable`,
+      `The Project Manager gathers the requirements again from the beginning`
+    ],
+    correct: 0,
+    explanation: `The loop goes back to modifying and re-presenting, not back to requirements gathering.`
+  },
+  {
+    id: "se_new_add_811",
+    topic: "se-module-5",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `According to the lecture, what is an activity partition?`,
+    options: [
+      `A guard condition shared by several branches`,
+      `A thick bar that splits the flow of control`,
+      `An activity group for actions that have some common characteristic`,
+      `An activity defined in more detail on another diagram`
+    ],
+    correct: 2,
+    explanation: `A partition groups actions with a common characteristic, such as who performs them.`
+  },
+  {
+    id: "se_new_add_812",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which statements about the SwimLane notation are correct?
+ I. It uses two, usually parallel, lines
+ II. Partitions are separated by dashed diamonds
+ III. The lines can be horizontal or vertical
+ IV. A name labels the partition in a box at one end
+ V. SwimLanes must always be vertical IT2030 - Lecture 5: Activity Diagrams | Practice Questions Page 10`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The slide shows both a horizontal and a vertical swimlane example, each with a name box at one end.`
+  },
+  {
+    id: "se_new_add_813",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Activity 5 (the Activity 4 scenario with swimlanes): which action-to-lane placements are correct?
+ I. 'Present prototype' in the Project Manager lane
+ II. 'Modify prototype' in the UI Engineer lane
+ III. 'Develop user-interface screens' in the Software Engineer lane
+ IV. 'Gather client requirements' in the UI Engineer lane
+ V. 'Sign off delivery' in the Client lane
+ VI. 'Integrate UI with system' in the Software Engineer lane`,
+    options: [
+      `I, II, V, and VI only`,
+      `I, II, III, and V only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The UI Engineer develops the UI screens, and the Project Manager gathers requirements. Always place each action in the lane of whoever performs it.`
+  },
+  {
+    id: "se_new_add_814",
+    topic: "se-module-5",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Activity 6 (Order Processing System): which modelling decisions are correct?
+ I. 'Send Invoice' is in the Customer Service lane and runs in parallel with order fulfilment
+ II. 'Receive Payment' is in the Finance lane and runs in parallel, because payment is not required before delivery
+ III. 'Deliver Order' must wait for payment through a join before it can start
+ IV. 'Close Order' is in the Customer Service lane, after a join that waits for all activities
+ V. 'Fill Order' then 'Deliver Order' are in the Fulfillment lane, in sequence
+ VI. A decision node chooses between sending the invoice and filling the order IT2030 - Lecture 5: Activity Diagrams | Practice Questions Page 11 Answer Key with Explanations Read the explanation even for the ones you got right - many distractors are built on common exam traps. Quick answer grid Q1: ABD Q2: ADEF Q3: A Q4: C Q5: D Q6: C Q7: C Q8: A Q9: D Q10: ABD Q11: D Q12: C Q13: A Q14: B Q15: C Q16: D Q17: ADEF Q18: D Q19: A Q20: BDE Q21: B Q22: ACD Q23: C Q24: ABCF Q25: B Q26: A Q27: C Q28: B Q29: A Q30: B Q31: C Q32: B Q33: A Q34: D Q35: BCD Q36: B Q37: A Q38: B Q39: C Q40: C Q41: D Q42: AE Q43: B Q44: A Q45: BCE Q46: ABCF Q47: D Q48: D Q49: ACE Q50: B Q51: D Q52: A Q53: B Q54: ADEF Q55: A Q56: C Q57: AC Q58: ACD Q59: ABEF Q60: ABDE Detailed explanations`,
+    options: [
+      `I, II, IV, and V only`,
+      `I, II, III, and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The shop works on a credit basis, so delivery does not wait for payment. All activities happen (fork, not decision), and the order closes only after the join.`
+  },
+  {
+    id: "se_new_add_815",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `According to the lecture, a requirements specification documents the requirements identified during which activity?`,
+    options: [
+      `Detailed design and coding`,
+      `System testing and deployment`,
+      `Requirements gathering and analysis`,
+      `Project planning and cost estimation`
+    ],
+    correct: 2,
+    explanation: `Requirements specification documents what was found during requirements gathering and analysis, using graphical notations.`
+  },
+  {
+    id: "se_new_add_816",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are listed in the lecture as graphical notations for requirements specification?
+ I. Use case diagrams
+ II. Entity relationship diagrams
+ III. Gantt charts
+ IV. Use case scenarios
+ V. Activity diagrams`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The lecture lists Use Case Diagrams and Use Case Scenarios, and Activity Diagrams. ERDs and Gantt charts are not part of this list.`
+  },
+  {
+    id: "se_new_add_817",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `A hotel owner with no technical background asks what a use case diagram will tell them about the new system. Which answer is most accurate?`,
+    options: [
+      `The exact order of screens and the UI layout of each screen`,
+      `The database tables that will store the hotel data`,
+      `WHAT the system will do when it is completed, without detailing HOW it will do it`,
+      `HOW each function will be implemented in the code`
+    ],
+    correct: 2,
+    explanation: `Use cases communicate WHAT a system will do to management, customers and non-development people, but not HOW it does anything.`
+  },
+  {
+    id: "se_new_add_818",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are purposes of a use case model according to the lecture?
+ I. Define the attributes and methods of each class
+ II. Graphically represent the proposed functionality of the new system
+ III. Demonstrate the high-level behaviour of the proposed system to clients
+ IV. Act as a means of communicating with stakeholders about what the system is intended to do
+ V. Specify the internal algorithms the system will use SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 2`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `All three correct options appear on the slides. Algorithms and class details are about HOW, which use cases deliberately avoid.`
+  },
+  {
+    id: "se_new_add_819",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the Inventory Management System example, where are the Inventory Manager and Admin drawn?`,
+    options: [
+      `Inside the boundary if they are human, outside if they are systems`,
+      `Exactly on the system boundary line`,
+      `Inside the system boundary, next to the use cases they perform`,
+      `Outside the system boundary, linked to use cases inside it by association lines`
+    ],
+    correct: 3,
+    explanation: `Actors are external entities, so they are always drawn outside the boundary and connected to the use cases inside it.`
+  },
+  {
+    id: "se_new_add_820",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following can correctly be modelled as ACTORS?
+ I. A use case such as 'Reserve a Room'
+ II. An external payment gateway system
+ III. External hardware such as a card reader
+ IV. A database table inside the system
+ V. A human user such as a receptionist`,
+    options: [
+      `II, III, and V only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Actors are roles that may be human users, external hardware or other systems. Things inside the system (tables, use cases) are not actors. SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 12`
+  },
+  {
+    id: "se_new_add_821",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `A student draws an actor labelled 'Nimal Perera' in a hotel system diagram. What is the best critique?`,
+    options: [
+      `Actors represent roles, so it should be named by the role (e.g. Receptionist), not a specific person`,
+      `It is correct, because actors always represent specific real people`,
+      `It is wrong only because actors must be external systems, never humans`,
+      `Actors must be named with a verb-noun phrase such as 'Handle Booking'`
+    ],
+    correct: 0,
+    explanation: `An actor is a ROLE adopted by those participating. Many different people can play the same role.`
+  },
+  {
+    id: "se_new_add_822",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which of the following is the BEST use case name according to the naming guideline in the lecture?`,
+    options: [
+      `Receptionist`,
+      `Room Database`,
+      `Reserve a Room`,
+      `Room Reservation Module`
+    ],
+    correct: 2,
+    explanation: `Use case names typically use a verb-noun phrase, like 'Reserve a Room'.`
+  },
+  {
+    id: "se_new_add_823",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of these questions are suggested in the lecture for identifying use cases for an actor?
+ I. Does the actor need to be informed about certain occurrences in the system?
+ II. Will the actor create, store, change, remove, or read data in the system?
+ III. What are the primary tasks the actor wants the system to perform?
+ IV. How many lines of code will the actor's use cases require?
+ V. Which programming language will be used to implement the actor's features?
+ VI. Will the actor perform a system start-up or shutdown?`,
+    options: [
+      `I, II, III, and VI only`,
+      `I, II, III, and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `All four correct questions are from the 'How to Identify a Use Case' slide (plus 'Will the actor need to inform the system about sudden, external changes?'). Language and code size are implementation details.`
+  },
+  {
+    id: "se_new_add_824",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the relationships hierarchy on the slides, which relationships fall under ACTOR relationships?`,
+    options: [
+      `Include, Extend and Generalization`,
+      `Include and Extend`,
+      `Association and Include`,
+      `Association and Generalization`
+    ],
+    correct: 3,
+    explanation: `Actor relationships: Association and Generalization. Use case relationships: Include, Extend and Generalization.`
+  },
+  {
+    id: "se_new_add_825",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Which of the following are USE CASE (use case-to-use case) relationships as shown in the lecture?
+ I. Generalization
+ II. Extend
+ III. Association
+ IV. Aggregation
+ V. Include SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 4`,
+    options: [
+      `I, II, and V only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Include, Extend and Generalization are the use case relationships. Association connects actors to use cases. Aggregation is not part of use case diagrams.`
+  },
+  {
+    id: "se_new_add_826",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `What does an association between an actor and a use case indicate?`,
+    options: [
+      `The use case is optional behaviour triggered by a condition`,
+      `The actor participates in (communicates with) the use case`,
+      `The use case always includes another use case`,
+      `The actor inherits the behaviour of another actor`
+    ],
+    correct: 1,
+    explanation: `Association = communication path between an actor and a use case it participates in, drawn as a plain solid line.`
+  },
+  {
+    id: "se_new_add_827",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the University Registration System example, which actor is associated with the 'Verify order' use case?`,
+    options: [
+      `Registrar`,
+      `Student`,
+      `Administrator`,
+      `Order verification system`
+    ],
+    correct: 3,
+    explanation: `'Verify order' is linked to the Order verification system, which shows that an actor can be another system, not only a human.`
+  },
+  {
+    id: "se_new_add_828",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the DVD system 'Quick Question', the generalization arrows go from Administrator to Manager, and from Manager to Attendant. Who has the MOST rights?`,
+    options: [
+      `Attendant`,
+      `Administrator`,
+      `Manager`,
+      `All three have equal rights`
+    ],
+    correct: 1,
+    explanation: `The arrow points from child to parent. Administrator is a child of Manager, which is a child of Attendant, so the Administrator inherits everything and has the most rights.`
+  },
+  {
+    id: "se_new_add_829",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the same DVD system, which use cases can the MANAGER perform?`,
+    options: [
+      `All seven use cases including Add User and Remove User`,
+      `Loan DVD, Return DVD, Add Member, Remove DVD and Add DVD`,
+      `Loan DVD, Return DVD and Add Member only`,
+      `Remove DVD and Add DVD only`
+    ],
+    correct: 1,
+    explanation: `Manager inherits Attendant's use cases (Loan, Return, Add Member) and has its own (Remove DVD, Add DVD). Add/Remove User belong only to Administrator, the child.`
+  },
+  {
+    id: "se_new_add_830",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the Hotel actor generalization example, the hollow triangle is at the Receptionist and the line comes from the Manager. Which statement is correct?`,
+    options: [
+      `Manager can only Approve Discounts`,
+      `Receptionist can Approve Discounts because the two actors are connected`,
+      `Manager can Assign Rooms, Calculate Bills and Approve Discounts, but Receptionist cannot Approve Discounts`,
+      `Guest inherits all of the Receptionist's use cases SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 5`
+    ],
+    correct: 2,
+    explanation: `Manager is the child, so it inherits Receptionist's use cases and adds Approve Discounts. Inheritance does not flow upward to the parent.`
+  },
+  {
+    id: "se_new_add_831",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In generalization notation, where does the hollow triangle arrowhead point?`,
+    options: [
+      `To the parent (more general) element`,
+      `To the use case the actor is associated with`,
+      `To the child (more specific) element`,
+      `To the system boundary`
+    ],
+    correct: 0,
+    explanation: `In both actor and use case generalization, the solid line goes from the child and the hollow triangle points to the parent. SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 13`
+  },
+  {
+    id: "se_new_add_832",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Library Management System chain: Guest <- Student member <- Staff member <- Library assistant <- Librarian <- System admin (each arrow points to the parent). Which use cases can a STAFF MEMBER perform?
+ I. Pay fine
+ II. Borrow book from any Library
+ III. Add item
+ IV. Search item
+ V. Generate reports`,
+    options: [
+      `I, II, and IV only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Staff member inherits from Student member (Pay fine) and Guest (Search item) and has its own 'Borrow book from any Library'. Generate reports and Add item belong to its children.`
+  },
+  {
+    id: "se_new_add_833",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Complete the definition: In an INCLUDE relationship, the base use case ______ incorporates the behaviour of another use case ______.`,
+    options: [
+      `explicitly ... at certain points called extension points`,
+      `implicitly ... at certain points called extension points`,
+      `explicitly ... at a location specified in the base`,
+      `implicitly ... at a location specified in the base`
+    ],
+    correct: 2,
+    explanation: `Include = explicitly, at a location specified in the base. Extend = implicitly, at extension points. Mixing these words up is a classic exam trap.`
+  },
+  {
+    id: "se_new_add_834",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the ATM example, a customer selects 'Transfer money'. What happens with 'Validate User'?`,
+    options: [
+      `It is always executed as part of Transfer money`,
+      `It is executed only for Withdraw money`,
+      `It is never executed, because the customer is not directly associated with it`,
+      `It is executed only if the customer asks for validation`
+    ],
+    correct: 0,
+    explanation: `Included behaviour is mandatory. Every time the base use case runs, the included use case runs too.`
+  },
+  {
+    id: "se_new_add_835",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `For Activity 04 (Learning Management System), which modelling choices are correct based on the sample diagram?
+ I. Guest is a child actor of Registered User
+ II. Registered User is a child actor of Guest
+ III. Attend Workshops ≪include≫ Register
+ IV. Search item and View More Details are associated with Guest
+ V. Register ≪extend≫ Attend Workshops`,
+    options: [
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The guest MUST register to attend a workshop, so it is include (mandatory). Registered User inherits from Guest, not the other way round.`
+  },
+  {
+    id: "se_new_add_836",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the LMS example, Buy a Course ≪include≫ Register, and Register ≪include≫ Check Deposit. When a Registered User buys a course, which use cases execute?`,
+    options: [
+      `Buy a Course and Check Deposit only`,
+      `Buy a Course and Register only`,
+      `Buy a Course, Register and Check Deposit`,
+      `Buy a Course only`
+    ],
+    correct: 2,
+    explanation: `Includes chain: Buy a Course always runs Register, and Register always runs Check Deposit.`
+  },
+  {
+    id: "se_new_add_837",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the LMS example, which use cases can a REGISTERED USER initiate directly (through association or inherited association)?
+ I. Approve Course
+ II. Sit For Exam
+ III. Attend Workshops
+ IV. Check Deposit, as a standalone use case
+ V. Buy a Course
+ VI. Search item`,
+    options: [
+      `II, III, V, and VI only`,
+      `I, II, III, and V only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Registered User has Buy a Course and Sit For Exam, and inherits Search item, View More Details and Attend Workshops from Guest. Check Deposit is included and never stands alone. Approve Course does not exist.`
+  },
+  {
+    id: "se_new_add_838",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `How is an extend relationship drawn?`,
+    options: [
+      `A solid line with a hollow triangle from the extending use case to the base`,
+      `A dashed arrow from the base use case to the extending use case, labelled ≪extend≫`,
+      `A dashed arrow from the extending use case to the base use case, labelled ≪extend≫`,
+      `A solid line from the actor to the extending use case`
+    ],
+    correct: 2,
+    explanation: `Extend points the OPPOSITE way to include: B extends A, so the arrow goes from B to A.`
+  },
+  {
+    id: "se_new_add_839",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the extend notation slide (actor linked to A with 'Ext.P: X=0', and B ≪extend≫ A), which statements are correct?
+ I. A is optional and B is mandatory
+ II. 'X=0' represents the condition at the extension point
+ III. B is the extended use case and represents optional behaviour
+ IV. B always executes whenever A executes
+ V. A is the base use case and contains mandatory / regular behaviour`,
+    options: [
+      `II, III, and V only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `A = base, mandatory. B = extension, optional, only when the condition (X=0) is met.`
+  },
+  {
+    id: "se_new_add_840",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the visa check example, 'Enroll In Uni.' has the extension point 'foreign stu' and 'Perform Visa check' extends it. What happens when a LOCAL student enrolls?`,
+    options: [
+      `The enrollment cannot complete without a visa check`,
+      `Both Enroll In Uni. and Perform Visa check execute`,
+      `Perform Visa check executes, but enrollment is skipped`,
+      `Enroll In Uni. executes, but Perform Visa check does not`
+    ],
+    correct: 3,
+    explanation: `The extension only happens when the condition (foreign student) is true. The base still works on its own.`
+  },
+  {
+    id: "se_new_add_841",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the SLIIT Library System example, which statements are correct?
+ I. Borrow book ≪include≫ Validate member
+ II. Calculate fine extends Borrow book at the extension point 'Overdue books'
+ III. Calculate fine executes every time a book is borrowed
+ IV. Suggest add item to library ≪extend≫ Search item, with the condition 'If not found'
+ V. Validate member is optional and only occurs when books are overdue SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 8`,
+    options: [
+      `I, II, and IV only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Validation is always needed (include). A fine and a suggestion only happen under a condition (extend).`
+  },
+  {
+    id: "se_new_add_842",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Research Rabbit (Activity 05): 'When they search, if an interested research area isn't available, they can suggest the research area.' Which relationship best models this?`,
+    options: [
+      `Search Groups ≪include≫ Suggest Research Area`,
+      `Search Groups ≪extend≫ Suggest Research Area`,
+      `Suggest Research Area is a child (generalization) of Search Groups`,
+      `Suggest Research Area ≪extend≫ Search Groups`
+    ],
+    correct: 3,
+    explanation: `Suggesting only happens under a condition (area not available), so it is extend, with the arrow from Suggest Research Area to Search Groups.`
+  },
+  {
+    id: "se_new_add_843",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Research Rabbit: 'If the EOI is not properly filled, the system will reject the request.' How should this be modelled?`,
+    options: [
+      `Reject Request ≪extend≫ Submit EOI, with the condition 'EOI not properly filled'`,
+      `Submit EOI ≪include≫ Reject Request`,
+      `Reject Request is a child use case of Submit EOI by generalization`,
+      `Reject Request is an actor associated with Submit EOI`
+    ],
+    correct: 0,
+    explanation: `Rejection only happens for improperly filled EOIs, so it is conditional (extend). Include would mean every EOI is rejected. SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 14`
+  },
+  {
+    id: "se_new_add_844",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which statement correctly describes USE CASE generalization?`,
+    options: [
+      `The child use case inherits behaviour but can never override it`,
+      `The parent use case inherits the behaviour of the child use case`,
+      `It is the same as include, but drawn with a solid line`,
+      `The child use case inherits the behaviour and meaning of the parent, and may add to or override it`
+    ],
+    correct: 3,
+    explanation: `Child inherits behaviour and meaning from the parent and may add to or override the parent's behaviour.`
+  },
+  {
+    id: "se_new_add_845",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `What is the correct notation for use case generalization?`,
+    options: [
+      `A solid line with a hollow triangle arrowhead pointing to the child use case`,
+      `A solid line with a hollow triangle arrowhead pointing to the parent use case`,
+      `A dashed arrow labelled ≪generalize≫ pointing to the parent use case`,
+      `A plain solid line with no arrowhead`
+    ],
+    correct: 1,
+    explanation: `Solid line + hollow triangle at the PARENT end, the same as actor generalization.`
+  },
+  {
+    id: "se_new_add_846",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the Make Payment generalization example, which statements are correct?
+ I. Each payment method can add to or override the behaviour of Make Payment
+ II. Make Payment is a child of the three payment methods
+ III. The Customer is associated with Make Payment
+ IV. Pay via Paypal, Pay via Credit Card and Pay via EFT are child use cases of Make Payment
+ V. Make Payment includes all three payment methods, so all three run for every payment`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `The three methods are specialised versions (children) of Make Payment. A customer uses one of them, not all three.`
+  },
+  {
+    id: "se_new_add_847",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Activity 06: 'This search can be extended to the two types called research programs and taught programs.' Despite the word 'extended', which relationship models this most accurately?`,
+    options: [
+      `≪extend≫, because the case study uses the word 'extended'`,
+      `≪include≫, because both searches always run together`,
+      `Use case generalization: Search Research Programs and Search Taught Programs as children of Search Postgraduate Courses`,
+      `Actor generalization between Research Student and Taught Student SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 9`
+    ],
+    correct: 2,
+    explanation: `'Two types of' a search means specialisation, which is generalization. Do not choose a relationship only because of a keyword in the scenario.`
+  },
+  {
+    id: "se_new_add_848",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Activity 06: 'In searching, if the user needs, the system will show the enrollment requirements including language requirement.' Which relationship fits best?`,
+    options: [
+      `Show Enrollment Requirements ≪extend≫ Search Postgraduate Courses`,
+      `Show Enrollment Requirements is an actor`,
+      `Show Enrollment Requirements is a child of Search Postgraduate Courses`,
+      `Search Postgraduate Courses ≪include≫ Show Enrollment Requirements`
+    ],
+    correct: 0,
+    explanation: `'If the user needs' is an optional, conditional behaviour, so it is extend.`
+  },
+  {
+    id: "se_new_add_849",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `Activity 07 (Dirgayu): which modelling decisions are correct?
+ I. Check Passport ≪extend≫ Admit Patient, with the condition 'foreign patient'
+ II. Provide Vaccination Details ≪extend≫ Admit Patient, because not all patients are vaccinated
+ III. Registered Nurse is a child actor of Medical Officer
+ IV. Admit Patient ≪include≫ Provide Vaccination Details
+ V. Medical Officer is a child actor of Registered Nurse`,
+    options: [
+      `I, IV, and V only`,
+      `I, II, and IV only`,
+      `I and IV only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `Vaccination details are needed for EVERY admission (include). Passport is only for foreign patients (extend). The Medical Officer can do all the nurse's tasks, so it is the child.`
+  },
+  {
+    id: "se_new_add_850",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Dirgayu: 'Medical record can be categorized to severe redline and low risk blue line.' Which modelling is best?`,
+    options: [
+      `Enter Medical Details includes both Redline and Blue Line records every time`,
+      `Use case generalization: Enter Redline Record and Enter Blue Line Record as children of Enter Medical Details`,
+      `Enter Medical Details extends Enter Redline Record`,
+      `Actor generalization: Redline Officer as a child of Medical Officer`
+    ],
+    correct: 1,
+    explanation: `The record is one of two TYPES, which is specialisation (generalization). Include would mean both are entered every time.`
+  },
+  {
+    id: "se_new_add_851",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which statement best describes the MAIN scenario?`,
+    options: [
+      `It describes the most frequent failure path of the use case`,
+      `It describes what happens when everything goes to plan, with no errors, leading directly to the desired outcome`,
+      `It combines all alternative flows into one sequence`,
+      `It describes every error that can happen in the use case SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 10`
+    ],
+    correct: 1,
+    explanation: `The main scenario is the 'happy path'. Variations and errors belong to other scenarios (alternative flows / extensions).`
+  },
+  {
+    id: "se_new_add_852",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `Which item is NOT part of the 'Use Case Sample Template' shown in the lecture?`,
+    options: [
+      `Test Cases`,
+      `Characteristic Information (Goal in Context, Scope, Level)`,
+      `Pre-Conditions`,
+      `Extensions`
+    ],
+    correct: 0,
+    explanation: `The template has: ID and name, Characteristic Information, Pre-Conditions, Primary Actor, Main Success Scenario Steps, Extensions and Optional Information.`
+  },
+  {
+    id: "se_new_add_853",
+    topic: "se-module-4",
+    difficulty: "medium",
+    source: "Additional PDFs",
+    question: `In the ATM 'Withdraw Money' specification, where is 'System notifies user that account funds are insufficient' recorded?`,
+    options: [
+      `Under Preconditions`,
+      `In Extensions as step 5a, branching from main scenario step 5`,
+      `As a new step in the main scenario right after step 5`,
+      `Under Open Issues`
+    ],
+    correct: 1,
+    explanation: `Alternative paths are Extensions, numbered after the main step they branch from (5 = debit and dispense, so 5a).`
+  },
+  {
+    id: "se_new_add_854",
+    topic: "se-module-4",
+    difficulty: "hard",
+    source: "Additional PDFs",
+    question: `In the 'Borrow a book' sample answer, which statements are correct?
+ I. 5a: the user cancels the request and the system exits
+ II. The trigger is 'User logs in to the system'
+ III. 2a: the system cannot read the ISBN, so it asks the user to enter it manually instead of exiting
+ IV. 3a: the title is 'Reference Only', so the system notifies and exits
+ V. The precondition is 'User gets the confirmation' SE2030 - Lecture 4: Use Case Diagrams | Practice Questions Page 11 Answer Key with Explanations Read the explanation even for the ones you got right - many distractors are built on common exam traps. Quick answer grid Q1: C Q2: ADE Q3: B Q4: C Q5: BCD Q6: A Q7: A Q8: D Q9: BCE Q10: A Q11: D Q12: ACE Q13: B Q14: D Q15: C Q16: ABCF Q17: D Q18: ABE Q19: B Q20: D Q21: A Q22: ACE Q23: B Q24: B Q25: C Q26: A Q27: ABD Q28: C Q29: C Q30: D Q31: A Q32: A Q33: BCD Q34: C Q35: BCEF Q36: D Q37: B Q38: C Q39: BCE Q40: D Q41: C Q42: B Q43: ABD Q44: D Q45: A Q46: D Q47: B Q48: ACD Q49: C Q50: A Q51: ABD Q52: ADE Q53: B Q54: A Q55: B Q56: ABCE Q57: A Q58: BCDE Q59: B Q60: ACD Detailed explanations`,
+    options: [
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`,
+      `I only`
+    ],
+    correct: 0,
+    explanation: `'User gets the confirmation' is the postcondition. The trigger is 'User has chosen to borrow a book' (logging in is main step 1). Note that 2a continues the flow, while other extensions exit.`
   }
 ];
