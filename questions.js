@@ -7561,5 +7561,170 @@ Owner, as clarified in the lecture?
     ],
     correct: 0,
     explanation: `The lecture explicitly states the Product Owner is not the same person as the client.`
+  },
+  {
+    id: "se_m3_rec_71",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `According to the lecturer, what analogy is used to explain the difference between Agile 'values' and 'principles'?`,
+    options: [
+      `Values are like wanting to be healthy; principles are the actions you take (go to gym, eat healthy) to achieve that value`,
+      `Values are specific coding rules; principles are project deadlines`,
+      `Values are team roles; principles are sprint durations`,
+      `Values and principles are the same thing expressed differently`
+    ],
+    correct: 0,
+    explanation: `The lecturer uses the health analogy: 'You wanted to be healthy — that is the value. To achieve that, you go to gym, eat healthy food, do yoga — those are the principles.'`
+  },
+  {
+    id: "se_m3_rec_72",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `According to the lecturer, why does the Scrum framework require a proper team rather than individuals working alone?`,
+    options: [
+      `Because sprints are very short (1-4 weeks), individuals cannot deliver all features alone in that time period`,
+      `Because Scrum Master needs someone to manage`,
+      `Because the Agile Manifesto requires at least 10 developers`,
+      `Because individuals are not allowed to use Agile methodologies`
+    ],
+    correct: 0,
+    explanation: `The lecturer explains: 'If you wanted to deliver a workable software in two weeks, that is very short time. Individuals can't work towards all the features for that short time period — so we need a proper team.'`
+  },
+  {
+    id: "se_m3_rec_73",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `The lecturer explicitly clarified that the Scrum Master does NOT do which of the following?`,
+    options: [
+      `Assign tasks to developers`,
+      `Support the development team`,
+      `Facilitate Scrum activities`,
+      `Remove obstacles for the team`
+    ],
+    correct: 0,
+    explanation: `The lecturer states: 'Scrum Master won't assign any task for the developers — that is handled by the development team. He will act as a support system.'`
+  },
+  {
+    id: "se_m3_rec_74",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `In the TDD example given by the lecturer, what scenario was used to explain writing tests before code?`,
+    options: [
+      `A discount calculation: if product price is 100 and 10% discount applied, the final price should be 90`,
+      `A login system: if username and password are correct, access should be granted`,
+      `A search function: if keyword matches, results should appear`,
+      `A sorting algorithm: if input is unsorted, output should be sorted`
+    ],
+    correct: 0,
+    explanation: `The lecturer used a discount example: 'If the product price is 100 rupees, after applying 10% discount, the price should be 90. We write this test case first, then write the code to meet it.'`
+  },
+  {
+    id: "se_m3_rec_75",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `According to the lecturer, why is code quality important in Extreme Programming (XP)?`,
+    options: [
+      `Because poorly written code (e.g., 4 lines vs 2 lines for the same logic) affects software performance and makes it harder for other developers to read`,
+      `Because code quality is only measured by the number of comments`,
+      `Because XP requires all code to be written in one programming language`,
+      `Because code quality only matters during deployment`
+    ],
+    correct: 0,
+    explanation: `The lecturer explains: 'One developer can write the code in two lines, another in four lines. The two-line code is better because four lines takes more time. If you don't meet engineering practices, other developers can't read or find errors from your code.'`
+  },
+  {
+    id: "se_m3_rec_76",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `According to the lecture recording, what is the main advantage of writing test cases BEFORE writing code in TDD?`,
+    options: [
+      `We can avoid later bugs because we write code exactly to meet the test criteria, saving time in short sprint periods`,
+      `It eliminates the need for a Scrum Master`,
+      `It allows skipping the sprint review process`,
+      `It makes the code run faster`
+    ],
+    correct: 0,
+    explanation: `The lecturer says: 'We can avoid any later bugs or issues in a short time period because we are writing the code exactly to meet the criteria. Then we will most of the time avoid these errors.'`
+  },
+  {
+    id: "se_m3_rec_77",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `In the burndown chart example from the lecture, the team had 120 tasks over 5 days. What was the ideal burndown velocity and which day had the lowest productivity?`,
+    options: [
+      `24 tasks/day ideal velocity; Day 3 had lowest productivity (0 tasks completed)`,
+      `30 tasks/day ideal velocity; Day 1 had lowest productivity`,
+      `20 tasks/day ideal velocity; Day 5 had lowest productivity`,
+      `24 tasks/day ideal velocity; Day 4 had lowest productivity`
+    ],
+    correct: 0,
+    explanation: `The lecturer calculated: '120 tasks divided by 5 days = 24 tasks per day ideal velocity. Day 3 had 0 tasks — the lowest productivity day.'`
+  },
+  {
+    id: "se_m3_rec_78",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `According to the lecturer, what happens to the Product Backlog after each sprint increment?`,
+    options: [
+      `It changes and evolves because customer feedback may introduce new features or improvements that need to be added`,
+      `It is frozen and never changes once created`,
+      `It is deleted and recreated from scratch`,
+      `It is only updated by the Scrum Master`
+    ],
+    correct: 0,
+    explanation: `The lecturer says: 'The product backlog changes and evolves throughout the project because each increment we get client feedback. Sometimes the client might want new features, so we update the product backlog.'`
+  },
+  {
+    id: "se_m3_rec_79",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `According to the lecturer, why should user stories avoid technical implementation details like 'database' or 'SQL query'?`,
+    options: [
+      `Because user stories should be simple and understandable among all stakeholders, including non-technical customers`,
+      `Because databases are not used in Agile development`,
+      `Because only the Scrum Master is allowed to mention technical terms`,
+      `Because technical terms make the story too long`
+    ],
+    correct: 0,
+    explanation: `The lecturer explains: 'User stories should be understandable to both business and technical people. You should avoid technical terms because the story should be simple and understandable among everyone, including customers and stakeholders.'`
+  },
+  {
+    id: "se_m3_rec_80",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `According to the lecture recording, what is the primary goal of a Sprint Review?`,
+    options: [
+      `To inspect the increment and adapt the product backlog if needed`,
+      `To plan the next sprint`,
+      `To assign new tasks to team members`,
+      `To conduct the retrospective`
+    ],
+    correct: 0,
+    explanation: `The lecturer explicitly asks this as a quiz question and answers: 'The correct answer is to inspect the increment and adapt the product backlog if needed. Planning happens in sprint planning, and retrospective is a separate activity.'`
+  },
+  {
+    id: "se_m3_rec_81",
+    topic: "se-module-3",
+    difficulty: "medium",
+    source: "Recording",
+    question: `According to the lecturer, in Pair Programming, why do two developers work on the same task together?`,
+    options: [
+      `Because in Agile's short sprints, two developers can find bugs early, discuss code quality, and deliver error-free code faster`,
+      `Because one developer writes code while the other takes notes`,
+      `Because company policy requires it for all projects`,
+      `Because one developer is always a beginner who needs supervision`
+    ],
+    correct: 0,
+    explanation: `The lecturer explains that in Agile's short time periods, two developers working together can 'find out bugs easily' and 'discuss and interact among them to identify any bugs or errors in an early stage' for quick delivery.`
   }
 ];
