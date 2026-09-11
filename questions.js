@@ -7156,32 +7156,40 @@ considered a poor example?`,
   {
     id: "se_friend_161",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
     question: `Which of the following are challenges associated with traditional software development,
-as discussed in the lecture?`,
+as discussed in the lecture?
+ I. Software is delivered in short, frequent increments
+ II. Requirements may change during development
+ III. Customer feedback is gathered and incorporated after every iteration
+ IV. Errors may be discovered late in the process
+ V. Teams may build features that users no longer need`,
     options: [
-      `Software is delivered in short, frequent increments`,
-      `Requirements may change during development`,
-      `Customer feedback is gathered and incorporated after every iteration`,
-      `Errors may be discovered late in the process`,
-      `Teams may build features that users no longer need`
+      `II, IV, and V only`,
+      `I, II, and IV only`,
+      `II and IV only`,
+      `All of the above`
     ],
-    correct: 1,
+    correct: 0,
     explanation: `Frequent increments and continuous feedback describe Agile, not traditional challenges.`
   },
   {
     id: "se_friend_162",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are the 4 key values defined in the Agile Manifesto?`,
+    question: `Which of the following are the 4 key values defined in the Agile Manifesto?
+ I. Individuals and Interactions
+ II. Comprehensive Documentation
+ III. Customer Collaboration
+ IV. Contract Negotiation
+ V. Responding to Change`,
     options: [
-      `Individuals and Interactions`,
-      `Comprehensive Documentation`,
-      `Customer Collaboration`,
-      `Contract Negotiation`,
-      `Responding to Change`
+      `I, III, and V only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Comprehensive Documentation and Contract Negotiation are the traditional counterparts, not Agile values.`
@@ -7189,16 +7197,20 @@ as discussed in the lecture?`,
   {
     id: "se_friend_163",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
     question: `Which of the following are recognized Agile development methodologies mentioned in the
-lecture?`,
+lecture?
+ I. Scrum
+ II. Kanban
+ III. Waterfall
+ IV. Extreme Programming (XP)
+ V. Spiral Model`,
     options: [
-      `Scrum`,
-      `Kanban`,
-      `Waterfall`,
-      `Extreme Programming (XP)`,
-      `Spiral Model`
+      `I, II, and IV only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Waterfall and Spiral are traditional software process models, not Agile methodologies.`
@@ -7206,16 +7218,20 @@ lecture?`,
   {
     id: "se_friend_164",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
     question: `Which of the following are considered Agile practices (as opposed to methodologies) in
-the lecture?`,
+the lecture?
+ I. Test-Driven Development (TDD)
+ II. Scrum
+ III. Pair Programming
+ IV. Behavior-Driven Development (BDD)
+ V. Kanban`,
     options: [
-      `Test-Driven Development (TDD)`,
-      `Scrum`,
-      `Pair Programming`,
-      `Behavior-Driven Development (BDD)`,
-      `Kanban`
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Scrum and Kanban are methodologies (overall structure), while TDD, Pair Programming, and BDD are implementation practices.`
@@ -7223,47 +7239,59 @@ the lecture?`,
   {
     id: "se_friend_165",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are among the three main Scrum roles?`,
+    question: `Which of the following are among the three main Scrum roles?
+ I. Project Manager
+ II. Business Analyst
+ III. Product Owner
+ IV. Scrum Master
+ V. Developers`,
     options: [
-      `Project Manager`,
-      `Business Analyst`,
-      `Product Owner`,
-      `Scrum Master`,
-      `Developers`
+      `III, IV, and V only`,
+      `I, III, and IV only`,
+      `III and IV only`,
+      `All of the above`
     ],
-    correct: 2,
+    correct: 0,
     explanation: `Project Manager and Business Analyst are not defined Scrum roles; the three Scrum roles are Product Owner, Scrum Master, and Developers.`
   },
   {
     id: "se_friend_166",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are responsibilities of the Product Owner?`,
+    question: `Which of the following are responsibilities of the Product Owner?
+ I. Facilitate daily scrum meetings and remove obstacles for the team
+ II. Define and prioritize requirements
+ III. Design, develop, and test the software code
+ IV. Maintain the Product Backlog
+ V. Accept or reject completed work`,
     options: [
-      `Facilitate daily scrum meetings and remove obstacles for the team`,
-      `Define and prioritize requirements`,
-      `Design, develop, and test the software code`,
-      `Maintain the Product Backlog`,
-      `Accept or reject completed work`
+      `II, IV, and V only`,
+      `I, II, and IV only`,
+      `II and IV only`,
+      `All of the above`
     ],
-    correct: 1,
+    correct: 0,
     explanation: `Facilitating scrum activities is the Scrum Master's job; designing/coding is the Developers' job.`
   },
   {
     id: "se_friend_167",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are responsibilities of the Scrum Master?`,
+    question: `Which of the following are responsibilities of the Scrum Master?
+ I. Facilitate Scrum activities
+ II. Promote collaboration and communication among the team
+ III. Define and prioritize the product backlog
+ IV. Design and develop the software code
+ V. Remove obstacles that affect the team's progress`,
     options: [
-      `Facilitate Scrum activities`,
-      `Promote collaboration and communication among the team`,
-      `Define and prioritize the product backlog`,
-      `Design and develop the software code`,
-      `Remove obstacles that affect the team's progress`
+      `I, II, and V only`,
+      `I, II, and III only`,
+      `I and II only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Prioritizing the backlog is the Product Owner's job; coding is the Developers' job.`
@@ -7271,15 +7299,19 @@ the lecture?`,
   {
     id: "se_friend_168",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are the three main Scrum artifacts?`,
+    question: `Which of the following are the three main Scrum artifacts?
+ I. Product Backlog
+ II. Definition of Done
+ III. Sprint Backlog
+ IV. Burn Down Chart
+ V. Release Plan`,
     options: [
-      `Product Backlog`,
-      `Definition of Done`,
-      `Sprint Backlog`,
-      `Burn Down Chart`,
-      `Release Plan`
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `The lecture names Product Backlog, Sprint Backlog, and Burn Down Chart as the three main Scrum artifacts.`
@@ -7287,15 +7319,19 @@ the lecture?`,
   {
     id: "se_friend_169",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are among the four main Scrum activities discussed in the lecture?`,
+    question: `Which of the following are among the four main Scrum activities discussed in the lecture?
+ I. Sprint Planning
+ II. Product Backlog Refinement
+ III. Daily Scrum
+ IV. Sprint Review
+ V. Sprint Retrospective`,
     options: [
-      `Sprint Planning`,
-      `Product Backlog Refinement`,
-      `Daily Scrum`,
-      `Sprint Review`,
-      `Sprint Retrospective`
+      `I, III, IV, and V only`,
+      `I, II, III, and IV only`,
+      `I and III only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `The lecture lists Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective as the four main Scrum activities.`
@@ -7303,15 +7339,19 @@ the lecture?`,
   {
     id: "se_friend_170",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following statements about Sprint Planning are correct?`,
+    question: `Which of the following statements about Sprint Planning are correct?
+ I. It is conducted at the beginning of each Sprint
+ II. Its purpose includes selecting Product Backlog items for the Sprint
+ III. It results in a clear plan for the upcoming Sprint
+ IV. It is conducted after the Sprint Review to reflect on team performance
+ V. It includes defining the Sprint Goal`,
     options: [
-      `It is conducted at the beginning of each Sprint`,
-      `Its purpose includes selecting Product Backlog items for the Sprint`,
-      `It results in a clear plan for the upcoming Sprint`,
-      `It is conducted after the Sprint Review to reflect on team performance`,
-      `It includes defining the Sprint Goal`
+      `I, II, III, and V only`,
+      `I, II, III, and IV only`,
+      `I and II only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Reflecting on team performance after the Sprint Review describes the Sprint Retrospective, not Sprint Planning.`
@@ -7319,15 +7359,19 @@ the lecture?`,
   {
     id: "se_friend_171",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are true about the Daily Scrum?`,
+    question: `Which of the following are true about the Daily Scrum?
+ I. It typically lasts around 15 minutes
+ II. It is held once per month
+ III. It addresses what was completed, what's next, and any obstacles
+ IV. It is used to monitor daily progress
+ V. It replaces the need for a Sprint Review`,
     options: [
-      `It typically lasts around 15 minutes`,
-      `It is held once per month`,
-      `It addresses what was completed, what's next, and any obstacles`,
-      `It is used to monitor daily progress`,
-      `It replaces the need for a Sprint Review`
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `The Daily Scrum is held daily (not monthly) and does not replace the Sprint Review.`
@@ -7335,15 +7379,19 @@ the lecture?`,
   {
     id: "se_friend_172",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are purposes of the Sprint Review?`,
+    question: `Which of the following are purposes of the Sprint Review?
+ I. Demonstrate completed work
+ II. Gather stakeholder feedback
+ III. Reflect only on team performance with no stakeholder involvement
+ IV. Review progress toward the Sprint Goal
+ V. Update the Product Backlog if needed`,
     options: [
-      `Demonstrate completed work`,
-      `Gather stakeholder feedback`,
-      `Reflect only on team performance with no stakeholder involvement`,
-      `Review progress toward the Sprint Goal`,
-      `Update the Product Backlog if needed`
+      `I, II, IV, and V only`,
+      `I, II, III, and IV only`,
+      `I and II only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Reflecting only on team performance without stakeholders describes the Sprint Retrospective, not the Sprint Review.`
@@ -7351,15 +7399,19 @@ the lecture?`,
   {
     id: "se_friend_173",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are true about the Sprint Retrospective?`,
+    question: `Which of the following are true about the Sprint Retrospective?
+ I. It focuses on the team and the process
+ II. It is conducted after the Sprint Review
+ III. Its main purpose is to demonstrate the product to the client
+ IV. It aims to identify what went well and areas for improvement
+ V. It results in a plan for improvements in the next Sprint`,
     options: [
-      `It focuses on the team and the process`,
-      `It is conducted after the Sprint Review`,
-      `Its main purpose is to demonstrate the product to the client`,
-      `It aims to identify what went well and areas for improvement`,
-      `It results in a plan for improvements in the next Sprint`
+      `I, II, IV, and V only`,
+      `I, II, III, and IV only`,
+      `I and II only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Demonstrating the product to the client is the purpose of the Sprint Review, not the Retrospective.`
@@ -7367,15 +7419,19 @@ the lecture?`,
   {
     id: "se_friend_174",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
-    question: `Which of the following are elements that should be included in a well-written user story?`,
+    question: `Which of the following are elements that should be included in a well-written user story?
+ I. A clearly identified user role
+ II. Technical implementation details like database structures
+ III. A description of the goal the user wants to achieve
+ IV. An explanation of the benefit (“so that...”)
+ V. SQL queries or code snippets describing functionality`,
     options: [
-      `A clearly identified user role`,
-      `Technical implementation details like database structures`,
-      `A description of the goal the user wants to achieve`,
-      `An explanation of the benefit (“so that...”)`,
-      `SQL queries or code snippets describing functionality`
+      `I, III, and IV only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Good user stories avoid technical implementation details such as databases or SQL queries.`
@@ -7383,16 +7439,20 @@ the lecture?`,
   {
     id: "se_friend_175",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
     question: `Based on the burndown chart activity (120 tasks over 5 days: Day1=20, Day2=50, Day3=0,
-Day4=20, Day5=30), which of the following statements are correct?`,
+Day4=20, Day5=30), which of the following statements are correct?
+ I. The ideal burn down velocity is 24 tasks per day
+ II. Day 2 had the highest productivity with 50 tasks completed
+ III. Day 3 had the lowest productivity with 0 tasks completed
+ IV. The team completed all 120 tasks by the end of Day 5
+ V. The team completed only 100 tasks in total`,
     options: [
-      `The ideal burn down velocity is 24 tasks per day`,
-      `Day 2 had the highest productivity with 50 tasks completed`,
-      `Day 3 had the lowest productivity with 0 tasks completed`,
-      `The team completed all 120 tasks by the end of Day 5`,
-      `The team completed only 100 tasks in total`
+      `I, II, III, and IV only`,
+      `I, II, III, and V only`,
+      `I and II only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `120 tasks / 5 days = 24 tasks/day ideal velocity. 20+50+0+20+30 = 120 tasks total, so the team completed all tasks.`
@@ -7400,16 +7460,20 @@ Day4=20, Day5=30), which of the following statements are correct?`,
   {
     id: "se_friend_176",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
     question: `Which of the following correctly match an Agile value to what it replaces in the Traditional
-way?`,
+way?
+ I. Individuals and Interactions over Process and Tools
+ II. Working Software over Comprehensive Documentation
+ III. Customer Collaboration over Contract Negotiation
+ IV. Responding to Change over Comprehensive Documentation
+ V. Working Software over Following a Plan`,
     options: [
-      `Individuals and Interactions over Process and Tools`,
-      `Working Software over Comprehensive Documentation`,
-      `Customer Collaboration over Contract Negotiation`,
-      `Responding to Change over Comprehensive Documentation`,
-      `Working Software over Following a Plan`
+      `I, II, and III only`,
+      `I, II, and IV only`,
+      `I and II only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Responding to Change is valued over Following a Plan (not Comprehensive Documentation), and Working Software is valued over Comprehensive Documentation (not Following a Plan) — D and E swap the pairs incorrectly.`
@@ -7417,16 +7481,20 @@ way?`,
   {
     id: "se_friend_177",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
     question: `In the Hospital Appointment Management System example, which of the following user
-stories were assigned HIGH priority in the initial Product Backlog?`,
+stories were assigned HIGH priority in the initial Product Backlog?
+ I. As a patient, I want to register an account so that I can use the appointment system.
+ II. As a patient, I want to receive appointment reminders so that I do not miss my appointment.
+ III. As a patient, I want to search for doctors by specialization so that I can find the correct doctor.
+ IV. As a doctor, I want to view my daily appointments so that I can prepare for consultations.
+ V. As a patient, I want to book an appointment so that I can reserve a consultation time.`,
     options: [
-      `As a patient, I want to register an account so that I can use the appointment system.`,
-      `As a patient, I want to receive appointment reminders so that I do not miss my appointment.`,
-      `As a patient, I want to search for doctors by specialization so that I can find the correct doctor.`,
-      `As a doctor, I want to view my daily appointments so that I can prepare for consultations.`,
-      `As a patient, I want to book an appointment so that I can reserve a consultation time.`
+      `I, III, and V only`,
+      `I, II, and III only`,
+      `I and III only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `Registration, doctor search, and appointment booking were High priority; reminders were Low and the doctor dashboard was Medium priority.`
@@ -7434,16 +7502,20 @@ stories were assigned HIGH priority in the initial Product Backlog?`,
   {
     id: "se_friend_178",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
     question: `Which of the following are valid reasons given in the lecture for why Sprint 1 of the
-Hospital Appointment System focused on registration and doctor search?`,
+Hospital Appointment System focused on registration and doctor search?
+ I. They have the highest business value
+ II. They are core system functionality needed for the system to operate
+ III. They are the lowest-priority items in the backlog
+ IV. They form a foundation for future features
+ V. They allow the team to deliver a working product early`,
     options: [
-      `They have the highest business value`,
-      `They are core system functionality needed for the system to operate`,
-      `They are the lowest-priority items in the backlog`,
-      `They form a foundation for future features`,
-      `They allow the team to deliver a working product early`
+      `I, II, IV, and V only`,
+      `I, II, III, and IV only`,
+      `I and II only`,
+      `All of the above`
     ],
     correct: 0,
     explanation: `These items were selected because they are high-value, core, foundational, and allow early delivery — not because they were low priority.`
@@ -7451,16 +7523,20 @@ Hospital Appointment System focused on registration and doctor search?`,
   {
     id: "se_friend_179",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
     question: `Which of the following statements accurately describe the difference between Agile
-“methodologies” and “practices”?`,
+“methodologies” and “practices”?
+ I. Methodologies provide the overall structure for managing a project
+ II. Practices are specific techniques used during implementation
+ III. TDD and Pair Programming are examples of methodologies
+ IV. Scrum and Kanban are examples of methodologies
+ V. Practices provide the overall project structure while methodologies focus on implementation`,
     options: [
-      `Methodologies provide the overall structure for managing a project`,
-      `Practices are specific techniques used during implementation`,
-      `TDD and Pair Programming are examples of methodologies`,
-      `Scrum and Kanban are examples of methodologies`,
-      `Practices provide the overall project structure while methodologies focus on implementation`
+      `I, II, and IV only`,
+      `I and II only`,
+      `All of the above`,
+      `III and V only`
     ],
     correct: 0,
     explanation: `TDD and Pair Programming are practices, not methodologies, and option E reverses the correct definitions.`
@@ -7468,18 +7544,22 @@ Hospital Appointment System focused on registration and doctor search?`,
   {
     id: "se_friend_180",
     topic: "se-module-3",
-    difficulty: "medium",
+    difficulty: "hard",
     source: "PDF",
     question: `Which of the following are true regarding the difference between a Client and a Product
-Owner, as clarified in the lecture?`,
+Owner, as clarified in the lecture?
+ I. The Product Owner is the same person as the Client
+ II. The Client sponsors the software and communicates the initial requirements
+ III. The Product Owner represents customers and stakeholders within the Scrum team
+ IV. The Product Owner prioritizes the requirements after they are collected
+ V. The Client is always a member of the development team`,
     options: [
-      `The Product Owner is the same person as the Client`,
-      `The Client sponsors the software and communicates the initial requirements`,
-      `The Product Owner represents customers and stakeholders within the Scrum team`,
-      `The Product Owner prioritizes the requirements after they are collected`,
-      `The Client is always a member of the development team`
+      `II, III, and IV only`,
+      `I, II, and III only`,
+      `II and III only`,
+      `All of the above`
     ],
-    correct: 1,
+    correct: 0,
     explanation: `The lecture explicitly states the Product Owner is not the same person as the client.`
   }
 ];
